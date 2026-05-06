@@ -1,0 +1,74 @@
+{
+  "modal_id": "rendez-vous",
+  "icon": "cal",
+  "eyebrow": {
+    "fr": "Entretiens",
+    "es": "Entrevistas",
+    "en": "Appointments"
+  },
+  "title": {
+    "fr": "Prendre rendez-vous",
+    "es": "Pedir una cita",
+    "en": "Schedule an Appointment"
+  },
+  "sections": [
+    {
+      "type": "heading",
+      "text_fr": "Patriarche du Pieu",
+      "text_es": "Patriarca de Estaca",
+      "text_en": "Stake Patriarch"
+    },
+    {
+      "type": "body",
+      "text_fr": "Pour recevoir votre bénédiction patriarcale, deux étapes sont nécessaires.",
+      "text_es": "Para recibir su bendición patriarcal, se necesitan dos pasos.",
+      "text_en": "To receive your patriarchal blessing, two steps are required."
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "text_fr": "Parler à votre évêque ou président de branche pour obtenir une recommandation.",
+          "text_es": "Hablar con su obispo o presidente de rama para obtener una recomendación.",
+          "text_en": "Speak with your bishop or branch president to obtain a recommendation."
+        },
+        {
+          "text_fr": "Contacter le patriarche pour prendre rendez-vous après avoir obtenu la recommandation.",
+          "text_es": "Contactar al patriarca para hacer una cita después de obtener la recomendación.",
+          "text_en": "Contact the patriarch to schedule an appointment after obtaining the recommendation."
+        }
+      ]
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "text_fr": "Présidence du Pieu",
+      "text_es": "Presidencia de Estaca",
+      "text_en": "Stake Presidency"
+    },
+    {
+      "type": "body",
+      "text_fr": "Les entretiens avec la présidence du pieu sont sur rendez-vous uniquement.",
+      "text_es": "Las entrevistas con la presidencia de estaca son solo con cita previa.",
+      "text_en": "Interviews with the stake presidency are by appointment only."
+    },
+    {
+      "type": "cta",
+      "label": {
+        "fr": "Prendre rendez-vous en ligne",
+        "es": "Pedir cita en línea",
+        "en": "Schedule online"
+      },
+      "href": "https://app.picktime.com/pieu-longueuil",
+      "style": "primary"
+    },
+    {
+      "type": "note",
+      "text_fr": "Recommandé — choisissez votre créneau et recevez une confirmation par courriel.",
+      "text_es": "Recomendado — elija su horario y reciba una confirmación por correo electrónico.",
+      "text_en": "Recommended — choose your time slot and receive email confirmation."
+    }
+  ]
+}

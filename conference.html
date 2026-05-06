@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Conférence de Pieu — Pieu Longueuil</title>
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+    body { background: var(--c-light); }
+    .conf-header {
+      background: var(--c-primary);
+      padding: 48px 40px 40px;
+      text-align: center;
+    }
+    .conf-header-eyebrow {
+      font-family: var(--font-ui);
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--c-secondary);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    .conf-header-title {
+      font-family: var(--font-heading);
+      font-size: 40px;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+    .conf-header-date {
+      font-family: var(--font-ui);
+      font-size: 14px;
+      color: rgba(255,255,255,0.65);
+    }
+    .conf-gold-bar { height: 3px; background: var(--c-secondary); }
+    .conf-body { max-width: 720px; margin: 0 auto; padding: 56px 40px; }
+    .conf-section { margin-bottom: 48px; }
+    .conf-section-title {
+      font-family: var(--font-heading);
+      font-size: 26px;
+      font-weight: 600;
+      color: var(--c-dark);
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--c-border);
+    }
+    .conf-item {
+      display: flex;
+      gap: 20px;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--c-border);
+    }
+    .conf-item:last-child { border-bottom: none; }
+    .conf-time {
+      font-family: var(--font-ui);
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--c-secondary);
+      min-width: 60px;
+      padding-top: 2px;
+    }
+    .conf-item-content {}
+    .conf-item-title {
+      font-family: var(--font-ui);
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--c-dark);
+      margin-bottom: 2px;
+    }
+    .conf-item-detail {
+      font-family: var(--font-ui);
+      font-size: 13px;
+      color: var(--c-muted);
+    }
+    .conf-hymn {
+      font-family: var(--font-body);
+      font-size: 14px;
+      color: var(--c-muted);
+      font-style: italic;
+    }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--font-ui);
+      font-size: 13px;
+      color: var(--c-muted);
+      margin-bottom: 40px;
+      transition: color 0.2s;
+    }
+    .back-link:hover { color: var(--c-primary); }
+    @media (max-width: 600px) {
+      .conf-body { padding: 32px 20px; }
+      .conf-header { padding: 40px 20px 32px; }
+      .conf-header-title { font-size: 28px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="conf-header">
+    <p class="conf-header-eyebrow">Pieu Longueuil Québec</p>
+    <h1 class="conf-header-title">Conférence de Pieu</h1>
+    <p class="conf-header-date" id="conf-date"><!-- Date set in content below --></p>
+  </div>
+  <div class="conf-gold-bar"></div>
+
+  <div class="conf-body">
+    <a class="back-link" href="index.html">← Retour au site</a>
+
+    <!-- ══════════════════════════════════════════
+         CONTENU DE LA CONFÉRENCE
+         Modifiez directement cette section pour
+         chaque nouvelle conférence.
+    ══════════════════════════════════════════ -->
+
+    <div class="conf-section">
+      <h2 class="conf-section-title">Première session — 10h00</h2>
+
+      <div class="conf-item">
+        <div class="conf-time">10:00</div>
+        <div class="conf-item-content">
+          <div class="conf-item-title">Prélude musical</div>
+        </div>
+      </div>
+
+      <div class="conf-item">
+        <div class="conf-time">10:05</div>
+        <div class="conf-item-content">
+          <div class="conf-item-title">Cantique d'ouverture</div>
+          <div class="conf-hymn">No. ___ — Titre du cantique</div>
+        </div>
+      </div>
+
+      <div class="conf-item">
+        <div class="conf-time">10:10</div>
+        <div class="conf-item-content">
+          <div class="conf-item-title">Prière d'ouverture</div>
+          <div class="conf-item-detail">Frère / Sœur Nom</div>
+        </div>
+      </div>
+
+      <div class="conf-item">
+        <div class="conf-time">10:15</div>
+        <div class="conf-item-content">
+          <div class="conf-item-title">Discours</div>
+          <div class="conf-item-detail">Frère / Sœur Nom — Organisation</div>
+        </div>
+      </div>
+
+      <div class="conf-item">
+        <div class="conf-time">10:35</div>
+        <div class="conf-item-content">
+          <div class="conf-item-title">Cantique</div>
+          <div class="conf-hymn">No. ___ — Titre du cantique</div>
+        </div>
+      </div>
+
+      <div class="conf-item">
+        <div class="conf-time">10:40</div>
+        <div class="conf-item-content">
+          <div class="conf-item-title">Discours</div>
+          <div class="conf-item-detail">Frère / Sœur Nom — Organisation</div>
+        </div>
+      </div>
+
+      <div class="conf-item">
+        <div class="conf-time">11:00</div>
+        <div class="conf-item-content">
+          <div class="conf-item-title">Cantique de clôture</div>
+          <div class="conf-hymn">No. ___ — Titre du cantique</div>
+        </div>
+      </div>
+
+      <div class="conf-item">
+        <div class="conf-time">11:05</div>
+        <div class="conf-item-content">
+          <div class="conf-item-title">Prière de clôture</div>
+          <div class="conf-item-detail">Frère / Sœur Nom</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="conf-section">
+      <h2 class="conf-section-title">Deuxième session — 12h00</h2>
+
+      <div class="conf-item">
+        <div class="conf-time">12:00</div>
+        <div class="conf-item-content">
+          <div class="conf-item-title">Prélude musical</div>
+        </div>
+      </div>
+
+      <div class="conf-item">
+        <div class="conf-time">12:05</div>
+        <div class="conf-item-content">
+          <div class="conf-item-title">Cantique d'ouverture</div>
+          <div class="conf-hymn">No. ___ — Titre du cantique</div>
+        </div>
+      </div>
+
+      <div class="conf-item">
+        <div class="conf-time">12:10</div>
+        <div class="conf-item-content">
+          <div class="conf-item-title">Discours — Président de Pieu</div>
+          <div class="conf-item-detail">Nom du Président</div>
+        </div>
+      </div>
+
+      <div class="conf-item">
+        <div class="conf-time">12:35</div>
+        <div class="conf-item-content">
+          <div class="conf-item-title">Cantique</div>
+          <div class="conf-hymn">No. ___ — Titre du cantique</div>
+        </div>
+      </div>
+
+      <div class="conf-item">
+        <div class="conf-time">12:40</div>
+        <div class="conf-item-content">
+          <div class="conf-item-title">Discours de clôture</div>
+          <div class="conf-item-detail">Premier Conseiller</div>
+        </div>
+      </div>
+
+      <div class="conf-item">
+        <div class="conf-time">12:55</div>
+        <div class="conf-item-content">
+          <div class="conf-item-title">Cantique de clôture</div>
+          <div class="conf-hymn">No. ___ — Titre du cantique</div>
+        </div>
+      </div>
+
+      <div class="conf-item">
+        <div class="conf-time">13:00</div>
+        <div class="conf-item-content">
+          <div class="conf-item-title">Prière de clôture</div>
+          <div class="conf-item-detail">Frère / Sœur Nom</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════
+         FIN DU CONTENU À MODIFIER
+    ══════════════════════════════════════════ -->
+  </div>
+
+  <script src="js/config.js"></script>
+  <script>
+    /* Set date dynamically if needed, or hardcode it above */
+    document.getElementById('conf-date').textContent =
+      new Date().toLocaleDateString('fr-CA', { weekday:'long', year:'numeric', month:'long', day:'numeric' });
+  </script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+[
+  {
+    "id": "vision-pieu",
+    "section": "dirigeants",
+    "category": "vision",
+    "type": "information",
+    "lang": ["fr"],
+    "title": {
+      "fr": "Vision et objectifs du Pieu",
+      "es": "Visión y objetivos de la Estaca",
+      "en": "Stake Vision and Goals"
+    },
+    "description": {
+      "fr": "Présentation des objectifs et de la direction spirituelle du Pieu de Longueuil.",
+      "es": "Presentación de los objetivos y la dirección espiritual de la Estaca Longueuil.",
+      "en": "Overview of the goals and spiritual direction of the Longueuil Stake."
+    },
+    "url": "#",
+    "icon": "target",
+    "active": true
+  },
+  {
+    "id": "guide-nouveaux-membres",
+    "section": "dirigeants",
+    "category": "guides",
+    "type": "guide",
+    "lang": ["fr"],
+    "title": {
+      "fr": "Guide des dirigeants pour les nouveaux membres",
+      "es": "Guía de líderes para nuevos miembros",
+      "en": "Leader Guide for New Members"
+    },
+    "description": {
+      "fr": "Comment intégrer les nouveaux membres par le service et les responsabilités appropriées.",
+      "es": "Cómo integrar a los nuevos miembros a través del servicio y las responsabilidades apropiadas.",
+      "en": "How to integrate new members through service and appropriate callings."
+    },
+    "url": "https://docs.google.com/document/d/15gc7VwH9NYniblyHtEJSLtGKRnaw7rMKGjwWNlKO2Ag/edit",
+    "icon": "users",
+    "active": true
+  },
+  {
+    "id": "service-pastoral-intro",
+    "section": "dirigeants",
+    "category": "guides",
+    "type": "guide",
+    "lang": ["fr"],
+    "title": {
+      "fr": "Introduction au service pastoral",
+      "es": "Introducción al servicio pastoral",
+      "en": "Introduction to Pastoral Service"
+    },
+    "description": {
+      "fr": "Principes et pratiques du service pastoral — de la parole aux actes.",
+      "es": "Principios y prácticas del servicio pastoral — de las palabras a los actos.",
+      "en": "Principles and practices of pastoral service — from words to action."
+    },
+    "url": "https://servicepastoral.ca/a-propos",
+    "icon": "heart",
+    "active": true
+  },
+  {
+    "id": "compte-eglise",
+    "section": "dirigeants",
+    "category": "tutoriels",
+    "type": "video",
+    "lang": ["fr"],
+    "title": {
+      "fr": "Créer un compte de l'Église",
+      "es": "Crear una cuenta de la Iglesia",
+      "en": "Creating a Church Account"
+    },
+    "description": {
+      "fr": "Guide étape par étape pour créer et configurer un compte LDS.",
+      "es": "Guía paso a paso para crear y configurar una cuenta de la Iglesia.",
+      "en": "Step-by-step guide to creating and setting up a Church account."
+    },
+    "url": "#",
+    "icon": "video",
+    "active": true
+  },
+  {
+    "id": "manuel-general",
+    "section": "dirigeants",
+    "category": "officiel",
+    "type": "information",
+    "lang": ["fr", "es", "en"],
+    "title": {
+      "fr": "Manuel général de l'Église",
+      "es": "Manual general de la Iglesia",
+      "en": "General Handbook"
+    },
+    "description": {
+      "fr": "Référence officielle pour les dirigeants — politiques, procédures et principes.",
+      "es": "Referencia oficial para los líderes — políticas, procedimientos y principios.",
+      "en": "Official reference for leaders — policies, procedures and principles."
+    },
+    "url": "https://www.churchofjesuschrist.org/study/manual/general-handbook?lang=fra",
+    "icon": "book",
+    "external": true,
+    "active": true
+  },
+  {
+    "id": "lcr-guide",
+    "section": "dirigeants",
+    "category": "tutoriels",
+    "type": "guide",
+    "lang": ["fr"],
+    "title": {
+      "fr": "Utiliser LCR",
+      "es": "Usar LCR",
+      "en": "Using LCR"
+    },
+    "description": {
+      "fr": "Comment naviguer dans le Système de registres de l'Église pour les appels courants.",
+      "es": "Cómo navegar en el Sistema de Registros de la Iglesia para los llamamientos comunes.",
+      "en": "How to navigate the Church Records system for common callings."
+    },
+    "url": "#",
+    "icon": "database",
+    "active": true
+  },
+  {
+    "id": "fiche-autonomie",
+    "section": "pastoral",
+    "category": "fiches",
+    "type": "fiche",
+    "lang": ["fr"],
+    "title": {
+      "fr": "Autonomie temporelle",
+      "es": "Autosuficiencia temporal",
+      "en": "Temporal Self-Reliance"
+    },
+    "description": {
+      "fr": "Ressources pour développer l'indépendance financière et la résilience.",
+      "es": "Recursos para desarrollar la independencia financiera y la resiliencia.",
+      "en": "Resources for developing financial independence and resilience."
+    },
+    "url": "https://servicepastoral.ca/a-la-recherche-de-lautonomie-temporelle",
+    "icon": "trending-up",
+    "active": true
+  },
+  {
+    "id": "fiche-couple",
+    "section": "pastoral",
+    "category": "fiches",
+    "type": "fiche",
+    "lang": ["fr"],
+    "title": {
+      "fr": "Fortifier notre couple",
+      "es": "Fortalecer nuestra pareja",
+      "en": "Strengthening Our Marriage"
+    },
+    "description": {
+      "fr": "Renforcer la relation conjugale par les principes de l'Évangile.",
+      "es": "Fortalecer la relación conyugal mediante los principios del Evangelio.",
+      "en": "Strengthening the marital relationship through Gospel principles."
+    },
+    "url": "https://servicepastoral.ca/fortifier-notre-couple",
+    "icon": "heart",
+    "active": true
+  },
+  {
+    "id": "fiche-mission",
+    "section": "pastoral",
+    "category": "fiches",
+    "type": "fiche",
+    "lang": ["fr"],
+    "title": {
+      "fr": "Œuvre missionnaire",
+      "es": "Obra misional",
+      "en": "Missionary Work"
+    },
+    "description": {
+      "fr": "Participer à l'œuvre missionnaire dans votre communauté.",
+      "es": "Participar en la obra misional en su comunidad.",
+      "en": "Participating in missionary work in your community."
+    },
+    "url": "https://servicepastoral.ca/oeuvre-missionnaire",
+    "icon": "globe",
+    "active": true
+  }
+]

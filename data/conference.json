@@ -1,0 +1,35 @@
+{
+  "date": "2025-10-05",
+  "title_fr": "Conférence de Pieu",
+  "title_es": "Conferencia de Estaca",
+  "title_en": "Stake Conference",
+  "sessions": [
+    {
+      "time": "10:00",
+      "title_fr": "Première session",
+      "items": [
+        { "time": "10:00", "title_fr": "Prélude musical", "type": "music" },
+        { "time": "10:05", "title_fr": "Cantique d'ouverture", "detail_fr": "No. ___", "type": "hymn" },
+        { "time": "10:10", "title_fr": "Prière d'ouverture", "detail_fr": "Frère / Sœur Nom", "type": "prayer" },
+        { "time": "10:15", "title_fr": "Discours", "detail_fr": "Frère / Sœur Nom", "type": "talk" },
+        { "time": "10:35", "title_fr": "Cantique", "detail_fr": "No. ___", "type": "hymn" },
+        { "time": "10:40", "title_fr": "Discours", "detail_fr": "Frère / Sœur Nom", "type": "talk" },
+        { "time": "11:00", "title_fr": "Cantique de clôture", "detail_fr": "No. ___", "type": "hymn" },
+        { "time": "11:05", "title_fr": "Prière de clôture", "detail_fr": "Frère / Sœur Nom", "type": "prayer" }
+      ]
+    },
+    {
+      "time": "12:00",
+      "title_fr": "Deuxième session",
+      "items": [
+        { "time": "12:00", "title_fr": "Prélude musical", "type": "music" },
+        { "time": "12:05", "title_fr": "Cantique d'ouverture", "detail_fr": "No. ___", "type": "hymn" },
+        { "time": "12:10", "title_fr": "Discours", "detail_fr": "Président de Pieu", "type": "talk" },
+        { "time": "12:35", "title_fr": "Cantique", "detail_fr": "No. ___", "type": "hymn" },
+        { "time": "12:40", "title_fr": "Discours de clôture", "detail_fr": "Premier Conseiller", "type": "talk" },
+        { "time": "12:55", "title_fr": "Cantique de clôture", "detail_fr": "No. ___", "type": "hymn" },
+        { "time": "13:00", "title_fr": "Prière de clôture", "detail_fr": "Frère / Sœur Nom", "type": "prayer" }
+      ]
+    }
+  ]
+}
