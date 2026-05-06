@@ -35,7 +35,7 @@ le contenu sans toucher au code. L'interface d'administration est accessible
 
 ## ÉTAPE 3 — Activer l'authentification (5 minutes)
 
-1. Dans Netlify, aller dans **Site configuration → Identity**
+1. Dans Netlify, aller dans **Project configuration → Identity**
 2. Cliquer **Enable Identity**
 3. Descendre à **Services → Git Gateway** → cliquer **Enable Git Gateway**
 4. Dans **Registration** → choisir **Invite only** (important — empêche les inconnus de s'inscrire)
