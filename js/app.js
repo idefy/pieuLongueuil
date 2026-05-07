@@ -188,12 +188,14 @@ function renderOrganisations() {
 
 function leaderCard(l,lang) {
   const role=l.role[lang]||l.role.fr;
+  const resp=l.responsibility?(l.responsibility[lang]||l.responsibility.fr||''):'';
   const init=(l.name.split(' ').map(w=>w[0]).join('').slice(0,2)).toUpperCase();
   const fallback=`data:image/svg+xml,${encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84 84"><circle cx="42" cy="42" r="42" fill="#1B3A6B"/><text x="42" y="47" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="26" font-family="Georgia,serif">${init}</text></svg>`)}`;
   return `<div class="leader-card">
     <img class="leader-photo" src="${l.photo}" alt="${l.name}" onerror="this.src='${fallback}'">
     <div class="leader-name">${l.name}</div>
     <div class="leader-role">${role}</div>
+    ${resp?`<div class="leader-responsibility">${resp}</div>`:''}
   </div>`;
 }
 

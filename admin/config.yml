@@ -51,6 +51,15 @@ collections:
                 media_folder: "/assets"
                 public_folder: "/assets"
               - { label: "Actif", name: active, widget: boolean, default: true }
+              - label: "Responsabilité (optionnel)"
+                name: responsibility
+                widget: object
+                required: false
+                hint: "Affiché en italique sous le rôle — laisser vide pour masquer"
+                fields:
+                  - { label: "Français", name: fr, widget: string, required: false }
+                  - { label: "Español",  name: es, widget: string, required: false }
+                  - { label: "English",  name: en, widget: string, required: false }
 
   - name: "resources"
     label: "📄 Ressources & Guides"
@@ -115,6 +124,15 @@ collections:
                 options: [book, heart, users, star, globe, calendar, settings, trendingUp, video, file, target, database]
               - { label: "Lien externe", name: external, widget: boolean, default: false }
               - { label: "Actif", name: active, widget: boolean, default: true }
+              - label: "Responsabilité (optionnel)"
+                name: responsibility
+                widget: object
+                required: false
+                hint: "Affiché en italique sous le rôle — laisser vide pour masquer"
+                fields:
+                  - { label: "Français", name: fr, widget: string, required: false }
+                  - { label: "Español",  name: es, widget: string, required: false }
+                  - { label: "English",  name: en, widget: string, required: false }
 
   - name: "modals"
     label: "🪟 Fenêtres modales"
