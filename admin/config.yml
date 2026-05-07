@@ -48,8 +48,8 @@ collections:
               - label: "Photo"
                 name: photo
                 widget: image
-                media_folder: "/assets/leaders"
-                public_folder: "/assets/leaders"
+                media_folder: "/assets"
+                public_folder: "/assets"
               - { label: "Actif", name: active, widget: boolean, default: true }
 
   - name: "resources"
@@ -200,8 +200,8 @@ collections:
               - label: "Image"
                 name: src
                 widget: image
-                media_folder: "/assets/modals"
-                public_folder: "/assets/modals"
+                media_folder: "/assets"
+                public_folder: "/assets"
               - { label: "Texte alt", name: alt_fr, widget: string }
           - label: "— Séparateur"
             name: divider
@@ -248,8 +248,8 @@ collections:
       - label: "Image"
         name: image
         widget: image
-        media_folder: "/assets/servicepastoral"
-        public_folder: "/assets/servicepastoral"
+        media_folder: "/assets"
+        public_folder: "/assets"
       - { label: "Couleur fond", name: color, widget: string, default: "#1B3A6B" }
       - label: "Titre"
         name: title

@@ -11,7 +11,7 @@ const FICHES_DATA = [
   {
     id: "autonomie-temporelle",
     slug: "a-la-recherche-de-lautonomie-temporelle",
-    image: "/assets/servicepastoral/autonomie-temporelle.webp",
+    image: "/assets/servicepastoral-autonomie-temporelle.webp",
     color: "#2E5E3E",
     num: "01",
     title: {
@@ -85,7 +85,7 @@ const FICHES_DATA = [
   {
     id: "vaincre-dependance",
     slug: "vaincre-la-dependance",
-    image: "/assets/servicepastoral/recovery.webp",
+    image: "/assets/servicepastoral-recovery.webp",
     color: "#5C3A1E",
     num: "02",
     title: {
@@ -159,7 +159,7 @@ const FICHES_DATA = [
   {
     id: "bien-etre-emotionnel",
     slug: "bien-etre-emotionnel",
-    image: "/assets/servicepastoral/bien-etre.webp",
+    image: "/assets/servicepastoral-bien-etre.webp",
     color: "#1E3A5C",
     num: "03",
     title: {
@@ -235,7 +235,7 @@ const FICHES_DATA = [
   {
     id: "fortifier-couple",
     slug: "fortifier-notre-couple",
-    image: "/assets/servicepastoral/couple.webp",
+    image: "/assets/servicepastoral-couple.webp",
     color: "#6B2D3E",
     num: "04",
     title: {
@@ -319,7 +319,7 @@ const FICHES_DATA = [
   {
     id: "oeuvre-missionnaire",
     slug: "oeuvre-missionnaire",
-    image: "/assets/servicepastoral/bom.webp",
+    image: "/assets/servicepastoral-bom.webp",
     color: "#2E4A6B",
     num: "05",
     title: {
@@ -390,7 +390,7 @@ const FICHES_DATA = [
   {
     id: "tourne-vers-avenir",
     slug: "tourne-vers-lavenir",
-    image: "/assets/servicepastoral/youth.webp",
+    image: "/assets/servicepastoral-youth.webp",
     color: "#3A4A2E",
     num: "06",
     title: {
@@ -457,7 +457,7 @@ const FICHES_DATA = [
   {
     id: "histoire-familiale-temple",
     slug: "histoire-familiale-et-temple",
-    image: "/assets/servicepastoral/temple.webp",
+    image: "/assets/servicepastoral-temple.webp",
     color: "#4A3A6B",
     num: "07",
     title: {
@@ -524,7 +524,7 @@ const FICHES_DATA = [
   {
     id: "autonomie-spirituelle",
     slug: "autonomie-spirituelle",
-    image: "/assets/servicepastoral/prayer.webp",
+    image: "/assets/servicepastoral-prayer.webp",
     color: "#1B3A6B",
     num: "08",
     title: {

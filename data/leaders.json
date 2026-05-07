@@ -9,7 +9,7 @@
         "en": "Stake President"
       },
       "name": "Prénom Nom",
-      "photo": "assets/leaders/placeholder.jpg",
+      "photo": "assets/leaders-placeholder.jpg",
       "active": true
     },
     {
@@ -21,7 +21,7 @@
         "en": "First Counselor"
       },
       "name": "Prénom Nom",
-      "photo": "assets/leaders/placeholder.jpg",
+      "photo": "assets/leaders-placeholder.jpg",
       "active": true
     },
     {
@@ -33,7 +33,7 @@
         "en": "Second Counselor"
       },
       "name": "Prénom Nom",
-      "photo": "assets/leaders/placeholder.jpg",
+      "photo": "assets/leaders-placeholder.jpg",
       "active": true
     },
     {
@@ -45,7 +45,7 @@
         "en": "Executive Secretary"
       },
       "name": "Prénom Nom",
-      "photo": "assets/leaders/placeholder.jpg",
+      "photo": "assets/leaders-placeholder.jpg",
       "active": true
     },
     {
@@ -57,7 +57,7 @@
         "en": "Stake Clerk"
       },
       "name": "Prénom Nom",
-      "photo": "assets/leaders/placeholder.jpg",
+      "photo": "assets/leaders-placeholder.jpg",
       "active": true
     },
     {
@@ -69,7 +69,7 @@
         "en": "High Council"
       },
       "name": "Prénom Nom",
-      "photo": "assets/leaders/placeholder.jpg",
+      "photo": "assets/leaders-placeholder.jpg",
       "active": true
     },
     {
@@ -81,7 +81,7 @@
         "en": "High Council"
       },
       "name": "Prénom Nom",
-      "photo": "assets/leaders/placeholder.jpg",
+      "photo": "assets/leaders-placeholder.jpg",
       "active": true
     },
     {
@@ -93,7 +93,7 @@
         "en": "High Council"
       },
       "name": "Prénom Nom",
-      "photo": "assets/leaders/placeholder.jpg",
+      "photo": "assets/leaders-placeholder.jpg",
       "active": true
     },
     {
@@ -105,7 +105,7 @@
         "en": "Relief Society President"
       },
       "name": "Prénom Nom",
-      "photo": "assets/leaders/placeholder.jpg",
+      "photo": "assets/leaders-placeholder.jpg",
       "active": true
     },
     {
@@ -117,7 +117,7 @@
         "en": "Young Women President"
       },
       "name": "Prénom Nom",
-      "photo": "assets/leaders/placeholder.jpg",
+      "photo": "assets/leaders-placeholder.jpg",
       "active": true
     },
     {
@@ -129,7 +129,7 @@
         "en": "Young Men President"
       },
       "name": "Prénom Nom",
-      "photo": "assets/leaders/placeholder.jpg",
+      "photo": "assets/leaders-placeholder.jpg",
       "active": true
     },
     {
@@ -141,7 +141,7 @@
         "en": "Primary President"
       },
       "name": "Prénom Nom",
-      "photo": "assets/leaders/placeholder.jpg",
+      "photo": "assets/leaders-placeholder.jpg",
       "active": true
     },
     {
@@ -153,7 +153,7 @@
         "en": "Sunday School President"
       },
       "name": "Prénom Nom",
-      "photo": "assets/leaders/placeholder.jpg",
+      "photo": "assets/leaders-placeholder.jpg",
       "active": true
     }
   ]
