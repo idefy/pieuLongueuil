@@ -1,0 +1,61 @@
+{
+  "modal_id": "distribution",
+  "icon": "settings",
+  "eyebrow": {
+    "fr": "Temple & Family History",
+    "es": "Distribución",
+    "en": "Distribution"
+  },
+  "title": {
+    "fr": "Distribution Centre",
+    "es": "Centro de Distribución",
+    "en": "Distribution Center"
+  },
+  "sections": [
+    {
+      "type": "heading",
+      "text_fr": "Opening hours"
+    },
+    {
+      "type": "body",
+      "text_fr": "Opening hours:"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "text_fr": "Wednesday: 3:30 PM to 6:30 PM"
+        },
+        {
+          "text_fr": "Thursday & Friday: 10:00 AM to 6:30 PM"
+        },
+        {
+          "text_fr": "Saturday: 8:00 AM to 3:00 PM"
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "text_fr": "Closed on the same days as the temple."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "body",
+      "text_fr": "You can also order online:"
+    },
+    {
+      "type": "cta",
+      "label": {
+        "fr": "store.churchofjesuschrist.org"
+      },
+      "href": "https://store.churchofjesuschrist.org",
+      "style": "secondary"
+    },
+    {
+      "type": "note",
+      "text_fr": "Call (450) 679-1473 for an emergency appointment or personal endowment on Wednesday evenings."
+    }
+  ]
+}

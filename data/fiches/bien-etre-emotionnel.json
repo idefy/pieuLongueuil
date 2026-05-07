@@ -1,0 +1,91 @@
+{
+  "fiche_id": "bien-etre-emotionnel",
+  "num": "03",
+  "image": "/assets/servicepastoral/bien-etre.webp",
+  "color": "#1E3A5C",
+  "title": {
+    "fr": "Bien-être émotionnel",
+    "es": "Bienestar emocional",
+    "en": "Emotional Wellbeing"
+  },
+  "quote": {
+    "fr": "« Bien que nous puissions ressentir que nous sommes comme un vase brisé... ce vase est dans les mains du potier divin. » — Jeffrey R. Holland, octobre 2013",
+    "es": "«Aunque podamos sentir que somos como un vaso quebrado... ese vaso está en manos del alfarero divino.» — Jeffrey R. Holland, octubre 2013",
+    "en": "\"Though we may feel like a broken vessel... that vessel is in the hands of the divine Potter.\" — Jeffrey R. Holland, October 2013"
+  },
+  "ideesFamille_fr": [
+    "Étudier l'article « Comme un vase brisé » de Jeffrey R. Holland dans un esprit de prière.",
+    "Lire « 14 manières de retrouver la santé émotionnelle » (Liahona, jan. 2019).",
+    "Si besoin, demander une bénédiction de prêtrise.",
+    "Si besoin, demander conseil à des personnes de bonne foi ayant une formation certifiée et de bonnes valeurs.",
+    "Suivre les recommandations des articles de référence."
+  ],
+  "ideesFamille_es": [
+    "Estudiar el artículo 'Como un vaso quebrado' de Jeffrey R. Holland con un espíritu de oración.",
+    "Leer '14 maneras de recuperar la salud emocional' (Liahona, ene. 2019).",
+    "Si es necesario, pedir una bendición de sacerdocio.",
+    "Si es necesario, buscar consejo de personas de buena fe con formación certificada y buenos valores.",
+    "Seguir las recomendaciones de los artículos de referencia."
+  ],
+  "ideesFamille_en": [
+    "Study Jeffrey R. Holland's 'Like a Broken Vessel' in a spirit of prayer.",
+    "Read '14 Ways to Get Your Emotional Health Back on Track' (Liahona, Jan. 2019).",
+    "If needed, request a priesthood blessing.",
+    "If needed, seek counsel from people of good faith with certified training and good values.",
+    "Follow the recommendations in the reference articles."
+  ],
+  "ideesPastorale_fr": [
+    "Partager et discuter « Comme un vase brisé » selon l'inspiration de l'Esprit.",
+    "Inviter la personne/famille à demander conseil à ceux qui détiennent les clés de leur bien-être spirituel.",
+    "Inviter à consulter un professionnel de santé mentale certifié et de bonne foi.",
+    "Partager les ressources sur la santé mentale de l'Église."
+  ],
+  "ideesPastorale_es": [
+    "Compartir y discutir 'Como un vaso quebrado' según la inspiración del Espíritu.",
+    "Invitar a la persona/familia a buscar consejo de quienes tienen las llaves de su bienestar espiritual.",
+    "Invitar a consultar a un profesional de salud mental certificado y de buena fe.",
+    "Compartir los recursos de salud mental de la Iglesia."
+  ],
+  "ideesPastorale_en": [
+    "Share and discuss 'Like a Broken Vessel' as the Spirit inspires.",
+    "Invite the person/family to seek counsel from those who hold the keys to their spiritual wellbeing.",
+    "Invite them to consult a certified mental health professional of good faith.",
+    "Share the Church's mental health resources."
+  ],
+  "ressourcesEglise": [
+    {
+      "label": "Comme un vase brisé – Jeffrey R. Holland",
+      "url": "https://www.lds.org/general-conference/2013/10/like-a-broken-vessel?lang=fra"
+    },
+    {
+      "label": "Quand les ténèbres me menacent – Liahona, nov. 2019",
+      "url": "https://www.churchofjesuschrist.org/study/general-conference/2019/10/31aburto?lang=fra"
+    },
+    {
+      "label": "Guide en trois étapes pour la santé mentale",
+      "url": "https://www.churchofjesuschrist.org/study/liahona/2020/09/young-adults/a-3-step-guide-to-maintaining-your-mental-health?lang=fra"
+    }
+  ],
+  "ressourcesCommunautaires": [
+    {
+      "label": "Ligne de prévention du suicide – 1-866-APPELLE",
+      "url": "https://www.aqps.info/"
+    },
+    {
+      "label": "Tel-jeunes",
+      "url": "https://www.teljeunes.com/Accueil"
+    },
+    {
+      "label": "811 (Info-santé, Info-social)",
+      "url": "https://www.quebec.ca/sante/trouver-une-ressource/consulter-un-professionnel/info-sante-811/"
+    },
+    {
+      "label": "Centre de crise – 418 688-4240",
+      "url": "http://centredecrise.com/"
+    },
+    {
+      "label": "CLSC de votre quartier – demander l'accueil psychosocial",
+      "url": null
+    }
+  ]
+}

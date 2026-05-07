@@ -1,0 +1,96 @@
+{
+  "fiche_id": "fortifier-couple",
+  "num": "04",
+  "image": "/assets/servicepastoral/couple.webp",
+  "color": "#6B2D3E",
+  "title": {
+    "fr": "Fortifier notre couple",
+    "es": "Fortalecer nuestra pareja",
+    "en": "Strengthening Our Marriage"
+  },
+  "quote": {
+    "fr": "« On n'atteint l'harmonie dans le mariage que lorsque l'on estime le bien-être de son conjoint comme l'une des principales priorités. » — Russell M. Nelson, octobre 2008",
+    "es": "«Solo se logra la armonía en el matrimonio cuando se considera el bienestar del cónyuge como una de las principales prioridades.» — Russell M. Nelson, octubre 2008",
+    "en": "\"Harmony in marriage comes only when one esteems the welfare of his or her spouse among the highest of priorities.\" — Russell M. Nelson, October 2008"
+  },
+  "ideesFamille_fr": [
+    "Étudier en couple le livre « Le mariage éternel » et le manuel « Édifier un mariage éternel ».",
+    "Si besoin, ne pas hésiter à consulter un dirigeant ou un professionnel des relations conjugales.",
+    "Prendre une marche en couple régulièrement et être à l'écoute des sentiments de l'autre.",
+    "Organiser une sortie en tête-à-tête régulièrement.",
+    "Trouver une activité de loisir commune.",
+    "Assister au temple et partager ses sentiments et son témoignage.",
+    "Prier ensemble tous les soirs et partager ses impressions spirituelles."
+  ],
+  "ideesFamille_es": [
+    "Estudiar en pareja el libro 'El matrimonio eterno' y el manual 'Construir un matrimonio eterno'.",
+    "Si es necesario, no dudar en consultar a un líder o profesional de relaciones conyugales.",
+    "Dar un paseo en pareja regularmente y escuchar los sentimientos del otro.",
+    "Organizar una salida romántica regularmente.",
+    "Encontrar una actividad recreativa común.",
+    "Asistir al templo y compartir sentimientos y testimonio.",
+    "Orar juntos cada noche y compartir las impresiones espirituales."
+  ],
+  "ideesFamille_en": [
+    "Study together 'Eternal Marriage' and 'Building an Eternal Marriage'.",
+    "If needed, don't hesitate to consult a leader or marital relations professional.",
+    "Take a walk together regularly and listen to each other's feelings.",
+    "Plan regular one-on-one outings.",
+    "Find a shared leisure activity.",
+    "Attend the temple and share feelings and testimony.",
+    "Pray together each evening and share spiritual impressions."
+  ],
+  "ideesPastorale_fr": [
+    "Suggérer d'étudier ensemble « Fortifier le mariage » — une fois par mois durant six mois.",
+    "Enseigner le plan de salut et la doctrine de la famille éternelle.",
+    "Accompagner la famille pour aller au temple ou s'y préparer.",
+    "Regarder des vidéos de l'Église et discuter du contenu selon l'inspiration de l'Esprit.",
+    "Lors d'une période difficile, inviter à demander conseil à des personnes qualifiées et de bonne foi."
+  ],
+  "ideesPastorale_es": [
+    "Sugerir estudiar juntos 'Fortalecer el matrimonio' — una vez al mes durante seis meses.",
+    "Enseñar el plan de salvación y la doctrina de la familia eterna.",
+    "Acompañar a la familia al templo o ayudarlos a prepararse.",
+    "Ver videos de la Iglesia y discutir el contenido según la inspiración del Espíritu.",
+    "En tiempos difíciles, invitar a buscar consejo de personas calificadas y de buena fe."
+  ],
+  "ideesPastorale_en": [
+    "Suggest studying 'Strengthening Marriage' together — once a month for six months.",
+    "Teach the plan of salvation and the doctrine of the eternal family.",
+    "Accompany the family to the temple or help them prepare.",
+    "Watch Church videos and discuss content as the Spirit inspires.",
+    "During difficult times, invite them to seek counsel from qualified people of good faith."
+  ],
+  "ressourcesEglise": [
+    {
+      "label": "Foyer et famille",
+      "url": "https://www.churchofjesuschrist.org/topics/family?lang=fra"
+    },
+    {
+      "label": "La Famille – Déclaration au monde",
+      "url": "https://www.churchofjesuschrist.org/bc/content/shared/content/french/pdf/language-materials/35602_fra.pdf?lang=fra"
+    },
+    {
+      "label": "Fortifier le mariage – Manuel",
+      "url": "https://www.churchofjesuschrist.org/bc/content/shared/content/french/pdf/language-materials/36889_fra.pdf"
+    }
+  ],
+  "ressourcesCommunautaires": [
+    {
+      "label": "Tel-aide – (514) 935-1101",
+      "url": "http://www.telaide.org/ressources/couple-en-crise/"
+    },
+    {
+      "label": "Ordre des travailleurs sociaux et thérapeutes du Québec",
+      "url": "https://www1.otstcfq.org/"
+    },
+    {
+      "label": "SOS Violence conjugale",
+      "url": "http://www.sosviolenceconjugale.ca/"
+    },
+    {
+      "label": "811 (Info-santé, Info-social)",
+      "url": "https://www.quebec.ca/sante/trouver-une-ressource/consulter-un-professionnel/info-sante-811/"
+    }
+  ]
+}

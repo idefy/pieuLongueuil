@@ -1,0 +1,66 @@
+{
+  "fiche_id": "histoire-familiale-temple",
+  "num": "07",
+  "image": "/assets/servicepastoral/temple.webp",
+  "color": "#4A3A6B",
+  "title": {
+    "fr": "Histoire familiale & Temple",
+    "es": "Historia familiar y Templo",
+    "en": "Family History & Temple"
+  },
+  "quote": {
+    "fr": "« Il tournera le cœur des pères vers leurs enfants, et le cœur des enfants vers leurs pères. » — Malachie 4:6",
+    "es": "«Él hará volver el corazón de los padres hacia los hijos, y el corazón de los hijos hacia los padres.» — Malaquías 4:6",
+    "en": "\"He shall turn the heart of the fathers to the children, and the heart of the children to their fathers.\" — Malachi 4:6"
+  },
+  "ideesFamille_fr": [
+    "Se créer un compte sur FamilySearch et commencer à construire l'arbre généalogique.",
+    "Interviewer des parents âgés pour recueillir des histoires et des photos de famille.",
+    "Identifier les ancêtres qui n'ont pas encore reçu leurs ordonnances.",
+    "Planifier des visites régulières au temple.",
+    "Participer aux activités d'histoire familiale de la paroisse ou du pieu."
+  ],
+  "ideesFamille_es": [
+    "Crear una cuenta en FamilySearch y comenzar a construir el árbol genealógico.",
+    "Entrevistar a familiares mayores para recopilar historias y fotos de familia.",
+    "Identificar a los antepasados que aún no han recibido sus ordenanzas.",
+    "Planificar visitas regulares al templo.",
+    "Participar en las actividades de historia familiar de la parroquia o estaca."
+  ],
+  "ideesFamille_en": [
+    "Create a FamilySearch account and begin building the family tree.",
+    "Interview older relatives to collect family stories and photos.",
+    "Identify ancestors who have not yet received their ordinances.",
+    "Plan regular temple visits.",
+    "Participate in ward or stake family history activities."
+  ],
+  "ideesPastorale_fr": [
+    "Aider la famille à créer ou enrichir son compte FamilySearch.",
+    "Accompagner la famille au temple ou pour s'y préparer.",
+    "Connecter la famille avec le spécialiste d'histoire familiale de la paroisse.",
+    "Partager des témoignages sur les bénédictions du travail au temple."
+  ],
+  "ideesPastorale_es": [
+    "Ayudar a la familia a crear o enriquecer su cuenta de FamilySearch.",
+    "Acompañar a la familia al templo o ayudarles a prepararse.",
+    "Conectar a la familia con el especialista de historia familiar de la parroquia.",
+    "Compartir testimonios sobre las bendiciones del trabajo en el templo."
+  ],
+  "ideesPastorale_en": [
+    "Help the family create or enrich their FamilySearch account.",
+    "Accompany the family to the temple or help them prepare.",
+    "Connect the family with the ward family history consultant.",
+    "Share testimonies about the blessings of temple work."
+  ],
+  "ressourcesEglise": [
+    {
+      "label": "FamilySearch",
+      "url": "https://www.familysearch.org"
+    },
+    {
+      "label": "Réservations au temple",
+      "url": "https://www.churchofjesuschrist.org/temples"
+    }
+  ],
+  "ressourcesCommunautaires": []
+}

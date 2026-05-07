@@ -1,0 +1,73 @@
+{
+  "fiche_id": "oeuvre-missionnaire",
+  "num": "05",
+  "image": "/assets/servicepastoral/bom.webp",
+  "color": "#2E4A6B",
+  "title": {
+    "fr": "Œuvre missionnaire",
+    "es": "Obra misional",
+    "en": "Missionary Work"
+  },
+  "quote": {
+    "fr": "« L'œuvre missionnaire est la manifestation de notre identité et de notre héritage spirituels. » — David A. Bednar, Liahona, octobre 2005",
+    "es": "«La obra misional es la manifestación de nuestra identidad y herencia espirituales.» — David A. Bednar, Liahona, octubre 2005",
+    "en": "\"Missionary work is the manifestation of our spiritual identity and heritage.\" — David A. Bednar, Liahona, October 2005"
+  },
+  "ideesFamille_fr": [
+    "S'impliquer avec les missionnaires de votre paroisse dans le cadre de Souviens-toi.",
+    "Prier avec une réelle intention d'avoir des opportunités missionnaires.",
+    "Nourrir les missionnaires de la paroisse et apprendre à les connaître.",
+    "Inviter un ami ou un voisin à une bénédiction, un baptême, un mariage.",
+    "Partager une vidéo de l'Évangile sur les médias sociaux.",
+    "Donner un Livre de Mormon à quelqu'un.",
+    "Partager votre écriture préférée avec quelqu'un que vous aimez."
+  ],
+  "ideesFamille_es": [
+    "Involucrarse con los misioneros de su parroquia.",
+    "Orar con la intención real de tener oportunidades misioneras.",
+    "Alimentar a los misioneros de la parroquia y conocerlos.",
+    "Invitar a un amigo o vecino a una bendición, bautismo o boda.",
+    "Compartir un video del Evangelio en las redes sociales.",
+    "Dar un Libro de Mormón a alguien.",
+    "Compartir su escritura favorita con alguien que amas."
+  ],
+  "ideesFamille_en": [
+    "Get involved with the ward missionaries.",
+    "Pray with genuine intent for missionary opportunities.",
+    "Feed the ward missionaries and get to know them.",
+    "Invite a friend or neighbor to a blessing, baptism, or wedding.",
+    "Share a Gospel video on social media.",
+    "Give someone a Book of Mormon.",
+    "Share your favorite scripture with someone you love."
+  ],
+  "ideesPastorale_fr": [
+    "Partager des histoires personnelles de succès dans le partage de l'Évangile.",
+    "Demander comment les familles ont connu l'Église et obtenu leur témoignage.",
+    "Réviser avec les familles les idées pour soutenir l'œuvre missionnaire."
+  ],
+  "ideesPastorale_es": [
+    "Compartir historias personales de éxito al compartir el Evangelio.",
+    "Preguntar cómo las familias conocieron la Iglesia y obtuvieron su testimonio.",
+    "Revisar con las familias las ideas para apoyar la obra misional."
+  ],
+  "ideesPastorale_en": [
+    "Share personal success stories of sharing the Gospel.",
+    "Ask how families came to know the Church and received their testimony.",
+    "Review with families the ideas to support missionary work."
+  ],
+  "ressourcesEglise": [
+    {
+      "label": "Faire connaître l'Évangile rétabli",
+      "url": "https://www.churchofjesuschrist.org/study/general-conference/2016/10/sharing-the-restored-gospel?lang=fra"
+    },
+    {
+      "label": "Pourquoi sommes-nous missionnaires ?",
+      "url": "https://www.churchofjesuschrist.org/study/liahona/2009/09/why-do-we-do-missionary-work?lang=fra"
+    },
+    {
+      "label": "Sept idées simples pour partager l'Évangile",
+      "url": "https://www.churchofjesuschrist.org/topics/missionary-work/seven-simple-suggestions-for-sharing-the-gospel?lang=fra"
+    }
+  ],
+  "ressourcesCommunautaires": []
+}

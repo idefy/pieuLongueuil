@@ -1,0 +1,66 @@
+{
+  "fiche_id": "autonomie-spirituelle",
+  "num": "08",
+  "image": "/assets/servicepastoral/prayer.webp",
+  "color": "#1B3A6B",
+  "title": {
+    "fr": "Autonomie spirituelle",
+    "es": "Autosuficiencia espiritual",
+    "en": "Spiritual Self-Reliance"
+  },
+  "quote": {
+    "fr": "« Fortifiez votre témoignage, et dans le monde vous aurez de la tribulation ; mais prenez courage, j'ai vaincu le monde. » — Jean 16:33",
+    "es": "«Fortifiquen su testimonio, y en el mundo tendréis aflicción; pero confiad, yo he vencido al mundo.» — Juan 16:33",
+    "en": "\"Strengthen your testimony; in the world you will have tribulation. But take heart; I have overcome the world.\" — John 16:33"
+  },
+  "ideesFamille_fr": [
+    "Établir une routine quotidienne de prière et d'étude des Écritures.",
+    "Tenir un journal personnel de foi et de gratitude.",
+    "Participer à toutes les réunions du dimanche et aux activités de la paroisse.",
+    "Consacrer du temps à la méditation et à la prière en famille.",
+    "Renouveler régulièrement les alliances par la Sainte-Cène."
+  ],
+  "ideesFamille_es": [
+    "Establecer una rutina diaria de oración y estudio de las Escrituras.",
+    "Llevar un diario personal de fe y gratitud.",
+    "Participar en todas las reuniones dominicales y actividades de la parroquia.",
+    "Dedicar tiempo a la meditación y oración en familia.",
+    "Renovar regularmente los convenios mediante la Santa Cena."
+  ],
+  "ideesFamille_en": [
+    "Establish a daily routine of prayer and scripture study.",
+    "Keep a personal journal of faith and gratitude.",
+    "Attend all Sunday meetings and ward activities.",
+    "Dedicate time to family meditation and prayer.",
+    "Regularly renew covenants through the Sacrament."
+  ],
+  "ideesPastorale_fr": [
+    "Partager des témoignages personnels de la puissance de la prière.",
+    "Enseigner comment l'étude des Écritures peut transformer la vie.",
+    "Encourager la famille à fixer des objectifs spirituels mesurables.",
+    "Inviter à participer à des activités qui renforcent la foi."
+  ],
+  "ideesPastorale_es": [
+    "Compartir testimonios personales del poder de la oración.",
+    "Enseñar cómo el estudio de las Escrituras puede transformar la vida.",
+    "Animar a la familia a establecer metas espirituales medibles.",
+    "Invitar a participar en actividades que fortalezcan la fe."
+  ],
+  "ideesPastorale_en": [
+    "Share personal testimonies of the power of prayer.",
+    "Teach how scripture study can transform life.",
+    "Encourage the family to set measurable spiritual goals.",
+    "Invite participation in faith-building activities."
+  ],
+  "ressourcesEglise": [
+    {
+      "label": "Fortifier l'autonomie spirituelle",
+      "url": "https://www.churchofjesuschrist.org/study/life-help/self-reliance?lang=fra"
+    },
+    {
+      "label": "Viens à moi",
+      "url": "https://www.comeuntochrist.org/?lang=fra"
+    }
+  ],
+  "ressourcesCommunautaires": []
+}

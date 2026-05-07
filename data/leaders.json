@@ -1,158 +1,160 @@
-[
-  {
-    "id": "president-pieu",
-    "org": "presidence",
-    "role": {
-      "fr": "Président de Pieu",
-      "es": "Presidente de Estaca",
-      "en": "Stake President"
+{
+  "leaders": [
+    {
+      "id": "president-pieu",
+      "org": "presidence",
+      "role": {
+        "fr": "Président de Pieu",
+        "es": "Presidente de Estaca",
+        "en": "Stake President"
+      },
+      "name": "Prénom Nom",
+      "photo": "assets/leaders/placeholder.jpg",
+      "active": true
     },
-    "name": "Prénom Nom",
-    "photo": "assets/leaders/placeholder.jpg",
-    "active": true
-  },
-  {
-    "id": "1er-conseiller-pieu",
-    "org": "presidence",
-    "role": {
-      "fr": "Premier Conseiller",
-      "es": "Primer Consejero",
-      "en": "First Counselor"
+    {
+      "id": "1er-conseiller-pieu",
+      "org": "presidence",
+      "role": {
+        "fr": "Premier Conseiller",
+        "es": "Primer Consejero",
+        "en": "First Counselor"
+      },
+      "name": "Prénom Nom",
+      "photo": "assets/leaders/placeholder.jpg",
+      "active": true
     },
-    "name": "Prénom Nom",
-    "photo": "assets/leaders/placeholder.jpg",
-    "active": true
-  },
-  {
-    "id": "2e-conseiller-pieu",
-    "org": "presidence",
-    "role": {
-      "fr": "Deuxième Conseiller",
-      "es": "Segundo Consejero",
-      "en": "Second Counselor"
+    {
+      "id": "2e-conseiller-pieu",
+      "org": "presidence",
+      "role": {
+        "fr": "Deuxième Conseiller",
+        "es": "Segundo Consejero",
+        "en": "Second Counselor"
+      },
+      "name": "Prénom Nom",
+      "photo": "assets/leaders/placeholder.jpg",
+      "active": true
     },
-    "name": "Prénom Nom",
-    "photo": "assets/leaders/placeholder.jpg",
-    "active": true
-  },
-  {
-    "id": "secretaire-executif",
-    "org": "presidence",
-    "role": {
-      "fr": "Secrétaire Exécutif",
-      "es": "Secretario Ejecutivo",
-      "en": "Executive Secretary"
+    {
+      "id": "secretaire-executif",
+      "org": "presidence",
+      "role": {
+        "fr": "Secrétaire Exécutif",
+        "es": "Secretario Ejecutivo",
+        "en": "Executive Secretary"
+      },
+      "name": "Prénom Nom",
+      "photo": "assets/leaders/placeholder.jpg",
+      "active": true
     },
-    "name": "Prénom Nom",
-    "photo": "assets/leaders/placeholder.jpg",
-    "active": true
-  },
-  {
-    "id": "greffier-pieu",
-    "org": "presidence",
-    "role": {
-      "fr": "Greffier de Pieu",
-      "es": "Secretario de Estaca",
-      "en": "Stake Clerk"
+    {
+      "id": "greffier-pieu",
+      "org": "presidence",
+      "role": {
+        "fr": "Greffier de Pieu",
+        "es": "Secretario de Estaca",
+        "en": "Stake Clerk"
+      },
+      "name": "Prénom Nom",
+      "photo": "assets/leaders/placeholder.jpg",
+      "active": true
     },
-    "name": "Prénom Nom",
-    "photo": "assets/leaders/placeholder.jpg",
-    "active": true
-  },
-  {
-    "id": "gc-01",
-    "org": "grandconseil",
-    "role": {
-      "fr": "Grand Conseil",
-      "es": "Alto Consejo",
-      "en": "High Council"
+    {
+      "id": "gc-01",
+      "org": "grandconseil",
+      "role": {
+        "fr": "Grand Conseil",
+        "es": "Alto Consejo",
+        "en": "High Council"
+      },
+      "name": "Prénom Nom",
+      "photo": "assets/leaders/placeholder.jpg",
+      "active": true
     },
-    "name": "Prénom Nom",
-    "photo": "assets/leaders/placeholder.jpg",
-    "active": true
-  },
-  {
-    "id": "gc-02",
-    "org": "grandconseil",
-    "role": {
-      "fr": "Grand Conseil",
-      "es": "Alto Consejo",
-      "en": "High Council"
+    {
+      "id": "gc-02",
+      "org": "grandconseil",
+      "role": {
+        "fr": "Grand Conseil",
+        "es": "Alto Consejo",
+        "en": "High Council"
+      },
+      "name": "Prénom Nom",
+      "photo": "assets/leaders/placeholder.jpg",
+      "active": true
     },
-    "name": "Prénom Nom",
-    "photo": "assets/leaders/placeholder.jpg",
-    "active": true
-  },
-  {
-    "id": "gc-03",
-    "org": "grandconseil",
-    "role": {
-      "fr": "Grand Conseil",
-      "es": "Alto Consejo",
-      "en": "High Council"
+    {
+      "id": "gc-03",
+      "org": "grandconseil",
+      "role": {
+        "fr": "Grand Conseil",
+        "es": "Alto Consejo",
+        "en": "High Council"
+      },
+      "name": "Prénom Nom",
+      "photo": "assets/leaders/placeholder.jpg",
+      "active": true
     },
-    "name": "Prénom Nom",
-    "photo": "assets/leaders/placeholder.jpg",
-    "active": true
-  },
-  {
-    "id": "presidente-ss",
-    "org": "ss",
-    "role": {
-      "fr": "Présidente de Société de Secours",
-      "es": "Presidenta de Sociedad de Socorro",
-      "en": "Relief Society President"
+    {
+      "id": "presidente-ss",
+      "org": "ss",
+      "role": {
+        "fr": "Présidente de Société de Secours",
+        "es": "Presidenta de Sociedad de Socorro",
+        "en": "Relief Society President"
+      },
+      "name": "Prénom Nom",
+      "photo": "assets/leaders/placeholder.jpg",
+      "active": true
     },
-    "name": "Prénom Nom",
-    "photo": "assets/leaders/placeholder.jpg",
-    "active": true
-  },
-  {
-    "id": "presidente-jf",
-    "org": "jf",
-    "role": {
-      "fr": "Présidente des Jeunes Filles",
-      "es": "Presidenta de Mujeres Jóvenes",
-      "en": "Young Women President"
+    {
+      "id": "presidente-jf",
+      "org": "jf",
+      "role": {
+        "fr": "Présidente des Jeunes Filles",
+        "es": "Presidenta de Mujeres Jóvenes",
+        "en": "Young Women President"
+      },
+      "name": "Prénom Nom",
+      "photo": "assets/leaders/placeholder.jpg",
+      "active": true
     },
-    "name": "Prénom Nom",
-    "photo": "assets/leaders/placeholder.jpg",
-    "active": true
-  },
-  {
-    "id": "president-jg",
-    "org": "jg",
-    "role": {
-      "fr": "Président des Jeunes Gens",
-      "es": "Presidente de Hombres Jóvenes",
-      "en": "Young Men President"
+    {
+      "id": "president-jg",
+      "org": "jg",
+      "role": {
+        "fr": "Président des Jeunes Gens",
+        "es": "Presidente de Hombres Jóvenes",
+        "en": "Young Men President"
+      },
+      "name": "Prénom Nom",
+      "photo": "assets/leaders/placeholder.jpg",
+      "active": true
     },
-    "name": "Prénom Nom",
-    "photo": "assets/leaders/placeholder.jpg",
-    "active": true
-  },
-  {
-    "id": "presidente-primaire",
-    "org": "primaire",
-    "role": {
-      "fr": "Présidente de la Primaire",
-      "es": "Presidenta de la Primaria",
-      "en": "Primary President"
+    {
+      "id": "presidente-primaire",
+      "org": "primaire",
+      "role": {
+        "fr": "Présidente de la Primaire",
+        "es": "Presidenta de la Primaria",
+        "en": "Primary President"
+      },
+      "name": "Prénom Nom",
+      "photo": "assets/leaders/placeholder.jpg",
+      "active": true
     },
-    "name": "Prénom Nom",
-    "photo": "assets/leaders/placeholder.jpg",
-    "active": true
-  },
-  {
-    "id": "president-ecole",
-    "org": "ecole",
-    "role": {
-      "fr": "Président de l'École du Dimanche",
-      "es": "Presidente de la Escuela Dominical",
-      "en": "Sunday School President"
-    },
-    "name": "Prénom Nom",
-    "photo": "assets/leaders/placeholder.jpg",
-    "active": true
-  }
-]
+    {
+      "id": "president-ecole",
+      "org": "ecole",
+      "role": {
+        "fr": "Président de l'École du Dimanche",
+        "es": "Presidente de la Escuela Dominical",
+        "en": "Sunday School President"
+      },
+      "name": "Prénom Nom",
+      "photo": "assets/leaders/placeholder.jpg",
+      "active": true
+    }
+  ]
+}

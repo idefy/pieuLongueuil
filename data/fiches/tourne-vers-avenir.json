@@ -1,0 +1,66 @@
+{
+  "fiche_id": "tourne-vers-avenir",
+  "num": "06",
+  "image": "/assets/servicepastoral/youth.webp",
+  "color": "#3A4A2E",
+  "title": {
+    "fr": "Tourné vers l'avenir",
+    "es": "Mirando hacia el futuro",
+    "en": "Looking to the Future"
+  },
+  "quote": {
+    "fr": "« Dieu a un plan pour chacun de nous. En Lui, notre avenir est lumière. » — Pieu Longueuil",
+    "es": "«Dios tiene un plan para cada uno de nosotros. En Él, nuestro futuro es luz.» — Estaca Longueuil",
+    "en": "\"God has a plan for each of us. In Him, our future is light.\" — Longueuil Stake"
+  },
+  "ideesFamille_fr": [
+    "Établir des objectifs personnels et familiaux fondés sur les principes de l'Évangile.",
+    "Planifier les prochaines ordonnances du temple pour chaque membre de la famille.",
+    "Étudier régulièrement les Écritures et la Proclamation sur la famille.",
+    "Participer aux activités de la paroisse et du pieu.",
+    "Identifier les rêves et aspirations de chaque membre de la famille et les soutenir."
+  ],
+  "ideesFamille_es": [
+    "Establecer metas personales y familiares basadas en los principios del Evangelio.",
+    "Planificar las próximas ordenanzas del templo para cada miembro de la familia.",
+    "Estudiar regularmente las Escrituras y la Proclamación sobre la familia.",
+    "Participar en las actividades de la parroquia y la estaca.",
+    "Identificar los sueños y aspiraciones de cada miembro de la familia y apoyarlos."
+  ],
+  "ideesFamille_en": [
+    "Set personal and family goals grounded in Gospel principles.",
+    "Plan upcoming temple ordinances for each family member.",
+    "Study the scriptures and the Family Proclamation regularly.",
+    "Participate in ward and stake activities.",
+    "Identify each family member's dreams and aspirations and support them."
+  ],
+  "ideesPastorale_fr": [
+    "Aider la famille à identifier ses forces et son potentiel.",
+    "Partager des témoignages d'espoir et de foi en l'avenir.",
+    "Encourager la participation aux programmes d'autonomie.",
+    "Soutenir la préparation aux ordonnances du temple."
+  ],
+  "ideesPastorale_es": [
+    "Ayudar a la familia a identificar sus fortalezas y potencial.",
+    "Compartir testimonios de esperanza y fe en el futuro.",
+    "Fomentar la participación en los programas de autosuficiencia.",
+    "Apoyar la preparación para las ordenanzas del templo."
+  ],
+  "ideesPastorale_en": [
+    "Help the family identify their strengths and potential.",
+    "Share testimonies of hope and faith in the future.",
+    "Encourage participation in self-reliance programs.",
+    "Support preparation for temple ordinances."
+  ],
+  "ressourcesEglise": [
+    {
+      "label": "La Proclamation sur la famille",
+      "url": "https://www.churchofjesuschrist.org/bc/content/shared/content/french/pdf/language-materials/35602_fra.pdf"
+    },
+    {
+      "label": "Aide mémorielle – Planifier mon avenir",
+      "url": "https://www.churchofjesuschrist.org/study/life-help/self-reliance?lang=fra"
+    }
+  ],
+  "ressourcesCommunautaires": []
+}

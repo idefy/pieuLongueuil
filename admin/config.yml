@@ -1,43 +1,18 @@
-# ============================================================
-#  DECAP CMS — Configuration Pieu Longueuil
-#  Fichier : admin/config.yml
-# ============================================================
-#
-#  DÉPLOIEMENT RAPIDE
-#  ------------------
-#  1. Pousser ce dossier sur GitHub (repo public ou privé)
-#  2. Connecter le repo sur netlify.com (drag & drop ou GitHub)
-#  3. Dans Netlify : Identity → Enable → Git Gateway → Enable
-#  4. Inviter vos administrateurs par courriel (Netlify Identity)
-#  5. L'interface admin sera disponible sur /admin
-#
-# ============================================================
-
+# Decap CMS — Pieu Longueuil
 backend:
   name: git-gateway
-  branch: main          # Branche principale — changer si vous utilisez "master"
+  branch: main
 
-# Dossier où Netlify stockera les médias uploadés (photos, images)
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
-
-# Langue de l'interface d'administration
 locale: fr
 
-# ============================================================
-#  COLLECTIONS — chaque collection = une section éditable
-# ============================================================
 collections:
 
-  # ──────────────────────────────────────────────────────────
-  #  1. DIRIGEANTS
-  #     Chaque dirigeant = un enregistrement
-  #     Fichier source : data/leaders.json  (tableau)
-  # ──────────────────────────────────────────────────────────
   - name: "leaders"
     label: "👥 Dirigeants"
     label_singular: "Dirigeant"
-    description: "Gérer les dirigeants du pieu — nom, appel, photo. Aucun courriel ni téléphone."
+    description: "Modifier les dirigeants — nom, appel, photo."
     files:
       - name: "leaders"
         label: "Liste des dirigeants"
@@ -49,152 +24,123 @@ collections:
             label_singular: "Dirigeant"
             summary: "{{fields.name}} — {{fields.org}}"
             fields:
-              - { label: "ID unique",  name: id,     widget: string,  hint: "Identifiant unique sans espaces, ex: president-pieu" }
+              - { label: "ID unique", name: id, widget: string }
               - label: "Organisation"
                 name: org
                 widget: select
                 options:
-                  - { label: "Présidence de Pieu",        value: presidence }
-                  - { label: "Grand Conseil",              value: grandconseil }
-                  - { label: "Société de Secours",         value: ss }
-                  - { label: "Jeunes Filles",              value: jf }
-                  - { label: "Jeunes Gens",                value: jg }
-                  - { label: "Primaire",                   value: primaire }
-                  - { label: "École du Dimanche",          value: ecole }
-                  - { label: "Jeunes Adultes Célibataires",value: jas }
-              - label: "Appel / Rôle"
+                  - { label: "Présidence de Pieu", value: presidence }
+                  - { label: "Grand Conseil", value: grandconseil }
+                  - { label: "Société de Secours", value: ss }
+                  - { label: "Jeunes Filles", value: jf }
+                  - { label: "Jeunes Gens", value: jg }
+                  - { label: "Primaire", value: primaire }
+                  - { label: "École du Dimanche", value: ecole }
+                  - { label: "Jeunes Adultes Célibataires", value: jas }
+              - label: "Rôle"
                 name: role
                 widget: object
                 fields:
-                  - { label: "Français",  name: fr, widget: string }
-                  - { label: "Español",   name: es, widget: string }
-                  - { label: "English",   name: en, widget: string }
-              - { label: "Nom complet",  name: name,   widget: string }
-              - { label: "Photo",        name: photo,  widget: image,  allow_multiple: false, hint: "Photo portrait — idéalement 200×200 px minimum" }
-              - { label: "Actif",        name: active, widget: boolean, default: true, hint: "Décocher pour masquer sans supprimer" }
+                  - { label: "Français", name: fr, widget: string }
+                  - { label: "Español", name: es, widget: string, required: false }
+                  - { label: "English", name: en, widget: string, required: false }
+              - { label: "Nom complet", name: name, widget: string }
+              - { label: "Photo", name: photo, widget: image }
+              - { label: "Actif", name: active, widget: boolean, default: true }
 
-  # ──────────────────────────────────────────────────────────
-  #  2. RESSOURCES & GUIDES (section Dirigeants)
-  #     Fichier source : data/resources.json
-  # ──────────────────────────────────────────────────────────
   - name: "resources"
     label: "📄 Ressources & Guides"
     label_singular: "Ressource"
-    description: "Guides, tutoriels vidéo et liens pour les dirigeants."
+    description: "Guides, tutoriels et liens pour les dirigeants."
     files:
       - name: "resources"
         label: "Liste des ressources"
         file: "data/resources.json"
         fields:
           - label: "Ressources"
-            name: resources
-            widget: list
+            name: "resources"
+            widget: "list"
             label_singular: "Ressource"
             summary: "{{fields.id}} — {{fields.type}}"
             fields:
-              - { label: "ID unique",    name: id,      widget: string }
-              - label: "Section du site"
+              - { label: "ID unique", name: id, widget: string }
+              - label: "Section"
                 name: section
                 widget: select
                 options:
-                  - { label: "Pour les dirigeants", value: dirigeants }
-                  - { label: "Service pastoral",    value: pastoral }
+                  - { label: "Dirigeants", value: dirigeants }
+                  - { label: "Service pastoral", value: pastoral }
               - label: "Catégorie"
                 name: category
                 widget: select
                 options:
-                  - { label: "Vision",    value: vision }
-                  - { label: "Guides",    value: guides }
+                  - { label: "Vision", value: vision }
+                  - { label: "Guides", value: guides }
                   - { label: "Tutoriels", value: tutoriels }
-                  - { label: "Officiel",  value: officiel }
-                  - { label: "Fiches",    value: fiches }
-              - label: "Type de document"
+                  - { label: "Officiel", value: officiel }
+                  - { label: "Fiches", value: fiches }
+              - label: "Type"
                 name: type
                 widget: select
                 options:
-                  - { label: "Guide",      value: guide }
-                  - { label: "Processus",  value: process }
-                  - { label: "Information",value: information }
-                  - { label: "Vidéo",      value: video }
-                  - { label: "Formation",  value: formation }
-                  - { label: "Rapport",    value: rapport }
-                  - { label: "Fiche",      value: fiche }
+                  - { label: "Guide", value: guide }
+                  - { label: "Processus", value: process }
+                  - { label: "Information", value: information }
+                  - { label: "Vidéo", value: video }
+                  - { label: "Formation", value: formation }
+                  - { label: "Rapport", value: rapport }
+                  - { label: "Fiche", value: fiche }
               - label: "Titre"
                 name: title
                 widget: object
                 fields:
-                  - { label: "Français",  name: fr, widget: string }
-                  - { label: "Español",   name: es, widget: string }
-                  - { label: "English",   name: en, widget: string }
+                  - { label: "Français", name: fr, widget: string }
+                  - { label: "Español", name: es, widget: string, required: false }
+                  - { label: "English", name: en, widget: string, required: false }
               - label: "Description"
                 name: description
                 widget: object
                 fields:
-                  - { label: "Français",  name: fr, widget: text }
-                  - { label: "Español",   name: es, widget: text }
-                  - { label: "English",   name: en, widget: text }
-              - { label: "URL / Lien",   name: url,    widget: string, required: false, hint: "URL externe ou # pour lien interne" }
+                  - { label: "Français", name: fr, widget: text }
+                  - { label: "Español", name: es, widget: text, required: false }
+                  - { label: "English", name: en, widget: text, required: false }
+              - { label: "URL", name: url, widget: string, required: false }
               - label: "Icône"
                 name: icon
                 widget: select
-                options:
-                  - book
-                  - heart
-                  - users
-                  - star
-                  - globe
-                  - calendar
-                  - settings
-                  - trendingUp
-                  - video
-                  - file
-                  - target
-                  - database
-              - { label: "Lien externe ?", name: external, widget: boolean, default: false }
-              - { label: "Actif",          name: active,   widget: boolean, default: true }
+                options: [book, heart, users, star, globe, calendar, settings, trendingUp, video, file, target, database]
+              - { label: "Lien externe", name: external, widget: boolean, default: false }
+              - { label: "Actif", name: active, widget: boolean, default: true }
 
-  # ──────────────────────────────────────────────────────────
-  #  3. FENÊTRES MODALES
-  #     Chaque modale = un fichier Markdown dans data/modals/
-  #     Le site les charge dynamiquement.
-  # ──────────────────────────────────────────────────────────
   - name: "modals"
     label: "🪟 Fenêtres modales"
     label_singular: "Modale"
-    description: "Créer et modifier les fenêtres d'information qui s'ouvrent sur le site. Chaque modale a un identifiant unique qui permet de la lier à un bouton ou lien."
+    description: "Fenêtres d'information. Lier avec href=\"modal:votre-id\"."
     folder: "data/modals"
     create: true
     slug: "{{fields.modal_id}}"
     identifier_field: modal_id
-    summary: "{{fields.title_fr}} ({{fields.modal_id}})"
+    summary: "{{fields.modal_id}} — {{fields.title_fr}}"
     fields:
-      - { label: "ID unique",    name: modal_id,   widget: string,  hint: "Ex: rendez-vous, temple, nouveaux-membres — sans espaces ni accents. Sera utilisé dans les liens: modal:votre-id" }
-      - { label: "Icône",        name: icon,       widget: select,  options: [cal, book, heart, users, star, globe, settings, trendingUp, video, file, target, database, shield, smile], default: "file", required: false }
-
-      - label: "En-tête (eyebrow)"
-        name: eyebrow
-        widget: object
-        hint: "Petit texte au-dessus du titre (ex: Ressources, Temple)"
-        fields:
-          - { label: "Français",  name: fr, widget: string }
-          - { label: "Español",   name: es, widget: string, required: false }
-          - { label: "English",   name: en, widget: string, required: false }
-
-      - label: "Titre"
-        name: title
-        widget: object
-        fields:
-          - { label: "Français",  name: fr, widget: string }
-          - { label: "Español",   name: es, widget: string, required: false }
-          - { label: "English",   name: en, widget: string, required: false }
-
-      - label: "Sections du contenu"
+      - { label: "ID unique", name: modal_id, widget: string, hint: "Ex: rendez-vous  —  utilisé dans href=\"modal:rendez-vous\"" }
+      - label: "Icône"
+        name: icon
+        widget: select
+        options: [cal, book, heart, users, star, globe, settings, trendingUp, video, file, target, database]
+        default: file
+        required: false
+      - { label: "En-tête (FR)", name: eyebrow_fr, widget: string }
+      - { label: "En-tête (ES)", name: eyebrow_es, widget: string, required: false }
+      - { label: "En-tête (EN)", name: eyebrow_en, widget: string, required: false }
+      - { label: "Titre (FR)", name: title_fr, widget: string }
+      - { label: "Titre (ES)", name: title_es, widget: string, required: false }
+      - { label: "Titre (EN)", name: title_en, widget: string, required: false }
+      - label: "Sections"
         name: sections
         widget: list
         label_singular: "Section"
-        summary: "{{fields.type}}{{fields.text_fr}}"
+        summary: "{{fields.type}}"
         types:
-
           - label: "📝 Introduction"
             name: intro
             widget: object
@@ -202,7 +148,6 @@ collections:
               - { label: "Texte (FR)", name: text_fr, widget: text }
               - { label: "Texte (ES)", name: text_es, widget: text, required: false }
               - { label: "Texte (EN)", name: text_en, widget: text, required: false }
-
           - label: "📌 Titre de section"
             name: heading
             widget: object
@@ -210,7 +155,6 @@ collections:
               - { label: "Titre (FR)", name: text_fr, widget: string }
               - { label: "Titre (ES)", name: text_es, widget: string, required: false }
               - { label: "Titre (EN)", name: text_en, widget: string, required: false }
-
           - label: "¶ Paragraphe"
             name: body
             widget: object
@@ -218,7 +162,6 @@ collections:
               - { label: "Texte (FR)", name: text_fr, widget: text }
               - { label: "Texte (ES)", name: text_es, widget: text, required: false }
               - { label: "Texte (EN)", name: text_en, widget: text, required: false }
-
           - label: "📋 Liste à puces"
             name: list
             widget: object
@@ -226,13 +169,11 @@ collections:
               - label: "Éléments"
                 name: items
                 widget: list
-                label_singular: "Élément"
                 summary: "{{fields.text_fr}}"
                 fields:
                   - { label: "Texte (FR)", name: text_fr, widget: string }
                   - { label: "Texte (ES)", name: text_es, widget: string, required: false }
                   - { label: "Texte (EN)", name: text_en, widget: string, required: false }
-
           - label: "🔗 Liste de liens"
             name: linklist
             widget: object
@@ -240,27 +181,23 @@ collections:
               - label: "Liens"
                 name: items
                 widget: list
-                label_singular: "Lien"
                 summary: "{{fields.label_fr}}"
                 fields:
                   - { label: "Étiquette (FR)", name: label_fr, widget: string }
                   - { label: "Étiquette (ES)", name: label_es, widget: string, required: false }
                   - { label: "Étiquette (EN)", name: label_en, widget: string, required: false }
-                  - { label: "URL",            name: url,      widget: string }
-
+                  - { label: "URL", name: url, widget: string }
           - label: "🖼️ Image"
             name: image
             widget: object
             fields:
-              - { label: "Image",        name: src, widget: image }
-              - { label: "Texte alt (FR)",name: alt_fr, widget: string }
-
+              - { label: "Image", name: src, widget: image }
+              - { label: "Texte alt", name: alt_fr, widget: string }
           - label: "— Séparateur"
             name: divider
             widget: object
             fields:
-              - { label: "Note (optionnel)", name: _placeholder, widget: string, required: false, hint: "Ce champ est ignoré — il marque juste un séparateur visuel" }
-
+              - { label: "Note (ignorée)", name: _note, widget: string, required: false }
           - label: "📎 Note"
             name: note
             widget: object
@@ -268,191 +205,147 @@ collections:
               - { label: "Texte (FR)", name: text_fr, widget: text }
               - { label: "Texte (ES)", name: text_es, widget: text, required: false }
               - { label: "Texte (EN)", name: text_en, widget: text, required: false }
-
-          - label: "🔘 Bouton (CTA)"
+          - label: "🔘 Bouton"
             name: cta
             widget: object
             fields:
-              - label: "Étiquette"
-                name: label
-                widget: object
-                fields:
-                  - { label: "Français",  name: fr, widget: string }
-                  - { label: "Español",   name: es, widget: string, required: false }
-                  - { label: "English",   name: en, widget: string, required: false }
-              - { label: "URL / lien", name: href,  widget: string, hint: "URL complète ou mailto:" }
+              - { label: "Étiquette (FR)", name: label_fr, widget: string }
+              - { label: "Étiquette (ES)", name: label_es, widget: string, required: false }
+              - { label: "Étiquette (EN)", name: label_en, widget: string, required: false }
+              - { label: "URL / lien", name: href, widget: string }
               - label: "Style"
                 name: style
                 widget: select
                 options:
-                  - { label: "Principal (bleu navy)", value: primary }
-                  - { label: "Secondaire (contour)",  value: secondary }
+                  - { label: "Principal (bleu)", value: primary }
+                  - { label: "Secondaire (contour)", value: secondary }
                 default: primary
 
-  # ──────────────────────────────────────────────────────────
-  #  4. FICHES DE SERVICE PASTORAL
-  #     Chaque fiche = un fichier dans data/fiches/
-  # ──────────────────────────────────────────────────────────
   - name: "fiches"
     label: "🌿 Fiches service pastoral"
     label_singular: "Fiche"
-    description: "Les 8 fiches thématiques du service pastoral — contenu complet, images, citations, liens."
+    description: "Les 8 fiches thématiques du service pastoral."
     folder: "data/fiches"
     create: true
     slug: "{{fields.fiche_id}}"
     identifier_field: fiche_id
-    summary: "{{fields.num}} — {{fields.title_fr}}"
+    summary: "{{fields.num}} — {{fields.fiche_id}}"
     fields:
-      - { label: "ID unique",    name: fiche_id, widget: string,  hint: "Ex: autonomie-temporelle" }
-      - { label: "Numéro",       name: num,      widget: string,  hint: "Ex: 01, 02 …" }
-      - { label: "Image",        name: image,    widget: image }
-      - { label: "Couleur fond (fallback)", name: color, widget: string, default: "#1B3A6B", hint: "Couleur hex si l'image ne charge pas" }
-
+      - { label: "ID unique", name: fiche_id, widget: string }
+      - { label: "Numéro", name: num, widget: string }
+      - { label: "Image", name: image, widget: image }
+      - { label: "Couleur fond", name: color, widget: string, default: "#1B3A6B" }
       - label: "Titre"
         name: title
         widget: object
         fields:
-          - { label: "Français",  name: fr, widget: string }
-          - { label: "Español",   name: es, widget: string, required: false }
-          - { label: "English",   name: en, widget: string, required: false }
-
+          - { label: "Français", name: fr, widget: string }
+          - { label: "Español", name: es, widget: string, required: false }
+          - { label: "English", name: en, widget: string, required: false }
       - label: "Citation"
         name: quote
         widget: object
         fields:
-          - { label: "Français",  name: fr, widget: text }
-          - { label: "Español",   name: es, widget: text, required: false }
-          - { label: "English",   name: en, widget: text, required: false }
-
-      - label: "Idées pour la famille"
-        name: ideesFamille
-        widget: object
-        fields:
-          - { label: "Français (une idée par ligne)",  name: fr, widget: list, field: { label: "Idée", name: item, widget: text } }
-          - { label: "Español",   name: es, widget: list, field: { label: "Idea", name: item, widget: text }, required: false }
-          - { label: "English",   name: en, widget: list, field: { label: "Idea", name: item, widget: text }, required: false }
-
-      - label: "Idées pour le service pastoral"
-        name: ideesPastorale
-        widget: object
-        fields:
-          - { label: "Français",  name: fr, widget: list, field: { label: "Idée", name: item, widget: text } }
-          - { label: "Español",   name: es, widget: list, field: { label: "Idea", name: item, widget: text }, required: false }
-          - { label: "English",   name: en, widget: list, field: { label: "Idea", name: item, widget: text }, required: false }
-
+          - { label: "Français", name: fr, widget: text }
+          - { label: "Español", name: es, widget: text, required: false }
+          - { label: "English", name: en, widget: text, required: false }
+      - { label: "Idées famille (FR)", name: ideesFamille_fr, widget: list, field: { label: "Idée", name: item, widget: text } }
+      - { label: "Idées famille (ES)", name: ideesFamille_es, widget: list, required: false, field: { label: "Idea", name: item, widget: text } }
+      - { label: "Idées famille (EN)", name: ideesFamille_en, widget: list, required: false, field: { label: "Idea", name: item, widget: text } }
+      - { label: "Idées service pastoral (FR)", name: ideesPastorale_fr, widget: list, field: { label: "Idée", name: item, widget: text } }
+      - { label: "Idées service pastoral (ES)", name: ideesPastorale_es, widget: list, required: false, field: { label: "Idea", name: item, widget: text } }
+      - { label: "Idées service pastoral (EN)", name: ideesPastorale_en, widget: list, required: false, field: { label: "Idea", name: item, widget: text } }
       - label: "Ressources de l'Église"
         name: ressourcesEglise
         widget: list
-        label_singular: "Ressource"
+        required: false
         summary: "{{fields.label}}"
         fields:
           - { label: "Étiquette", name: label, widget: string }
-          - { label: "URL",       name: url,   widget: string }
-
+          - { label: "URL", name: url, widget: string }
       - label: "Ressources communautaires"
         name: ressourcesCommunautaires
         widget: list
-        label_singular: "Ressource"
-        summary: "{{fields.label}}"
         required: false
+        summary: "{{fields.label}}"
         fields:
           - { label: "Étiquette", name: label, widget: string }
-          - { label: "URL",       name: url,   widget: string, required: false, hint: "Laisser vide si c'est un numéro de téléphone" }
+          - { label: "URL (optionnel)", name: url, widget: string, required: false }
 
-  # ──────────────────────────────────────────────────────────
-  #  5. PROGRAMME DE CONFÉRENCE
-  #     Fichier source : data/conference.json
-  # ──────────────────────────────────────────────────────────
   - name: "conference"
     label: "📋 Conférence de Pieu"
-    description: "Programme de la conférence — accessible uniquement via QR code."
+    description: "Programme accessible via QR code uniquement."
     files:
       - name: "conference"
-        label: "Programme de conférence"
+        label: "Programme"
         file: "data/conference.json"
         fields:
-          - { label: "Date",       name: date,    widget: datetime, format: "YYYY-MM-DD", date_format: "DD MMMM YYYY", time_format: false }
-          - { label: "Titre (FR)", name: title_fr, widget: string,  default: "Conférence de Pieu" }
-          - { label: "Titre (ES)", name: title_es, widget: string,  default: "Conferencia de Estaca", required: false }
-          - { label: "Titre (EN)", name: title_en, widget: string,  default: "Stake Conference", required: false }
+          - { label: "Date", name: date, widget: datetime, format: "YYYY-MM-DD", date_format: "DD MMMM YYYY", time_format: false }
+          - { label: "Titre (FR)", name: title_fr, widget: string, default: "Conférence de Pieu" }
+          - { label: "Titre (ES)", name: title_es, widget: string, required: false }
           - label: "Sessions"
             name: sessions
             widget: list
-            label_singular: "Session"
             summary: "{{fields.time}} — {{fields.title_fr}}"
             fields:
-              - { label: "Heure",      name: time,     widget: string, hint: "Ex: 10:00" }
+              - { label: "Heure", name: time, widget: string }
               - { label: "Titre (FR)", name: title_fr, widget: string }
-              - label: "Éléments du programme"
+              - label: "Éléments"
                 name: items
                 widget: list
-                label_singular: "Élément"
                 summary: "{{fields.time}} — {{fields.title_fr}}"
                 fields:
-                  - { label: "Heure",         name: time,     widget: string }
-                  - { label: "Élément (FR)",   name: title_fr, widget: string }
-                  - { label: "Détail (FR)",    name: detail_fr,widget: string, required: false, hint: "Nom de l'intervenant, titre de cantique, etc." }
+                  - { label: "Heure", name: time, widget: string }
+                  - { label: "Élément (FR)", name: title_fr, widget: string }
+                  - { label: "Détail (FR)", name: detail_fr, widget: string, required: false }
                   - label: "Type"
                     name: type
                     widget: select
-                    required: false
                     default: item
                     options:
-                      - { label: "Élément général",   value: item }
-                      - { label: "Cantique",           value: hymn }
-                      - { label: "Prière",             value: prayer }
-                      - { label: "Discours",           value: talk }
-                      - { label: "Prélude / Postlude", value: music }
+                      - { label: "Général", value: item }
+                      - { label: "Cantique", value: hymn }
+                      - { label: "Prière", value: prayer }
+                      - { label: "Discours", value: talk }
+                      - { label: "Prélude/Postlude", value: music }
 
-  # ──────────────────────────────────────────────────────────
-  #  6. CONFIGURATION DU SITE
-  #     Couleurs, textes, liens sociaux — tout en un seul endroit
-  # ──────────────────────────────────────────────────────────
   - name: "settings"
     label: "⚙️ Paramètres du site"
-    description: "Couleurs, mission, réseaux sociaux, bulletins — modifiable sans toucher au code."
+    description: "Couleurs, mission, réseaux sociaux."
     files:
       - name: "settings"
         label: "Paramètres généraux"
         file: "data/settings.json"
         fields:
-          - { label: "Nom du pieu",   name: stakeName,  widget: string }
-
-          - label: "Mission du pieu"
+          - { label: "Nom du pieu", name: stakeName, widget: string }
+          - label: "Mission"
             name: mission
             widget: object
             fields:
-              - { label: "Français",  name: fr, widget: text }
-              - { label: "Español",   name: es, widget: text, required: false }
-              - { label: "English",   name: en, widget: text, required: false }
-
-          - label: "Photo de la chapelle (hero)"
-            name: chapelImage
-            widget: image
-            hint: "Image principale en haut de page"
-
-          - label: "Couleurs du thème"
+              - { label: "Français", name: fr, widget: text }
+              - { label: "Español", name: es, widget: text, required: false }
+              - { label: "English", name: en, widget: text, required: false }
+          - { label: "Photo de la chapelle", name: chapelImage, widget: image }
+          - label: "Couleurs"
             name: colors
             widget: object
             fields:
-              - { label: "Couleur principale (navy)",  name: primary,   widget: color, default: "#1B3A6B" }
-              - { label: "Couleur accent (or)",        name: secondary, widget: color, default: "#B8924A" }
-              - { label: "Couleur liens",              name: accent,    widget: color, default: "#2C5F9E" }
-              - { label: "Fond de page (crème)",       name: light,     widget: color, default: "#F7F5F0" }
-              - { label: "Titres (sombre)",            name: dark,      widget: color, default: "#0D1F3C" }
-
+              - { label: "Principale (navy)", name: primary, widget: string }
+              - { label: "Accent (or)", name: secondary, widget: string }
+              - { label: "Liens", name: accent, widget: string }
+              - { label: "Fond (crème)", name: light, widget: string }
+              - { label: "Titres (sombre)", name: dark, widget: string }
           - label: "Réseaux sociaux"
             name: social
             widget: object
             fields:
-              - { label: "Facebook",  name: facebook,  widget: string, required: false }
-              - { label: "YouTube",   name: youtube,   widget: string, required: false }
+              - { label: "Facebook", name: facebook, widget: string, required: false }
+              - { label: "YouTube", name: youtube, widget: string, required: false }
               - { label: "Instagram", name: instagram, widget: string, required: false }
-              - { label: "Twitter/X", name: twitter,   widget: string, required: false }
-
-          - label: "Inscription au bulletin"
+              - { label: "Twitter/X", name: twitter, widget: string, required: false }
+          - label: "Bulletin"
             name: newsletter
             widget: object
             fields:
-              - { label: "Lien d'inscription (FR)", name: fr, widget: string, required: false }
-              - { label: "Lien d'inscription (ES)", name: es, widget: string, required: false }
+              - { label: "Lien (FR)", name: fr, widget: string, required: false }
+              - { label: "Lien (ES)", name: es, widget: string, required: false }

@@ -17,8 +17,8 @@ async function loadModalFromCMS(id) {
 
 function renderCMSModal(data) {
   const lang = window.currentLang || 'fr';
-  const title   = data.title?.[lang]   || data.title?.fr   || '';
-  const eyebrow = data.eyebrow?.[lang] || data.eyebrow?.fr || '';
+  const title   = data.title?.[lang] || data.title?.fr || data[`title_${lang}`] || data.title_fr || "";
+  const eyebrow = data.eyebrow?.[lang] || data.eyebrow?.fr || data[`eyebrow_${lang}`] || data.eyebrow_fr || "";
   const closeLabel = lang==='fr'?'Fermer':lang==='es'?'Cerrar':'Close';
   return `
     <div class="page-modal-header">
@@ -43,7 +43,7 @@ function renderCMSSection(s, lang) {
     case 'list':     return `<ul class="pm-list">${(s.items||[]).map(i=>`<li>${i[`text_${lang}`]||i.text_fr||i.item||''}</li>`).join('')}</ul>`;
     case 'linklist': return `<ul class="pm-linklist">${(s.items||[]).map(i=>`<li><a href="${i.url||'#'}" target="_blank" rel="noopener">${svgExtLinkInline(12)} ${i[`label_${lang}`]||i.label_fr||''}</a></li>`).join('')}</ul>`;
     case 'cta': {
-      const label = s.label?.[lang]||s.label?.fr||'';
+      const label = s.label?.[lang] || s.label?.fr || s['label_'+lang] || s.label_fr || '';
       const href  = s.href||'#';
       const ext   = href.startsWith('http')||href.startsWith('mailto');
       const cls   = s.style==='primary'?'btn pm-btn-primary':'btn btn-outline pm-btn-secondary';

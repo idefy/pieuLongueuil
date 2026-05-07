@@ -2,73 +2,104 @@
   "modal_id": "rendez-vous",
   "icon": "cal",
   "eyebrow": {
-    "fr": "Entretiens",
-    "es": "Entrevistas",
-    "en": "Appointments"
+    "fr": "Interviews & Appointments",
+    "es": "Entrevistas y Citas",
+    "en": "Interviews & Appointments"
   },
   "title": {
-    "fr": "Prendre rendez-vous",
+    "fr": "Appointments",
     "es": "Pedir una cita",
     "en": "Schedule an Appointment"
   },
   "sections": [
     {
       "type": "heading",
-      "text_fr": "Patriarche du Pieu",
-      "text_es": "Patriarca de Estaca",
-      "text_en": "Stake Patriarch"
+      "text_fr": "With the patriarch"
     },
     {
       "type": "body",
-      "text_fr": "Pour recevoir votre bénédiction patriarcale, deux étapes sont nécessaires.",
-      "text_es": "Para recibir su bendición patriarcal, se necesitan dos pasos.",
-      "text_en": "To receive your patriarchal blessing, two steps are required."
+      "text_fr": "To schedule an appointment with Brother Limoges for a patriarchal blessing:"
     },
     {
       "type": "list",
       "items": [
         {
-          "text_fr": "Parler à votre évêque ou président de branche pour obtenir une recommandation.",
-          "text_es": "Hablar con su obispo o presidente de rama para obtener una recomendación.",
-          "text_en": "Speak with your bishop or branch president to obtain a recommendation."
+          "text_fr": "Meet with your bishop for a recommendation"
         },
         {
-          "text_fr": "Contacter le patriarche pour prendre rendez-vous après avoir obtenu la recommandation.",
-          "text_es": "Contactar al patriarca para hacer una cita después de obtener la recomendación.",
-          "text_en": "Contact the patriarch to schedule an appointment after obtaining the recommendation."
+          "text_fr": "Schedule by email"
         }
       ]
+    },
+    {
+      "type": "note",
+      "text_fr": "Patriarchal blessings are given at the stake centre."
+    },
+    {
+      "type": "cta",
+      "label": {
+        "fr": "Email the patriarch"
+      },
+      "href": "mailto:daniellimoges88@gmail.com",
+      "style": "secondary"
     },
     {
       "type": "divider"
     },
     {
       "type": "heading",
-      "text_fr": "Présidence du Pieu",
-      "text_es": "Presidencia de Estaca",
-      "text_en": "Stake Presidency"
+      "text_fr": "With the stake presidency"
     },
     {
       "type": "body",
-      "text_fr": "Les entretiens avec la présidence du pieu sont sur rendez-vous uniquement.",
-      "text_es": "Las entrevistas con la presidencia de estaca son solo con cita previa.",
-      "text_en": "Interviews with the stake presidency are by appointment only."
+      "text_fr": "If the interview requires first meeting with a member of your bishopric or branch president, please do so before scheduling an appointment with us."
+    },
+    {
+      "type": "body",
+      "text_fr": "If you are a sister and your interview is in person, please come accompanied to respect the protocol in place."
+    },
+    {
+      "type": "body",
+      "text_fr": "We invite you to come to the interview dressed as you would to enter the temple."
+    },
+    {
+      "type": "body",
+      "text_fr": "Reminder: there must be no more than 3 months between the bishopric interview and the stake presidency interview."
     },
     {
       "type": "cta",
       "label": {
-        "fr": "Prendre rendez-vous en ligne",
-        "es": "Pedir cita en línea",
-        "en": "Schedule online"
+        "fr": "Schedule via Picktime"
       },
-      "href": "https://app.picktime.com/pieu-longueuil",
+      "href": "https://www.picktime.com/RVPieuLongueuil",
       "style": "primary"
     },
     {
       "type": "note",
-      "text_fr": "Recommandé — choisissez votre créneau et recevez une confirmation par courriel.",
-      "text_es": "Recomendado — elija su horario y reciba una confirmación por correo electrónico.",
-      "text_en": "Recommended — choose your time slot and receive email confirmation."
+      "text_fr": "★ Recommended option"
+    },
+    {
+      "type": "cta",
+      "label": {
+        "fr": "Contact by email"
+      },
+      "href": "mailto:rv-pieulongueuil@googlegroups.com",
+      "style": "secondary"
+    },
+    {
+      "type": "note",
+      "text_fr": "For special cases."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "text_fr": "Why Picktime?"
+    },
+    {
+      "type": "body",
+      "text_fr": "Choose the best time based on your availability and the stake presidency"
     }
   ]
 }

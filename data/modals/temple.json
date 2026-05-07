@@ -1,0 +1,71 @@
+{
+  "modal_id": "temple",
+  "icon": "star",
+  "eyebrow": {
+    "fr": "Temple & Family History",
+    "es": "Templo",
+    "en": "Temple"
+  },
+  "title": {
+    "fr": "Montreal Temple",
+    "es": "Templo de Montréal",
+    "en": "Montréal Temple"
+  },
+  "sections": [
+    {
+      "type": "heading",
+      "text_fr": "Contact the temple"
+    },
+    {
+      "type": "linklist",
+      "items": [
+        {
+          "label_fr": "montr-off@churchofjesuschrist.org",
+          "url": "mailto:montr-off@churchofjesuschrist.org"
+        },
+        {
+          "label_fr": "+1 450 646-5775",
+          "url": "tel:+14506465775"
+        }
+      ]
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "text_fr": "Opening hours"
+    },
+    {
+      "type": "body",
+      "text_fr": "Reservations are made online."
+    },
+    {
+      "type": "body",
+      "text_fr": "Open Wednesday through Saturday."
+    },
+    {
+      "type": "body",
+      "text_fr": "2025 Closures:"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "text_fr": "Wednesday, December 24 – Friday, December 26, 2025"
+        },
+        {
+          "text_fr": "Wednesday, December 31, 2025 – Thursday, January 1, 2026"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "label": {
+        "fr": "Temple page"
+      },
+      "href": "https://www.churchofjesuschrist.org/temples/details/montreal-quebec-temple",
+      "style": "primary"
+    }
+  ]
+}

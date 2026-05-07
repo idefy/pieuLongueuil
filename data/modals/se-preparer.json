@@ -1,0 +1,155 @@
+{
+  "modal_id": "se-preparer",
+  "icon": "star",
+  "eyebrow": {
+    "fr": "Interviews & Appointments",
+    "es": "Entrevistas y Citas",
+    "en": "Interviews & Appointments"
+  },
+  "title": {
+    "fr": "Se préparer à un entretien",
+    "es": "Prepararse para una entrevista",
+    "en": "Preparing for an Interview"
+  },
+  "sections": [
+    {
+      "type": "intro",
+      "text_fr": "As a servant of the Lord, a member of the stake presidency will have the privilege of meeting with you. He will desire to call down upon you the blessings of our Heavenly Father. We invite you to consider the preparatory study according to the interview you will have."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "text_fr": "Ordination to the Melchizedek Priesthood"
+    },
+    {
+      "type": "body",
+      "text_fr": "Preparatory study:"
+    },
+    {
+      "type": "linklist",
+      "items": [
+        {
+          "label_fr": "Alma 13",
+          "url": "https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/13"
+        },
+        {
+          "label_fr": "Abraham 1",
+          "url": "https://www.churchofjesuschrist.org/study/scriptures/pgp/abr/1"
+        },
+        {
+          "label_fr": "D&C 13",
+          "url": "https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/13"
+        },
+        {
+          "label_fr": "D&C 20, 84, 107 and 121",
+          "url": "https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/20"
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "text_fr": "We will have the opportunity to review the oath and covenant of the priesthood together."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "text_fr": "Personal Endowment"
+    },
+    {
+      "type": "body",
+      "text_fr": "Preparatory study:"
+    },
+    {
+      "type": "linklist",
+      "items": [
+        {
+          "label_fr": "Preparing for Your Temple Visit",
+          "url": "https://www.churchofjesuschrist.org/temples/prepare-for-your-temple-visit"
+        },
+        {
+          "label_fr": "The Temple Endowment",
+          "url": "https://www.churchofjesuschrist.org/temples/what-is-temple-endowment"
+        },
+        {
+          "label_fr": "Temple Endowment: Q&A",
+          "url": "https://www.churchofjesuschrist.org/study/liahona/2019/03/young-adults/temple-endowment-q-and-a"
+        },
+        {
+          "label_fr": "The Temple Garment",
+          "url": "https://www.churchofjesuschrist.org/study/liahona/1999/09/the-temple-garment-an-outward-expression-of-an-inward-commitment?lang=eng"
+        }
+      ]
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "text_fr": "Renewing Your Temple Recommend"
+    },
+    {
+      "type": "body",
+      "text_fr": "Preparatory study:"
+    },
+    {
+      "type": "linklist",
+      "items": [
+        {
+          "label_fr": "Return to the Temple — video by Elder Bednar (FR)",
+          "url": "https://www.youtube.com/watch?v=uuok_oZnnD0"
+        },
+        {
+          "label_fr": "Return to the Temple — video by Elder Bednar (ES)",
+          "url": "https://www.youtube.com/watch?v=-e0FviPJWbc"
+        },
+        {
+          "label_fr": "Return to the Temple — video by Elder Bednar (EN)",
+          "url": "https://www.youtube.com/watch?v=_97I5BG4EGM"
+        },
+        {
+          "label_fr": "D&C 95:8; 109:72-80; 2 Nephi 12:2-3",
+          "url": "https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/95"
+        }
+      ]
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "text_fr": "Temple Sealing"
+    },
+    {
+      "type": "body",
+      "text_fr": "Preparatory study:"
+    },
+    {
+      "type": "linklist",
+      "items": [
+        {
+          "label_fr": "The Family: A Proclamation to the World",
+          "url": "https://www.churchofjesuschrist.org/topics/family-proclamation"
+        },
+        {
+          "label_fr": "About Temple Sealings",
+          "url": "https://www.churchofjesuschrist.org/temples/what-happens-in-a-temple-sealing"
+        }
+      ]
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "cta",
+      "label": {
+        "fr": "Schedule Appointment (Picktime)"
+      },
+      "href": "https://www.picktime.com/RVPieuLongueuil",
+      "style": "primary"
+    }
+  ]
+}

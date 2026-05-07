@@ -1,0 +1,83 @@
+{
+  "fiche_id": "autonomie-temporelle",
+  "num": "01",
+  "image": "/assets/servicepastoral/autonomie-temporelle.webp",
+  "color": "#2E5E3E",
+  "title": {
+    "fr": "Autonomie temporelle",
+    "es": "Autosuficiencia temporal",
+    "en": "Temporal Self-Reliance"
+  },
+  "quote": {
+    "fr": "« J'ai l'intention de pourvoir aux besoins de mes saints. » — D&A 104:15",
+    "es": "«Tengo la intención de proveer para mis santos.» — D&C 104:15",
+    "en": "\"I will provide for my saints.\" — D&C 104:15"
+  },
+  "ideesFamille_fr": [
+    "Participer à un des cours des groupes d'autonomie : Finances personnelles, Lancer mon entreprise, Trouver un meilleur emploi, Des études pour un meilleur emploi.",
+    "Évaluer la possibilité de retourner aux études pour obtenir un meilleur emploi.",
+    "Lors d'un conseil de famille, élaborer un budget et s'engager à le respecter.",
+    "Faire des démarches pour trouver un meilleur emploi.",
+    "Contacter le spécialiste d'emploi du pieu ou de votre unité."
+  ],
+  "ideesFamille_es": [
+    "Participar en uno de los cursos de grupos de autosuficiencia: Finanzas personales, Iniciar y hacer crecer un negocio, Encontrar un mejor empleo, Educación para un mejor empleo.",
+    "Evaluar la posibilidad de continuar los estudios para obtener un mejor empleo.",
+    "En un consejo familiar, elaborar un presupuesto y comprometerse a cumplirlo.",
+    "Hacer gestiones para encontrar un mejor empleo.",
+    "Contactar al especialista de empleo de la estaca o de su unidad."
+  ],
+  "ideesFamille_en": [
+    "Participate in one of the self-reliance group courses: Personal Finances, Starting and Growing My Business, Finding a Better Job, Education for Better Work.",
+    "Evaluate the possibility of returning to school for a better job.",
+    "In a family council, develop a budget and commit to following it.",
+    "Take steps to find a better job.",
+    "Contact the stake or unit employment specialist."
+  ],
+  "ideesPastorale_fr": [
+    "S'inscrire à un groupe d'autonomie avec la famille.",
+    "Aider la famille avec leur recherche d'emploi ou leurs projets d'études.",
+    "Accompagner la famille vers les ressources communautaires disponibles.",
+    "Être ou trouver un mentor pour les aider et les accompagner (transport, conseils, appels de soutien)."
+  ],
+  "ideesPastorale_es": [
+    "Inscribirse en un grupo de autosuficiencia con la familia.",
+    "Ayudar a la familia con su búsqueda de empleo o proyectos de estudio.",
+    "Acompañar a la familia hacia los recursos comunitarios disponibles.",
+    "Ser o encontrar un mentor para ayudarlos y acompañarlos."
+  ],
+  "ideesPastorale_en": [
+    "Enroll in a self-reliance group with the family.",
+    "Help the family with their job search or study plans.",
+    "Guide the family toward available community resources.",
+    "Be or find a mentor to help and accompany them."
+  ],
+  "ressourcesEglise": [
+    {
+      "label": "Les services d'autonomie",
+      "url": "https://www.churchofjesuschrist.org/study/life-help/self-reliance?lang=fra"
+    },
+    {
+      "label": "Préparez tout ce qui est nécessaire : Réserves au foyer",
+      "url": "https://www.churchofjesuschrist.org/bc/content/shared/content/french/pdf/language-materials/04008_fra.pdf"
+    },
+    {
+      "label": "Préparez tout ce qui est nécessaire : Finances familiales",
+      "url": "https://www.churchofjesuschrist.org/bc/content/shared/content/french/pdf/language-materials/04007_fra.pdf"
+    },
+    {
+      "label": "Guide de ressources pour les immigrants",
+      "url": "https://docs.google.com/presentation/d/1czDtTQBLruSSDDzGQN96xG3htAwTEPfam5_0no6u4SU/present"
+    }
+  ],
+  "ressourcesCommunautaires": [
+    {
+      "label": "Répertoire de ressources communautaires du Québec",
+      "url": "http://www.qc.211.ca"
+    },
+    {
+      "label": "Composer le 211 (téléphone)",
+      "url": null
+    }
+  ]
+}

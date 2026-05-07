@@ -1,0 +1,92 @@
+{
+  "fiche_id": "vaincre-dependance",
+  "num": "02",
+  "image": "/assets/servicepastoral/recovery.webp",
+  "color": "#5C3A1E",
+  "title": {
+    "fr": "Vaincre la dépendance",
+    "es": "Superar la adicción",
+    "en": "Overcoming Addiction"
+  },
+  "quote": {
+    "fr": "« Vous connaîtrez la vérité, et la vérité vous affranchira. » — Jean 8:32",
+    "es": "«Conoceréis la verdad, y la verdad os hará libres.» — Juan 8:32",
+    "en": "\"You will know the truth, and the truth will set you free.\" — John 8:32"
+  },
+  "ideesFamille_fr": [
+    "Prendre le temps d'avoir des discussions honnêtes et intimes avec une personne de confiance.",
+    "Jeûner pour recevoir de la force.",
+    "Reconnaître le besoin d'aide pour surmonter la dépendance et travailler honnêtement avec le Seigneur.",
+    "Étudier le sacrifice expiatoire et le pouvoir du repentir.",
+    "Lire des discours de conférence générale à l'appui."
+  ],
+  "ideesFamille_es": [
+    "Tomarse el tiempo de tener conversaciones honestas e íntimas con una persona de confianza.",
+    "Ayunar para recibir fortaleza.",
+    "Reconocer la necesidad de ayuda para superar la adicción y trabajar honestamente con el Señor.",
+    "Estudiar el sacrificio expiatorio y el poder del arrepentimiento.",
+    "Leer discursos de conferencia general de apoyo."
+  ],
+  "ideesFamille_en": [
+    "Take time for honest, intimate conversations with a trusted person.",
+    "Fast for strength.",
+    "Recognize the need for help to overcome addiction and work honestly with the Lord.",
+    "Study the Atonement and the power of repentance.",
+    "Read supporting General Conference talks."
+  ],
+  "ideesPastorale_fr": [
+    "Présenter les étapes du programme de dépendance de l'Église et son introduction.",
+    "Proposer l'accompagnement au programme.",
+    "Aider la famille à trouver un soutien personnel (parrain), ou le devenir."
+  ],
+  "ideesPastorale_es": [
+    "Presentar los pasos del programa de adicciones de la Iglesia y su introducción.",
+    "Proponer acompañamiento al programa.",
+    "Ayudar a la familia a encontrar un apoyo personal (padrino), o convertirse en uno."
+  ],
+  "ideesPastorale_en": [
+    "Present the steps of the Church addiction program and its introduction.",
+    "Offer to accompany them to the program.",
+    "Help the family find personal support (sponsor), or become one."
+  ],
+  "ressourcesEglise": [
+    {
+      "label": "Programme de traitement de la dépendance",
+      "url": "https://addictionrecovery.churchofjesuschrist.org/?lang=fra"
+    },
+    {
+      "label": "Il guérit ceux qui sont chargés – Dallin H. Oaks",
+      "url": "https://www.churchofjesuschrist.org/study/general-conference/2006/10/he-heals-the-heavy-laden?lang=fra"
+    },
+    {
+      "label": "Fortifiés par l'expiation de Jésus-Christ – Dallin H. Oaks",
+      "url": "https://www.churchofjesuschrist.org/study/general-conference/2015/10/strengthened-by-the-atonement-of-jesus-christ?lang=fra"
+    },
+    {
+      "label": "Vidéos de l'Église sur la dépendance",
+      "url": "https://addictionrecovery.churchofjesuschrist.org/videos?lang=fra"
+    }
+  ],
+  "ressourcesCommunautaires": [
+    {
+      "label": "Alcooliques Anonymes",
+      "url": "https://aa-quebec.org/aaqc_wp/"
+    },
+    {
+      "label": "Ligne de prévention du suicide – 1-866-APPELLE",
+      "url": "https://www.aqps.info/"
+    },
+    {
+      "label": "Tel-jeunes",
+      "url": "https://www.teljeunes.com/Accueil"
+    },
+    {
+      "label": "811 (Info-santé, Info-social)",
+      "url": "https://www.quebec.ca/sante/trouver-une-ressource/consulter-un-professionnel/info-sante-811/"
+    },
+    {
+      "label": "Répertoire de ressources – qc.211.ca",
+      "url": "http://www.qc.211.ca"
+    }
+  ]
+}
