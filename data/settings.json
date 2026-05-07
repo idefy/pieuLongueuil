@@ -5,19 +5,19 @@
     "es": "Somos discípulos comprometidos de Jesucristo. De un solo corazón y de una sola mente, ejercemos nuestra fe para hacer avanzar Su obra para reunir a Israel.",
     "en": "We are committed disciples of Jesus Christ. With one heart and one mind, we exercise our faith to advance His work to gather Israel."
   },
-  "chapelImage": "assets/chapel.jpg",
+  "chapelImage": "/assets/chapel.jpg",
   "colors": {
-    "primary":   "#1B3A6B",
+    "primary": "#1B3A6B",
     "secondary": "#B8924A",
-    "accent":    "#2C5F9E",
-    "light":     "#F7F5F0",
-    "dark":      "#0D1F3C"
+    "accent": "#2C5F9E",
+    "light": "#F7F5F0",
+    "dark": "#0D1F3C"
   },
   "social": {
-    "facebook":  "https://www.facebook.com/membresPieuLongueuil",
-    "youtube":   "https://www.youtube.com/channel/UCQs1I1gEuprnoL1yel1s7ww",
+    "facebook": "https://www.facebook.com/membresPieuLongueuil",
+    "youtube": "https://www.youtube.com/channel/UCQs1I1gEuprnoL1yel1s7ww",
     "instagram": "https://www.instagram.com/eglisedejesuschristlongueuil",
-    "twitter":   "https://twitter.com/PieuLongueuil"
+    "twitter": "https://twitter.com/PieuLongueuil"
   },
   "newsletter": {
     "fr": "http://subscribepage.io/Iiz4Xc",

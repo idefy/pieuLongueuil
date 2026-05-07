@@ -3,8 +3,8 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: "assets/uploads"
-public_folder: "/assets/uploads"
+media_folder: "assets"
+public_folder: "/assets"
 locale: fr
 
 collections:
@@ -45,7 +45,11 @@ collections:
                   - { label: "Español", name: es, widget: string, required: false }
                   - { label: "English", name: en, widget: string, required: false }
               - { label: "Nom complet", name: name, widget: string }
-              - { label: "Photo", name: photo, widget: image }
+              - label: "Photo"
+                name: photo
+                widget: image
+                media_folder: "/assets/leaders"
+                public_folder: "/assets/leaders"
               - { label: "Actif", name: active, widget: boolean, default: true }
 
   - name: "resources"
@@ -193,7 +197,11 @@ collections:
             name: image
             widget: object
             fields:
-              - { label: "Image", name: src, widget: image }
+              - label: "Image"
+                name: src
+                widget: image
+                media_folder: "/assets/modals"
+                public_folder: "/assets/modals"
               - { label: "Texte alt", name: alt_fr, widget: string }
           - label: "— Séparateur"
             name: divider
@@ -237,7 +245,11 @@ collections:
     fields:
       - { label: "ID unique", name: fiche_id, widget: string }
       - { label: "Numéro", name: num, widget: string }
-      - { label: "Image", name: image, widget: image }
+      - label: "Image"
+        name: image
+        widget: image
+        media_folder: "/assets/servicepastoral"
+        public_folder: "/assets/servicepastoral"
       - { label: "Couleur fond", name: color, widget: string, default: "#1B3A6B" }
       - label: "Titre"
         name: title
@@ -329,7 +341,11 @@ collections:
               - { label: "Français", name: fr, widget: text }
               - { label: "Español", name: es, widget: text, required: false }
               - { label: "English", name: en, widget: text, required: false }
-          - { label: "Photo de la chapelle", name: chapelImage, widget: image }
+          - label: "Photo de la chapelle"
+            name: chapelImage
+            widget: image
+            media_folder: "/assets"
+            public_folder: "/assets"
           - label: "Couleurs"
             name: colors
             widget: object
