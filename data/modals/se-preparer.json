@@ -1,16 +1,6 @@
 {
   "modal_id": "se-preparer",
   "icon": "star",
-  "eyebrow": {
-    "fr": "Interviews & Appointments",
-    "es": "Entrevistas y Citas",
-    "en": "Interviews & Appointments"
-  },
-  "title": {
-    "fr": "Se préparer à un entretien",
-    "es": "Prepararse para una entrevista",
-    "en": "Preparing for an Interview"
-  },
   "sections": [
     {
       "type": "intro",
@@ -145,11 +135,17 @@
     },
     {
       "type": "cta",
-      "label": {
-        "fr": "Schedule Appointment (Picktime)"
-      },
       "href": "https://www.picktime.com/RVPieuLongueuil",
-      "style": "primary"
+      "style": "primary",
+      "label_fr": "Schedule Appointment (Picktime)",
+      "label_es": "",
+      "label_en": ""
     }
-  ]
+  ],
+  "title_fr": "Se préparer à un entretien",
+  "title_es": "Prepararse para una entrevista",
+  "title_en": "Preparing for an Interview",
+  "eyebrow_fr": "Entretiens",
+  "eyebrow_es": "Entrevistas",
+  "eyebrow_en": "Interviews"
 }

@@ -1,16 +1,6 @@
 {
   "modal_id": "distribution",
   "icon": "settings",
-  "eyebrow": {
-    "fr": "Temple & Family History",
-    "es": "Distribución",
-    "en": "Distribution"
-  },
-  "title": {
-    "fr": "Distribution Centre",
-    "es": "Centro de Distribución",
-    "en": "Distribution Center"
-  },
   "sections": [
     {
       "type": "heading",
@@ -47,15 +37,21 @@
     },
     {
       "type": "cta",
-      "label": {
-        "fr": "store.churchofjesuschrist.org"
-      },
       "href": "https://store.churchofjesuschrist.org",
-      "style": "secondary"
+      "style": "secondary",
+      "label_fr": "store.churchofjesuschrist.org",
+      "label_es": "",
+      "label_en": ""
     },
     {
       "type": "note",
       "text_fr": "Call (450) 679-1473 for an emergency appointment or personal endowment on Wednesday evenings."
     }
-  ]
+  ],
+  "title_fr": "Centre de distribution",
+  "title_es": "Centro de Distribución",
+  "title_en": "Distribution Center",
+  "eyebrow_fr": "Ressources",
+  "eyebrow_es": "Recursos",
+  "eyebrow_en": "Resources"
 }

@@ -118,6 +118,8 @@ collections:
     description: "Fenêtres d'information. Lier avec href=\"modal:votre-id\"."
     folder: "data/modals"
     create: true
+    extension: json
+    format: json
     slug: "{{fields.modal_id}}"
     identifier_field: modal_id
     summary: "{{fields.modal_id}} — {{fields.title_fr}}"
@@ -227,6 +229,8 @@ collections:
     description: "Les 8 fiches thématiques du service pastoral."
     folder: "data/fiches"
     create: true
+    extension: json
+    format: json
     slug: "{{fields.fiche_id}}"
     identifier_field: fiche_id
     summary: "{{fields.num}} — {{fields.fiche_id}}"

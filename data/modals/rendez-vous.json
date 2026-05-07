@@ -1,16 +1,6 @@
 {
   "modal_id": "rendez-vous",
   "icon": "cal",
-  "eyebrow": {
-    "fr": "Interviews & Appointments",
-    "es": "Entrevistas y Citas",
-    "en": "Interviews & Appointments"
-  },
-  "title": {
-    "fr": "Appointments",
-    "es": "Pedir una cita",
-    "en": "Schedule an Appointment"
-  },
   "sections": [
     {
       "type": "heading",
@@ -37,11 +27,11 @@
     },
     {
       "type": "cta",
-      "label": {
-        "fr": "Email the patriarch"
-      },
       "href": "mailto:daniellimoges88@gmail.com",
-      "style": "secondary"
+      "style": "secondary",
+      "label_fr": "Email the patriarch",
+      "label_es": "",
+      "label_en": ""
     },
     {
       "type": "divider"
@@ -68,11 +58,11 @@
     },
     {
       "type": "cta",
-      "label": {
-        "fr": "Schedule via Picktime"
-      },
       "href": "https://www.picktime.com/RVPieuLongueuil",
-      "style": "primary"
+      "style": "primary",
+      "label_fr": "Schedule via Picktime",
+      "label_es": "",
+      "label_en": ""
     },
     {
       "type": "note",
@@ -80,11 +70,11 @@
     },
     {
       "type": "cta",
-      "label": {
-        "fr": "Contact by email"
-      },
       "href": "mailto:rv-pieulongueuil@googlegroups.com",
-      "style": "secondary"
+      "style": "secondary",
+      "label_fr": "Contact by email",
+      "label_es": "",
+      "label_en": ""
     },
     {
       "type": "note",
@@ -101,5 +91,11 @@
       "type": "body",
       "text_fr": "Choose the best time based on your availability and the stake presidency"
     }
-  ]
+  ],
+  "title_fr": "Prendre rendez-vous",
+  "title_es": "Pedir una cita",
+  "title_en": "Schedule an Appointment",
+  "eyebrow_fr": "Entretiens & Rendez-vous",
+  "eyebrow_es": "Entrevistas y Citas",
+  "eyebrow_en": "Interviews & Appointments"
 }

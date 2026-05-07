@@ -1,16 +1,6 @@
 {
   "modal_id": "temple",
   "icon": "star",
-  "eyebrow": {
-    "fr": "Temple & Family History",
-    "es": "Templo",
-    "en": "Temple"
-  },
-  "title": {
-    "fr": "Montreal Temple",
-    "es": "Templo de Montréal",
-    "en": "Montréal Temple"
-  },
   "sections": [
     {
       "type": "heading",
@@ -61,11 +51,17 @@
     },
     {
       "type": "cta",
-      "label": {
-        "fr": "Temple page"
-      },
       "href": "https://www.churchofjesuschrist.org/temples/details/montreal-quebec-temple",
-      "style": "primary"
+      "style": "primary",
+      "label_fr": "Temple page",
+      "label_es": "",
+      "label_en": ""
     }
-  ]
+  ],
+  "title_fr": "Temple de Montréal",
+  "title_es": "Templo de Montréal",
+  "title_en": "Montréal Temple",
+  "eyebrow_fr": "Temple",
+  "eyebrow_es": "Templo",
+  "eyebrow_en": "Temple"
 }
