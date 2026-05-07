@@ -8,8 +8,8 @@
         "es": "Presidente de Estaca",
         "en": "Stake President"
       },
-      "name": "Prénom Nom",
-      "photo": "assets/leaders-placeholder.jpg",
+      "name": "Paul Pelchat",
+      "photo": "/assets/leaders-paul-pelchat.jpg",
       "active": true,
       "responsibility": {
         "fr": "",
@@ -25,13 +25,13 @@
         "es": "Primer Consejero",
         "en": "First Counselor"
       },
-      "name": "Prénom Nom",
-      "photo": "assets/leaders-placeholder.jpg",
+      "name": "Jonathan Gingras",
+      "photo": "/assets/leaders-jonathan-gingras.jpg",
       "active": true,
       "responsibility": {
-        "fr": "",
-        "es": "",
-        "en": ""
+        "fr": "Jeunes Gens et Jeunes Filles, JAS, Séminaire et Institut, Musique",
+        "es": "Hombres y Mujeres Jovenes, JAS, Seminario e Instituto, Musica",
+        "en": "Young Men and Young Women, YAS, Seminario & Institut, Music"
       }
     },
     {
@@ -42,13 +42,13 @@
         "es": "Segundo Consejero",
         "en": "Second Counselor"
       },
-      "name": "Prénom Nom",
-      "photo": "assets/leaders-placeholder.jpg",
+      "name": "Philippe Dumas",
+      "photo": "/assets/leaders-philippe-dumas.jpg",
       "active": true,
       "responsibility": {
-        "fr": "",
-        "es": "",
-        "en": ""
+        "fr": "École du dimanche, Primaire, Adultes seuls, Histoire familiale, Entraide et autonomie",
+        "es": "Escuela dominical, primaria, adultos solteros, historia familiar, ayuda mutua y autonomía.",
+        "en": "Sunday school, Primary, Single Adults, Family history, Mutual aid and autonomy"
       }
     },
     {
