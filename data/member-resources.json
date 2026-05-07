@@ -1,64 +1,160 @@
-[
-  {
-    "id": "outils-comptes",
-    "icon": "settings",
-    "title": { "fr": "Outils & comptes", "es": "Herramientas y cuentas", "en": "Tools & Accounts" },
-    "description": { "fr": "Créer et gérer votre compte de l'Église, accéder à l'annuaire et aux raccourcis utiles.", "es": "Crear y gestionar su cuenta de la Iglesia, acceder al directorio y a los accesos directos.", "en": "Create and manage your Church account, access the directory and useful shortcuts." },
-    "links": [
-      { "labelKey": "res_outils_create",  "href": "modal:compte-eglise" },
-      { "labelKey": "res_outils_manage",  "href": "modal:compte-eglise" },
-      { "labelKey": "res_outils_dir",     "href": "https://www.churchofjesuschrist.org/directory" }
-    ]
-  },
-  {
-    "id": "temple-histoire",
-    "icon": "star",
-    "title": { "fr": "Temple & Histoire familiale", "es": "Templo e Historia familiar", "en": "Temple & Family History" },
-    "description": { "fr": "Réservation pour le temple, FamilySearch, centre de distribution.", "es": "Reservas para el templo, FamilySearch, centro de distribución.", "en": "Temple reservations, FamilySearch, distribution center." },
-    "links": [
-      { "labelKey": "res_temple_book", "href": "modal:temple" },
-      { "labelKey": "res_temple_fs",   "href": "https://www.familysearch.org" },
-      { "labelKey": "res_temple_dist", "href": "modal:distribution" }
-    ]
-  },
-  {
-    "id": "autonomie",
-    "icon": "trendingUp",
-    "title": { "fr": "Autonomie", "es": "Autosuficiencia", "en": "Self-Reliance" },
-    "description": { "fr": "Ressources pour l'autonomie temporelle et spirituelle de votre famille.", "es": "Recursos para la autosuficiencia temporal y espiritual de su familia.", "en": "Resources for temporal and spiritual self-reliance for your family." },
-    "links": [
-      { "labelKey": "read_more", "href": "#pastoral" }
-    ]
-  },
-  {
-    "id": "entretiens-rdv",
-    "icon": "calendar",
-    "title": { "fr": "Entretiens & rendez-vous", "es": "Entrevistas y citas", "en": "Interviews & Appointments" },
-    "description": { "fr": "Prendre rendez-vous et se préparer à un entretien avec un dirigeant.", "es": "Pedir cita y prepararse para una entrevista con un líder.", "en": "Schedule an appointment and prepare for an interview with a leader." },
-    "links": [
-      { "labelKey": "res_entretien_rdv",  "href": "modal:rendez-vous" },
-      { "labelKey": "res_entretien_prep", "href": "modal:se-preparer" }
-    ]
-  },
-  {
-    "id": "sinstruire",
-    "icon": "book",
-    "title": { "fr": "S'instruire", "es": "Instrucción", "en": "Learning" },
-    "description": { "fr": "Séminaire, Institut, réunions du dimanche et ressources d'étude.", "es": "Seminario, Instituto, reuniones dominicales y recursos de estudio.", "en": "Seminary, Institute, Sunday meetings and study resources." },
-    "links": [
-      { "labelKey": "res_instruire_sem",  "href": "https://www.churchofjesuschrist.org/si/?lang=fra" },
-      { "labelKey": "res_instruire_inst", "href": "https://www.churchofjesuschrist.org/si/institute?lang=fra" }
-    ]
-  },
-  {
-    "id": "bulletin-reseaux",
-    "icon": "mail",
-    "title": { "fr": "Bulletin & réseaux", "es": "Boletín y redes", "en": "Newsletter & Social" },
-    "description": { "fr": "S'inscrire au bulletin hebdomadaire, consulter les anciens bulletins et suivre nos réseaux sociaux.", "es": "Suscribirse al boletín semanal, consultar boletines anteriores y seguir nuestras redes sociales.", "en": "Subscribe to the weekly newsletter, view past bulletins and follow our social media." },
-    "links": [
-      { "label": { "fr": "Voir les bulletins passés", "es": "Ver boletines anteriores", "en": "View past bulletins" }, "href": "https://subscribepage.io/g1hs6q" },
-      { "labelKey": "res_bulletin_sub_fr", "href": "http://subscribepage.io/Iiz4Xc" },
-      { "labelKey": "res_bulletin_sub_es", "href": "http://subscribepage.io/WJSnVm" }
-    ]
-  }
-]
+{
+  "member_resources": [
+    {
+      "id": "outils-comptes",
+      "icon": "settings",
+      "title": {
+        "fr": "Outils & comptes",
+        "es": "Herramientas y cuentas",
+        "en": "Tools & Accounts"
+      },
+      "description": {
+        "fr": "Créer et gérer votre compte de l'Église, accéder à l'annuaire et aux raccourcis utiles.",
+        "es": "Crear y gestionar su cuenta de la Iglesia, acceder al directorio y a los accesos directos.",
+        "en": "Create and manage your Church account, access the directory and useful shortcuts."
+      },
+      "links": [
+        {
+          "labelKey": "res_outils_create",
+          "href": "modal:compte-eglise"
+        },
+        {
+          "labelKey": "res_outils_manage",
+          "href": "modal:compte-eglise"
+        },
+        {
+          "labelKey": "res_outils_dir",
+          "href": "https://www.churchofjesuschrist.org/directory"
+        }
+      ]
+    },
+    {
+      "id": "temple-histoire",
+      "icon": "star",
+      "title": {
+        "fr": "Temple & Histoire familiale",
+        "es": "Templo e Historia familiar",
+        "en": "Temple & Family History"
+      },
+      "description": {
+        "fr": "Réservation pour le temple, FamilySearch, centre de distribution.",
+        "es": "Reservas para el templo, FamilySearch, centro de distribución.",
+        "en": "Temple reservations, FamilySearch, distribution center."
+      },
+      "links": [
+        {
+          "labelKey": "res_temple_book",
+          "href": "modal:temple"
+        },
+        {
+          "labelKey": "res_temple_fs",
+          "href": "https://www.familysearch.org"
+        },
+        {
+          "labelKey": "res_temple_dist",
+          "href": "modal:distribution"
+        }
+      ]
+    },
+    {
+      "id": "autonomie",
+      "icon": "trendingUp",
+      "title": {
+        "fr": "Autonomie",
+        "es": "Autosuficiencia",
+        "en": "Self-Reliance"
+      },
+      "description": {
+        "fr": "Ressources pour l'autonomie temporelle et spirituelle de votre famille.",
+        "es": "Recursos para la autosuficiencia temporal y espiritual de su familia.",
+        "en": "Resources for temporal and spiritual self-reliance for your family."
+      },
+      "links": [
+        {
+          "labelKey": "read_more",
+          "href": "#pastoral"
+        }
+      ]
+    },
+    {
+      "id": "entretiens-rdv",
+      "icon": "calendar",
+      "title": {
+        "fr": "Entretiens & rendez-vous",
+        "es": "Entrevistas y citas",
+        "en": "Interviews & Appointments"
+      },
+      "description": {
+        "fr": "Prendre rendez-vous et se préparer à un entretien avec un dirigeant.",
+        "es": "Pedir cita y prepararse para una entrevista con un líder.",
+        "en": "Schedule an appointment and prepare for an interview with a leader."
+      },
+      "links": [
+        {
+          "labelKey": "res_entretien_rdv",
+          "href": "modal:rendez-vous"
+        },
+        {
+          "labelKey": "res_entretien_prep",
+          "href": "modal:se-preparer"
+        }
+      ]
+    },
+    {
+      "id": "sinstruire",
+      "icon": "book",
+      "title": {
+        "fr": "S'instruire",
+        "es": "Instrucción",
+        "en": "Learning"
+      },
+      "description": {
+        "fr": "Séminaire, Institut, réunions du dimanche et ressources d'étude.",
+        "es": "Seminario, Instituto, reuniones dominicales y recursos de estudio.",
+        "en": "Seminary, Institute, Sunday meetings and study resources."
+      },
+      "links": [
+        {
+          "labelKey": "res_instruire_sem",
+          "href": "https://www.churchofjesuschrist.org/si/?lang=fra"
+        },
+        {
+          "labelKey": "res_instruire_inst",
+          "href": "https://www.churchofjesuschrist.org/si/institute?lang=fra"
+        }
+      ]
+    },
+    {
+      "id": "bulletin-reseaux",
+      "icon": "mail",
+      "title": {
+        "fr": "Bulletin & réseaux",
+        "es": "Boletín y redes",
+        "en": "Newsletter & Social"
+      },
+      "description": {
+        "fr": "S'inscrire au bulletin hebdomadaire, consulter les anciens bulletins et suivre nos réseaux sociaux.",
+        "es": "Suscribirse al boletín semanal, consultar boletines anteriores y seguir nuestras redes sociales.",
+        "en": "Subscribe to the weekly newsletter, view past bulletins and follow our social media."
+      },
+      "links": [
+        {
+          "label": {
+            "fr": "Voir les bulletins passés",
+            "es": "Ver boletines anteriores",
+            "en": "View past bulletins"
+          },
+          "href": "https://subscribepage.io/g1hs6q"
+        },
+        {
+          "labelKey": "res_bulletin_sub_fr",
+          "href": "http://subscribepage.io/Iiz4Xc"
+        },
+        {
+          "labelKey": "res_bulletin_sub_es",
+          "href": "http://subscribepage.io/WJSnVm"
+        }
+      ]
+    }
+  ]
+}

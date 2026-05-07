@@ -35,7 +35,7 @@ async function loadData() {
     ]);
     leadersData         = (Array.isArray(lr) ? lr : lr.leaders || []).filter(l=>l.active!==false);
     resourcesData       = (Array.isArray(rr) ? rr : rr.resources || []).filter(r=>r.active!==false);
-    memberResourcesData = Array.isArray(mr) ? mr : (mr ? Object.values(mr)[0] : null) || null;
+    memberResourcesData = Array.isArray(mr) ? mr : (mr?.member_resources || null);
     // Merge CMS settings into SITE_CONFIG (CMS values take precedence)
     if (sr && window.SITE_CONFIG) {
       if (sr.stakeName)   window.SITE_CONFIG.stakeName   = sr.stakeName;
@@ -169,7 +169,7 @@ function renderPastoral() {
 }
 
 function renderDirigeants() {
-  const cfg=SITE_CONFIG, lang=window.currentLang;
+  const lang=window.currentLang;
   const all=resourcesData.filter(r=>r.section==='dirigeants');
   const panels={
     vision:  document.getElementById('dp-vision'),
@@ -178,30 +178,17 @@ function renderDirigeants() {
     officiel:document.getElementById('dp-officiel'),
   };
 
-  const officialCards=[
-    {title:t('dir_lcr'),     desc:t('visit_official'),href:cfg.officialLinks.lcr,     icon:svgDb},
-    {title:t('dir_manual'),  desc:t('visit_official'),href:cfg.officialLinks.manual,  icon:svgBook},
-    {title:t('dir_calendar'),desc:t('visit_official'),href:cfg.officialLinks.calendar,icon:svgCal},
-    {title:t('dir_tools'),   desc:t('visit_official'),href:cfg.officialLinks.tools,   icon:svgSettings},
-  ];
-  if(panels.officiel) panels.officiel.innerHTML=`<div class="res-grid-2">${officialCards.map(o=>`
-    <a class="dir-card" href="${o.href}" target="_blank" rel="noopener">
-      <div class="res-icon">${o.icon(22)}</div>
-      <div class="dir-card-title">${o.title}</div>
-      <div class="dir-card-desc">${o.desc}</div>
-      <div class="dir-card-ext">${svgExtLink(12)} ${t('visit_official')}</div>
-    </a>`).join('')}</div>`;
-
-  ['vision','guides','tutoriels'].forEach(cat=>{
+  // All 4 categories now rendered from resourcesData (officiel included)
+  ['vision','guides','tutoriels','officiel'].forEach(cat=>{
     if (!panels[cat]) return;
     if (cat === 'tutoriels') {
       panels[cat].innerHTML = `<p style="color:var(--c-muted);font-size:14px;font-style:italic;padding:16px 0">${lang==='fr'?'Aucun tutoriel disponible pour le moment.':lang==='es'?'No hay tutoriales disponibles por el momento.':'No video tutorials available at this time.'}</p>`;
       return;
     }
-    const items=all.filter(r=>r.category===cat);
-    panels[cat].innerHTML=items.length
+    const items = all.filter(r => r.category === cat && r.active !== false);
+    panels[cat].innerHTML = items.length
       ? `<div class="res-grid-2">${items.map(r=>dirCard(r,lang)).join('')}</div>`
-      : `<p style="color:var(--c-muted);font-size:14px">${t('loading')}</p>`;
+      : `<p style="color:var(--c-muted);font-size:14px;font-style:italic;padding:16px 0">—</p>`;
   });
 }
 

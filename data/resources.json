@@ -72,7 +72,7 @@
     {
       "id": "compte-eglise",
       "section": "dirigeants",
-      "category": "tutoriels",
+      "category": "guides",
       "type": "guide",
       "lang": [
         "fr"
@@ -114,6 +114,66 @@
       },
       "url": "https://www.churchofjesuschrist.org/study/manual/general-handbook?lang=fra",
       "icon": "book",
+      "external": true,
+      "active": true
+    },
+    {
+      "id": "lcr-registres",
+      "section": "dirigeants",
+      "category": "officiel",
+      "type": "information",
+      "title": {
+        "fr": "LCR – Registres de l'Église",
+        "es": "SUD – Registros de la Iglesia",
+        "en": "LCR – Church Records"
+      },
+      "description": {
+        "fr": "Système de registres de l'Église pour les dirigeants.",
+        "es": "Sistema de registros de la Iglesia para líderes.",
+        "en": "Church record-keeping system for leaders."
+      },
+      "url": "https://lcr.churchofjesuschrist.org",
+      "icon": "database",
+      "external": true,
+      "active": true
+    },
+    {
+      "id": "calendrier-eglise",
+      "section": "dirigeants",
+      "category": "officiel",
+      "type": "information",
+      "title": {
+        "fr": "Calendrier de l'Église",
+        "es": "Calendario de la Iglesia",
+        "en": "Church Calendar"
+      },
+      "description": {
+        "fr": "Calendrier et planification des activités de l'Église.",
+        "es": "Calendario y planificación de actividades de la Iglesia.",
+        "en": "Church activities calendar and planning."
+      },
+      "url": "https://www.churchofjesuschrist.org/calendar",
+      "icon": "calendar",
+      "external": true,
+      "active": true
+    },
+    {
+      "id": "outils-eglise",
+      "section": "dirigeants",
+      "category": "officiel",
+      "type": "information",
+      "title": {
+        "fr": "Outils de l'Église",
+        "es": "Herramientas de la Iglesia",
+        "en": "Church Tools"
+      },
+      "description": {
+        "fr": "Suite d'outils officiels pour les membres et dirigeants.",
+        "es": "Suite de herramientas oficiales para miembros y líderes.",
+        "en": "Official tools suite for members and leaders."
+      },
+      "url": "https://www.churchofjesuschrist.org/tools",
+      "icon": "settings",
       "external": true,
       "active": true
     }
