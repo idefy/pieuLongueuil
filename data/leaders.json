@@ -12,9 +12,9 @@
       "photo": "/assets/leaders-paul-pelchat.jpg",
       "active": true,
       "responsibility": {
-        "fr": "",
-        "es": "",
-        "en": ""
+        "fr": "Évêques, Société de Secours",
+        "es": "Obispos, Sociedad de Socorro",
+        "en": "Bishops, Relief Society"
       }
     },
     {
@@ -59,8 +59,8 @@
         "es": "Secretario Ejecutivo",
         "en": "Executive Secretary"
       },
-      "name": "Prénom Nom",
-      "photo": "assets/leaders-placeholder.jpg",
+      "name": "Igor DeFaye",
+      "photo": "/assets/leaders-igor-defaye.png",
       "active": true,
       "responsibility": {
         "fr": "",
@@ -76,8 +76,8 @@
         "es": "Secretario de Estaca",
         "en": "Stake Clerk"
       },
-      "name": "Prénom Nom",
-      "photo": "assets/leaders-placeholder.jpg",
+      "name": "Marc Pelchat",
+      "photo": "/assets/leaders-marc-pelchat.png",
       "active": true,
       "responsibility": {
         "fr": "",
