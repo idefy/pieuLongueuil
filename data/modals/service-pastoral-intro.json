@@ -1,0 +1,49 @@
+{
+  "modal_id": "service-pastoral-intro",
+  "icon": "heart",
+  "eyebrow_fr": "Service pastoral",
+  "eyebrow_es": "Servicio pastoral",
+  "eyebrow_en": "Pastoral Service",
+  "title_fr": "Introduction au service pastoral",
+  "title_es": "Introducción al servicio pastoral",
+  "title_en": "Introduction to Pastoral Service",
+  "sections": [
+    {
+      "type": "intro",
+      "text_fr": "Les frères et les sœurs de service pastoral s'efforcent de répondre au mieux aux besoins individuels. Ils peuvent utiliser toutes formes de communication pour agir selon l'inspiration de l'Esprit et répondre aux besoins des personnes qu'ils servent."
+    },
+    {
+      "type": "heading",
+      "text_fr": "Les quatre principes"
+    },
+    {
+      "type": "list",
+      "items": [
+        { "text_fr": "Écouter — être vraiment présent et attentif lors des visites." },
+        { "text_fr": "Observer — remarquer les besoins non exprimés." },
+        { "text_fr": "Discerner — chercher l'inspiration de l'Esprit." },
+        { "text_fr": "Agir — répondre concrètement selon les besoins identifiés." }
+      ]
+    },
+    {
+      "type": "note",
+      "text_fr": "Cela commence par une réflexion aidée de la prière et par une conversation avec les familles pour mieux les connaître."
+    },
+    {
+      "type": "cta",
+      "label_fr": "Voir les fiches thématiques",
+      "label_es": "Ver las fichas temáticas",
+      "label_en": "View topic cards",
+      "href": "#pastoral",
+      "style": "secondary"
+    },
+    {
+      "type": "cta",
+      "label_fr": "Ressources complètes — servicepastoral.ca",
+      "label_es": "Recursos completos — servicepastoral.ca",
+      "label_en": "Full resources — servicepastoral.ca",
+      "href": "https://servicepastoral.ca/a-propos",
+      "style": "primary"
+    }
+  ]
+}

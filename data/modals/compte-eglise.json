@@ -1,0 +1,133 @@
+{
+  "modal_id": "compte-eglise",
+  "icon": "settings",
+  "eyebrow_fr": "Outils de l'Église",
+  "eyebrow_es": "Herramientas de la Iglesia",
+  "eyebrow_en": "Church Tools",
+  "title_fr": "Compte de l'Église",
+  "title_es": "Cuenta de la Iglesia",
+  "title_en": "Church Account",
+  "sections": [
+    {
+      "type": "intro",
+      "text_fr": "Votre compte de l'Église vous donne accès à tous les outils : annuaire, calendrier, LCR, séminaire et plus. Deux guides ci-dessous — créer votre compte, puis le maintenir à jour."
+    },
+    {
+      "type": "heading",
+      "text_fr": "Créer un compte de l'Église"
+    },
+    {
+      "type": "note",
+      "text_fr": "Au préalable vous aurez besoin de votre numéro de certificat de membre. Si vous ne le connaissez pas, votre greffier de paroisse ou de branche peut vous le donner."
+    },
+    {
+      "type": "heading",
+      "text_fr": "1. Choisir le pays"
+    },
+    {
+      "type": "list",
+      "items": [
+        { "text_fr": "Rendez-vous sur la page d'inscription : account.churchofjesuschrist.org/register?lang=fra" },
+        { "text_fr": "Sélectionnez le pays : Canada" },
+        { "text_fr": "Cliquez Continuer" }
+      ]
+    },
+    {
+      "type": "heading",
+      "text_fr": "2. Créer un compte"
+    },
+    {
+      "type": "list",
+      "items": [
+        { "text_fr": "Choisissez un nom de compte et un mot de passe. Une bonne approche est prénom.nomdefamille — vous devrez peut-être ajouter un numéro si le nom est déjà pris." },
+        { "text_fr": "L'outil vérifiera que le mot de passe est relativement sécuritaire." },
+        { "text_fr": "Si tout est bon, le bouton Continuer devient bleu — cliquez dessus." }
+      ]
+    },
+    {
+      "type": "heading",
+      "text_fr": "3. Lier à votre profil de membre"
+    },
+    {
+      "type": "list",
+      "items": [
+        { "text_fr": "Cochez : Je suis membre de l'Église de Jésus-Christ des Saints des Derniers Jours." },
+        { "text_fr": "Entrez votre numéro de certificat de membre." },
+        { "text_fr": "Entrez votre date de naissance." },
+        { "text_fr": "Cliquez Continuer — votre compte est créé !" }
+      ]
+    },
+    {
+      "type": "linklist",
+      "items": [
+        {
+          "label_fr": "Page d'inscription de l'Église",
+          "url": "https://account.churchofjesuschrist.org/register?lang=fra"
+        }
+      ]
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "text_fr": "Maintenir son compte de l'Église"
+    },
+    {
+      "type": "intro",
+      "text_fr": "Une fois connecté, nous vous recommandons de vérifier et mettre à jour les éléments suivants dans les paramètres de votre compte."
+    },
+    {
+      "type": "heading",
+      "text_fr": "Renseignements personnels"
+    },
+    {
+      "type": "list",
+      "items": [
+        { "text_fr": "Nom affiché — le nom visible dans tous les outils de l'Église (annuaire, certificats, etc.). Utilisez votre nom usuel plutôt que vos prénoms complets." },
+        { "text_fr": "Langue de notification — la langue dans laquelle vous recevez les messages (SMS, courriels) de l'Église." },
+        { "text_fr": "Langue souhaitée — la langue par défaut des outils et portails de l'Église." }
+      ]
+    },
+    {
+      "type": "heading",
+      "text_fr": "Paramètres de contact"
+    },
+    {
+      "type": "list",
+      "items": [
+        { "text_fr": "Téléphone — vérifiez qu'il est à jour." },
+        { "text_fr": "Courriel — important pour recevoir les communications de l'Église, surtout en tant que dirigeant." },
+        { "text_fr": "Abonnements aux courriels de l'Église." }
+      ]
+    },
+    {
+      "type": "heading",
+      "text_fr": "Comptes pour enfants"
+    },
+    {
+      "type": "body",
+      "text_fr": "Vous pouvez administrer et créer les comptes de vos enfants depuis vos paramètres. Particulièrement utile dès l'âge d'entrer aux Jeunes Gens et Jeunes Filles — cela leur permet de participer aux cercles, voir le calendrier et s'inscrire au séminaire."
+    },
+    {
+      "type": "heading",
+      "text_fr": "Paramètres de sécurité"
+    },
+    {
+      "type": "list",
+      "items": [
+        { "text_fr": "Changez votre mot de passe si nécessaire." },
+        { "text_fr": "Activez la connexion en 2 étapes pour une sécurité accrue — recommandé pour les dirigeants." },
+        { "text_fr": "Account Checkup — vérifiez régulièrement que votre courriel et téléphone sont à jour pour pouvoir récupérer l'accès à votre compte." }
+      ]
+    },
+    {
+      "type": "cta",
+      "label_fr": "Accéder aux paramètres du compte",
+      "label_es": "Acceder a la configuración de la cuenta",
+      "label_en": "Go to account settings",
+      "href": "https://account.churchofjesuschrist.org/?lang=fra",
+      "style": "primary"
+    }
+  ]
+}

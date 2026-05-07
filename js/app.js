@@ -154,22 +154,40 @@ function renderDirigeants() {
     </a>`).join('')}</div>`;
 
   ['vision','guides','tutoriels'].forEach(cat=>{
+    if (!panels[cat]) return;
+    if (cat === 'tutoriels') {
+      panels[cat].innerHTML = `<p style="color:var(--c-muted);font-size:14px;font-style:italic;padding:16px 0">${lang==='fr'?'Aucun tutoriel disponible pour le moment.':lang==='es'?'No hay tutoriales disponibles por el momento.':'No video tutorials available at this time.'}</p>`;
+      return;
+    }
     const items=all.filter(r=>r.category===cat);
-    if(panels[cat]) panels[cat].innerHTML=items.length
+    panels[cat].innerHTML=items.length
       ? `<div class="res-grid-2">${items.map(r=>dirCard(r,lang)).join('')}</div>`
       : `<p style="color:var(--c-muted);font-size:14px">${t('loading')}</p>`;
   });
 }
 
 function dirCard(r,lang) {
-  const title=r.title[lang]||r.title.fr, desc=r.description[lang]||r.description.fr;
-  const ext=r.url&&r.url.startsWith('http');
-  const iconFn={'book':svgBook,'heart':svgHeart,'users':svgUsers,'video':svgVideo,'file':svgFile,'target':svgTarget,'database':svgDb,'settings':svgSettings,'calendar':svgCal,'trendingUp':svgTrend,'globe':svgGlobe}[r.icon]||svgFile;
-  return `<a class="dir-card" href="${r.url||'#'}" ${ext?'target="_blank" rel="noopener"':''}>
-    <span class="dir-badge badge-${r.type}">${t('dir_type_'+r.type)||r.type}</span>
+  const title   = r.title[lang] || r.title.fr;
+  const desc    = r.description[lang] || r.description.fr;
+  const url     = r.url || '#';
+  const isExt   = r.external === true || url.startsWith('http');
+  const isModal = url.startsWith('modal:');
+  const iconFn  = {'book':svgBook,'heart':svgHeart,'users':svgUsers,'video':svgVideo,'file':svgFile,'target':svgTarget,'database':svgDb,'settings':svgSettings,'calendar':svgCal,'trendingUp':svgTrend,'globe':svgGlobe}[r.icon] || svgFile;
+  const badge   = t('dir_type_'+r.type) || r.type;
+
+  if (isModal) {
+    const modalId = url.slice(6);
+    return `<div class="dir-card" onclick="openPageModal('${modalId}')" style="cursor:pointer">
+      <span class="dir-badge badge-${r.type}">${badge}</span>
+      <div class="dir-card-title">${title}</div>
+      <div class="dir-card-desc">${desc}</div>
+    </div>`;
+  }
+  return `<a class="dir-card" href="${url}" ${isExt ? 'target="_blank" rel="noopener"' : ''}>
+    <span class="dir-badge badge-${r.type}">${badge}</span>
     <div class="dir-card-title">${title}</div>
     <div class="dir-card-desc">${desc}</div>
-    ${ext?`<div class="dir-card-ext">${svgExtLink(11)} ${t('visit_official')}</div>`:''}
+    ${isExt ? `<div class="dir-card-ext">${svgExtLink(11)} ${t('visit_official')}</div>` : ''}
   </a>`;
 }
 

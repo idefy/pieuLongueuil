@@ -1,0 +1,24 @@
+{
+  "modal_id": "nouveaux-membres",
+  "icon": "users",
+  "eyebrow_fr": "Guides pour les dirigeants",
+  "eyebrow_es": "Guías para líderes",
+  "eyebrow_en": "Leader Guides",
+  "title_fr": "Guide — Intégration des nouveaux membres",
+  "title_es": "Guía — Integración de nuevos miembros",
+  "title_en": "Guide — New Member Integration",
+  "sections": [
+    {
+      "type": "intro",
+      "text_fr": "Ce guide aide les dirigeants à accueillir et intégrer les nouveaux membres par le service pastoral, les appels adaptés et l'accompagnement fraternel."
+    },
+    {
+      "type": "cta",
+      "label_fr": "Ouvrir le document complet",
+      "label_es": "Abrir el documento completo",
+      "label_en": "Open full document",
+      "href": "https://docs.google.com/document/d/15gc7VwH9NYniblyHtEJSLtGKRnaw7rMKGjwWNlKO2Ag/edit",
+      "style": "primary"
+    }
+  ]
+}

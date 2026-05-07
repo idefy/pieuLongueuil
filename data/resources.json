@@ -18,9 +18,10 @@
         "es": "Presentación de los objetivos y la dirección espiritual de la Estaca Longueuil.",
         "en": "Overview of the goals and spiritual direction of the Longueuil Stake."
       },
-      "url": "#",
+      "url": "https://sites.google.com/view/pieulongueuil/ressources/pour-les-dirigeants/vision-du-pieu",
       "icon": "target",
-      "active": true
+      "active": true,
+      "external": true
     },
     {
       "id": "guide-nouveaux-membres",
@@ -40,9 +41,10 @@
         "es": "Cómo integrar a los nuevos miembros a través del servicio y las responsabilidades apropiadas.",
         "en": "How to integrate new members through service and appropriate callings."
       },
-      "url": "https://docs.google.com/document/d/15gc7VwH9NYniblyHtEJSLtGKRnaw7rMKGjwWNlKO2Ag/edit",
+      "url": "modal:nouveaux-membres",
       "icon": "users",
-      "active": true
+      "active": true,
+      "external": false
     },
     {
       "id": "service-pastoral-intro",
@@ -62,31 +64,33 @@
         "es": "Principios y prácticas del servicio pastoral — de las palabras a los actos.",
         "en": "Principles and practices of pastoral service — from words to action."
       },
-      "url": "https://servicepastoral.ca/a-propos",
+      "url": "modal:service-pastoral-intro",
       "icon": "heart",
-      "active": true
+      "active": true,
+      "external": false
     },
     {
       "id": "compte-eglise",
       "section": "dirigeants",
       "category": "tutoriels",
-      "type": "video",
+      "type": "guide",
       "lang": [
         "fr"
       ],
       "title": {
-        "fr": "Créer un compte de l'Église",
-        "es": "Crear una cuenta de la Iglesia",
-        "en": "Creating a Church Account"
+        "fr": "Compte de l'Église",
+        "es": "Cuenta de la Iglesia",
+        "en": "Church Account"
       },
       "description": {
-        "fr": "Guide étape par étape pour créer et configurer un compte LDS.",
-        "es": "Guía paso a paso para crear y configurar una cuenta de la Iglesia.",
-        "en": "Step-by-step guide to creating and setting up a Church account."
+        "fr": "Créer et maintenir son compte — accès à tous les outils de l'Église.",
+        "es": "Crear y mantener su cuenta — acceso a todas las herramientas de la Iglesia.",
+        "en": "Create and maintain your account — access to all Church tools."
       },
-      "url": "#",
+      "url": "modal:compte-eglise",
       "icon": "video",
-      "active": true
+      "active": true,
+      "external": false
     },
     {
       "id": "manuel-general",
@@ -111,28 +115,6 @@
       "url": "https://www.churchofjesuschrist.org/study/manual/general-handbook?lang=fra",
       "icon": "book",
       "external": true,
-      "active": true
-    },
-    {
-      "id": "lcr-guide",
-      "section": "dirigeants",
-      "category": "tutoriels",
-      "type": "guide",
-      "lang": [
-        "fr"
-      ],
-      "title": {
-        "fr": "Utiliser LCR",
-        "es": "Usar LCR",
-        "en": "Using LCR"
-      },
-      "description": {
-        "fr": "Comment naviguer dans le Système de registres de l'Église pour les appels courants.",
-        "es": "Cómo navegar en el Sistema de Registros de la Iglesia para los llamamientos comunes.",
-        "en": "How to navigate the Church Records system for common callings."
-      },
-      "url": "#",
-      "icon": "database",
       "active": true
     },
     {
