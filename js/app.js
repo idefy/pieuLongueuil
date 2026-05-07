@@ -24,16 +24,18 @@ function initLang() {
 function setLang(l) { window.currentLang=l; localStorage.setItem('pieu-lang',l); updateLangBtns(); renderAll(); }
 function updateLangBtns() { document.querySelectorAll('.lang-btn').forEach(b=>b.classList.toggle('active',b.dataset.lang===window.currentLang)); }
 
-let leadersData=[], resourcesData=[];
+let leadersData=[], resourcesData=[], memberResourcesData=[];
 async function loadData() {
   try {
-    const [lr, rr, sr] = await Promise.all([
+    const [lr, rr, sr, mr] = await Promise.all([
       fetch('data/leaders.json').then(r=>r.json()),
       fetch('data/resources.json').then(r=>r.json()),
-      fetch('data/settings.json').then(r=>r.json()).catch(()=>null)
+      fetch('data/settings.json').then(r=>r.json()).catch(()=>null),
+      fetch('data/member-resources.json').then(r=>r.json()).catch(()=>null)
     ]);
-    leadersData    = (Array.isArray(lr) ? lr : lr.leaders || []).filter(l=>l.active!==false);
-    resourcesData  = (Array.isArray(rr) ? rr : rr.resources || []).filter(r=>r.active!==false);
+    leadersData         = (Array.isArray(lr) ? lr : lr.leaders || []).filter(l=>l.active!==false);
+    resourcesData       = (Array.isArray(rr) ? rr : rr.resources || []).filter(r=>r.active!==false);
+    memberResourcesData = Array.isArray(mr) ? mr : (mr ? Object.values(mr)[0] : null) || null;
     // Merge CMS settings into SITE_CONFIG (CMS values take precedence)
     if (sr && window.SITE_CONFIG) {
       if (sr.stakeName)   window.SITE_CONFIG.stakeName   = sr.stakeName;
@@ -79,6 +81,35 @@ function renderQuickStrip() {
 
 function renderRessources() {
   const el=document.getElementById('res-grid'); if(!el) return;
+  const lang=window.currentLang;
+
+  // Use CMS data if loaded, otherwise fall back to hardcoded defaults
+  if (memberResourcesData && memberResourcesData.length) {
+    el.innerHTML = memberResourcesData.map(c => {
+      const title = c.title?.[lang] || c.title?.fr || '';
+      const desc  = c.description?.[lang] || c.description?.fr || '';
+      const iconFn = {settings:svgSettings,star:svgStar,trendingUp:svgTrend,calendar:svgCal,book:svgBook,mail:svgMail,heart:svgHeart,users:svgUsers,globe:svgGlobe,file:svgFile,database:svgDb}[c.icon] || svgFile;
+      const linksHtml = (c.links||[]).map(l => {
+        const label = l.label?.[lang] || l.label?.fr || l['label_'+lang] || l.label_fr || (l.labelKey ? t(l.labelKey) : '');
+        const href  = l.href || '#';
+        const isModal = href.startsWith('modal:');
+        const isExt   = href.startsWith('http');
+        const modalId = isModal ? href.slice(6) : '';
+        return isModal
+          ? `<span class="res-link" onclick="openPageModal('${modalId}')" style="cursor:pointer">${svgChev(14)}<span>${label}</span></span>`
+          : `<a class="res-link" href="${href}" ${isExt?'target="_blank" rel="noopener"':''}>${svgChev(14)}<span>${label}</span></a>`;
+      }).join('');
+      return `<div class="res-card reveal">
+        <div class="res-icon">${iconFn(28)}</div>
+        <div class="res-title">${title}</div>
+        <div class="res-desc">${desc}</div>
+        <div class="res-links">${linksHtml}</div>
+      </div>`;
+    }).join('');
+    return;
+  }
+
+  // Hardcoded fallback
   const cfg=SITE_CONFIG;
   const cards=[
     { icon:svgSettings, title:'res_outils_title', desc:'res_outils_desc',
@@ -92,7 +123,11 @@ function renderRessources() {
     { icon:svgBook, title:'res_instruire_title', desc:'res_instruire_desc',
       links:[{k:'res_instruire_sem',h:cfg.officialLinks.seminary},{k:'res_instruire_inst',h:cfg.officialLinks.institute}]},
     { icon:svgMail, title:'res_bulletin_title', desc:'res_bulletin_desc',
-      links:[{k:'res_bulletin_sub_fr',h:cfg.newsletter.fr},{k:'res_bulletin_sub_es',h:cfg.newsletter.es}]},
+      links:[
+        {k:'res_bulletin_past',h:'https://subscribepage.io/g1hs6q'},
+        {k:'res_bulletin_sub_fr',h:cfg.newsletter.fr},
+        {k:'res_bulletin_sub_es',h:cfg.newsletter.es}
+      ]},
   ];
   el.innerHTML=cards.map(c=>`
     <div class="res-card reveal">

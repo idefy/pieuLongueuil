@@ -61,13 +61,67 @@ collections:
                   - { label: "Español",  name: es, widget: string, required: false }
                   - { label: "English",  name: en, widget: string, required: false }
 
-  - name: "resources"
-    label: "📄 Ressources & Guides"
-    label_singular: "Ressource"
-    description: "Guides, tutoriels et liens pour les dirigeants."
+  - name: "member_resources"
+    label: "👥 Ressources pour les membres"
+    label_singular: "Boîte de ressources"
+    description: "Les 6 boîtes de la section Ressources — titres, descriptions et liens pour les membres."
     files:
-      - name: "resources"
-        label: "Liste des ressources"
+      - name: "member_resources"
+        label: "Les 6 boîtes de ressources"
+        file: "data/member-resources.json"
+        fields:
+          - label: "Boîtes"
+            name: member_resources
+            widget: list
+            label_singular: "Boîte"
+            summary: "{{fields.id}}"
+            fields:
+              - { label: "ID unique", name: id, widget: string }
+              - label: "Icône"
+                name: icon
+                widget: select
+                options: [settings, star, trendingUp, calendar, book, mail, heart, users, globe, file, database]
+              - label: "Titre"
+                name: title
+                widget: object
+                fields:
+                  - { label: "Français", name: fr, widget: string }
+                  - { label: "Español",  name: es, widget: string, required: false }
+                  - { label: "English",  name: en, widget: string, required: false }
+              - label: "Description"
+                name: description
+                widget: object
+                fields:
+                  - { label: "Français", name: fr, widget: text }
+                  - { label: "Español",  name: es, widget: text, required: false }
+                  - { label: "English",  name: en, widget: text, required: false }
+              - label: "Liens"
+                name: links
+                widget: list
+                label_singular: "Lien"
+                summary: "{{fields.href}}"
+                fields:
+                  - label: "Étiquette personnalisée (FR)"
+                    name: label_fr
+                    widget: string
+                    required: false
+                    hint: "Si vide, utilise la clé de traduction ci-dessous"
+                  - { label: "Étiquette (ES)", name: label_es, widget: string, required: false }
+                  - { label: "Étiquette (EN)", name: label_en, widget: string, required: false }
+                  - label: "Clé de traduction"
+                    name: labelKey
+                    widget: string
+                    required: false
+                    hint: "Clé i18n existante, ex: res_outils_create — ignorée si étiquette personnalisée fournie"
+                  - { label: "URL / modal (ex: modal:compte-eglise)", name: href, widget: string }
+
+  - name: "dirigeants_resources"
+    label: "📋 Pour les dirigeants — Ressources"
+    label_singular: "Ressource"
+    description: "Guides, tutoriels et liens officiels pour les dirigeants."
+    files:
+      - name: "dirigeants_resources"
+        label: "Ressources pour les dirigeants"
         file: "data/resources.json"
         fields:
           - label: "Ressources"
@@ -77,53 +131,46 @@ collections:
             summary: "{{fields.id}} — {{fields.type}}"
             fields:
               - { label: "ID unique", name: id, widget: string }
-              - label: "Section"
-                name: section
-                widget: select
-                options:
-                  - { label: "Dirigeants", value: dirigeants }
-                  - { label: "Service pastoral", value: pastoral }
               - label: "Catégorie"
                 name: category
                 widget: select
                 options:
-                  - { label: "Vision", value: vision }
-                  - { label: "Guides", value: guides }
+                  - { label: "Vision",    value: vision }
+                  - { label: "Guides",    value: guides }
                   - { label: "Tutoriels", value: tutoriels }
-                  - { label: "Officiel", value: officiel }
-                  - { label: "Fiches", value: fiches }
+                  - { label: "Officiel",  value: officiel }
               - label: "Type"
                 name: type
                 widget: select
                 options:
-                  - { label: "Guide", value: guide }
-                  - { label: "Processus", value: process }
+                  - { label: "Guide",       value: guide }
+                  - { label: "Processus",   value: process }
                   - { label: "Information", value: information }
-                  - { label: "Vidéo", value: video }
-                  - { label: "Formation", value: formation }
-                  - { label: "Rapport", value: rapport }
-                  - { label: "Fiche", value: fiche }
+                  - { label: "Vidéo",       value: video }
+                  - { label: "Formation",   value: formation }
+                  - { label: "Rapport",     value: rapport }
               - label: "Titre"
                 name: title
                 widget: object
                 fields:
                   - { label: "Français", name: fr, widget: string }
-                  - { label: "Español", name: es, widget: string, required: false }
-                  - { label: "English", name: en, widget: string, required: false }
+                  - { label: "Español",  name: es, widget: string, required: false }
+                  - { label: "English",  name: en, widget: string, required: false }
               - label: "Description"
                 name: description
                 widget: object
                 fields:
                   - { label: "Français", name: fr, widget: text }
-                  - { label: "Español", name: es, widget: text, required: false }
-                  - { label: "English", name: en, widget: text, required: false }
-              - { label: "URL", name: url, widget: string, required: false }
+                  - { label: "Español",  name: es, widget: text, required: false }
+                  - { label: "English",  name: en, widget: text, required: false }
+              - { label: "URL / lien (ex: modal:mon-id)", name: url,      widget: string, required: false }
               - label: "Icône"
                 name: icon
                 widget: select
                 options: [book, heart, users, star, globe, calendar, settings, trendingUp, video, file, target, database]
-              - { label: "Lien externe", name: external, widget: boolean, default: false }
+              - { label: "Lien externe (nouvel onglet)", name: external, widget: boolean, default: false }
               - { label: "Actif", name: active, widget: boolean, default: true }
+              - { label: "Section (ne pas changer)", name: section, widget: hidden, default: dirigeants }
               - label: "Responsabilité (optionnel)"
                 name: responsibility
                 widget: object

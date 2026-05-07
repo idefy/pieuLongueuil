@@ -50,6 +50,7 @@ const TRANSLATIONS = {
 
     res_bulletin_title:  "Bulletin & réseaux",
     res_bulletin_desc:   "S'inscrire au bulletin hebdomadaire et suivre nos réseaux sociaux.",
+    res_bulletin_past:   "Voir les bulletins passés",
     res_bulletin_sub_fr: "S'inscrire (Français)",
     res_bulletin_sub_es: "Inscribirse (Español)",
 
@@ -278,6 +279,7 @@ const TRANSLATIONS = {
 
     res_bulletin_title:  "Boletín y redes",
     res_bulletin_desc:   "Suscribirse al boletín semanal y seguir nuestras redes sociales.",
+    res_bulletin_past:   "Ver boletines anteriores",
     res_bulletin_sub_fr: "Suscribirse (Français)",
     res_bulletin_sub_es: "Inscribirse (Español)",
 
@@ -502,6 +504,7 @@ const TRANSLATIONS = {
 
     res_bulletin_title:  "Newsletter & Social",
     res_bulletin_desc:   "Subscribe to the weekly newsletter and follow our social media.",
+    res_bulletin_past:   "View past bulletins",
     res_bulletin_sub_fr: "Subscribe (Français)",
     res_bulletin_sub_es: "Subscribe (Español)",
 
