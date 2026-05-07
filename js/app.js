@@ -82,7 +82,7 @@ function renderRessources() {
   const cfg=SITE_CONFIG;
   const cards=[
     { icon:svgSettings, title:'res_outils_title', desc:'res_outils_desc',
-      links:[{k:'res_outils_create',h:'#'},{k:'res_outils_manage',h:'#'},{k:'res_outils_dir',h:cfg.officialLinks.directory}]},
+      links:[{k:'res_outils_create',h:'modal:compte-eglise'},{k:'res_outils_manage',h:'modal:compte-eglise'},{k:'res_outils_dir',h:cfg.officialLinks.directory}]},
     { icon:svgStar, title:'res_temple_title', desc:'res_temple_desc',
       links:[{k:'res_temple_book',h:'modal:temple'},{k:'res_temple_fs',h:cfg.officialLinks.familySearch},{k:'res_temple_dist',h:'modal:distribution'}]},
     { icon:svgTrend, title:'res_autonomie_title', desc:'res_autonomie_desc',
@@ -99,10 +99,14 @@ function renderRessources() {
       <div class="res-icon">${c.icon(28)}</div>
       <div class="res-title" data-i18n="${c.title}">${t(c.title)}</div>
       <div class="res-desc" data-i18n="${c.desc}">${t(c.desc)}</div>
-      <div class="res-links">${c.links.map(l=>`
-        <a class="res-link" href="${l.h}" ${l.h.startsWith('http')?'target="_blank" rel="noopener"':''}>
-          ${svgChev(14)}<span data-i18n="${l.k}">${t(l.k)}</span>
-        </a>`).join('')}
+      <div class="res-links">${c.links.map(l=>{
+        const isModal=l.h.startsWith('modal:');
+        const isExt=l.h.startsWith('http');
+        const modalId=isModal?l.h.slice(6):'';
+        return isModal
+          ? `<span class="res-link" onclick="openPageModal('${modalId}')" style="cursor:pointer">${svgChev(14)}<span data-i18n="${l.k}">${t(l.k)}</span></span>`
+          : `<a class="res-link" href="${l.h}" ${isExt?'target="_blank" rel="noopener"':''}>${svgChev(14)}<span data-i18n="${l.k}">${t(l.k)}</span></a>`;
+      }).join('')}
       </div>
     </div>`).join('');
 }
