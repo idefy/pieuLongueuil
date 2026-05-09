@@ -1,10 +1,13 @@
 {
+  "eyebrow_fr": "Temple",
+  "eyebrow_es": "Templo",
   "modal_id": "temple",
-  "icon": "star",
   "sections": [
     {
       "type": "heading",
-      "text_fr": "Contact the temple"
+      "text_fr": "Contacter le temple",
+      "text_en": "Contact the temple",
+      "text_es": "Contactar el templo"
     },
     {
       "type": "linklist",
@@ -24,19 +27,27 @@
     },
     {
       "type": "heading",
-      "text_fr": "Opening hours"
+      "text_fr": "Heures d'ouverture ",
+      "text_en": "Opening hours",
+      "text_es": "Horario de atención "
     },
     {
       "type": "body",
-      "text_fr": "Reservations are made online."
+      "text_fr": "Les reservations sont faites en ligne.",
+      "text_en": "Reservations are made online.",
+      "text_es": "Las reservaciones se realizan en línea."
     },
     {
       "type": "body",
-      "text_fr": "Open Wednesday through Saturday."
+      "text_fr": "Ouvert du mercredi au samedi.",
+      "text_en": "Open Wednesday through Saturday.",
+      "text_es": "Abierto de miércoles a sábado."
     },
     {
       "type": "body",
-      "text_fr": "2025 Closures:"
+      "text_fr": "Fermetures 2025 :",
+      "text_en": "2025 Closures:",
+      "text_es": "Cierres en 2025:"
     },
     {
       "type": "list",
@@ -58,10 +69,9 @@
       "label_en": ""
     }
   ],
+  "title_en": "Montréal Temple",
   "title_fr": "Temple de Montréal",
   "title_es": "Templo de Montréal",
-  "title_en": "Montréal Temple",
-  "eyebrow_fr": "Temple",
-  "eyebrow_es": "Templo",
+  "icon": "star",
   "eyebrow_en": "Temple"
 }
