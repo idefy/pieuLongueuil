@@ -1,57 +1,73 @@
 {
+  "eyebrow_fr": "Ressources",
+  "eyebrow_es": "Recursos",
   "modal_id": "distribution",
-  "icon": "settings",
   "sections": [
     {
       "type": "heading",
-      "text_fr": "Opening hours"
+      "text_fr": "Heures d'ouverture",
+      "text_en": "Opening hours",
+      "text_es": "Horario de atención"
     },
     {
       "type": "body",
-      "text_fr": "Opening hours:"
+      "text_fr": "Heures d'ouverture:",
+      "text_en": "Opening hours:",
+      "text_es": "Horario de atención:"
     },
     {
       "type": "list",
       "items": [
         {
-          "text_fr": "Wednesday: 3:30 PM to 6:30 PM"
+          "text_fr": "Mercredi : 15:30 à 18:30",
+          "text_en": "Wednesday: 3:30 PM to 6:30 PM",
+          "text_es": "Miércoles : 15:30 a 18:30"
         },
         {
-          "text_fr": "Thursday & Friday: 10:00 AM to 6:30 PM"
+          "text_fr": "Jeudi & Vendredi : 10:00 à 18:30",
+          "text_en": "Thursday & Friday: 10:00 AM to 6:30 PM",
+          "text_es": "Jueves & Viernes : 10:00 à 18:30"
         },
         {
-          "text_fr": "Saturday: 8:00 AM to 3:00 PM"
+          "text_fr": "Samedi : 8:00 à 15:00",
+          "text_en": "Saturday: 8:00 AM to 3:00 PM",
+          "text_es": "Sábado : 8:00 a 15:00"
         }
       ]
     },
     {
       "type": "note",
-      "text_fr": "Closed on the same days as the temple."
+      "text_fr": "Fermé les mêmes jours que le temple.",
+      "text_en": "Closed on the same days as the temple.",
+      "text_es": "Cerrado los mismos días que el templó."
     },
     {
       "type": "divider"
     },
     {
       "type": "body",
-      "text_fr": "You can also order online:"
+      "text_fr": "Vous pouvez aussi commander en ligne:",
+      "text_en": "You can also order online:",
+      "text_es": "Se puede también hacer pedido en línea :"
     },
     {
       "type": "cta",
       "href": "https://store.churchofjesuschrist.org",
       "style": "secondary",
       "label_fr": "store.churchofjesuschrist.org",
-      "label_es": "",
-      "label_en": ""
+      "label_es": "store.churchofjesuschrist.org",
+      "label_en": "store.churchofjesuschrist.org"
     },
     {
       "type": "note",
-      "text_fr": "Call (450) 679-1473 for an emergency appointment or personal endowment on Wednesday evenings."
+      "text_fr": "Appelez le (450) 679-1473 pour un rendez-vous d'urgence ou une dotation personnelle les mercredis soirs.",
+      "text_en": "Call (450) 679-1473 for an emergency appointment or personal endowment on Wednesday evenings.",
+      "text_es": "Llame al (450) 679-1473 para una cita de emergencia o para solicitar una donación personal los miércoles por la noche."
     }
   ],
+  "title_en": "Distribution Center",
   "title_fr": "Centre de distribution",
   "title_es": "Centro de Distribución",
-  "title_en": "Distribution Center",
-  "eyebrow_fr": "Ressources",
-  "eyebrow_es": "Recursos",
+  "icon": "settings",
   "eyebrow_en": "Resources"
 }
