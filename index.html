@@ -172,19 +172,7 @@
 <div class="fiche-panel-overlay" id="fiche-overlay" role="dialog" aria-modal="true" aria-label="Fiche de service pastoral">
   <div class="fiche-panel" id="fiche-panel"></div>
 </div>
-
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-<script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", function(user) {
-      if (!user) {
-        window.netlifyIdentity.on("login", function() {
-          document.location.href = "/admin/";
-        });
-      }
-    });
-  }
-</script>
+  
 <script src="js/config.js"></script>
 <script src="js/i18n.js"></script>
 <script src="data/fiches.js"></script>
