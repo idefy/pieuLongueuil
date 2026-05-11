@@ -455,3 +455,848 @@ collections:
             fields:
               - { label: "Lien (FR)", name: fr, widget: string, required: false }
               - { label: "Lien (ES)", name: es, widget: string, required: false }
+
+  # ──────────────────────────────────────────────────────────
+  #  7. TRADUCTIONS  →  data/translations.json
+  #  Modifier les textes de l'interface dans les 3 langues.
+  # ──────────────────────────────────────────────────────────
+  - name: "translations"
+    label: "🌐 Traductions (FR / ES / EN)"
+    description: "Modifier les textes de l'interface dans les trois langues."
+    files:
+      - name: "tr_nav"
+        label: "🧭 Navigation"
+        file: "data/translations.json"
+        fields:
+          - label: "nav_home"
+            name: "nav_home"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "nav_ressources"
+            name: "nav_ressources"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "nav_pastoral"
+            name: "nav_pastoral"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "nav_dirigeants"
+            name: "nav_dirigeants"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "nav_organisations"
+            name: "nav_organisations"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+      - name: "tr_accueil"
+        label: "🖼️ Accueil"
+        file: "data/translations.json"
+        fields:
+          - label: "hero_scroll"
+            name: "hero_scroll"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "ressources_title"
+            name: "ressources_title"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "ressources_intro"
+            name: "ressources_intro"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "pastoral_title"
+            name: "pastoral_title"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "pastoral_intro"
+            name: "pastoral_intro"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "dirigeants_title"
+            name: "dirigeants_title"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "dirigeants_intro"
+            name: "dirigeants_intro"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "org_title"
+            name: "org_title"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "org_intro"
+            name: "org_intro"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+      - name: "tr_ressources"
+        label: "📦 Ressources membres"
+        file: "data/translations.json"
+        fields:
+          - label: "res_outils_title"
+            name: "res_outils_title"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "res_outils_desc"
+            name: "res_outils_desc"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "res_outils_create"
+            name: "res_outils_create"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "res_outils_manage"
+            name: "res_outils_manage"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "res_outils_trouble"
+            name: "res_outils_trouble"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "res_outils_dir"
+            name: "res_outils_dir"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "res_temple_title"
+            name: "res_temple_title"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "res_temple_desc"
+            name: "res_temple_desc"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "res_temple_book"
+            name: "res_temple_book"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "res_temple_fs"
+            name: "res_temple_fs"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "res_temple_dist"
+            name: "res_temple_dist"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "res_autonomie_title"
+            name: "res_autonomie_title"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "res_autonomie_desc"
+            name: "res_autonomie_desc"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "res_entretien_title"
+            name: "res_entretien_title"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "res_entretien_desc"
+            name: "res_entretien_desc"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "res_entretien_rdv"
+            name: "res_entretien_rdv"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "res_entretien_prep"
+            name: "res_entretien_prep"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "res_instruire_title"
+            name: "res_instruire_title"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "res_instruire_desc"
+            name: "res_instruire_desc"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "res_instruire_sem"
+            name: "res_instruire_sem"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "res_instruire_inst"
+            name: "res_instruire_inst"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "res_instruire_dim"
+            name: "res_instruire_dim"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "res_bulletin_title"
+            name: "res_bulletin_title"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "res_bulletin_desc"
+            name: "res_bulletin_desc"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "res_bulletin_past"
+            name: "res_bulletin_past"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "res_bulletin_sub_fr"
+            name: "res_bulletin_sub_fr"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "res_bulletin_sub_es"
+            name: "res_bulletin_sub_es"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+      - name: "tr_pastoral"
+        label: "🌿 Service pastoral"
+        file: "data/translations.json"
+        fields:
+          - label: "pastoral_fiches"
+            name: "pastoral_fiches"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "pastoral_guides"
+            name: "pastoral_guides"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "pastoral_about"
+            name: "pastoral_about"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "fiche_autonomie"
+            name: "fiche_autonomie"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "fiche_dependance"
+            name: "fiche_dependance"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "fiche_emotion"
+            name: "fiche_emotion"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "fiche_couple"
+            name: "fiche_couple"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "fiche_mission"
+            name: "fiche_mission"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "fiche_avenir"
+            name: "fiche_avenir"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "fiche_histoire"
+            name: "fiche_histoire"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "fiche_spirituel"
+            name: "fiche_spirituel"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "fiche_autonomie_desc"
+            name: "fiche_autonomie_desc"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "fiche_dependance_desc"
+            name: "fiche_dependance_desc"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "fiche_emotion_desc"
+            name: "fiche_emotion_desc"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "fiche_couple_desc"
+            name: "fiche_couple_desc"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "fiche_mission_desc"
+            name: "fiche_mission_desc"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "fiche_avenir_desc"
+            name: "fiche_avenir_desc"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "fiche_histoire_desc"
+            name: "fiche_histoire_desc"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "fiche_spirituel_desc"
+            name: "fiche_spirituel_desc"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+      - name: "tr_dirigeants"
+        label: "📋 Dirigeants"
+        file: "data/translations.json"
+        fields:
+          - label: "dir_vision_title"
+            name: "dir_vision_title"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "dir_vision_desc"
+            name: "dir_vision_desc"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "dir_guides_title"
+            name: "dir_guides_title"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "dir_guides_desc"
+            name: "dir_guides_desc"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "dir_video_title"
+            name: "dir_video_title"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "dir_video_desc"
+            name: "dir_video_desc"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "dir_officiel_title"
+            name: "dir_officiel_title"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "dir_officiel_desc"
+            name: "dir_officiel_desc"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "dir_type_guide"
+            name: "dir_type_guide"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "dir_type_process"
+            name: "dir_type_process"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "dir_type_info"
+            name: "dir_type_info"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "dir_type_information"
+            name: "dir_type_information"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "dir_type_formation"
+            name: "dir_type_formation"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "dir_type_video"
+            name: "dir_type_video"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "dir_type_rapport"
+            name: "dir_type_rapport"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "dir_lcr"
+            name: "dir_lcr"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "dir_manual"
+            name: "dir_manual"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "dir_calendar"
+            name: "dir_calendar"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "dir_tools"
+            name: "dir_tools"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+      - name: "tr_org"
+        label: "👥 Organisations"
+        file: "data/translations.json"
+        fields:
+          - label: "org_title"
+            name: "org_title"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "org_intro"
+            name: "org_intro"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "org_no_contact"
+            name: "org_no_contact"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "org_dir_link"
+            name: "org_dir_link"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "org_presidence"
+            name: "org_presidence"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "org_grandconseil"
+            name: "org_grandconseil"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "org_ss"
+            name: "org_ss"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "org_jf"
+            name: "org_jf"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "org_jg"
+            name: "org_jg"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "org_primaire"
+            name: "org_primaire"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "org_ecole"
+            name: "org_ecole"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "org_unites"
+            name: "org_unites"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "org_jas"
+            name: "org_jas"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+      - name: "tr_commun"
+        label: "⚙️ Interface"
+        file: "data/translations.json"
+        fields:
+          - label: "read_more"
+            name: "read_more"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "visit_official"
+            name: "visit_official"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "back_top"
+            name: "back_top"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "loading"
+            name: "loading"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "external_link"
+            name: "external_link"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "lang_fr"
+            name: "lang_fr"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "lang_es"
+            name: "lang_es"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "lang_en"
+            name: "lang_en"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}
+          - label: "footer_rights"
+            name: "footer_rights"
+            widget: object
+            collapsed: true
+            fields:
+              - {label: "Français", name: fr, widget: string}
+              - {label: "Español",  name: es, widget: string, required: false}
+              - {label: "English",  name: en, widget: string, required: false}

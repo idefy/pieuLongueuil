@@ -1,6 +1,6 @@
 /* PIEU LONGUEUIL v2 — Application */
 document.addEventListener('DOMContentLoaded', async () => {
-  applyConfig(); initLang(); await loadData(); renderAll(); initNav(); initScrollEffects(); initDirTabs(); initFicheModal(); initPageModals(); initModalLinks();
+  applyConfig(); initLang(); await Promise.all([loadData(), loadTranslations()]); renderAll(); initNav(); initScrollEffects(); initDirTabs(); initFicheModal(); initPageModals(); initModalLinks();
 });
 
 function applyConfig() {
