@@ -1,0 +1,47 @@
+{
+  "read_more": {
+    "fr": "En savoir plus",
+    "es": "Más información",
+    "en": "Learn more"
+  },
+  "visit_official": {
+    "fr": "Visiter le site officiel",
+    "es": "Visitar el sitio oficial",
+    "en": "Visit official site"
+  },
+  "back_top": {
+    "fr": "Retour en haut",
+    "es": "Volver arriba",
+    "en": "Back to top"
+  },
+  "loading": {
+    "fr": "Chargement…",
+    "es": "Cargando…",
+    "en": "Loading…"
+  },
+  "external_link": {
+    "fr": "Lien externe",
+    "es": "Enlace externo",
+    "en": "External link"
+  },
+  "lang_fr": {
+    "fr": "Français",
+    "es": "Français",
+    "en": "Français"
+  },
+  "lang_es": {
+    "fr": "Español",
+    "es": "Español",
+    "en": "Español"
+  },
+  "lang_en": {
+    "fr": "English",
+    "es": "English",
+    "en": "English"
+  },
+  "footer_rights": {
+    "fr": "Site non officiel de l'Église",
+    "es": "Sitio no oficial de la Iglesia",
+    "en": "Unofficial Church site"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "hero_scroll": {
+    "fr": "Découvrir",
+    "es": "Descubrir",
+    "en": "Discover"
+  },
+  "ressources_title": {
+    "fr": "Ressources pour les membres",
+    "es": "Recursos para los miembros",
+    "en": "Member Resources"
+  },
+  "ressources_intro": {
+    "fr": "Trouvez ici les outils, guides et liens pour vous accompagner dans votre vie de membre.",
+    "es": "Encuentre aquí las herramientas, guías y enlaces para acompañarle en su vida como miembro.",
+    "en": "Find here the tools, guides and links to support you in your life as a member."
+  },
+  "pastoral_title": {
+    "fr": "Service pastoral",
+    "es": "Servicio pastoral",
+    "en": "Pastoral Service"
+  },
+  "pastoral_intro": {
+    "fr": "Les frères et sœurs de service pastoral s'efforcent de répondre aux besoins individuels. Ces ressources facilitent l'écoute et aident à mieux suivre l'inspiration reçue lors des visites.",
+    "es": "Los hermanos y hermanas de servicio pastoral se esfuerzan por responder a las necesidades individuales. Estos recursos facilitan la escucha y ayudan a seguir mejor la inspiración recibida en las visitas.",
+    "en": "Ministering brothers and sisters strive to meet individual needs. These resources facilitate listening and help better follow the inspiration received during visits."
+  },
+  "dirigeants_title": {
+    "fr": "Pour les dirigeants",
+    "es": "Para los líderes",
+    "en": "For Leaders"
+  },
+  "dirigeants_intro": {
+    "fr": "Guides, processus et ressources pour vous accompagner dans votre appel.",
+    "es": "Guías, procesos y recursos para acompañarle en su llamamiento.",
+    "en": "Guides, processes and resources to support you in your calling."
+  },
+  "org_title": {
+    "fr": "Organisations du Pieu",
+    "es": "Organizaciones de la Estaca",
+    "en": "Stake Organizations"
+  },
+  "org_intro": {
+    "fr": "Les dirigeants du Pieu de Longueuil au service des membres.",
+    "es": "Los líderes de la Estaca Longueuil al servicio de los miembros.",
+    "en": "Longueuil Stake leaders serving the members."
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "dir_vision_title": {
+    "fr": "Vision du pieu",
+    "es": "Visión de la estaca",
+    "en": "Stake Vision"
+  },
+  "dir_vision_desc": {
+    "fr": "Objectifs et orientations de la présidence du pieu.",
+    "es": "Objetivos y orientaciones de la presidencia de estaca.",
+    "en": "Goals and directions from the stake presidency."
+  },
+  "dir_guides_title": {
+    "fr": "Guides & processus",
+    "es": "Guías y procesos",
+    "en": "Guides & Processes"
+  },
+  "dir_guides_desc": {
+    "fr": "Documents de référence pour l'exercice de vos responsabilités.",
+    "es": "Documentos de referencia para el ejercicio de sus responsabilidades.",
+    "en": "Reference documents for carrying out your responsibilities."
+  },
+  "dir_video_title": {
+    "fr": "Tutoriels vidéo",
+    "es": "Tutoriales en vídeo",
+    "en": "Video Tutorials"
+  },
+  "dir_video_desc": {
+    "fr": "Formations visuelles pour les outils et processus courants.",
+    "es": "Formaciones visuales para las herramientas y procesos comunes.",
+    "en": "Visual training for common tools and processes."
+  },
+  "dir_officiel_title": {
+    "fr": "Liens officiels",
+    "es": "Enlaces oficiales",
+    "en": "Official Links"
+  },
+  "dir_officiel_desc": {
+    "fr": "Ressources officielles de l'Église pour les dirigeants.",
+    "es": "Recursos oficiales de la Iglesia para los líderes.",
+    "en": "Official Church resources for leaders."
+  },
+  "dir_type_guide": {
+    "fr": "Guide",
+    "es": "Guía",
+    "en": "Guide"
+  },
+  "dir_type_process": {
+    "fr": "Processus",
+    "es": "Proceso",
+    "en": "Process"
+  },
+  "dir_type_info": {
+    "fr": "Information",
+    "es": "Información",
+    "en": "Information"
+  },
+  "dir_type_information": {
+    "fr": "Information",
+    "es": "Información",
+    "en": "Information"
+  },
+  "dir_type_formation": {
+    "fr": "Formation",
+    "es": "Formación",
+    "en": "Training"
+  },
+  "dir_type_video": {
+    "fr": "Vidéo",
+    "es": "Vídeo",
+    "en": "Video"
+  },
+  "dir_type_rapport": {
+    "fr": "Rapport",
+    "es": "Informe",
+    "en": "Report"
+  },
+  "dir_lcr": {
+    "fr": "LCR – Registres de l'Église",
+    "es": "SUD – Registros de la Iglesia",
+    "en": "LCR – Church Records"
+  },
+  "dir_manual": {
+    "fr": "Manuel général",
+    "es": "Manual general",
+    "en": "General Handbook"
+  },
+  "dir_calendar": {
+    "fr": "Calendrier de l'Église",
+    "es": "Calendario de la Iglesia",
+    "en": "Church Calendar"
+  },
+  "dir_tools": {
+    "fr": "Outils de l'Église",
+    "es": "Herramientas de la Iglesia",
+    "en": "Church Tools"
+  }
+}

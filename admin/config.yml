@@ -457,8 +457,7 @@ collections:
               - { label: "Lien (ES)", name: es, widget: string, required: false }
 
   # ──────────────────────────────────────────────────────────
-  #  7. TRADUCTIONS  →  data/translations.json
-  #  Modifier les textes de l'interface dans les 3 langues.
+  #  7. TRADUCTIONS  →  data/i18n/*.json  (un fichier par groupe)
   # ──────────────────────────────────────────────────────────
   - name: "translations"
     label: "🌐 Traductions (FR / ES / EN)"
@@ -466,12 +465,13 @@ collections:
     files:
       - name: "tr_nav"
         label: "🧭 Navigation"
-        file: "data/translations.json"
+        file: "data/i18n/nav.json"
         fields:
           - label: "nav_home"
             name: "nav_home"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -480,6 +480,7 @@ collections:
             name: "nav_ressources"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -488,6 +489,7 @@ collections:
             name: "nav_pastoral"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -496,6 +498,7 @@ collections:
             name: "nav_dirigeants"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -504,18 +507,20 @@ collections:
             name: "nav_organisations"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
               - {label: "English",  name: en, widget: string, required: false}
       - name: "tr_accueil"
         label: "🖼️ Accueil"
-        file: "data/translations.json"
+        file: "data/i18n/accueil.json"
         fields:
           - label: "hero_scroll"
             name: "hero_scroll"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -524,6 +529,7 @@ collections:
             name: "ressources_title"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -532,6 +538,7 @@ collections:
             name: "ressources_intro"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -540,6 +547,7 @@ collections:
             name: "pastoral_title"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -548,6 +556,7 @@ collections:
             name: "pastoral_intro"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -556,6 +565,7 @@ collections:
             name: "dirigeants_title"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -564,6 +574,7 @@ collections:
             name: "dirigeants_intro"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -572,6 +583,7 @@ collections:
             name: "org_title"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -580,18 +592,20 @@ collections:
             name: "org_intro"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
               - {label: "English",  name: en, widget: string, required: false}
       - name: "tr_ressources"
         label: "📦 Ressources membres"
-        file: "data/translations.json"
+        file: "data/i18n/ressources.json"
         fields:
           - label: "res_outils_title"
             name: "res_outils_title"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -600,6 +614,7 @@ collections:
             name: "res_outils_desc"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -608,6 +623,7 @@ collections:
             name: "res_outils_create"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -616,6 +632,7 @@ collections:
             name: "res_outils_manage"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -624,6 +641,7 @@ collections:
             name: "res_outils_trouble"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -632,6 +650,7 @@ collections:
             name: "res_outils_dir"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -640,6 +659,7 @@ collections:
             name: "res_temple_title"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -648,6 +668,7 @@ collections:
             name: "res_temple_desc"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -656,6 +677,7 @@ collections:
             name: "res_temple_book"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -664,6 +686,7 @@ collections:
             name: "res_temple_fs"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -672,6 +695,7 @@ collections:
             name: "res_temple_dist"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -680,6 +704,7 @@ collections:
             name: "res_autonomie_title"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -688,6 +713,7 @@ collections:
             name: "res_autonomie_desc"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -696,6 +722,7 @@ collections:
             name: "res_entretien_title"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -704,6 +731,7 @@ collections:
             name: "res_entretien_desc"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -712,6 +740,7 @@ collections:
             name: "res_entretien_rdv"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -720,6 +749,7 @@ collections:
             name: "res_entretien_prep"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -728,6 +758,7 @@ collections:
             name: "res_instruire_title"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -736,6 +767,7 @@ collections:
             name: "res_instruire_desc"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -744,6 +776,7 @@ collections:
             name: "res_instruire_sem"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -752,6 +785,7 @@ collections:
             name: "res_instruire_inst"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -760,6 +794,7 @@ collections:
             name: "res_instruire_dim"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -768,6 +803,7 @@ collections:
             name: "res_bulletin_title"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -776,6 +812,7 @@ collections:
             name: "res_bulletin_desc"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -784,6 +821,7 @@ collections:
             name: "res_bulletin_past"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -792,6 +830,7 @@ collections:
             name: "res_bulletin_sub_fr"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -800,18 +839,20 @@ collections:
             name: "res_bulletin_sub_es"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
               - {label: "English",  name: en, widget: string, required: false}
       - name: "tr_pastoral"
         label: "🌿 Service pastoral"
-        file: "data/translations.json"
+        file: "data/i18n/pastoral.json"
         fields:
           - label: "pastoral_fiches"
             name: "pastoral_fiches"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -820,6 +861,7 @@ collections:
             name: "pastoral_guides"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -828,6 +870,7 @@ collections:
             name: "pastoral_about"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -836,6 +879,7 @@ collections:
             name: "fiche_autonomie"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -844,6 +888,7 @@ collections:
             name: "fiche_dependance"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -852,6 +897,7 @@ collections:
             name: "fiche_emotion"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -860,6 +906,7 @@ collections:
             name: "fiche_couple"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -868,6 +915,7 @@ collections:
             name: "fiche_mission"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -876,6 +924,7 @@ collections:
             name: "fiche_avenir"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -884,6 +933,7 @@ collections:
             name: "fiche_histoire"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -892,6 +942,7 @@ collections:
             name: "fiche_spirituel"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -900,6 +951,7 @@ collections:
             name: "fiche_autonomie_desc"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -908,6 +960,7 @@ collections:
             name: "fiche_dependance_desc"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -916,6 +969,7 @@ collections:
             name: "fiche_emotion_desc"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -924,6 +978,7 @@ collections:
             name: "fiche_couple_desc"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -932,6 +987,7 @@ collections:
             name: "fiche_mission_desc"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -940,6 +996,7 @@ collections:
             name: "fiche_avenir_desc"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -948,6 +1005,7 @@ collections:
             name: "fiche_histoire_desc"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -956,18 +1014,20 @@ collections:
             name: "fiche_spirituel_desc"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
               - {label: "English",  name: en, widget: string, required: false}
       - name: "tr_dirigeants"
         label: "📋 Dirigeants"
-        file: "data/translations.json"
+        file: "data/i18n/dirigeants.json"
         fields:
           - label: "dir_vision_title"
             name: "dir_vision_title"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -976,6 +1036,7 @@ collections:
             name: "dir_vision_desc"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -984,6 +1045,7 @@ collections:
             name: "dir_guides_title"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -992,6 +1054,7 @@ collections:
             name: "dir_guides_desc"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -1000,6 +1063,7 @@ collections:
             name: "dir_video_title"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -1008,6 +1072,7 @@ collections:
             name: "dir_video_desc"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -1016,6 +1081,7 @@ collections:
             name: "dir_officiel_title"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -1024,6 +1090,7 @@ collections:
             name: "dir_officiel_desc"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -1032,6 +1099,7 @@ collections:
             name: "dir_type_guide"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -1040,6 +1108,7 @@ collections:
             name: "dir_type_process"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -1048,6 +1117,7 @@ collections:
             name: "dir_type_info"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -1056,6 +1126,7 @@ collections:
             name: "dir_type_information"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -1064,6 +1135,7 @@ collections:
             name: "dir_type_formation"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -1072,6 +1144,7 @@ collections:
             name: "dir_type_video"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -1080,6 +1153,7 @@ collections:
             name: "dir_type_rapport"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -1088,6 +1162,7 @@ collections:
             name: "dir_lcr"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -1096,6 +1171,7 @@ collections:
             name: "dir_manual"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -1104,6 +1180,7 @@ collections:
             name: "dir_calendar"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -1112,18 +1189,20 @@ collections:
             name: "dir_tools"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
               - {label: "English",  name: en, widget: string, required: false}
       - name: "tr_org"
         label: "👥 Organisations"
-        file: "data/translations.json"
+        file: "data/i18n/org.json"
         fields:
           - label: "org_title"
             name: "org_title"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -1132,6 +1211,7 @@ collections:
             name: "org_intro"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -1140,6 +1220,7 @@ collections:
             name: "org_no_contact"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -1148,6 +1229,7 @@ collections:
             name: "org_dir_link"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -1156,6 +1238,7 @@ collections:
             name: "org_presidence"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -1164,6 +1247,7 @@ collections:
             name: "org_grandconseil"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -1172,6 +1256,7 @@ collections:
             name: "org_ss"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -1180,6 +1265,7 @@ collections:
             name: "org_jf"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -1188,6 +1274,7 @@ collections:
             name: "org_jg"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -1196,6 +1283,7 @@ collections:
             name: "org_primaire"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -1204,6 +1292,7 @@ collections:
             name: "org_ecole"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -1212,6 +1301,7 @@ collections:
             name: "org_unites"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -1220,18 +1310,20 @@ collections:
             name: "org_jas"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
               - {label: "English",  name: en, widget: string, required: false}
       - name: "tr_commun"
         label: "⚙️ Interface"
-        file: "data/translations.json"
+        file: "data/i18n/commun.json"
         fields:
           - label: "read_more"
             name: "read_more"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -1240,6 +1332,7 @@ collections:
             name: "visit_official"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -1248,6 +1341,7 @@ collections:
             name: "back_top"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -1256,6 +1350,7 @@ collections:
             name: "loading"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -1264,6 +1359,7 @@ collections:
             name: "external_link"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -1272,6 +1368,7 @@ collections:
             name: "lang_fr"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -1280,6 +1377,7 @@ collections:
             name: "lang_es"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -1288,6 +1386,7 @@ collections:
             name: "lang_en"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
@@ -1296,6 +1395,7 @@ collections:
             name: "footer_rights"
             widget: object
             collapsed: true
+            summary: "{{fields.fr}}"
             fields:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}

@@ -1,0 +1,97 @@
+{
+  "pastoral_fiches": {
+    "fr": "Fiches thématiques",
+    "es": "Fichas temáticas",
+    "en": "Topic Cards"
+  },
+  "pastoral_guides": {
+    "fr": "Guides pratiques",
+    "es": "Guías prácticas",
+    "en": "Practical Guides"
+  },
+  "pastoral_about": {
+    "fr": "À propos du service pastoral",
+    "es": "Acerca del servicio pastoral",
+    "en": "About Pastoral Service"
+  },
+  "fiche_autonomie": {
+    "fr": "Autonomie temporelle",
+    "es": "Autosuficiencia temporal",
+    "en": "Temporal Self-Reliance"
+  },
+  "fiche_dependance": {
+    "fr": "Vaincre la dépendance",
+    "es": "Superar la adicción",
+    "en": "Overcoming Addiction"
+  },
+  "fiche_emotion": {
+    "fr": "Bien-être émotionnel",
+    "es": "Bienestar emocional",
+    "en": "Emotional Wellbeing"
+  },
+  "fiche_couple": {
+    "fr": "Fortifier notre couple",
+    "es": "Fortalecer nuestra pareja",
+    "en": "Strengthening Our Marriage"
+  },
+  "fiche_mission": {
+    "fr": "Œuvre missionnaire",
+    "es": "Obra misional",
+    "en": "Missionary Work"
+  },
+  "fiche_avenir": {
+    "fr": "Tourné vers l'avenir",
+    "es": "Mirando hacia el futuro",
+    "en": "Looking to the Future"
+  },
+  "fiche_histoire": {
+    "fr": "Histoire familiale & Temple",
+    "es": "Historia familiar y Templo",
+    "en": "Family History & Temple"
+  },
+  "fiche_spirituel": {
+    "fr": "Autonomie spirituelle",
+    "es": "Autosuficiencia espiritual",
+    "en": "Spiritual Self-Reliance"
+  },
+  "fiche_autonomie_desc": {
+    "fr": "Ressources pour développer l'indépendance et la résilience financière.",
+    "es": "Recursos para desarrollar la independencia y la resiliencia financiera.",
+    "en": "Resources for developing financial independence and resilience."
+  },
+  "fiche_dependance_desc": {
+    "fr": "Accompagnement pour surmonter diverses formes de dépendance.",
+    "es": "Acompañamiento para superar diversas formas de adicción.",
+    "en": "Support for overcoming various forms of addiction."
+  },
+  "fiche_emotion_desc": {
+    "fr": "Soutien pour le bien-être mental et émotionnel.",
+    "es": "Apoyo para el bienestar mental y emocional.",
+    "en": "Support for mental and emotional wellbeing."
+  },
+  "fiche_couple_desc": {
+    "fr": "Renforcer la relation conjugale par les principes de l'Évangile.",
+    "es": "Fortalecer la relación conyugal mediante los principios del Evangelio.",
+    "en": "Strengthening the marital relationship through Gospel principles."
+  },
+  "fiche_mission_desc": {
+    "fr": "Participer à l'œuvre missionnaire dans votre communauté.",
+    "es": "Participar en la obra misional en su comunidad.",
+    "en": "Participating in missionary work in your community."
+  },
+  "fiche_avenir_desc": {
+    "fr": "Planifier l'avenir avec foi et perspective éternelle.",
+    "es": "Planificar el futuro con fe y perspectiva eterna.",
+    "en": "Planning the future with faith and eternal perspective."
+  },
+  "fiche_histoire_desc": {
+    "fr": "Découvrir vos ancêtres et accomplir l'œuvre du Temple.",
+    "es": "Descubrir a sus antepasados y realizar la obra del Templo.",
+    "en": "Discovering your ancestors and performing Temple work."
+  },
+  "fiche_spirituel_desc": {
+    "fr": "Fortifier votre témoignage et votre vie spirituelle.",
+    "es": "Fortalecer su testimonio y su vida espiritual.",
+    "en": "Strengthening your testimony and spiritual life."
+  }
+}

@@ -1,34 +1,31 @@
 /**
  * TRADUCTIONS — i18n
- * ====================
- * Les chaînes sont chargées depuis data/translations.json (géré par le CMS).
- * Ce fichier ne contient plus les chaînes directement — modifier via /admin.
+ * Chargé depuis data/i18n/*.json (géré par le CMS via /admin).
  */
-
 window.TRANSLATIONS = { fr: {}, es: {}, en: {} };
-window._translationsLoaded = false;
 
-/* Load translations.json and unpack into TRANSLATIONS */
 async function loadTranslations() {
+  const groups = ['nav','accueil','ressources','pastoral','dirigeants','org','commun'];
   try {
-    const res = await fetch('data/translations.json');
-    const data = await res.json();
-    // data is { key: { fr, es, en }, ... }
-    Object.entries(data).forEach(([key, vals]) => {
-      if (vals.fr) window.TRANSLATIONS.fr[key] = vals.fr;
-      if (vals.es) window.TRANSLATIONS.es[key] = vals.es;
-      if (vals.en) window.TRANSLATIONS.en[key] = vals.en;
+    const results = await Promise.all(
+      groups.map(g => fetch(`data/i18n/${g}.json`).then(r => r.json()).catch(() => ({})))
+    );
+    results.forEach(chunk => {
+      Object.entries(chunk).forEach(([key, vals]) => {
+        if (vals.fr) window.TRANSLATIONS.fr[key] = vals.fr;
+        if (vals.es) window.TRANSLATIONS.es[key] = vals.es;
+        if (vals.en) window.TRANSLATIONS.en[key] = vals.en;
+      });
     });
-    window._translationsLoaded = true;
   } catch(e) {
-    console.warn('translations.json not found, using fallback', e);
+    console.warn('Translation load error', e);
   }
 }
 
 function t(key) {
   const lang = window.currentLang || window.SITE_CONFIG?.defaultLang || 'fr';
-  return (window.TRANSLATIONS[lang]?.[key])
-      || (window.TRANSLATIONS['fr']?.[key])
+  return window.TRANSLATIONS[lang]?.[key]
+      || window.TRANSLATIONS['fr']?.[key]
       || key;
 }
 

@@ -1,0 +1,67 @@
+{
+  "org_title": {
+    "fr": "Organisations du Pieu",
+    "es": "Organizaciones de la Estaca",
+    "en": "Stake Organizations"
+  },
+  "org_intro": {
+    "fr": "Les dirigeants du Pieu de Longueuil au service des membres.",
+    "es": "Los líderes de la Estaca Longueuil al servicio de los miembros.",
+    "en": "Longueuil Stake leaders serving the members."
+  },
+  "org_no_contact": {
+    "fr": "Pour contacter un dirigeant, utilisez l'annuaire de l'Église.",
+    "es": "Para contactar a un líder, use el directorio de la Iglesia.",
+    "en": "To contact a leader, use the Church directory."
+  },
+  "org_dir_link": {
+    "fr": "Ouvrir l'annuaire",
+    "es": "Abrir el directorio",
+    "en": "Open directory"
+  },
+  "org_presidence": {
+    "fr": "Présidence de Pieu",
+    "es": "Presidencia de Estaca",
+    "en": "Stake Presidency"
+  },
+  "org_grandconseil": {
+    "fr": "Grand Conseil",
+    "es": "Alto Consejo",
+    "en": "High Council"
+  },
+  "org_ss": {
+    "fr": "Société de Secours",
+    "es": "Sociedad de Socorro",
+    "en": "Relief Society"
+  },
+  "org_jf": {
+    "fr": "Jeunes Filles",
+    "es": "Mujeres Jóvenes",
+    "en": "Young Women"
+  },
+  "org_jg": {
+    "fr": "Jeunes Gens",
+    "es": "Hombres Jóvenes",
+    "en": "Young Men"
+  },
+  "org_primaire": {
+    "fr": "Primaire",
+    "es": "Primaria",
+    "en": "Primary"
+  },
+  "org_ecole": {
+    "fr": "École du Dimanche",
+    "es": "Escuela Dominical",
+    "en": "Sunday School"
+  },
+  "org_unites": {
+    "fr": "Unités du Pieu",
+    "es": "Unidades de la Estaca",
+    "en": "Stake Units"
+  },
+  "org_jas": {
+    "fr": "Jeunes Adultes",
+    "es": "Adultos Jóvenes Solteros",
+    "en": "Young Single Adults"
+  }
+}

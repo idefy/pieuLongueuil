@@ -1,0 +1,137 @@
+{
+  "res_outils_title": {
+    "fr": "Outils & comptes",
+    "es": "Herramientas y cuentas",
+    "en": "Tools & Accounts"
+  },
+  "res_outils_desc": {
+    "fr": "Créer et gérer votre compte de l'Église, accéder à l'annuaire et aux raccourcis utiles.",
+    "es": "Crear y gestionar su cuenta de la Iglesia, acceder al directorio y a los accesos directos.",
+    "en": "Create and manage your Church account, access the directory and useful shortcuts."
+  },
+  "res_outils_create": {
+    "fr": "Créer un compte",
+    "es": "Crear una cuenta",
+    "en": "Create an account"
+  },
+  "res_outils_manage": {
+    "fr": "Gérer mon compte",
+    "es": "Gestionar mi cuenta",
+    "en": "Manage my account"
+  },
+  "res_outils_trouble": {
+    "fr": "Problème de connexion",
+    "es": "Problema de inicio de sesión",
+    "en": "Login issues"
+  },
+  "res_outils_dir": {
+    "fr": "Annuaire des membres",
+    "es": "Directorio de miembros",
+    "en": "Member directory"
+  },
+  "res_temple_title": {
+    "fr": "Temple & Histoire familiale",
+    "es": "Templo e Historia familiar",
+    "en": "Temple & Family History"
+  },
+  "res_temple_desc": {
+    "fr": "Réservation pour le temple, FamilySearch, centre de distribution.",
+    "es": "Reservas para el templo, FamilySearch, centro de distribución.",
+    "en": "Temple reservations, FamilySearch, distribution center."
+  },
+  "res_temple_book": {
+    "fr": "Temple",
+    "es": "Templo",
+    "en": "Temple"
+  },
+  "res_temple_fs": {
+    "fr": "FamilySearch",
+    "es": "FamilySearch",
+    "en": "FamilySearch"
+  },
+  "res_temple_dist": {
+    "fr": "Centre de distribution",
+    "es": "Centro de distribución",
+    "en": "Distribution center"
+  },
+  "res_autonomie_title": {
+    "fr": "Autonomie",
+    "es": "Autosuficiencia",
+    "en": "Self-Reliance"
+  },
+  "res_autonomie_desc": {
+    "fr": "Ressources pour l'autonomie temporelle et spirituelle de votre famille.",
+    "es": "Recursos para la autosuficiencia temporal y espiritual de su familia.",
+    "en": "Resources for temporal and spiritual self-reliance for your family."
+  },
+  "res_entretien_title": {
+    "fr": "Entretiens & rendez-vous",
+    "es": "Entrevistas y citas",
+    "en": "Interviews & Appointments"
+  },
+  "res_entretien_desc": {
+    "fr": "Prendre rendez-vous et se préparer à un entretien avec un dirigeant.",
+    "es": "Pedir cita y prepararse para una entrevista con un líder.",
+    "en": "Schedule an appointment and prepare for an interview with a leader."
+  },
+  "res_entretien_rdv": {
+    "fr": "Prendre rendez-vous",
+    "es": "Pedir cita",
+    "en": "Schedule appointment"
+  },
+  "res_entretien_prep": {
+    "fr": "Se préparer à un entretien",
+    "es": "Prepararse para una entrevista",
+    "en": "Prepare for an interview"
+  },
+  "res_instruire_title": {
+    "fr": "S'instruire",
+    "es": "Instrucción",
+    "en": "Learning"
+  },
+  "res_instruire_desc": {
+    "fr": "Séminaire, Institut, réunions du dimanche et ressources d'étude.",
+    "es": "Seminario, Instituto, reuniones dominicales y recursos de estudio.",
+    "en": "Seminary, Institute, Sunday meetings and study resources."
+  },
+  "res_instruire_sem": {
+    "fr": "Séminaire",
+    "es": "Seminario",
+    "en": "Seminary"
+  },
+  "res_instruire_inst": {
+    "fr": "Institut",
+    "es": "Instituto",
+    "en": "Institute"
+  },
+  "res_instruire_dim": {
+    "fr": "Réunions du dimanche",
+    "es": "Reuniones dominicales",
+    "en": "Sunday meetings"
+  },
+  "res_bulletin_title": {
+    "fr": "Bulletin & réseaux",
+    "es": "Boletín y redes",
+    "en": "Newsletter & Social"
+  },
+  "res_bulletin_desc": {
+    "fr": "S'inscrire au bulletin hebdomadaire et suivre nos réseaux sociaux.",
+    "es": "Suscribirse al boletín semanal y seguir nuestras redes sociales.",
+    "en": "Subscribe to the weekly newsletter and follow our social media."
+  },
+  "res_bulletin_past": {
+    "fr": "Voir les bulletins passés",
+    "es": "Ver boletines anteriores",
+    "en": "View past bulletins"
+  },
+  "res_bulletin_sub_fr": {
+    "fr": "S'inscrire (Français)",
+    "es": "Suscribirse (Français)",
+    "en": "Subscribe (Français)"
+  },
+  "res_bulletin_sub_es": {
+    "fr": "Inscribirse (Español)",
+    "es": "Inscribirse (Español)",
+    "en": "Subscribe (Español)"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "nav_home": {
+    "fr": "Accueil",
+    "es": "Inicio",
+    "en": "Home"
+  },
+  "nav_ressources": {
+    "fr": "Ressources",
+    "es": "Recursos",
+    "en": "Resources"
+  },
+  "nav_pastoral": {
+    "fr": "Service pastoral",
+    "es": "Servicio pastoral",
+    "en": "Pastoral Service"
+  },
+  "nav_dirigeants": {
+    "fr": "Dirigeants",
+    "es": "Líderes",
+    "en": "Leaders"
+  },
+  "nav_organisations": {
+    "fr": "Organisations",
+    "es": "Organizaciones",
+    "en": "Organizations"
+  }
+}
