@@ -97,9 +97,9 @@
       "photo": "/assets/leaders-laurent-groux.png",
       "active": true,
       "responsibility": {
-        "fr": "",
-        "es": "",
-        "en": ""
+        "fr": "Victoria, Œuvre du Temple, histoire familiale",
+        "es": "Victoria, Obras del Templo, historia familiar",
+        "en": "Victoria, Temple Works, family history"
       }
     },
     {
@@ -114,9 +114,9 @@
       "photo": "/assets/leaders-yan-bergeron.jpg",
       "active": true,
       "responsibility": {
-        "fr": "",
-        "es": "",
-        "en": ""
+        "fr": "Jeunes Gens",
+        "es": "Hombres Jóvenes ",
+        "en": "Young Men"
       }
     },
     {
@@ -131,9 +131,9 @@
       "photo": "/assets/leaders-claude-montminy.jpg",
       "active": true,
       "responsibility": {
-        "fr": "",
-        "es": "",
-        "en": ""
+        "fr": "St-Luc, Adultes Seuls",
+        "es": "St-Luc, Adultos Solteros",
+        "en": "St-Luc, Single Adults"
       }
     },
     {
@@ -148,9 +148,9 @@
       "photo": "/assets/leaders-francois-bessette.jpg",
       "active": true,
       "responsibility": {
-        "fr": "",
-        "es": "",
-        "en": ""
+        "fr": "Biens et immeubles + Plan d’urgence",
+        "es": "Activos y edificios + Plan de emergencia",
+        "en": "Assets and buildings + Emergency plan"
       }
     },
     {
@@ -165,9 +165,9 @@
       "photo": "/assets/leaders-philippe-bouchard.jpg",
       "active": true,
       "responsibility": {
-        "fr": "",
-        "es": "",
-        "en": ""
+        "fr": "Sherbrooke, Jeunes Adultes Seuls ",
+        "es": "Sherbrooke, Jóvenes Adultos Solteros ",
+        "en": "Sherbrooke, Young Single Adults"
       }
     },
     {
@@ -182,9 +182,9 @@
       "photo": "/assets/leaders-olivier-carter.jpg",
       "active": true,
       "responsibility": {
-        "fr": "",
-        "es": "",
-        "en": ""
+        "fr": "Longueuil, Séminaire et Institut",
+        "es": "Longueuil, Seminario e Instituto ",
+        "en": "Longueuil, Seminary and Institute "
       }
     },
     {
@@ -199,9 +199,9 @@
       "photo": "/assets/leaders-alain-quevedo.jpg",
       "active": true,
       "responsibility": {
-        "fr": "",
-        "es": "",
-        "en": ""
+        "fr": "St-Hilaire, École du Dimanche ",
+        "es": "St-Hilaire, Escuela Dominical ",
+        "en": "St-Hilaire, Sunday School"
       }
     },
     {
@@ -216,9 +216,9 @@
       "photo": "/assets/leaders-richard-gingras.jpg",
       "active": true,
       "responsibility": {
-        "fr": "",
-        "es": "",
-        "en": ""
+        "fr": "Granby, œuvre Missionnaire ",
+        "es": "Granby, Obra Misional",
+        "en": "Granby, Missionnaire Work"
       }
     },
     {
@@ -233,9 +233,9 @@
       "photo": "/assets/leaders-wesley-olsen.jpg",
       "active": true,
       "responsibility": {
-        "fr": "",
-        "es": "",
-        "en": ""
+        "fr": "Lemoyne, Jeunes Filles",
+        "es": "Lemoyne, Mujeres Jóvenes ",
+        "en": "Lemoyne, Young Women"
       }
     },
     {
@@ -250,9 +250,9 @@
       "photo": "/assets/leaders-david-pelchat.jpg",
       "active": true,
       "responsibility": {
-        "fr": "",
-        "es": "",
-        "en": ""
+        "fr": "Drummondville, Entraide et Autonomie ",
+        "es": "Drummondville, Ayuda Mutua y Autonomía",
+        "en": "Drummondville, Mutual Aid and Autonomy"
       }
     },
     {
