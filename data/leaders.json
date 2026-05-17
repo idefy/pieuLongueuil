@@ -136,7 +136,7 @@
         "en": ""
       }
     },
-	{
+    {
       "id": "gc-04",
       "org": "grandconseil",
       "role": {
@@ -153,7 +153,7 @@
         "en": ""
       }
     },
-	{
+    {
       "id": "gc-05",
       "org": "grandconseil",
       "role": {
@@ -170,7 +170,7 @@
         "en": ""
       }
     },
-	{
+    {
       "id": "gc-06",
       "org": "grandconseil",
       "role": {
@@ -187,7 +187,7 @@
         "en": ""
       }
     },
-	{
+    {
       "id": "gc-07",
       "org": "grandconseil",
       "role": {
@@ -204,7 +204,7 @@
         "en": ""
       }
     },
-	{
+    {
       "id": "gc-08",
       "org": "grandconseil",
       "role": {
@@ -221,7 +221,7 @@
         "en": ""
       }
     },
-	{
+    {
       "id": "gc-09",
       "org": "grandconseil",
       "role": {
@@ -238,7 +238,7 @@
         "en": ""
       }
     },
-	{
+    {
       "id": "gc-10",
       "org": "grandconseil",
       "role": {
@@ -255,7 +255,7 @@
         "en": ""
       }
     },
-	{
+    {
       "id": "gc-11",
       "org": "grandconseil",
       "role": {
@@ -272,7 +272,7 @@
         "en": ""
       }
     },
-	{
+    {
       "id": "gc-12",
       "org": "grandconseil",
       "role": {
@@ -306,7 +306,7 @@
         "en": ""
       }
     },
-	{
+    {
       "id": "1conseil-ss",
       "org": "ss",
       "role": {
@@ -323,7 +323,7 @@
         "en": ""
       }
     },
-	{
+    {
       "id": "2cons-ss",
       "org": "ss",
       "role": {
@@ -340,7 +340,7 @@
         "en": ""
       }
     },
-	{
+    {
       "id": "sec-ss",
       "org": "ss",
       "role": {
@@ -357,7 +357,7 @@
         "en": ""
       }
     },
-	    {
+    {
       "id": "presidente-jf",
       "org": "jf",
       "role": {
@@ -374,7 +374,7 @@
         "en": ""
       }
     },
-	{
+    {
       "id": "1conseil-jf",
       "org": "jf",
       "role": {
@@ -391,7 +391,7 @@
         "en": ""
       }
     },
-	{
+    {
       "id": "2conseil-jf",
       "org": "jf",
       "role": {
@@ -408,7 +408,7 @@
         "en": ""
       }
     },
-	{
+    {
       "id": "sec-jf",
       "org": "jf",
       "role": {
@@ -434,7 +434,7 @@
         "en": "Young Men President"
       },
       "name": "Yan Bergeron",
-      "photo": "assets/leaders-placeholder.jpg",
+      "photo": "https://ws.churchofjesuschrist.org/api/mlu/scdn/v2/img/68d19e16-21c5-4ae9-b397-c867aabaeaad/MEDIUM",
       "active": true,
       "responsibility": {
         "fr": "",
@@ -442,7 +442,7 @@
         "en": ""
       }
     },
-	{
+    {
       "id": "1conseil-jg",
       "org": "jg",
       "role": {
@@ -459,7 +459,7 @@
         "en": ""
       }
     },
-	{
+    {
       "id": "2conseil-jg",
       "org": "jg",
       "role": {
@@ -476,7 +476,7 @@
         "en": ""
       }
     },
-	{
+    {
       "id": "sec-jg",
       "org": "jg",
       "role": {
@@ -502,7 +502,7 @@
         "en": "Primary President"
       },
       "name": "Sonia Khalil",
-      "photo": "assets/leaders-placeholder.jpg",
+      "photo": "https://ws.churchofjesuschrist.org/api/mlu/scdn/v2/img/ac67b825-3587-4322-bb22-718b5428bc97/MEDIUM",
       "active": true,
       "responsibility": {
         "fr": "",
@@ -510,7 +510,7 @@
         "en": ""
       }
     },
-	{
+    {
       "id": "1conseil-prim",
       "org": "primaire",
       "role": {
@@ -527,7 +527,7 @@
         "en": ""
       }
     },
-	{
+    {
       "id": "2conseil-prim",
       "org": "primaire",
       "role": {
@@ -536,7 +536,7 @@
         "en": "Second Counselor"
       },
       "name": "Jennifer Alvarenga",
-      "photo": "assets/leaders-placeholder.jpg",
+      "photo": "https://ws.churchofjesuschrist.org/api/mlu/scdn/v2/img/c56f2606-75f2-404b-bfa2-b3e1647bcd0b/MEDIUM",
       "active": true,
       "responsibility": {
         "fr": "",
@@ -544,7 +544,7 @@
         "en": ""
       }
     },
-	{
+    {
       "id": "sec-prim",
       "org": "primaire",
       "role": {
@@ -553,7 +553,7 @@
         "en": "Secretary"
       },
       "name": "Marie-Josée Bergeron",
-      "photo": "assets/leaders-placeholder.jpg",
+      "photo": "https://ws.churchofjesuschrist.org/api/mlu/scdn/v2/img/ac1d7379-6996-4c08-8681-41901c8fa4a3/MEDIUM",
       "active": true,
       "responsibility": {
         "fr": "",
@@ -578,7 +578,7 @@
         "en": ""
       }
     },
-	{
+    {
       "id": "1conseil-ed",
       "org": "ed",
       "role": {
@@ -595,7 +595,7 @@
         "en": ""
       }
     },
-	{
+    {
       "id": "2conseil-ed",
       "org": "ed",
       "role": {
@@ -612,7 +612,7 @@
         "en": ""
       }
     },
-	{
+    {
       "id": "sec-ed",
       "org": "ed",
       "role": {
