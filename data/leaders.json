@@ -93,7 +93,7 @@
         "es": "Alto Consejo",
         "en": "High Council"
       },
-      "name": "Prénom Nom",
+      "name": "Laurent Groux",
       "photo": "assets/leaders-placeholder.jpg",
       "active": true,
       "responsibility": {
@@ -110,7 +110,7 @@
         "es": "Alto Consejo",
         "en": "High Council"
       },
-      "name": "Prénom Nom",
+      "name": "Yan Bergeron",
       "photo": "assets/leaders-placeholder.jpg",
       "active": true,
       "responsibility": {
@@ -121,6 +121,159 @@
     },
     {
       "id": "gc-03",
+      "org": "grandconseil",
+      "role": {
+        "fr": "Grand Conseil",
+        "es": "Alto Consejo",
+        "en": "High Council"
+      },
+      "name": "Claude Montminy",
+      "photo": "assets/leaders-placeholder.jpg",
+      "active": true,
+      "responsibility": {
+        "fr": "",
+        "es": "",
+        "en": ""
+      }
+    },
+	{
+      "id": "gc-04",
+      "org": "grandconseil",
+      "role": {
+        "fr": "Grand Conseil",
+        "es": "Alto Consejo",
+        "en": "High Council"
+      },
+      "name": "François Bessette",
+      "photo": "assets/leaders-placeholder.jpg",
+      "active": true,
+      "responsibility": {
+        "fr": "",
+        "es": "",
+        "en": ""
+      }
+    },
+	{
+      "id": "gc-05",
+      "org": "grandconseil",
+      "role": {
+        "fr": "Grand Conseil",
+        "es": "Alto Consejo",
+        "en": "High Council"
+      },
+      "name": "Philippe Bouchard",
+      "photo": "assets/leaders-placeholder.jpg",
+      "active": true,
+      "responsibility": {
+        "fr": "",
+        "es": "",
+        "en": ""
+      }
+    },
+	{
+      "id": "gc-06",
+      "org": "grandconseil",
+      "role": {
+        "fr": "Grand Conseil",
+        "es": "Alto Consejo",
+        "en": "High Council"
+      },
+      "name": "Olivier Carter",
+      "photo": "assets/leaders-placeholder.jpg",
+      "active": true,
+      "responsibility": {
+        "fr": "",
+        "es": "",
+        "en": ""
+      }
+    },
+	{
+      "id": "gc-07",
+      "org": "grandconseil",
+      "role": {
+        "fr": "Grand Conseil",
+        "es": "Alto Consejo",
+        "en": "High Council"
+      },
+      "name": "Alain Quevedo",
+      "photo": "assets/leaders-placeholder.jpg",
+      "active": true,
+      "responsibility": {
+        "fr": "",
+        "es": "",
+        "en": ""
+      }
+    },
+	{
+      "id": "gc-08",
+      "org": "grandconseil",
+      "role": {
+        "fr": "Grand Conseil",
+        "es": "Alto Consejo",
+        "en": "High Council"
+      },
+      "name": "Richard Gringras",
+      "photo": "assets/leaders-placeholder.jpg",
+      "active": true,
+      "responsibility": {
+        "fr": "",
+        "es": "",
+        "en": ""
+      }
+    },
+	{
+      "id": "gc-09",
+      "org": "grandconseil",
+      "role": {
+        "fr": "Grand Conseil",
+        "es": "Alto Consejo",
+        "en": "High Council"
+      },
+      "name": "Wesley Olsen",
+      "photo": "assets/leaders-placeholder.jpg",
+      "active": true,
+      "responsibility": {
+        "fr": "",
+        "es": "",
+        "en": ""
+      }
+    },
+	{
+      "id": "gc-10",
+      "org": "grandconseil",
+      "role": {
+        "fr": "Grand Conseil",
+        "es": "Alto Consejo",
+        "en": "High Council"
+      },
+      "name": "David Pelchat",
+      "photo": "assets/leaders-placeholder.jpg",
+      "active": true,
+      "responsibility": {
+        "fr": "",
+        "es": "",
+        "en": ""
+      }
+    },
+	{
+      "id": "gc-11",
+      "org": "grandconseil",
+      "role": {
+        "fr": "Grand Conseil",
+        "es": "Alto Consejo",
+        "en": "High Council"
+      },
+      "name": "Prénom Nom",
+      "photo": "assets/leaders-placeholder.jpg",
+      "active": true,
+      "responsibility": {
+        "fr": "",
+        "es": "",
+        "en": ""
+      }
+    },
+	{
+      "id": "gc-12",
       "org": "grandconseil",
       "role": {
         "fr": "Grand Conseil",
@@ -144,7 +297,7 @@
         "es": "Presidenta de Sociedad de Socorro",
         "en": "Relief Society President"
       },
-      "name": "Prénom Nom",
+      "name": "Émilie Bouchard",
       "photo": "assets/leaders-placeholder.jpg",
       "active": true,
       "responsibility": {
@@ -153,7 +306,58 @@
         "en": ""
       }
     },
-    {
+	{
+      "id": "1conseil-ss",
+      "org": "ss",
+      "role": {
+        "fr": "Première Conseillère",
+        "es": "Primera Consejera",
+        "en": "First Counselor"
+      },
+      "name": "Patricia Chamale",
+      "photo": "assets/leaders-placeholder.jpg",
+      "active": true,
+      "responsibility": {
+        "fr": "",
+        "es": "",
+        "en": ""
+      }
+    },
+	{
+      "id": "2cons-ss",
+      "org": "ss",
+      "role": {
+        "fr": "Deuxième Conseillère",
+        "es": "Segunda Consejera",
+        "en": "Second Counselor"
+      },
+      "name": "Denise Hébert",
+      "photo": "assets/leaders-placeholder.jpg",
+      "active": true,
+      "responsibility": {
+        "fr": "",
+        "es": "",
+        "en": ""
+      }
+    },
+	{
+      "id": "sec-ss",
+      "org": "ss",
+      "role": {
+        "fr": "Secrétaire",
+        "es": "Secretaria",
+        "en": "Secretary"
+      },
+      "name": "Chantale Blain",
+      "photo": "assets/leaders-placeholder.jpg",
+      "active": true,
+      "responsibility": {
+        "fr": "",
+        "es": "",
+        "en": ""
+      }
+    },
+	    {
       "id": "presidente-jf",
       "org": "jf",
       "role": {
@@ -161,7 +365,58 @@
         "es": "Presidenta de Mujeres Jóvenes",
         "en": "Young Women President"
       },
-      "name": "Prénom Nom",
+      "name": "Karina Mora",
+      "photo": "assets/leaders-placeholder.jpg",
+      "active": true,
+      "responsibility": {
+        "fr": "",
+        "es": "",
+        "en": ""
+      }
+    },
+	{
+      "id": "1conseil-jf",
+      "org": "jf",
+      "role": {
+        "fr": "Première Conseillère",
+        "es": "Primera Consejera",
+        "en": "First Counselor"
+      },
+      "name": "Sandra Lopez",
+      "photo": "assets/leaders-placeholder.jpg",
+      "active": true,
+      "responsibility": {
+        "fr": "",
+        "es": "",
+        "en": ""
+      }
+    },
+	{
+      "id": "2conseil-jf",
+      "org": "jf",
+      "role": {
+        "fr": "Deuxième Conseillère",
+        "es": "Segunda Consejera",
+        "en": "Second Counselor"
+      },
+      "name": "Emilie Marsan",
+      "photo": "assets/leaders-placeholder.jpg",
+      "active": true,
+      "responsibility": {
+        "fr": "",
+        "es": "",
+        "en": ""
+      }
+    },
+	{
+      "id": "sec-jf",
+      "org": "jf",
+      "role": {
+        "fr": "Secrétaire",
+        "es": "Secretaria",
+        "en": "Secretary"
+      },
+      "name": "Regina Lara",
       "photo": "assets/leaders-placeholder.jpg",
       "active": true,
       "responsibility": {
@@ -177,6 +432,57 @@
         "fr": "Président des Jeunes Gens",
         "es": "Presidente de Hombres Jóvenes",
         "en": "Young Men President"
+      },
+      "name": "Yan Bergeron",
+      "photo": "assets/leaders-placeholder.jpg",
+      "active": true,
+      "responsibility": {
+        "fr": "",
+        "es": "",
+        "en": ""
+      }
+    },
+	{
+      "id": "1conseil-jg",
+      "org": "jg",
+      "role": {
+        "fr": "Premier Conseiller",
+        "es": "Primero Consejero",
+        "en": "First Counselor"
+      },
+      "name": "Kevin Morrison",
+      "photo": "assets/leaders-placeholder.jpg",
+      "active": true,
+      "responsibility": {
+        "fr": "",
+        "es": "",
+        "en": ""
+      }
+    },
+	{
+      "id": "2conseil-jg",
+      "org": "jg",
+      "role": {
+        "fr": "Deuxième Conseiller",
+        "es": "Segundo Consejero",
+        "en": "Second Counselor"
+      },
+      "name": "Prénom Nom",
+      "photo": "assets/leaders-placeholder.jpg",
+      "active": true,
+      "responsibility": {
+        "fr": "",
+        "es": "",
+        "en": ""
+      }
+    },
+	{
+      "id": "sec-jg",
+      "org": "jg",
+      "role": {
+        "fr": "Secrétaire",
+        "es": "Secretaria",
+        "en": "Secretary"
       },
       "name": "Prénom Nom",
       "photo": "assets/leaders-placeholder.jpg",
@@ -195,7 +501,58 @@
         "es": "Presidenta de la Primaria",
         "en": "Primary President"
       },
+      "name": "Sonia Khalil",
+      "photo": "assets/leaders-placeholder.jpg",
+      "active": true,
+      "responsibility": {
+        "fr": "",
+        "es": "",
+        "en": ""
+      }
+    },
+	{
+      "id": "1conseil-prim",
+      "org": "primaire",
+      "role": {
+        "fr": "Première Conseillère",
+        "es": "Primera Consejera",
+        "en": "First Counselor"
+      },
       "name": "Prénom Nom",
+      "photo": "assets/leaders-placeholder.jpg",
+      "active": true,
+      "responsibility": {
+        "fr": "",
+        "es": "",
+        "en": ""
+      }
+    },
+	{
+      "id": "2conseil-prim",
+      "org": "primaire",
+      "role": {
+        "fr": "Deuxième Conseillère",
+        "es": "Segunda Consejera",
+        "en": "Second Counselor"
+      },
+      "name": "Jennifer Alvarenga",
+      "photo": "assets/leaders-placeholder.jpg",
+      "active": true,
+      "responsibility": {
+        "fr": "",
+        "es": "",
+        "en": ""
+      }
+    },
+	{
+      "id": "sec-prim",
+      "org": "primaire",
+      "role": {
+        "fr": "Secrétaire",
+        "es": "Secretaria",
+        "en": "Secretary"
+      },
+      "name": "Marie-Josée Bergeron",
       "photo": "assets/leaders-placeholder.jpg",
       "active": true,
       "responsibility": {
@@ -206,11 +563,62 @@
     },
     {
       "id": "president-ecole",
-      "org": "ecole",
+      "org": "ed",
       "role": {
         "fr": "Président de l'École du Dimanche",
         "es": "Presidente de la Escuela Dominical",
         "en": "Sunday School President"
+      },
+      "name": "Alain Quevedo",
+      "photo": "assets/leaders-placeholder.jpg",
+      "active": true,
+      "responsibility": {
+        "fr": "",
+        "es": "",
+        "en": ""
+      }
+    },
+	{
+      "id": "1conseil-ed",
+      "org": "ed",
+      "role": {
+        "fr": "Premier Conseiller",
+        "es": "Primero Consejero",
+        "en": "First Counselor"
+      },
+      "name": "Serge Cloix",
+      "photo": "assets/leaders-placeholder.jpg",
+      "active": true,
+      "responsibility": {
+        "fr": "",
+        "es": "",
+        "en": ""
+      }
+    },
+	{
+      "id": "2conseil-ed",
+      "org": "ed",
+      "role": {
+        "fr": "Deuxième Conseiller",
+        "es": "Segundo Consejero",
+        "en": "Second Counselor"
+      },
+      "name": "Prénom Nom",
+      "photo": "assets/leaders-placeholder.jpg",
+      "active": true,
+      "responsibility": {
+        "fr": "",
+        "es": "",
+        "en": ""
+      }
+    },
+	{
+      "id": "sec-ed",
+      "org": "ed",
+      "role": {
+        "fr": "Secrétaire",
+        "es": "Secretaria",
+        "en": "Secretary"
       },
       "name": "Prénom Nom",
       "photo": "assets/leaders-placeholder.jpg",
