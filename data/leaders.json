@@ -434,7 +434,7 @@
         "en": "Young Men President"
       },
       "name": "Yan Bergeron",
-      "photo": "https://ws.churchofjesuschrist.org/api/mlu/scdn/v2/img/68d19e16-21c5-4ae9-b397-c867aabaeaad/MEDIUM",
+      "photo": "/assets/leaders-yan-bergeron.jpg",
       "active": true,
       "responsibility": {
         "fr": "",
@@ -451,7 +451,7 @@
         "en": "First Counselor"
       },
       "name": "Kevin Morrison",
-      "photo": "assets/leaders-placeholder.jpg",
+      "photo": "/assets/leaders-kevin-morrison.jpg",
       "active": true,
       "responsibility": {
         "fr": "",
