@@ -247,7 +247,7 @@
         "en": "High Council"
       },
       "name": "David Pelchat",
-      "photo": "/assets/leaders-david-pelchat.jfif",
+      "photo": "/assets/leaders-david-pelchat.jpg",
       "active": true,
       "responsibility": {
         "fr": "",
@@ -366,7 +366,7 @@
         "en": "Young Women President"
       },
       "name": "Karina Mora",
-      "photo": "assets/leaders-placeholder.jpg",
+      "photo": "/assets/leaders-karina-mora.jpg",
       "active": true,
       "responsibility": {
         "fr": "",
@@ -383,7 +383,7 @@
         "en": "First Counselor"
       },
       "name": "Sandra Lopez",
-      "photo": "assets/leaders-placeholder.jpg",
+      "photo": "/assets/leaders-sandra-lopez.jpg",
       "active": true,
       "responsibility": {
         "fr": "",
@@ -400,7 +400,7 @@
         "en": "Second Counselor"
       },
       "name": "Emilie Marsan",
-      "photo": "assets/leaders-placeholder.jpg",
+      "photo": "/assets/leaders-emilie-marsan.jpg",
       "active": true,
       "responsibility": {
         "fr": "",
@@ -417,7 +417,7 @@
         "en": "Secretary"
       },
       "name": "Regina Lara",
-      "photo": "assets/leaders-placeholder.jpg",
+      "photo": "/assets/leaders-regina-lara.jpg",
       "active": true,
       "responsibility": {
         "fr": "",
@@ -502,7 +502,7 @@
         "en": "Primary President"
       },
       "name": "Sonia Khalil",
-      "photo": "https://ws.churchofjesuschrist.org/api/mlu/scdn/v2/img/ac67b825-3587-4322-bb22-718b5428bc97/MEDIUM",
+      "photo": "/assets/leaders-sonia-khalil.jpg",
       "active": true,
       "responsibility": {
         "fr": "",
@@ -536,7 +536,7 @@
         "en": "Second Counselor"
       },
       "name": "Jennifer Alvarenga",
-      "photo": "https://ws.churchofjesuschrist.org/api/mlu/scdn/v2/img/c56f2606-75f2-404b-bfa2-b3e1647bcd0b/MEDIUM",
+      "photo": "/assets/leaders-jennifer-alvarenga.jpg",
       "active": true,
       "responsibility": {
         "fr": "",
@@ -553,7 +553,7 @@
         "en": "Secretary"
       },
       "name": "Marie-Josée Bergeron",
-      "photo": "https://ws.churchofjesuschrist.org/api/mlu/scdn/v2/img/ac1d7379-6996-4c08-8681-41901c8fa4a3/MEDIUM",
+      "photo": "/assets/leaders-marie-josee-bergeron.jpg",
       "active": true,
       "responsibility": {
         "fr": "",
@@ -587,7 +587,7 @@
         "en": "First Counselor"
       },
       "name": "Jean-Serge Cloix",
-      "photo": "assets/leaders-placeholder.jpg",
+      "photo": "/assets/leaders-jean-serge-cloix.jpg",
       "active": true,
       "responsibility": {
         "fr": "",
