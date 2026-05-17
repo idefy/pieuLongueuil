@@ -298,7 +298,7 @@
         "en": "Relief Society President"
       },
       "name": "Émilie Bouchard",
-      "photo": "assets/leaders-placeholder.jpg",
+      "photo": "/assets/leaders-emilie-provost.jpg",
       "active": true,
       "responsibility": {
         "fr": "",
@@ -315,7 +315,7 @@
         "en": "First Counselor"
       },
       "name": "Patricia Chamale",
-      "photo": "assets/leaders-placeholder.jpg",
+      "photo": "/assets/leaders-patricia-chamale.jpg",
       "active": true,
       "responsibility": {
         "fr": "",
@@ -348,8 +348,8 @@
         "es": "Secretaria",
         "en": "Secretary"
       },
-      "name": "Chantale Blain",
-      "photo": "assets/leaders-placeholder.jpg",
+      "name": "Chantal Blain",
+      "photo": "/assets/ledaers-chantal-blain.jpg",
       "active": true,
       "responsibility": {
         "fr": "",
