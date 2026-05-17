@@ -94,7 +94,7 @@
         "en": "High Council"
       },
       "name": "Laurent Groux",
-      "photo": "assets/leaders-placeholder.jpg",
+      "photo": "/assets/leaders-laurent-groux.png",
       "active": true,
       "responsibility": {
         "fr": "",
@@ -111,7 +111,7 @@
         "en": "High Council"
       },
       "name": "Yan Bergeron",
-      "photo": "assets/leaders-placeholder.jpg",
+      "photo": "/assets/leaders-yan-bergeron.jpg",
       "active": true,
       "responsibility": {
         "fr": "",
@@ -128,7 +128,7 @@
         "en": "High Council"
       },
       "name": "Claude Montminy",
-      "photo": "assets/leaders-placeholder.jpg",
+      "photo": "/assets/leaders-claude-montminy.jpg",
       "active": true,
       "responsibility": {
         "fr": "",
@@ -145,7 +145,7 @@
         "en": "High Council"
       },
       "name": "François Bessette",
-      "photo": "assets/leaders-placeholder.jpg",
+      "photo": "/assets/leaders-francois-bessette.jpg",
       "active": true,
       "responsibility": {
         "fr": "",
@@ -162,7 +162,7 @@
         "en": "High Council"
       },
       "name": "Philippe Bouchard",
-      "photo": "assets/leaders-placeholder.jpg",
+      "photo": "/assets/leaders-philippe-bouchard.jpg",
       "active": true,
       "responsibility": {
         "fr": "",
@@ -179,7 +179,7 @@
         "en": "High Council"
       },
       "name": "Olivier Carter",
-      "photo": "assets/leaders-placeholder.jpg",
+      "photo": "/assets/leaders-olivier-carter.jpg",
       "active": true,
       "responsibility": {
         "fr": "",
@@ -196,7 +196,7 @@
         "en": "High Council"
       },
       "name": "Alain Quevedo",
-      "photo": "assets/leaders-placeholder.jpg",
+      "photo": "/assets/leaders-alain-quevedo.jpg",
       "active": true,
       "responsibility": {
         "fr": "",
@@ -213,7 +213,7 @@
         "en": "High Council"
       },
       "name": "Richard Gringras",
-      "photo": "assets/leaders-placeholder.jpg",
+      "photo": "/assets/leaders-richard-gingras.jpg",
       "active": true,
       "responsibility": {
         "fr": "",
@@ -230,7 +230,7 @@
         "en": "High Council"
       },
       "name": "Wesley Olsen",
-      "photo": "assets/leaders-placeholder.jpg",
+      "photo": "/assets/leaders-wesley-olsen.jpg",
       "active": true,
       "responsibility": {
         "fr": "",
@@ -247,7 +247,7 @@
         "en": "High Council"
       },
       "name": "David Pelchat",
-      "photo": "assets/leaders-placeholder.jpg",
+      "photo": "/assets/leaders-david-pelchat.jfif",
       "active": true,
       "responsibility": {
         "fr": "",
@@ -570,7 +570,7 @@
         "en": "Sunday School President"
       },
       "name": "Alain Quevedo",
-      "photo": "assets/leaders-placeholder.jpg",
+      "photo": "/assets/leaders-alain-quevedo.jpg",
       "active": true,
       "responsibility": {
         "fr": "",
