@@ -91,7 +91,7 @@ function renderRessources() {
       const iconFn = {settings:svgSettings,star:svgStar,trendingUp:svgTrend,calendar:svgCal,book:svgBook,mail:svgMail,heart:svgHeart,users:svgUsers,globe:svgGlobe,file:svgFile,database:svgDb}[c.icon] || svgFile;
       const linksHtml = (c.links||[]).map(l => {
         const label = l.label?.[lang] || l.label?.fr || l['label_'+lang] || l.label_fr || (l.labelKey ? t(l.labelKey) : '');
-        const href  = l.href || '#';
+        const href  = l['href_'+lang] || l.href || '#';  // per-language URL override if set
         const isModal = href.startsWith('modal:');
         const isExt   = href.startsWith('http');
         const modalId = isModal ? href.slice(6) : '';

@@ -16,15 +16,24 @@
       "links": [
         {
           "labelKey": "res_outils_create",
-          "href": "modal:compte-eglise"
+          "href": "modal:compte-eglise",
+          "href_fr": "",
+          "href_es": "",
+          "href_en": ""
         },
         {
           "labelKey": "res_outils_manage",
-          "href": "modal:compte-eglise"
+          "href": "modal:compte-eglise",
+          "href_fr": "",
+          "href_es": "",
+          "href_en": ""
         },
         {
           "labelKey": "res_outils_dir",
-          "href": "https://www.churchofjesuschrist.org/directory"
+          "href": "https://www.churchofjesuschrist.org/directory",
+          "href_fr": "",
+          "href_es": "",
+          "href_en": ""
         }
       ]
     },
@@ -44,15 +53,24 @@
       "links": [
         {
           "labelKey": "res_temple_book",
-          "href": "modal:temple"
+          "href": "modal:temple",
+          "href_fr": "",
+          "href_es": "",
+          "href_en": ""
         },
         {
           "labelKey": "res_temple_fs",
-          "href": "https://www.familysearch.org"
+          "href": "https://www.familysearch.org",
+          "href_fr": "",
+          "href_es": "",
+          "href_en": ""
         },
         {
           "labelKey": "res_temple_dist",
-          "href": "modal:distribution"
+          "href": "modal:distribution",
+          "href_fr": "",
+          "href_es": "",
+          "href_en": ""
         }
       ]
     },
@@ -72,13 +90,19 @@
       "links": [
         {
           "labelKey": "read_more",
-          "href": "#pastoral"
+          "href": "#pastoral",
+          "href_fr": "",
+          "href_es": "",
+          "href_en": ""
         },
         {
           "href": "https://docs.google.com/presentation/d/1czDtTQBLruSSDDzGQN96xG3htAwTEPfam5_0no6u4SU/present",
           "label_fr": "Guide de ressources pour les immigrants",
           "label_es": "Guía de recursos para los inmigrantes",
-          "label_en": "Resource guide for immigrants"
+          "label_en": "Resource guide for immigrants",
+          "href_fr": "",
+          "href_es": "",
+          "href_en": ""
         }
       ]
     },
@@ -98,11 +122,17 @@
       "links": [
         {
           "labelKey": "res_entretien_rdv",
-          "href": "modal:rendez-vous"
+          "href": "modal:rendez-vous",
+          "href_fr": "",
+          "href_es": "",
+          "href_en": ""
         },
         {
           "labelKey": "res_entretien_prep",
-          "href": "modal:se-preparer"
+          "href": "modal:se-preparer",
+          "href_fr": "",
+          "href_es": "",
+          "href_en": ""
         }
       ]
     },
@@ -122,11 +152,17 @@
       "links": [
         {
           "labelKey": "res_instruire_sem",
-          "href": "https://www.churchofjesuschrist.org/si/?lang=fra"
+          "href": "https://www.churchofjesuschrist.org/si/?lang=fra",
+          "href_fr": "https://www.churchofjesuschrist.org/si/?lang=fra",
+          "href_es": "https://www.churchofjesuschrist.org/si/?lang=spa",
+          "href_en": "https://www.churchofjesuschrist.org/si/?lang=eng"
         },
         {
           "labelKey": "res_instruire_inst",
-          "href": "https://www.churchofjesuschrist.org/si/institute?lang=fra"
+          "href": "https://www.churchofjesuschrist.org/si/institute?lang=fra",
+          "href_fr": "https://www.churchofjesuschrist.org/si/institute?lang=fra",
+          "href_es": "https://www.churchofjesuschrist.org/si/institute?lang=spa",
+          "href_en": "https://www.churchofjesuschrist.org/si/institute?lang=eng"
         }
       ]
     },
@@ -150,15 +186,24 @@
             "es": "Ver boletines anteriores",
             "en": "View past bulletins"
           },
-          "href": "https://subscribepage.io/g1hs6q"
+          "href": "https://subscribepage.io/g1hs6q",
+          "href_fr": "",
+          "href_es": "",
+          "href_en": ""
         },
         {
           "labelKey": "res_bulletin_sub_fr",
-          "href": "http://subscribepage.io/Iiz4Xc"
+          "href": "http://subscribepage.io/Iiz4Xc",
+          "href_fr": "",
+          "href_es": "",
+          "href_en": ""
         },
         {
           "labelKey": "res_bulletin_sub_es",
-          "href": "http://subscribepage.io/WJSnVm"
+          "href": "http://subscribepage.io/WJSnVm",
+          "href_fr": "",
+          "href_es": "",
+          "href_en": ""
         }
       ]
     }

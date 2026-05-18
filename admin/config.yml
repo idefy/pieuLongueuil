@@ -134,7 +134,22 @@ collections:
                     widget: string
                     required: false
                     hint: "Clé i18n existante, ex: res_outils_create — ignorée si étiquette personnalisée fournie"
-                  - { label: "URL / modal (ex: modal:compte-eglise)", name: href, widget: string }
+                  - { label: "URL / modal (ex: modal:compte-eglise)", name: href, widget: string, hint: "URL par défaut pour toutes les langues" }
+                  - label: "URL spécifique par langue (optionnel)"
+                    name: href_fr
+                    widget: string
+                    required: false
+                    hint: "Si renseigné, remplace l'URL par défaut pour le Français"
+                  - label: "URL específica (opcional — Español)"
+                    name: href_es
+                    widget: string
+                    required: false
+                    hint: "Si se rellena, reemplaza la URL predeterminada para Español"
+                  - label: "Specific URL (optional — English)"
+                    name: href_en
+                    widget: string
+                    required: false
+                    hint: "If filled, overrides the default URL for English"
 
   - name: "dirigeants_resources"
     label: "📋 Pour les dirigeants — Ressources"
