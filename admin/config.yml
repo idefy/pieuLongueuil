@@ -134,22 +134,7 @@ collections:
                     widget: string
                     required: false
                     hint: "Clé i18n existante, ex: res_outils_create — ignorée si étiquette personnalisée fournie"
-                  - { label: "URL / modal (ex: modal:compte-eglise)", name: href, widget: string, hint: "URL par défaut pour toutes les langues" }
-                  - label: "URL spécifique par langue (optionnel)"
-                    name: href_fr
-                    widget: string
-                    required: false
-                    hint: "Si renseigné, remplace l'URL par défaut pour le Français"
-                  - label: "URL específica (opcional — Español)"
-                    name: href_es
-                    widget: string
-                    required: false
-                    hint: "Si se rellena, reemplaza la URL predeterminada para Español"
-                  - label: "Specific URL (optional — English)"
-                    name: href_en
-                    widget: string
-                    required: false
-                    hint: "If filled, overrides the default URL for English"
+                  - { label: "URL / modal (ex: modal:compte-eglise)", name: href, widget: string }
 
   - name: "dirigeants_resources"
     label: "📋 Pour les dirigeants — Ressources"
@@ -1415,3 +1400,207 @@ collections:
               - {label: "Français", name: fr, widget: string}
               - {label: "Español",  name: es, widget: string, required: false}
               - {label: "English",  name: en, widget: string, required: false}
+
+  # ──────────────────────────────────────────────────────────
+  #  8. SOUS-PAGES  →  data/pages/*.json  (une page = un fichier)
+  #
+  #  Rôles :
+  #   - admin     : accès complet à tout le CMS
+  #   - editeur   : accès à toutes les sous-pages
+  #   - traducteur: accès à toutes les sous-pages (lecture/écriture)
+  #   - page-SLUG : accès uniquement à la page dont le slug correspond
+  #
+  #  Pour donner accès à une page spécifique, attribuer le rôle
+  #  "page-mon-slug" à l'utilisateur dans DecapBridge.
+  # ──────────────────────────────────────────────────────────
+  - name: "pages"
+    label: "📃 Sous-pages"
+    label_singular: "Sous-page"
+    description: "Créer et modifier les sous-pages du site. Chaque page est accessible via page.html?p=slug."
+    folder: "data/pages"
+    create: true
+    extension: json
+    format: json
+    slug: "{{fields.slug}}"
+    identifier_field: slug
+    summary: "{{fields.slug}} — {{fields.title_fr}} {{fields.visible_in_nav}}"
+    preview_path: "page.html?p={{fields.slug}}"
+    fields:
+      - { label: "Slug (identifiant URL)", name: slug, widget: string, hint: "Identifiant unique sans espaces ni accents. Ex: conseil-jeunesse. Sera dans l'URL: page.html?p=conseil-jeunesse" }
+      - { label: "Visible dans la navigation", name: visible_in_nav, widget: boolean, default: false, hint: "Afficher dans le menu déroulant Pages" }
+      - { label: "Ordre dans le menu", name: nav_order, widget: number, default: 99, hint: "Nombre entier — les pages sont triées du plus petit au plus grand" }
+      - label: "Image hero (optionnel)"
+        name: hero_image
+        widget: image
+        required: false
+        media_folder: "/assets"
+        public_folder: "/assets"
+        hint: "Image de fond en haut de page. Laisser vide pour un fond navy uni."
+      - { label: "Titre (FR)", name: title_fr, widget: string }
+      - { label: "Titre (ES)", name: title_es, widget: string, required: false }
+      - { label: "Titre (EN)", name: title_en, widget: string, required: false }
+      - { label: "Sous-titre (FR)", name: subtitle_fr, widget: string, required: false }
+      - { label: "Sous-titre (ES)", name: subtitle_es, widget: string, required: false }
+      - { label: "Sous-titre (EN)", name: subtitle_en, widget: string, required: false }
+      - label: "Sections du contenu"
+        name: sections
+        widget: list
+        label_singular: "Section"
+        summary: "{{fields.type}}"
+        types:
+          - label: "🔖 En-tête (eyebrow)"
+            name: eyebrow
+            widget: object
+            fields:
+              - { label: "Texte (FR)", name: text_fr, widget: string }
+              - { label: "Texte (ES)", name: text_es, widget: string, required: false }
+              - { label: "Texte (EN)", name: text_en, widget: string, required: false }
+          - label: "📝 Introduction"
+            name: intro
+            widget: object
+            fields:
+              - { label: "Texte (FR)", name: text_fr, widget: text }
+              - { label: "Texte (ES)", name: text_es, widget: text, required: false }
+              - { label: "Texte (EN)", name: text_en, widget: text, required: false }
+          - label: "📌 Titre de section (H2)"
+            name: heading
+            widget: object
+            fields:
+              - { label: "Titre (FR)", name: text_fr, widget: string }
+              - { label: "Titre (ES)", name: text_es, widget: string, required: false }
+              - { label: "Titre (EN)", name: text_en, widget: string, required: false }
+          - label: "📎 Sous-titre (H3)"
+            name: subheading
+            widget: object
+            fields:
+              - { label: "Titre (FR)", name: text_fr, widget: string }
+              - { label: "Titre (ES)", name: text_es, widget: string, required: false }
+              - { label: "Titre (EN)", name: text_en, widget: string, required: false }
+          - label: "¶ Paragraphe"
+            name: body
+            widget: object
+            hint: "Supporte **gras**, *italique*, et [texte](url) pour les liens"
+            fields:
+              - { label: "Texte (FR)", name: text_fr, widget: text }
+              - { label: "Texte (ES)", name: text_es, widget: text, required: false }
+              - { label: "Texte (EN)", name: text_en, widget: text, required: false }
+          - label: "📣 Encadré (callout)"
+            name: callout
+            widget: object
+            fields:
+              - { label: "Texte (FR)", name: text_fr, widget: text }
+              - { label: "Texte (ES)", name: text_es, widget: text, required: false }
+              - { label: "Texte (EN)", name: text_en, widget: text, required: false }
+          - label: "📎 Note en italique"
+            name: note
+            widget: object
+            fields:
+              - { label: "Texte (FR)", name: text_fr, widget: text }
+              - { label: "Texte (ES)", name: text_es, widget: text, required: false }
+              - { label: "Texte (EN)", name: text_en, widget: text, required: false }
+          - label: "— Séparateur"
+            name: divider
+            widget: object
+            fields:
+              - { label: "Note (ignorée)", name: _note, widget: string, required: false }
+          - label: "🖼️ Image"
+            name: image
+            widget: object
+            fields:
+              - label: "Image"
+                name: src
+                widget: image
+                media_folder: "/assets"
+                public_folder: "/assets"
+              - { label: "Texte alt (FR)", name: alt_fr, widget: string }
+              - { label: "Légende (FR)", name: caption_fr, widget: string, required: false }
+              - { label: "Légende (ES)", name: caption_es, widget: string, required: false }
+              - { label: "Légende (EN)", name: caption_en, widget: string, required: false }
+          - label: "📋 Liste à puces"
+            name: list
+            widget: object
+            fields:
+              - label: "Éléments"
+                name: items
+                widget: list
+                summary: "{{fields.text_fr}}"
+                fields:
+                  - { label: "Texte (FR)", name: text_fr, widget: string }
+                  - { label: "Texte (ES)", name: text_es, widget: string, required: false }
+                  - { label: "Texte (EN)", name: text_en, widget: string, required: false }
+          - label: "🔗 Liste de liens"
+            name: linklist
+            widget: object
+            fields:
+              - label: "Liens"
+                name: items
+                widget: list
+                summary: "{{fields.label_fr}}"
+                fields:
+                  - { label: "Étiquette (FR)", name: label_fr, widget: string }
+                  - { label: "Étiquette (ES)", name: label_es, widget: string, required: false }
+                  - { label: "Étiquette (EN)", name: label_en, widget: string, required: false }
+                  - { label: "URL (ou modal:id)", name: url, widget: string }
+                  - { label: "URL spécifique (FR)", name: url_fr, widget: string, required: false }
+                  - { label: "URL spécifique (ES)", name: url_es, widget: string, required: false }
+                  - { label: "URL spécifique (EN)", name: url_en, widget: string, required: false }
+          - label: "🔘 Bouton (CTA)"
+            name: cta
+            widget: object
+            fields:
+              - { label: "Étiquette (FR)", name: label_fr, widget: string }
+              - { label: "Étiquette (ES)", name: label_es, widget: string, required: false }
+              - { label: "Étiquette (EN)", name: label_en, widget: string, required: false }
+              - { label: "URL / lien (ou modal:id)", name: href, widget: string }
+              - { label: "URL (FR spécifique)", name: href_fr, widget: string, required: false }
+              - { label: "URL (ES spécifique)", name: href_es, widget: string, required: false }
+              - { label: "URL (EN spécifique)", name: href_en, widget: string, required: false }
+              - label: "Style"
+                name: style
+                widget: select
+                options:
+                  - { label: "Principal (bleu)", value: primary }
+                  - { label: "Or", value: gold }
+                  - { label: "Secondaire (contour)", value: secondary }
+                default: primary
+          - label: "🔁 Lien vers une autre sous-page"
+            name: page_link
+            widget: object
+            fields:
+              - { label: "Slug de la page cible", name: slug, widget: string, hint: "Le slug de la sous-page vers laquelle pointer" }
+              - { label: "Étiquette (FR)", name: label_fr, widget: string }
+              - { label: "Étiquette (ES)", name: label_es, widget: string, required: false }
+              - { label: "Étiquette (EN)", name: label_en, widget: string, required: false }
+
+  # ──────────────────────────────────────────────────────────
+  #  9. INDEX DES PAGES (navigation)  →  data/pages-index.json
+  #
+  #  Ce fichier est lu par le site pour construire le menu
+  #  déroulant. Il doit être maintenu en sync avec les pages.
+  #  Idéalement : après avoir créé/supprimé une page ci-dessus,
+  #  mettre à jour cet index.
+  # ──────────────────────────────────────────────────────────
+  - name: "pages_index"
+    label: "🗂️ Menu — Ordre des pages"
+    description: "Gérer quelles pages apparaissent dans le menu et dans quel ordre. Ce fichier est lu par le site pour le menu déroulant."
+    files:
+      - name: "pages_index"
+        label: "Index des pages (menu)"
+        file: "data/pages-index.json"
+        fields:
+          - label: "Pages"
+            name: pages_index
+            widget: list
+            label_singular: "Page"
+            summary: "{{fields.slug}} — {{fields.visible_in_nav}}"
+            fields:
+              - { label: "Slug", name: slug, widget: string, hint: "Doit correspondre exactement au slug de la sous-page" }
+              - { label: "Visible dans le menu", name: visible_in_nav, widget: boolean, default: false }
+              - { label: "Ordre", name: nav_order, widget: number, default: 99 }
+              - label: "Titre affiché dans le menu"
+                name: title
+                widget: object
+                fields:
+                  - { label: "Français", name: fr, widget: string }
+                  - { label: "Español",  name: es, widget: string, required: false }
+                  - { label: "English",  name: en, widget: string, required: false }

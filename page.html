@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pieu Longueuil">
+  <meta name="theme-color" content="#1B3A6B">
+  <title id="page-title">Pieu Longueuil</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%231B3A6B'/><text x='16' y='22' text-anchor='middle' fill='%23B8924A' font-size='18' font-family='Georgia,serif'>P</text></svg>">
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+    /* ── Subpage-specific styles ───────────────────────── */
+    .subpage-hero {
+      position: relative;
+      min-height: 280px;
+      display: flex;
+      align-items: flex-end;
+      overflow: hidden;
+      background: var(--c-primary);
+      margin-top: var(--nav-h);
+    }
+    .subpage-hero.has-image {
+      min-height: 380px;
+    }
+    .subpage-hero-bg {
+      position: absolute; inset: 0;
+      background-size: cover; background-position: center;
+    }
+    .subpage-hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to bottom, rgba(13,31,60,0.3), rgba(13,31,60,0.85));
+    }
+    .subpage-hero-content {
+      position: relative; z-index: 1;
+      padding: 40px 80px 48px;
+      width: 100%;
+    }
+    .subpage-back {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-family: var(--font-body); font-size: 12px; font-weight: 700;
+      color: rgba(255,255,255,0.6); letter-spacing: 0.1em; text-transform: uppercase;
+      text-decoration: none; margin-bottom: 20px;
+      transition: color var(--transition);
+    }
+    .subpage-back:hover { color: var(--c-secondary); }
+    .subpage-back svg { flex-shrink: 0; }
+    .subpage-hero-title {
+      font-family: var(--font-display);
+      font-size: clamp(32px, 5vw, 60px);
+      font-weight: 700; color: #fff; line-height: 1.1;
+      margin-bottom: 10px;
+    }
+    .subpage-hero-subtitle {
+      font-family: var(--font-display);
+      font-size: 18px; font-style: italic;
+      color: rgba(255,255,255,0.72);
+    }
+    .subpage-hero-rule {
+      width: 48px; height: 1px;
+      background: var(--c-secondary);
+      margin: 16px 0;
+    }
+
+    /* ── Content area ──────────────────────────────────── */
+    .subpage-content {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 64px 80px 96px;
+    }
+
+    /* Section types */
+    .sp-intro {
+      font-size: 18px; color: var(--c-muted);
+      line-height: 1.8; margin-bottom: 40px;
+      font-family: var(--font-display); font-style: italic;
+    }
+    .sp-heading {
+      font-family: var(--font-display);
+      font-size: 28px; font-weight: 700;
+      color: var(--c-dark); margin: 40px 0 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--c-border);
+    }
+    .sp-heading:first-child { margin-top: 0; }
+    .sp-subheading {
+      font-family: var(--font-display);
+      font-size: 20px; font-weight: 600;
+      color: var(--c-primary); margin: 28px 0 12px;
+    }
+    .sp-body {
+      font-size: 16px; line-height: 1.85;
+      color: var(--c-text); margin-bottom: 16px;
+    }
+    .sp-body a { color: var(--c-accent); text-decoration: underline; text-underline-offset: 3px; }
+    .sp-body a:hover { color: var(--c-secondary); }
+    .sp-note {
+      font-size: 14px; font-style: italic;
+      color: var(--c-muted); margin-bottom: 16px;
+      padding-left: 16px; border-left: 2px solid var(--c-border);
+    }
+    .sp-divider {
+      border: none; border-top: 1px solid var(--c-border);
+      margin: 36px 0;
+    }
+    .sp-list {
+      list-style: none; margin-bottom: 20px;
+      display: flex; flex-direction: column; gap: 10px;
+    }
+    .sp-list li {
+      font-size: 15px; color: var(--c-text); line-height: 1.65;
+      display: flex; gap: 10px; align-items: flex-start;
+    }
+    .sp-list li::before {
+      content: '—'; color: var(--c-secondary);
+      font-weight: 700; flex-shrink: 0;
+    }
+    .sp-linklist {
+      list-style: none; margin-bottom: 20px;
+      display: flex; flex-direction: column; gap: 8px;
+    }
+    .sp-linklist li a {
+      font-size: 14px; font-weight: 700; color: var(--c-accent);
+      display: flex; align-items: center; gap: 8px;
+      padding: 9px 14px; border: 1px solid var(--c-border);
+      border-radius: 4px; background: var(--c-surface);
+      transition: all var(--transition); text-decoration: none;
+    }
+    .sp-linklist li a:hover {
+      border-color: var(--c-secondary); color: var(--c-primary);
+      background: var(--c-warm);
+    }
+    .sp-image {
+      width: 100%; border-radius: 6px;
+      margin: 24px 0; display: block;
+      box-shadow: var(--shadow-md);
+    }
+    .sp-cta-wrap { margin: 24px 0; }
+    .sp-cta-wrap .btn { display: inline-flex; align-items: center; gap: 8px; }
+    .sp-callout {
+      background: var(--c-highlight);
+      border-left: 3px solid var(--c-secondary);
+      border-radius: 0 6px 6px 0;
+      padding: 20px 24px; margin: 24px 0;
+      font-size: 15px; line-height: 1.7; color: var(--c-text);
+    }
+    .sp-eyebrow {
+      font-size: 10px; font-weight: 700;
+      color: var(--c-secondary); letter-spacing: 0.22em;
+      text-transform: uppercase; margin-bottom: 8px;
+    }
+
+    /* ── Page not found ────────────────────────────────── */
+    .sp-not-found {
+      text-align: center; padding: 80px 40px;
+    }
+    .sp-not-found h2 {
+      font-family: var(--font-display); font-size: 32px;
+      color: var(--c-dark); margin-bottom: 16px;
+    }
+    .sp-not-found p { color: var(--c-muted); margin-bottom: 24px; }
+
+    /* ── Responsive ────────────────────────────────────── */
+    @media (max-width: 768px) {
+      .subpage-hero-content { padding: 32px 24px 40px; }
+      .subpage-content { padding: 40px 24px 64px; }
+      .sp-heading { font-size: 22px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV (inherited from main site) -->
+<nav id="nav" role="navigation">
+  <a href="index.html" class="nav-brand">
+    <span class="nav-brand-main">Pieu Longueuil</span>
+    <span class="nav-brand-pipe">|</span>
+    <span class="nav-brand-sub">Québec</span>
+  </a>
+  <ul class="nav-links" id="nav-links-main">
+    <li><a href="index.html#ressources"    data-i18n="nav_ressources">Ressources</a></li>
+    <li><a href="index.html#pastoral"      data-i18n="nav_pastoral">Service pastoral</a></li>
+    <li><a href="index.html#dirigeants"    data-i18n="nav_dirigeants">Dirigeants</a></li>
+    <li><a href="index.html#organisations" data-i18n="nav_organisations">Organisations</a></li>
+    <!-- Subpages dropdown injected by JS when pages exist -->
+    <li id="nav-pages-dropdown" style="display:none; position:relative;">
+      <a href="#" class="nav-dropdown-trigger" id="nav-pages-trigger" aria-haspopup="true" aria-expanded="false">
+        <span id="nav-pages-label" data-i18n="nav_pages">Pages</span>
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-left:4px;transition:transform 0.2s"><polyline points="6 9 12 15 18 9"/></svg>
+      </a>
+      <ul class="nav-dropdown" id="nav-pages-list" role="menu"></ul>
+    </li>
+  </ul>
+  <div class="nav-right">
+    <div class="lang-switcher">
+      <button class="lang-btn active" data-lang="fr">FR</button>
+      <button class="lang-btn"        data-lang="es">ES</button>
+      <button class="lang-btn"        data-lang="en">EN</button>
+    </div>
+    <button class="nav-hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div id="mobile-nav">
+  <a href="index.html#ressources"    data-i18n="nav_ressources">Ressources</a>
+  <a href="index.html#pastoral"      data-i18n="nav_pastoral">Service pastoral</a>
+  <a href="index.html#dirigeants"    data-i18n="nav_dirigeants">Dirigeants</a>
+  <a href="index.html#organisations" data-i18n="nav_organisations">Organisations</a>
+  <div id="mobile-pages-section" style="display:none">
+    <div style="font-size:10px;font-weight:700;color:var(--c-secondary);letter-spacing:0.15em;text-transform:uppercase;padding:12px 0 6px" data-i18n="nav_pages">Pages</div>
+    <div id="mobile-pages-list"></div>
+  </div>
+  <div class="mobile-nav-lang" style="display:flex;gap:6px;padding:12px 0">
+    <button class="lang-btn" data-lang="fr">FR</button>
+    <button class="lang-btn" data-lang="es">ES</button>
+    <button class="lang-btn" data-lang="en">EN</button>
+  </div>
+</div>
+
+<!-- HERO (conditional) -->
+<div id="subpage-hero" class="subpage-hero">
+  <div id="subpage-hero-bg" class="subpage-hero-bg" style="display:none"></div>
+  <div class="subpage-hero-overlay"></div>
+  <div class="subpage-hero-content">
+    <a href="index.html" class="subpage-back" id="back-link">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      <span data-i18n="subpage_back">Retour à l'accueil</span>
+    </a>
+    <div id="subpage-eyebrow" class="sp-eyebrow" style="display:none"></div>
+    <div class="subpage-hero-rule"></div>
+    <h1 class="subpage-hero-title" id="subpage-title">…</h1>
+    <p  class="subpage-hero-subtitle" id="subpage-subtitle" style="display:none"></p>
+  </div>
+</div>
+
+<!-- CONTENT -->
+<main class="subpage-content" id="subpage-content" role="main">
+  <p style="color:var(--c-muted);font-style:italic" data-i18n="loading">Chargement…</p>
+</main>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand-name">Pieu Longueuil Québec</div>
+      <p class="footer-disc" id="footer-disclaimer"></p>
+      <div class="footer-social">
+        <a class="footer-soc-link" id="footer-fb" href="#" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a class="footer-soc-link" id="footer-yt" href="#" target="_blank" rel="noopener" aria-label="YouTube">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+        </a>
+        <a class="footer-soc-link" id="footer-ig" href="#" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+      </div>
+    </div>
+    <div>
+      <p class="footer-col-h" data-i18n="nav_ressources">Navigation</p>
+      <ul class="footer-links">
+        <li><a href="index.html" data-i18n="nav_home">Accueil</a></li>
+        <li><a href="index.html#ressources" data-i18n="nav_ressources">Ressources</a></li>
+        <li><a href="index.html#pastoral"   data-i18n="nav_pastoral">Service pastoral</a></li>
+        <li><a href="index.html#dirigeants" data-i18n="nav_dirigeants">Dirigeants</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-col-h">Liens officiels</p>
+      <ul class="footer-links">
+        <li><a href="https://www.churchofjesuschrist.org/?lang=fra" target="_blank" rel="noopener">churchofjesuschrist.org</a></li>
+        <li><a href="https://www.familysearch.org" target="_blank" rel="noopener">FamilySearch</a></li>
+        <li><a href="https://lcr.churchofjesuschrist.org" target="_blank" rel="noopener">LCR</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy" data-i18n="footer_rights">Site non officiel · Pieu Longueuil Québec</p>
+    <button class="back-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑ <span data-i18n="back_top">Retour en haut</span></button>
+  </div>
+</footer>
+
+<!-- Modal overlay (shared) -->
+<div class="fiche-panel-overlay" id="page-modal-overlay" role="dialog" aria-modal="true">
+  <div class="fiche-panel" id="page-modal-panel"></div>
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/modals.js"></script>
+<script src="js/page.js"></script>
+</body>
+</html>

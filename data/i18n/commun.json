@@ -43,5 +43,10 @@
     "fr": "Site non officiel de l'Église",
     "es": "Sitio no oficial de la Iglesia",
     "en": "Unofficial Church site"
+  },
+  "subpage_back": {
+    "fr": "Retour à l'accueil",
+    "es": "Volver al inicio",
+    "en": "Back to home"
   }
 }

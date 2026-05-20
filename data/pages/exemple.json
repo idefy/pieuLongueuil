@@ -1,0 +1,31 @@
+{
+  "page_id": "exemple-sous-page",
+  "slug": "exemple",
+  "visible_in_nav": true,
+  "nav_order": 1,
+  "hero_image": "",
+  "title": {
+    "fr": "Exemple de sous-page",
+    "es": "Ejemplo de subpágina",
+    "en": "Subpage Example"
+  },
+  "subtitle": {
+    "fr": "",
+    "es": "",
+    "en": ""
+  },
+  "sections": [
+    {
+      "type": "intro",
+      "text_fr": "Ceci est un exemple de sous-page. Modifiez ce contenu via l'administration.",
+      "text_es": "Este es un ejemplo de subpágina. Modifique este contenido en la administración.",
+      "text_en": "This is a subpage example. Edit this content via the admin panel."
+    }
+  ],
+  "title_fr": "Exemple de sous-page",
+  "title_es": "Ejemplo de subpágina",
+  "title_en": "Subpage Example",
+  "subtitle_fr": "",
+  "subtitle_es": "",
+  "subtitle_en": ""
+}

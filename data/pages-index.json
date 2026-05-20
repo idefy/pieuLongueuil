@@ -1,0 +1,14 @@
+{
+  "pages_index": [
+    {
+      "slug": "exemple",
+      "visible_in_nav": false,
+      "nav_order": 1,
+      "title": {
+        "fr": "Exemple de sous-page",
+        "es": "Ejemplo de subpágina",
+        "en": "Subpage Example"
+      }
+    }
+  ]
+}

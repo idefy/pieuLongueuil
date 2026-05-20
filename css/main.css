@@ -198,6 +198,43 @@ a { color: var(--c-accent); text-decoration: none; transition: color var(--trans
 .reveal { opacity:0; transform:translateY(18px); transition:opacity 0.6s ease,transform 0.6s ease; }
 .reveal.visible { opacity:1; transform:translateY(0); }
 
+
+/* ── Nav dropdown (subpages) ─────────────────────────────── */
+.nav-dropdown-trigger {
+  display: flex !important;
+  align-items: center;
+}
+.nav-dropdown {
+  display: none;
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  min-width: 200px;
+  background: rgba(11,26,54,0.99);
+  border: 1px solid rgba(184,146,74,0.25);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+  list-style: none;
+  padding: 6px 0;
+  z-index: 1001;
+}
+.nav-dropdown.open { display: block; }
+.nav-dropdown li a {
+  display: block;
+  padding: 10px 18px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.75);
+  text-decoration: none;
+  transition: all var(--transition);
+  white-space: nowrap;
+}
+.nav-dropdown li a:hover,
+.nav-dropdown li a.active {
+  color: #fff;
+  background: rgba(184,146,74,0.15);
+}
+.nav-dropdown li a.active { color: var(--c-secondary); }
+
 /* RESPONSIVE */
 @media (max-width:1100px) { .pastoral-grid{grid-template-columns:repeat(2,1fr)} .res-grid{grid-template-columns:repeat(2,1fr)} }
 @media (max-width:1024px) { .section{padding:72px 48px} #nav,#footer{padding-left:32px;padding-right:32px} .hero-content{padding:0 48px 80px} }
