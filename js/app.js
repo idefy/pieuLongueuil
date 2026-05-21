@@ -24,35 +24,34 @@ function initLang() {
 function setLang(l) { window.currentLang=l; localStorage.setItem('pieu-lang',l); updateLangBtns(); renderAll(); }
 function updateLangBtns() { document.querySelectorAll('.lang-btn').forEach(b=>b.classList.toggle('active',b.dataset.lang===window.currentLang)); }
 
-let leadersData=[], resourcesData=[], memberResourcesData=[];
+let leadersData=[], resourcesData=[], memberResourcesData=[], pagesData=[];
 async function loadData() {
   try {
-    const [lr, rr, sr, mr] = await Promise.all([
+    const [lr, rr, sr, mr, pi] = await Promise.all([
       fetch('data/leaders.json').then(r=>r.json()),
       fetch('data/resources.json').then(r=>r.json()),
       fetch('data/settings.json').then(r=>r.json()).catch(()=>null),
-      fetch('data/member-resources.json').then(r=>r.json()).catch(()=>null)
+      fetch('data/member-resources.json').then(r=>r.json()).catch(()=>null),
+      fetch('data/pages-index.json').then(r=>r.json()).catch(()=>[])
     ]);
+    pagesData           = Array.isArray(arguments[4]?arguments[4]:mr) ? (arguments[4]||[]) : [];
     leadersData         = (Array.isArray(lr) ? lr : lr.leaders || []).filter(l=>l.active!==false);
     resourcesData       = (Array.isArray(rr) ? rr : rr.resources || []).filter(r=>r.active!==false);
     memberResourcesData = Array.isArray(mr) ? mr : (mr?.member_resources || null);
     // Merge CMS settings into SITE_CONFIG (CMS values take precedence)
     if (sr && window.SITE_CONFIG) {
-      if (sr.stakeName)     window.SITE_CONFIG.stakeName     = sr.stakeName;
-      if (sr.stakeNameI18n) window.SITE_CONFIG.stakeNameI18n = sr.stakeNameI18n;
-      if (sr.mission)       window.SITE_CONFIG.mission       = sr.mission;
-      if (sr.chapelImage)   window.SITE_CONFIG.chapelImage   = sr.chapelImage;
-      if (sr.social)        window.SITE_CONFIG.social        = sr.social;
-      if (sr.newsletter)    window.SITE_CONFIG.newsletter    = sr.newsletter;
-      if (sr.colors)        Object.assign(window.SITE_CONFIG.colors, sr.colors);
-      if (sr.eyebrows)      window.SITE_CONFIG.eyebrows      = sr.eyebrows;
-      if (sr.pastoralQuote) window.SITE_CONFIG.pastoralQuote = sr.pastoralQuote;
+      if (sr.stakeName)   window.SITE_CONFIG.stakeName   = sr.stakeName;
+      if (sr.mission)     window.SITE_CONFIG.mission     = sr.mission;
+      if (sr.chapelImage) window.SITE_CONFIG.chapelImage = sr.chapelImage;
+      if (sr.social)      window.SITE_CONFIG.social      = sr.social;
+      if (sr.newsletter)  window.SITE_CONFIG.newsletter  = sr.newsletter;
+      if (sr.colors)      Object.assign(window.SITE_CONFIG.colors, sr.colors);
     }
   } catch(e) { console.warn('Data load failed', e); }
 }
 
 function renderAll() {
-  renderHero(); renderQuickStrip(); renderRessources(); renderPastoral(); renderDirigeants(); renderOrganisations(); renderFooter(); renderSiteStrings(); updateI18n();
+  renderHero(); renderQuickStrip(); renderRessources(); renderPastoral(); renderDirigeants(); renderOrganisations(); renderFooter(); renderNavDropdown(); updateI18n();
   initScrollEffects();
 }
 
@@ -63,38 +62,6 @@ function renderHero() {
   setEl('hero-mission',cfg.mission[l]||cfg.mission.fr);
   const bg=document.getElementById('hero-bg');
   if(bg){ bg.style.backgroundImage=`url('${cfg.chapelImage}')`; const i=new Image(); i.onload=()=>bg.classList.add('loaded'); i.src=cfg.chapelImage; }
-}
-
-
-function renderSiteStrings() {
-  const l   = window.currentLang || 'fr';
-  const cfg = window.SITE_CONFIG;
-
-  // Section eyebrows
-  const eb = cfg.eyebrows || {};
-  setEl('eyebrow-membres',    eb.membres?.[l]    || eb.membres?.fr    || 'Membres');
-  setEl('eyebrow-pastoral',   eb.pastoral?.[l]   || eb.pastoral?.fr   || 'Service pastoral');
-  setEl('eyebrow-dirigeants', eb.dirigeants?.[l] || eb.dirigeants?.fr || 'Dirigeants');
-  setEl('eyebrow-pieu',       eb.pieu?.[l]       || eb.pieu?.fr       || 'Pieu Longueuil');
-
-  // Pastoral quote block
-  const pq = cfg.pastoralQuote;
-  if (pq) {
-    const rawText = pq.text?.[l] || pq.text?.fr || '';
-    // Render **bold** markdown and newlines
-    const htmlText = rawText
-      .replace(/\*\*(.+?)\*\*/g, `<strong style="color:var(--c-secondary)">$1</strong>`)
-      .replace(/
-
-/g, '<br><br>');
-    const el = document.getElementById('pastoral-quote-text');
-    if (el) el.innerHTML = htmlText;
-    setEl('pastoral-quote-attr', pq.attribution?.[l] || pq.attribution?.fr || '');
-  }
-
-  // Footer + nav brand stake name
-  const name = cfg.stakeNameI18n?.[l] || cfg.stakeNameI18n?.fr || cfg.stakeName;
-  setEl('footer-brand-name', name);
 }
 
 function renderQuickStrip() {
@@ -346,8 +313,58 @@ function closeFiche() {
 window.closeFiche=closeFiche;
 
 /* NAV */
+
+function renderNavDropdown() {
+  const lang    = window.currentLang || 'fr';
+  const visible = pagesData
+    .filter(p => p.visible_in_nav)
+    .sort((a,b) => (a.nav_order||99) - (b.nav_order||99));
+
+  const dropdown = document.getElementById('nav-pages-dropdown');
+  const list     = document.getElementById('nav-pages-list');
+  const mobileSection = document.getElementById('mobile-pages-section');
+  const mobileList    = document.getElementById('mobile-pages-list');
+
+  if (!visible.length || !dropdown) return;
+
+  dropdown.style.display = 'block';
+
+  list.innerHTML = visible.map(p => {
+    const label = p.title?.[lang] || p.title?.fr || p.slug;
+    return `<li role="menuitem"><a href="page.html?p=${p.slug}">${label}</a></li>`;
+  }).join('');
+
+  if (mobileSection && mobileList) {
+    mobileSection.style.display = 'block';
+    mobileList.innerHTML = visible.map(p => {
+      const label = p.title?.[lang] || p.title?.fr || p.slug;
+      return `<a href="page.html?p=${p.slug}" style="display:block;font-size:14px;color:rgba(255,255,255,0.7);padding:8px 0 8px 12px;border-bottom:1px solid rgba(255,255,255,0.05)">${label}</a>`;
+    }).join('');
+  }
+}
+
 function initNav() {
   const nav=document.getElementById('nav');
+
+  // Dropdown toggle
+  const trigger=document.getElementById('nav-pages-trigger');
+  const dropList=document.getElementById('nav-pages-list');
+  if(trigger&&dropList){
+    trigger.addEventListener('click',e=>{
+      e.preventDefault();
+      const open=dropList.classList.toggle('open');
+      trigger.setAttribute('aria-expanded',open);
+      trigger.querySelector('svg').style.transform=open?'rotate(180deg)':'';
+    });
+    document.addEventListener('click',e=>{
+      if(!trigger.closest('li').contains(e.target)){
+        dropList.classList.remove('open');
+        trigger.setAttribute('aria-expanded','false');
+        trigger.querySelector('svg').style.transform='';
+      }
+    });
+  }
+
   window.addEventListener('scroll',()=>{
     nav.classList.toggle('scrolled',window.scrollY>40);
     const sections=['ressources','pastoral','dirigeants','organisations'];
