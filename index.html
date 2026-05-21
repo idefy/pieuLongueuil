@@ -23,13 +23,6 @@
     <li><a href="#pastoral"      data-i18n="nav_pastoral">Service pastoral</a></li>
     <li><a href="#dirigeants"    data-i18n="nav_dirigeants">Dirigeants</a></li>
     <li><a href="#organisations" data-i18n="nav_organisations">Organisations</a></li>
-    <li id="nav-pages-dropdown" style="display:none; position:relative;">
-      <a href="#" class="nav-dropdown-trigger" id="nav-pages-trigger" aria-haspopup="true" aria-expanded="false">
-        <span id="nav-pages-label" data-i18n="nav_pages">Pages</span>
-        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-left:4px;transition:transform 0.2s"><polyline points="6 9 12 15 18 9"/></svg>
-      </a>
-      <ul class="nav-dropdown" id="nav-pages-list" role="menu"></ul>
-    </li>
   </ul>
   <div class="nav-right">
     <div class="lang-switcher">
@@ -46,10 +39,6 @@
   <a href="#pastoral"      data-i18n="nav_pastoral">Service pastoral</a>
   <a href="#dirigeants"    data-i18n="nav_dirigeants">Dirigeants</a>
   <a href="#organisations" data-i18n="nav_organisations">Organisations</a>
-  <div id="mobile-pages-section" style="display:none">
-    <div style="font-size:10px;font-weight:700;color:var(--c-secondary);letter-spacing:0.15em;text-transform:uppercase;padding:12px 0 6px" data-i18n="nav_pages">Pages</div>
-    <div id="mobile-pages-list"></div>
-  </div>
   <div class="mobile-nav-lang">
     <button class="lang-btn" data-lang="fr">FR</button>
     <button class="lang-btn" data-lang="es">ES</button>
@@ -78,7 +67,7 @@
 
 <!-- RESSOURCES -->
 <section id="ressources" class="section">
-  <p class="sec-eyebrow">Membres</p>
+  <p class="sec-eyebrow" id="eyebrow-membres"></p>
   <h2 class="sec-title" data-i18n="ressources_title">Ressources pour les membres</h2>
   <div class="sec-rule"></div>
   <p class="sec-intro" data-i18n="ressources_intro">Trouvez ici les outils, guides et liens pour vous accompagner.</p>
@@ -87,20 +76,20 @@
 
 <!-- SERVICE PASTORAL -->
 <section id="pastoral" class="section section-alt">
-  <p class="sec-eyebrow">Service pastoral</p>
+  <p class="sec-eyebrow" id="eyebrow-pastoral"></p>
   <h2 class="sec-title" data-i18n="pastoral_title">Service pastoral</h2>
   <div class="sec-rule"></div>
   <p class="sec-intro" data-i18n="pastoral_intro">Les frères et sœurs de service pastoral s'efforcent de répondre aux besoins individuels.</p>
   <div class="pastoral-grid" id="pastoral-grid"></div>
   <div class="pastoral-quote-block">
-    <p class="pqb-text">Les frères et les sœurs de service pastoral s'efforcent de répondre au mieux aux besoins individuels. Ils peuvent utiliser toutes formes de communication pour agir selon l'inspiration de l'Esprit. Cela commence par une réflexion aidée de la prière et par une conversation avec les familles pour mieux les connaître.<br><br>La visite pastorale repose sur quatre principes&nbsp;: <strong style="color:var(--c-secondary)">écouter, observer, discerner et agir.</strong></p>
-    <p class="pqb-attr">— Président Omer Pirlet, Présidence du Pieu de Longueuil</p>
+    <p class="pqb-text" id="pastoral-quote-text"></p>
+    <p class="pqb-attr" id="pastoral-quote-attr"></p>
   </div>
 </section>
 
 <!-- DIRIGEANTS -->
 <section id="dirigeants" class="section">
-  <p class="sec-eyebrow">Dirigeants</p>
+  <p class="sec-eyebrow" id="eyebrow-dirigeants"></p>
   <h2 class="sec-title" data-i18n="dirigeants_title">Pour les dirigeants</h2>
   <div class="sec-rule"></div>
   <p class="sec-intro" data-i18n="dirigeants_intro">Guides, processus et ressources pour vous accompagner dans votre appel.</p>
@@ -118,7 +107,7 @@
 
 <!-- ORGANISATIONS -->
 <section id="organisations" class="section section-alt">
-  <p class="sec-eyebrow">Pieu Longueuil</p>
+  <p class="sec-eyebrow" id="eyebrow-pieu"></p>
   <h2 class="sec-title" data-i18n="org_title">Organisations du Pieu</h2>
   <div class="sec-rule"></div>
   <p class="sec-intro" data-i18n="org_intro">Les dirigeants du Pieu de Longueuil au service des membres.</p>
@@ -136,7 +125,7 @@
 <footer id="footer">
   <div class="footer-grid">
     <div>
-      <div class="footer-brand-name">Pieu Longueuil Québec</div>
+      <div class="footer-brand-name" id="footer-brand-name">Pieu Longueuil Québec</div>
       <p class="footer-disc" id="footer-disclaimer"></p>
       <!--p class="footer-disc" id="footer-church" style="margin-top:6px;opacity:0.4;font-size:11px"></p -->
       <div class="footer-social">
