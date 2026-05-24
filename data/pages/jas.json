@@ -6,6 +6,17 @@
       "text_fr": "Activités a venir",
       "text_es": "Actividades a venir",
       "text_en": "Upcoming activities "
+    },
+    {
+      "type": "heading",
+      "text_fr": "Conference des JAS",
+      "text_es": "Conferencia JAS",
+      "text_en": "YSA conference "
+    },
+    {
+      "type": "image",
+      "src": "/assets/1330.jpg",
+      "alt_fr": "Conference "
     }
   ],
   "subtitle_en": "From 18 to 35 years old",
