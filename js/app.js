@@ -24,18 +24,20 @@ function initLang() {
 function setLang(l) { window.currentLang=l; localStorage.setItem('pieu-lang',l); updateLangBtns(); renderAll(); }
 function updateLangBtns() { document.querySelectorAll('.lang-btn').forEach(b=>b.classList.toggle('active',b.dataset.lang===window.currentLang)); }
 
-let leadersData=[], resourcesData=[], memberResourcesData=[];
+let leadersData=[], resourcesData=[], memberResourcesData=[], pagesData=[];
 async function loadData() {
   try {
-    const [lr, rr, sr, mr] = await Promise.all([
+    const [lr, rr, sr, mr, pi] = await Promise.all([
       fetch('data/leaders.json').then(r=>r.json()),
       fetch('data/resources.json').then(r=>r.json()),
       fetch('data/settings.json').then(r=>r.json()).catch(()=>null),
-      fetch('data/member-resources.json').then(r=>r.json()).catch(()=>null)
+      fetch('data/member-resources.json').then(r=>r.json()).catch(()=>null),
+      fetch('data/pages-index.json').then(r=>r.json()).catch(()=>[])
     ]);
     leadersData         = (Array.isArray(lr) ? lr : lr.leaders || []).filter(l=>l.active!==false);
     resourcesData       = (Array.isArray(rr) ? rr : rr.resources || []).filter(r=>r.active!==false);
     memberResourcesData = Array.isArray(mr) ? mr : (mr?.member_resources || null);
+    pagesData           = Array.isArray(pi) ? pi : (pi?.pages_index || []);
     // Merge CMS settings into SITE_CONFIG (CMS values take precedence)
     if (sr && window.SITE_CONFIG) {
       if (sr.stakeName)     window.SITE_CONFIG.stakeName     = sr.stakeName;
@@ -52,7 +54,7 @@ async function loadData() {
 }
 
 function renderAll() {
-  renderHero(); renderQuickStrip(); renderRessources(); renderPastoral(); renderDirigeants(); renderOrganisations(); renderFooter(); renderSiteStrings(); updateI18n();
+  renderHero(); renderQuickStrip(); renderRessources(); renderPastoral(); renderDirigeants(); renderOrganisations(); renderFooter(); renderSiteStrings(); renderNavDropdown(); updateI18n();
   initScrollEffects();
 }
 
@@ -349,8 +351,58 @@ function closeFiche() {
 window.closeFiche=closeFiche;
 
 /* NAV */
+function renderNavDropdown() {
+  const lang    = window.currentLang || 'fr';
+  const visible = pagesData
+    .filter(p => p.visible_in_nav)
+    .sort((a,b) => (a.nav_order||99) - (b.nav_order||99));
+
+  const dropdown = document.getElementById('nav-pages-dropdown');
+  const list     = document.getElementById('nav-pages-list');
+  const mobileSection = document.getElementById('mobile-pages-section');
+  const mobileList    = document.getElementById('mobile-pages-list');
+
+  if (!visible.length || !dropdown) return;
+
+  dropdown.style.display = 'block';
+
+  list.innerHTML = visible.map(p => {
+    const label = p.title?.[lang] || p.title?.fr || p.slug;
+    return `<li role="menuitem"><a href="page.html?p=${p.slug}">${label}</a></li>`;
+  }).join('');
+
+  if (mobileSection && mobileList) {
+    mobileSection.style.display = 'block';
+    mobileList.innerHTML = visible.map(p => {
+      const label = p.title?.[lang] || p.title?.fr || p.slug;
+      return `<a href="page.html?p=${p.slug}" style="display:block;font-size:14px;color:rgba(255,255,255,0.7);padding:8px 0 8px 12px;border-bottom:1px solid rgba(255,255,255,0.05)">${label}</a>`;
+    }).join('');
+  }
+}
+
+
 function initNav() {
   const nav=document.getElementById('nav');
+
+  // Dropdown toggle
+  const trigger=document.getElementById('nav-pages-trigger');
+  const dropList=document.getElementById('nav-pages-list');
+  if(trigger&&dropList){
+    trigger.addEventListener('click',e=>{
+      e.preventDefault();
+      const open=dropList.classList.toggle('open');
+      trigger.setAttribute('aria-expanded',open);
+      trigger.querySelector('svg').style.transform=open?'rotate(180deg)':'';
+    });
+    document.addEventListener('click',e=>{
+      if(!trigger.closest('li').contains(e.target)){
+        dropList.classList.remove('open');
+        trigger.setAttribute('aria-expanded','false');
+        trigger.querySelector('svg').style.transform='';
+      }
+    });
+  }
+
   window.addEventListener('scroll',()=>{
     nav.classList.toggle('scrolled',window.scrollY>40);
     const sections=['ressources','pastoral','dirigeants','organisations'];
