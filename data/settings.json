@@ -1,33 +1,11 @@
 {
-  "stakeName": "Pieu Longueuil Québec",
-  "mission": {
-    "fr": "Nous sommes des disciples engagés de Jésus-Christ. D'un seul cœur et d'un seul esprit, nous exerçons notre foi à faire avancer Son œuvre pour rassembler Israël.",
-    "es": "Somos discípulos comprometidos de Jesucristo. De un solo corazón y de una sola mente, ejercemos nuestra fe para hacer avanzar Su obra para reunir a Israel.",
-    "en": "We are committed disciples of Jesus Christ. With one heart and one mind, we exercise our faith to advance His work to gather Israel."
-  },
   "chapelImage": "/assets/chapel.jpg",
-  "colors": {
-    "primary": "#1B3A6B",
-    "secondary": "#B8924A",
-    "accent": "#2C5F9E",
-    "light": "#F7F5F0",
-    "dark": "#0D1F3C"
-  },
-  "social": {
-    "facebook": "https://www.facebook.com/membresPieuLongueuil",
-    "youtube": "https://www.youtube.com/channel/UCQs1I1gEuprnoL1yel1s7ww",
-    "instagram": "https://www.instagram.com/eglisedejesuschristlongueuil",
-    "twitter": "https://twitter.com/PieuLongueuil"
-  },
-  "newsletter": {
-    "fr": "http://subscribepage.io/Iiz4Xc",
-    "es": "http://subscribepage.io/WJSnVm"
-  },
   "stakeNameI18n": {
     "fr": "Pieu Longueuil Québec",
     "es": "Estaca Longueuil Quebec",
     "en": "Longueuil Quebec Stake"
   },
+  "stakeName": "Pieu Longueuil Québec",
   "eyebrows": {
     "membres": {
       "fr": "Membres",
@@ -50,11 +28,33 @@
       "en": "Longueuil Stake"
     }
   },
+  "mission": {
+    "fr": "Nous sommes des disciples engagés de Jésus-Christ. D'un seul cœur et d'un seul esprit, nous exerçons notre foi à faire avancer Son œuvre pour rassembler Israël.",
+    "es": "Somos discípulos comprometidos de Jesucristo. De un solo corazón y de una sola mente, ejercemos nuestra fe para hacer avanzar Su obra para reunir a Israel.",
+    "en": "We are committed disciples of Jesus Christ. With one heart and one mind, we exercise our faith to advance His work to gather Israel."
+  },
+  "social": {
+    "facebook": "https://www.facebook.com/membresPieuLongueuil",
+    "youtube": "https://www.youtube.com/channel/UCQs1I1gEuprnoL1yel1s7ww",
+    "instagram": "https://www.instagram.com/eglisedejesuschristlongueuil",
+    "twitter": "https://twitter.com/PieuLongueuil"
+  },
+  "colors": {
+    "primary": "#1B3A6B",
+    "secondary": "#B8924A",
+    "accent": "#2C5F9E",
+    "light": "#F7F5F0",
+    "dark": "#0D1F3C"
+  },
+  "newsletter": {
+    "fr": "http://subscribepage.io/Iiz4Xc",
+    "es": "http://subscribepage.io/WJSnVm"
+  },
   "pastoralQuote": {
     "text": {
-      "fr": "Les frères et les sœurs de service pastoral s'efforcent de répondre au mieux aux besoins individuels. Ils peuvent utiliser toutes formes de communication pour agir selon l'inspiration de l'Esprit. Cela commence par une réflexion aidée de la prière et par une conversation avec les familles pour mieux les connaître.\n\nLa visite pastorale repose sur quatre principes : **écouter, observer, discerner et agir.**",
-      "es": "Los hermanos y hermanas de servicio pastoral se esfuerzan por responder mejor a las necesidades individuales. Pueden utilizar todas las formas de comunicación para actuar según la inspiración del Espíritu. Esto comienza con una reflexión guiada por la oración y una conversación con las familias para conocerlas mejor.\n\nLa visita pastoral se basa en cuatro principios: **escuchar, observar, discernir y actuar.**",
-      "en": "Ministering brothers and sisters strive to respond to individual needs. They may use all forms of communication to act on the inspiration of the Spirit. This begins with prayerful reflection and conversation with families to better know them.\n\nMinistering is based on four principles: **listen, observe, discern and act.**"
+      "fr": "Le service pastoral est fondé sur trois principes simples et puissants : **Aimer, Partager, Inviter**. Chaque frère et chaque sœur est invité à aller à la rencontre de ceux qui lui sont confiés — non par obligation, mais par amour sincère. En partageant un témoignage, une parole d'encouragement ou une ressource utile, nous devenons des instruments dans les mains du Seigneur. Et en invitant — à revenir, à progresser, à s'approcher du Christ — nous participons à rassembler Israël, un foyer à la fois.",
+      "es": "El ministerio se fundamenta en tres principios sencillos pero poderosos: **Amar, Compartir, Invitar**. Cada hermano y hermana está invitado a acercarse a quienes están a su cuidado, no por obligación, sino por amor genuino. Al compartir un testimonio, una palabra de aliento o un recurso útil, nos convertimos en instrumentos en las manos del Señor. Y al invitar a otros —a regresar, a crecer, a acercarse más a Cristo— participamos en la congregación de Israel, una familia a la vez.",
+      "en": "Ministering is founded on three simple yet powerful principles: **Love, Share, Invite**. Each brother and sister is invited to reach out to those entrusted to their care—not out of obligation, but out of genuine love. By sharing a testimony, a word of encouragement, or a helpful resource, we become instruments in the Lord's hands. And by inviting others—to return, to grow, to draw closer to Christ—we participate in gathering Israel together, one household at a time."
     },
     "attribution": {
       "fr": "— Président Omer Pirlet, Présidence du Pieu de Longueuil",
