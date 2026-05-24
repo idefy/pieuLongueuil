@@ -62,6 +62,11 @@
       "text_fr": "Nouvelles ",
       "text_es": "Novedades ",
       "text_en": "News"
+    },
+    {
+      "type": "image",
+      "src": "/assets/1327.jpg",
+      "alt_fr": "Nouvelles "
     }
   ],
   "subtitle_en": "From 12 to 18 years old",
