@@ -39,6 +39,14 @@
       "type": "image",
       "src": "/assets/1328.jpg",
       "alt_fr": "Volontaire "
+    },
+    {
+      "type": "cta",
+      "style": "primary",
+      "label_fr": "Se porter volontaire ",
+      "label_es": "Ser voluntario ",
+      "label_en": "Be a volunteer ",
+      "href": "https://docs.google.com/forms/d/e/1FAIpQLScT8xg6ztnJxL65JWKxE0m5lIFWC-damuyRY1UrFRRfl6zrZQ/viewform"
     }
   ],
   "subtitle_en": "From 12 to 18 years old",
