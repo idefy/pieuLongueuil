@@ -31,6 +31,11 @@
       "text_fr": "Appel aux volontaires ",
       "text_es": "Llamada a voluntarios ",
       "text_en": "Call to volunteers"
+    },
+    {
+      "type": "image",
+      "src": "/assets/1328.jpg",
+      "alt_fr": "Volontaire "
     }
   ],
   "subtitle_en": "From 12 to 18 years old",
