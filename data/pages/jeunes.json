@@ -25,6 +25,12 @@
       "label_es": "Inscribirse",
       "label_en": "Register",
       "href": "https://docs.google.com/forms/d/e/1FAIpQLSf44-ylfouflJQoUs8Tvbr8-GBQngXfytcpEJpk4Ej8r59Bzg/viewform?usp=send_form"
+    },
+    {
+      "type": "subheading",
+      "text_fr": "Appel aux volontaires ",
+      "text_es": "Llamada a voluntarios ",
+      "text_en": "Call to volunteers"
     }
   ],
   "subtitle_en": "From 12 to 18 years old",
