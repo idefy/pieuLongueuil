@@ -1,0 +1,19 @@
+{
+  "slug": "jas",
+  "sections": [
+    {
+      "type": "eyebrow",
+      "text_fr": "Activités a venir",
+      "text_es": "Actividades a venir",
+      "text_en": "Upcoming activities "
+    }
+  ],
+  "subtitle_en": "From 18 to 35 years old",
+  "title_en": "Youth Single Adults ",
+  "nav_order": 1,
+  "title_fr": "Jeunes Adultes Seuls",
+  "subtitle_fr": "De 18 à 35 ans",
+  "subtitle_es": "De 18 a 35 años ",
+  "title_es": "Jóvenes Adultos Solteros ",
+  "visible_in_nav": true
+}
