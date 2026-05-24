@@ -14,6 +14,11 @@
       "text_en": "Youth conference "
     },
     {
+      "type": "image",
+      "src": "/assets/1326.jpg",
+      "alt_fr": "Conference "
+    },
+    {
       "type": "cta",
       "style": "primary",
       "label_fr": "S'inscrire ",
