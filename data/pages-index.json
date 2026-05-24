@@ -9,6 +9,26 @@
         "es": "Ejemplo de subpágina",
         "en": "Subpage Example"
       }
+    },
+    {
+      "visible_in_nav": true,
+      "nav_order": 1,
+      "slug": "Jeunes",
+      "title": {
+        "fr": "Jeunes",
+        "es": "Jóvenes ",
+        "en": "Youth"
+      }
+    },
+    {
+      "visible_in_nav": true,
+      "nav_order": 2,
+      "slug": "jas",
+      "title": {
+        "fr": "JAS",
+        "es": "JAS",
+        "en": "YSA"
+      }
     }
   ]
 }
