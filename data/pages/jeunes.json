@@ -47,6 +47,21 @@
       "label_es": "Ser voluntario ",
       "label_en": "Be a volunteer ",
       "href": "https://docs.google.com/forms/d/e/1FAIpQLScT8xg6ztnJxL65JWKxE0m5lIFWC-damuyRY1UrFRRfl6zrZQ/viewform"
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "heading",
+      "text_fr": "Jeunes Filles ",
+      "text_es": "Mujeres jóvenes ",
+      "text_en": "Young women "
+    },
+    {
+      "type": "subheading",
+      "text_fr": "Nouvelles ",
+      "text_es": "Novedades ",
+      "text_en": "News"
     }
   ],
   "subtitle_en": "From 12 to 18 years old",
