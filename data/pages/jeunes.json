@@ -1,0 +1,33 @@
+{
+  "slug": "jeunes",
+  "sections": [
+    {
+      "type": "eyebrow",
+      "text_fr": "Activités a venir",
+      "text_es": "Actividades a venir",
+      "text_en": "Upcoming activities "
+    },
+    {
+      "type": "heading",
+      "text_fr": "Conference de jeunesse",
+      "text_es": "Conferencia para la juventud ",
+      "text_en": "Youth conference "
+    },
+    {
+      "type": "cta",
+      "style": "primary",
+      "label_fr": "S'inscrire ",
+      "label_es": "Inscribirse",
+      "label_en": "Register",
+      "href": "https://docs.google.com/forms/d/e/1FAIpQLSf44-ylfouflJQoUs8Tvbr8-GBQngXfytcpEJpk4Ej8r59Bzg/viewform?usp=send_form"
+    }
+  ],
+  "subtitle_en": "From 12 to 18 years old",
+  "title_en": "Youth",
+  "nav_order": 1,
+  "title_fr": "Jeunes",
+  "subtitle_fr": "De 12 à 18 ans",
+  "subtitle_es": "De 12 a 18 años ",
+  "title_es": "Jóvenes ",
+  "visible_in_nav": true
+}
