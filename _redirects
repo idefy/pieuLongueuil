@@ -1,3 +1,10 @@
-/index.html 301
-/*/  /page.html?p=:splat  200
-/*   /page.html?p=:splat  200
+# 1. Protect the root homepage (stops it from redirecting to /page)
+/              /index.html   200
+/index.html    /index.html   200
+/admin         /admin        200			
+
+# 2. Add any other specific page exceptions here
+/about         /about        200
+
+# 3. Catch-all for subfolders and sub-paths
+/*             /page.html?p=:splat  200
