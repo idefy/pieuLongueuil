@@ -108,10 +108,11 @@ function renderPage(data) {
   // <title>
   document.getElementById('page-title').textContent = `${title} — Pieu Longueuil`;
 
-  // Hero
-  if (data.hero_image) {
+  // Hero — use language-specific image if available, else default
+  const heroImg = data[`hero_image_${lang}`] || data.hero_image || '';
+  if (heroImg) {
     const bg = document.getElementById('subpage-hero-bg');
-    bg.style.backgroundImage = `url('${data.hero_image}')`;
+    bg.style.backgroundImage = `url('${heroImg}')`;
     bg.style.display = 'block';
     document.getElementById('subpage-hero').classList.add('has-image');
   }
@@ -159,10 +160,13 @@ function renderSection(s, lang) {
       return `<hr class="sp-divider">`;
 
     case 'image': {
-      const alt = s[`alt_${lang}`] || s.alt_fr || '';
+      const alt     = s[`alt_${lang}`] || s.alt_fr || '';
       const caption = s[`caption_${lang}`] || s.caption_fr || '';
+      // Per-language image override: src_fr / src_es / src_en take precedence over src
+      const imgSrc  = s[`src_${lang}`] || s.src || '';
+      if (!imgSrc) return '';
       return `<figure style="margin:24px 0">
-        <img class="sp-image" src="${s.src}" alt="${alt}" onerror="this.style.display='none'">
+        <img class="sp-image" src="${imgSrc}" alt="${alt}" onerror="this.style.display='none'">
         ${caption ? `<figcaption style="font-size:13px;color:var(--c-muted);text-align:center;margin-top:8px;font-style:italic">${caption}</figcaption>` : ''}
       </figure>`;
     }
