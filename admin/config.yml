@@ -1489,13 +1489,34 @@ collections:
       - { label: "Slug (identifiant URL)", name: slug, widget: string, hint: "Identifiant unique sans espaces ni accents. Ex: conseil-jeunesse. Sera dans l'URL: page.html?p=conseil-jeunesse" }
       - { label: "Visible dans la navigation", name: visible_in_nav, widget: boolean, default: false, hint: "Afficher dans le menu déroulant Pages" }
       - { label: "Ordre dans le menu", name: nav_order, widget: number, default: 99, hint: "Nombre entier — les pages sont triées du plus petit au plus grand" }
-      - label: "Image hero (optionnel)"
+      - label: "Image hero par défaut (optionnel)"
         name: hero_image
         widget: image
         required: false
         media_folder: "/assets"
         public_folder: "/assets"
         hint: "Image de fond en haut de page. Laisser vide pour un fond navy uni."
+      - label: "Image hero — Français (optionnel)"
+        name: hero_image_fr
+        widget: image
+        required: false
+        media_folder: "/assets"
+        public_folder: "/assets"
+        hint: "Si renseigné, remplace l'image hero pour les visiteurs en français"
+      - label: "Imagen hero — Español (opcional)"
+        name: hero_image_es
+        widget: image
+        required: false
+        media_folder: "/assets"
+        public_folder: "/assets"
+        hint: "Si se rellena, reemplaza la imagen hero para visitantes en español"
+      - label: "Hero image — English (optional)"
+        name: hero_image_en
+        widget: image
+        required: false
+        media_folder: "/assets"
+        public_folder: "/assets"
+        hint: "If filled, overrides the hero image for English visitors"
       - { label: "Titre (FR)", name: title_fr, widget: string }
       - { label: "Titre (ES)", name: title_es, widget: string, required: false }
       - { label: "Titre (EN)", name: title_en, widget: string, required: false }
@@ -1567,12 +1588,33 @@ collections:
             name: image
             widget: object
             fields:
-              - label: "Image"
+              - label: "Image par défaut (toutes langues)"
                 name: src
                 widget: image
                 media_folder: "/assets"
                 public_folder: "/assets"
               - { label: "Texte alt (FR)", name: alt_fr, widget: string }
+              - label: "Image spécifique — Français (optionnel)"
+                name: src_fr
+                widget: image
+                required: false
+                media_folder: "/assets"
+                public_folder: "/assets"
+                hint: "Si renseigné, remplace l'image par défaut pour les visiteurs en français"
+              - label: "Imagen específica — Español (opcional)"
+                name: src_es
+                widget: image
+                required: false
+                media_folder: "/assets"
+                public_folder: "/assets"
+                hint: "Si se rellena, reemplaza la imagen predeterminada para visitantes en español"
+              - label: "Specific image — English (optional)"
+                name: src_en
+                widget: image
+                required: false
+                media_folder: "/assets"
+                public_folder: "/assets"
+                hint: "If filled, overrides the default image for English visitors"
               - { label: "Légende (FR)", name: caption_fr, widget: string, required: false }
               - { label: "Légende (ES)", name: caption_es, widget: string, required: false }
               - { label: "Légende (EN)", name: caption_en, widget: string, required: false }
