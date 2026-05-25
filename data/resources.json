@@ -1,181 +1,181 @@
 {
   "resources": [
     {
-      "id": "vision-pieu",
       "section": "dirigeants",
-      "category": "vision",
-      "type": "information",
+      "active": true,
+      "external": true,
       "lang": [
         "fr"
       ],
+      "url": "https://docs.google.com/presentation/d/1KaODuZo3B09ZSUYIPn07xnQbj2L4MXBleses-aDIANQ/present?slide=id.g30cc6b6624c_0_510",
       "title": {
         "fr": "Vision et objectifs du Pieu",
         "es": "Visión y objetivos de la Estaca",
         "en": "Stake Vision and Goals"
       },
+      "icon": "target",
+      "type": "information",
+      "id": "vision-pieu",
       "description": {
         "fr": "Présentation des objectifs et de la direction spirituelle du Pieu de Longueuil.",
         "es": "Presentación de los objetivos y la dirección espiritual de la Estaca Longueuil.",
         "en": "Overview of the goals and spiritual direction of the Longueuil Stake."
       },
-      "url": "https://sites.google.com/view/pieulongueuil/ressources/pour-les-dirigeants/vision-du-pieu",
-      "icon": "target",
-      "active": true,
-      "external": true
+      "category": "vision"
     },
     {
-      "id": "guide-nouveaux-membres",
       "section": "dirigeants",
-      "category": "guides",
-      "type": "guide",
+      "active": true,
+      "external": false,
       "lang": [
         "fr"
       ],
+      "url": "modal:nouveaux-membres",
       "title": {
         "fr": "Guide des dirigeants pour les nouveaux membres",
         "es": "Guía de líderes para nuevos miembros",
         "en": "Leader Guide for New Members"
       },
+      "icon": "users",
+      "type": "guide",
+      "id": "guide-nouveaux-membres",
       "description": {
         "fr": "Comment intégrer les nouveaux membres par le service et les responsabilités appropriées.",
         "es": "Cómo integrar a los nuevos miembros a través del servicio y las responsabilidades apropiadas.",
         "en": "How to integrate new members through service and appropriate callings."
       },
-      "url": "modal:nouveaux-membres",
-      "icon": "users",
-      "active": true,
-      "external": false
+      "category": "guides"
     },
     {
-      "id": "service-pastoral-intro",
       "section": "dirigeants",
-      "category": "guides",
-      "type": "guide",
+      "active": true,
+      "external": false,
       "lang": [
         "fr"
       ],
+      "url": "modal:service-pastoral-intro",
       "title": {
         "fr": "Introduction au service pastoral",
         "es": "Introducción al servicio pastoral",
         "en": "Introduction to Pastoral Service"
       },
+      "icon": "heart",
+      "type": "guide",
+      "id": "service-pastoral-intro",
       "description": {
         "fr": "Principes et pratiques du service pastoral — de la parole aux actes.",
         "es": "Principios y prácticas del servicio pastoral — de las palabras a los actos.",
         "en": "Principles and practices of pastoral service — from words to action."
       },
-      "url": "modal:service-pastoral-intro",
-      "icon": "heart",
-      "active": true,
-      "external": false
+      "category": "guides"
     },
     {
-      "id": "compte-eglise",
       "section": "dirigeants",
-      "category": "guides",
-      "type": "guide",
+      "active": true,
+      "external": false,
       "lang": [
         "fr"
       ],
+      "url": "modal:compte-eglise",
       "title": {
         "fr": "Compte de l'Église",
         "es": "Cuenta de la Iglesia",
         "en": "Church Account"
       },
+      "icon": "video",
+      "type": "guide",
+      "id": "compte-eglise",
       "description": {
         "fr": "Créer et maintenir son compte — accès à tous les outils de l'Église.",
         "es": "Crear y mantener su cuenta — acceso a todas las herramientas de la Iglesia.",
         "en": "Create and maintain your account — access to all Church tools."
       },
-      "url": "modal:compte-eglise",
-      "icon": "video",
-      "active": true,
-      "external": false
+      "category": "guides"
     },
     {
-      "id": "manuel-general",
       "section": "dirigeants",
-      "category": "officiel",
-      "type": "information",
+      "active": true,
+      "external": true,
       "lang": [
         "fr",
         "es",
         "en"
       ],
+      "url": "https://www.churchofjesuschrist.org/study/manual/general-handbook?lang=fra",
       "title": {
         "fr": "Manuel général de l'Église",
         "es": "Manual general de la Iglesia",
         "en": "General Handbook"
       },
+      "icon": "book",
+      "type": "information",
+      "id": "manuel-general",
       "description": {
         "fr": "Référence officielle pour les dirigeants — politiques, procédures et principes.",
         "es": "Referencia oficial para los líderes — políticas, procedimientos y principios.",
         "en": "Official reference for leaders — policies, procedures and principles."
       },
-      "url": "https://www.churchofjesuschrist.org/study/manual/general-handbook?lang=fra",
-      "icon": "book",
-      "external": true,
-      "active": true
+      "category": "officiel"
     },
     {
-      "id": "lcr-registres",
       "section": "dirigeants",
-      "category": "officiel",
-      "type": "information",
+      "active": true,
+      "external": true,
+      "url": "https://lcr.churchofjesuschrist.org",
       "title": {
         "fr": "LCR – Registres de l'Église",
         "es": "SUD – Registros de la Iglesia",
         "en": "LCR – Church Records"
       },
+      "icon": "database",
+      "type": "information",
+      "id": "lcr-registres",
       "description": {
         "fr": "Système de registres de l'Église pour les dirigeants.",
         "es": "Sistema de registros de la Iglesia para líderes.",
         "en": "Church record-keeping system for leaders."
       },
-      "url": "https://lcr.churchofjesuschrist.org",
-      "icon": "database",
-      "external": true,
-      "active": true
+      "category": "officiel"
     },
     {
-      "id": "calendrier-eglise",
       "section": "dirigeants",
-      "category": "officiel",
-      "type": "information",
+      "active": true,
+      "external": true,
+      "url": "https://www.churchofjesuschrist.org/calendar",
       "title": {
         "fr": "Calendrier de l'Église",
         "es": "Calendario de la Iglesia",
         "en": "Church Calendar"
       },
+      "icon": "calendar",
+      "type": "information",
+      "id": "calendrier-eglise",
       "description": {
         "fr": "Calendrier et planification des activités de l'Église.",
         "es": "Calendario y planificación de actividades de la Iglesia.",
         "en": "Church activities calendar and planning."
       },
-      "url": "https://www.churchofjesuschrist.org/calendar",
-      "icon": "calendar",
-      "external": true,
-      "active": true
+      "category": "officiel"
     },
     {
-      "id": "outils-eglise",
       "section": "dirigeants",
-      "category": "officiel",
-      "type": "information",
+      "active": true,
+      "external": true,
+      "url": "https://www.churchofjesuschrist.org/tools",
       "title": {
         "fr": "Outils de l'Église",
         "es": "Herramientas de la Iglesia",
         "en": "Church Tools"
       },
+      "icon": "settings",
+      "type": "information",
+      "id": "outils-eglise",
       "description": {
         "fr": "Suite d'outils officiels pour les membres et dirigeants.",
         "es": "Suite de herramientas oficiales para miembros y líderes.",
         "en": "Official tools suite for members and leaders."
       },
-      "url": "https://www.churchofjesuschrist.org/tools",
-      "icon": "settings",
-      "external": true,
-      "active": true
+      "category": "officiel"
     }
   ]
 }

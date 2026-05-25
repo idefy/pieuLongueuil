@@ -1,0 +1,38 @@
+{
+  "slug": "jas",
+  "sections": [
+    {
+      "type": "eyebrow",
+      "text_fr": "Activités a venir",
+      "text_es": "Actividades a venir",
+      "text_en": "Upcoming activities "
+    },
+    {
+      "type": "heading",
+      "text_fr": "Conference des JAS",
+      "text_es": "Conferencia JAS",
+      "text_en": "YSA conference "
+    },
+    {
+      "type": "image",
+      "src": "/assets/1330.jpg",
+      "alt_fr": "Conference "
+    },
+    {
+      "type": "cta",
+      "style": "primary",
+      "href": "https://web.cvent.com/event/c771dd6c-e733-46cb-8e50-93b874520340/register?rp=3e79f640-430d-425e-b191-c2cebc8d4db1&utm_source=ig&utm_medium=social&utm_content=link_in_bio&utm_id=97760_v0_s00_e0_tv3",
+      "label_fr": "S'inscrire ",
+      "label_es": "Inscribirse ",
+      "label_en": "Register "
+    }
+  ],
+  "subtitle_en": "From 18 to 35 years old",
+  "title_en": "Youth Single Adults ",
+  "nav_order": 2,
+  "title_fr": "Jeunes Adultes Seuls",
+  "subtitle_fr": "De 18 à 35 ans",
+  "subtitle_es": "De 18 a 35 años ",
+  "title_es": "Jóvenes Adultos Solteros ",
+  "visible_in_nav": true
+}
