@@ -43,7 +43,9 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 /* ── URL slug ────────────────────────────────────────────── */
 function getSlug() {
-  return new URLSearchParams(window.location.search).get('p') || '';
+  return new URLSearchParams(window.location.search).get('p') || 
+	window.location.pathname.split('/').filter(Boolean).at(-1) ||
+	'';
 }
 
 /* ── Apply config colors/fonts (same as main site) ──────── */
