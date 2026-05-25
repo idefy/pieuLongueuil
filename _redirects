@@ -2,7 +2,12 @@
 /              /index.html   200
 /index.html    /index.html   200
 /admin         /admin        200
-/page		   /page         200			
+/page		   /page         200
+/data		   /data         200
+/css		   /css          200		
+/assets        /assets       200
+/js            /js           200
+/conference    /conference.html 200
 
 # 2. Add any other specific page exceptions here
 /about         /about        200
