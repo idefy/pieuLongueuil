@@ -7,4 +7,4 @@
 /about         /about        200
 
 # 3. Catch-all for subfolders and sub-paths
-/*             /page.html?p=:splat  200
+#/*             /page.html?p=:splat  200
