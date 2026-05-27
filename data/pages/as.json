@@ -1,0 +1,19 @@
+{
+  "slug": "as",
+  "sections": [
+    {
+      "type": "eyebrow",
+      "text_fr": "Activités a venir",
+      "text_es": "Actividades a venir",
+      "text_en": "Upcoming activities "
+    }
+  ],
+  "subtitle_en": "From 36 years old and more",
+  "title_en": "Single Adults ",
+  "nav_order": 2,
+  "title_fr": "Adultes Seuls",
+  "subtitle_fr": "De 35 ans et +",
+  "subtitle_es": "De 36 años y mas",
+  "title_es": "Adultos Solteros ",
+  "visible_in_nav": true
+}
