@@ -3,6 +3,26 @@
   "sections": [
     {
       "type": "eyebrow",
+      "text_fr": "Soirée familiale",
+      "text_es": "Noche de hogar",
+      "text_en": "Family Home Evening "
+    },
+    {
+      "type": "intro",
+      "text_fr": "Quand on s’unit\nFini l’ennui !\n\nVenez nous rejoindre lors de nos soirées.\nTout les lundis à 19h00 sur Zoom.",
+      "text_en": "When we unite\nNo more boredom!\n\nJoin us for our evenings.\nEvery Monday at 7:00 PM on Zoom.",
+      "text_es": "Cuando nos unimos\n¡Se acabó el aburrimiento!\n\nÚnete a nosotros en nuestras reuniones vespertinas.\n\nTodos los lunes a las 19:00 en Zoom."
+    },
+    {
+      "type": "cta",
+      "style": "primary",
+      "label_fr": "Lien Zoom",
+      "label_es": "Enlace Zoom",
+      "label_en": "Zoom link",
+      "href": "https://zoom.us/j/93155322608@pwd=VTUxaGlvQTV LRkh3ZS9qMVoyREJOZz09"
+    },
+    {
+      "type": "eyebrow",
       "text_fr": "Activités a venir",
       "text_es": "Actividades a venir",
       "text_en": "Upcoming activities "
