@@ -8,5 +8,307 @@
 </head>
 <body>
   <script src="https://unpkg.com/decap-cms@3.8.4/dist/decap-cms.js"></script>
+  <script>
+  /* ============================================================
+     DECAP CMS — Preview template for Sous-pages
+     Renders a live visual preview of subpage content as the
+     editor types. Inherits the real site's CSS.
+  ============================================================ */
+
+  /* ── Inject site stylesheet into preview iframe ──────────── */
+  CMS.registerPreviewStyle('../css/main.css');
+
+  /* ── Inline preview styles (subpage-specific) ────────────── */
+  CMS.registerPreviewStyle(`
+    body {
+      font-family: 'Lato', sans-serif;
+      background: #F9F6F0;
+      margin: 0;
+      padding: 0;
+      color: #2A2A2A;
+    }
+    .preview-hero {
+      background: #1B3A6B;
+      padding: 40px 48px 44px;
+      position: relative;
+      overflow: hidden;
+      min-height: 160px;
+    }
+    .preview-hero.has-image {
+      background-size: cover;
+      background-position: center;
+    }
+    .preview-hero.has-image::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(13,31,60,0.3), rgba(13,31,60,0.85));
+    }
+    .preview-hero-inner { position: relative; z-index: 1; }
+    .preview-back {
+      font-size: 11px; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: rgba(255,255,255,0.5);
+      margin-bottom: 16px; display: flex; align-items: center; gap: 6px;
+    }
+    .preview-rule { width: 40px; height: 1px; background: #B8924A; margin: 14px 0; }
+    .preview-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 36px; font-weight: 700; color: #fff; line-height: 1.1;
+      margin: 0 0 8px;
+    }
+    .preview-subtitle {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 17px; font-style: italic;
+      color: rgba(255,255,255,0.7); margin: 0;
+    }
+    .preview-content {
+      max-width: 720px; margin: 0 auto; padding: 48px 48px 64px;
+    }
+    .sp-intro {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 17px; font-style: italic; color: #6B6460;
+      line-height: 1.8; margin-bottom: 32px;
+    }
+    .sp-heading {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 26px; font-weight: 700; color: #0D1F3C;
+      margin: 36px 0 14px; padding-bottom: 10px;
+      border-bottom: 1px solid #E4DDD4;
+    }
+    .sp-subheading {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 19px; font-weight: 600; color: #1B3A6B;
+      margin: 24px 0 10px;
+    }
+    .sp-eyebrow {
+      font-size: 10px; font-weight: 700; letter-spacing: 0.22em;
+      text-transform: uppercase; color: #B8924A; margin-bottom: 6px;
+    }
+    .sp-body {
+      font-size: 15px; line-height: 1.85; color: #2A2A2A; margin-bottom: 14px;
+    }
+    .sp-body a { color: #2C5F9E; }
+    .sp-note {
+      font-size: 13px; font-style: italic; color: #6B6460;
+      margin-bottom: 14px; padding-left: 14px;
+      border-left: 2px solid #E4DDD4;
+    }
+    .sp-callout {
+      background: #EAF0F9; border-left: 3px solid #B8924A;
+      border-radius: 0 6px 6px 0; padding: 16px 20px;
+      margin: 20px 0; font-size: 14px; line-height: 1.7;
+    }
+    .sp-divider { border: none; border-top: 1px solid #E4DDD4; margin: 28px 0; }
+    .sp-image { width: 100%; border-radius: 6px; margin: 20px 0; display: block; }
+    .sp-list { list-style: none; margin-bottom: 16px; padding: 0; }
+    .sp-list li {
+      font-size: 14px; line-height: 1.65; color: #2A2A2A;
+      display: flex; gap: 10px; align-items: flex-start;
+      padding: 4px 0;
+    }
+    .sp-list li::before { content: '—'; color: #B8924A; font-weight: 700; flex-shrink: 0; }
+    .sp-linklist { list-style: none; padding: 0; margin-bottom: 16px; }
+    .sp-linklist li { margin-bottom: 6px; }
+    .sp-linklist li a, .sp-linklist li span {
+      font-size: 13px; font-weight: 700; color: #2C5F9E;
+      display: flex; align-items: center; gap: 8px;
+      padding: 8px 12px; border: 1px solid #E4DDD4;
+      border-radius: 4px; background: #fff;
+      text-decoration: none;
+    }
+    .sp-cta-wrap { margin: 20px 0; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 11px; font-weight: 700; letter-spacing: 0.08em;
+      text-transform: uppercase; padding: 10px 22px; border-radius: 3px;
+      text-decoration: none; cursor: pointer; border: 1px solid #E4DDD4;
+      background: #fff; color: #1B3A6B;
+    }
+    .btn-gold { background: #B8924A; color: #fff; border-color: #B8924A; }
+    .preview-empty {
+      text-align: center; padding: 48px 24px; color: #6B6460;
+      font-style: italic; font-size: 14px;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Lato:wght@400;700&display=swap');
+  `, { raw: true });
+
+  /* ── Helper: render inline markdown (bold, italic, links) ── */
+  function renderInline(text) {
+    if (!text) return '';
+    return text
+      .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+      .replace(/\*([^*]+)\*/g,   '<em>$1</em>')
+      .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>');
+  }
+
+  /* ── Helper: get field value (Decap immutable map) ─────────── */
+  function fv(entry, field) {
+    try { return entry.getIn(['data', field]) || ''; }
+    catch(e) { return ''; }
+  }
+
+  function fvIn(obj, ...path) {
+    try {
+      let v = obj;
+      for (const k of path) { v = v && v.get ? v.get(k) : (v || {})[k]; }
+      return v || '';
+    } catch(e) { return ''; }
+  }
+
+  /* ── Render a single section ─────────────────────────────── */
+  function renderSection(s) {
+    if (!s || !s.get) return '';
+    const type    = s.get('type') || '';
+    const text_fr = s.get('text_fr') || '';
+    const text    = text_fr;
+
+    const h = window.h;
+
+    switch(type) {
+      case 'eyebrow':
+        return h('div', { className: 'sp-eyebrow' }, text);
+
+      case 'intro':
+        return h('p', {
+          className: 'sp-intro',
+          dangerouslySetInnerHTML: { __html: renderInline(text) }
+        });
+
+      case 'heading':
+        return h('h2', { className: 'sp-heading' }, text);
+
+      case 'subheading':
+        return h('h3', { className: 'sp-subheading' }, text);
+
+      case 'body':
+        return h('p', {
+          className: 'sp-body',
+          dangerouslySetInnerHTML: { __html: renderInline(text) }
+        });
+
+      case 'note':
+        return h('p', {
+          className: 'sp-note',
+          dangerouslySetInnerHTML: { __html: renderInline(text) }
+        });
+
+      case 'callout':
+        return h('div', {
+          className: 'sp-callout',
+          dangerouslySetInnerHTML: { __html: renderInline(text) }
+        });
+
+      case 'divider':
+        return h('hr', { className: 'sp-divider' });
+
+      case 'image': {
+        const src = s.get('src_fr') || s.get('src') || '';
+        const alt = s.get('alt_fr') || '';
+        const cap = s.get('caption_fr') || '';
+        if (!src) return null;
+        return h('figure', { style: { margin: '20px 0' } },
+          h('img', { className: 'sp-image', src, alt }),
+          cap ? h('figcaption', {
+            style: { fontSize: '13px', color: '#6B6460', textAlign: 'center', marginTop: '6px', fontStyle: 'italic' }
+          }, cap) : null
+        );
+      }
+
+      case 'list': {
+        const items = s.get('items');
+        if (!items) return null;
+        return h('ul', { className: 'sp-list' },
+          items.map((item, i) =>
+            h('li', { key: i }, item.get('text_fr') || '')
+          ).toArray()
+        );
+      }
+
+      case 'linklist': {
+        const items = s.get('items');
+        if (!items) return null;
+        return h('ul', { className: 'sp-linklist' },
+          items.map((item, i) => {
+            const label = item.get('label_fr') || '';
+            const url   = item.get('url_fr') || item.get('url') || '#';
+            return h('li', { key: i },
+              h('a', { href: url }, '↗ ', label)
+            );
+          }).toArray()
+        );
+      }
+
+      case 'cta': {
+        const label = s.get('label_fr') || '';
+        const href  = s.get('href_fr') || s.get('href') || '#';
+        const style = s.get('style') || 'primary';
+        const cls   = style === 'gold' ? 'btn btn-gold' : 'btn';
+        return h('div', { className: 'sp-cta-wrap' },
+          h('a', { className: cls, href }, label)
+        );
+      }
+
+      case 'page_link': {
+        const label = s.get('label_fr') || '';
+        const slug  = s.get('slug') || '';
+        return h('div', { className: 'sp-cta-wrap' },
+          h('a', { className: 'btn', href: `../page.html?p=${slug}` }, label, ' →')
+        );
+      }
+
+      default:
+        return null;
+    }
+  }
+
+  /* ── Main preview component ──────────────────────────────── */
+  var SubpagePreview = createClass({
+    render: function() {
+      const entry    = this.props.entry;
+      const h        = this.props.widgetFor ? window.h : window.h;
+      window.h       = window.h || React.createElement.bind(React);
+
+      const title    = fv(entry, 'title_fr')    || '(Titre non défini)';
+      const subtitle = fv(entry, 'subtitle_fr') || '';
+      const heroImg  = fv(entry, 'hero_image_fr') || fv(entry, 'hero_image') || '';
+      const sections = entry.getIn(['data', 'sections']);
+
+      const heroStyle = heroImg
+        ? { backgroundImage: `url(${heroImg})` }
+        : {};
+
+      return React.createElement('div', null,
+
+        /* Hero */
+        React.createElement('div', {
+          className: 'preview-hero' + (heroImg ? ' has-image' : ''),
+          style: heroStyle
+        },
+          React.createElement('div', { className: 'preview-hero-inner' },
+            React.createElement('div', { className: 'preview-back' }, '← Retour à l\'accueil'),
+            React.createElement('div', { className: 'preview-rule' }),
+            React.createElement('h1', { className: 'preview-title' }, title),
+            subtitle ? React.createElement('p', { className: 'preview-subtitle' }, subtitle) : null
+          )
+        ),
+
+        /* Content */
+        React.createElement('div', { className: 'preview-content' },
+          sections && sections.size > 0
+            ? sections.map(function(s, i) {
+                return React.createElement('div', { key: i }, renderSection(s));
+              }).toArray()
+            : React.createElement('p', { className: 'preview-empty' },
+                'Ajoutez des sections pour voir un aperçu…'
+              )
+        )
+      );
+    }
+  });
+
+  /* ── Register for the "pages" collection ─────────────────── */
+  CMS.registerPreviewTemplate('pages', SubpagePreview);
+
+  </script>
 </body>
 </html>
