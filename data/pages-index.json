@@ -29,6 +29,16 @@
         "es": "JAS",
         "en": "YSA"
       }
+    },
+    {
+      "visible_in_nav": true,
+      "nav_order": 3,
+      "slug": "as",
+      "title": {
+        "fr": "Adultes Seuls",
+        "es": "Adultos Solteros",
+        "en": "Single Adults"
+      }
     }
   ]
 }
