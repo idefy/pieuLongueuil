@@ -11,13 +11,13 @@
   <script>
   /* ============================================================
      DECAP CMS — Live preview for Sous-pages
-     Uses only CMS.registerPreviewTemplate + h() — no React globals
+     h and createClass are globals exposed by decap-cms.js
   ============================================================ */
 
   CMS.registerPreviewStyle('../css/main.css');
   CMS.registerPreviewStyle(`
     @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Lato:wght@400;700&display=swap');
-    body { font-family: 'Lato',sans-serif; background:#F9F6F0; margin:0; padding:0; color:#2A2A2A; }
+    body { font-family:'Lato',sans-serif; background:#F9F6F0; margin:0; padding:0; color:#2A2A2A; }
     .preview-hero { background:#1B3A6B; padding:40px 48px 44px; position:relative; overflow:hidden; min-height:160px; }
     .preview-hero.has-image { background-size:cover; background-position:center; }
     .preview-hero.has-image::after { content:''; position:absolute; inset:0; background:linear-gradient(to bottom,rgba(13,31,60,0.3),rgba(13,31,60,0.85)); }
@@ -42,18 +42,18 @@
     .sp-linklist { list-style:none; padding:0; margin-bottom:16px; }
     .sp-linklist li { margin-bottom:6px; }
     .sp-linklist li a { font-size:13px; font-weight:700; color:#2C5F9E; display:flex; align-items:center; gap:8px; padding:8px 12px; border:1px solid #E4DDD4; border-radius:4px; background:#fff; text-decoration:none; }
-    .sp-cta { display:inline-flex; align-items:center; gap:8px; font-size:11px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; padding:10px 22px; border-radius:3px; border:1px solid #E4DDD4; background:#fff; color:#1B3A6B; margin:20px 0; }
+    .sp-cta { display:inline-flex; align-items:center; font-size:11px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; padding:10px 22px; border-radius:3px; border:1px solid #E4DDD4; background:#fff; color:#1B3A6B; margin:20px 0; text-decoration:none; }
     .sp-cta.gold { background:#B8924A; color:#fff; border-color:#B8924A; }
     .preview-empty { text-align:center; padding:48px 24px; color:#6B6460; font-style:italic; font-size:14px; }
   `, { raw: true });
 
   /* ── Safe field getter ──────────────────────────────────── */
-  function g(entry, field) {
+  function gf(entry, field) {
     try { return entry.getIn(['data', field]) || ''; }
     catch(e) { return ''; }
   }
 
-  /* ── Inline markdown → HTML string ─────────────────────── */
+  /* ── Inline markdown → HTML ─────────────────────────────── */
   function md(text) {
     if (!text) return '';
     return String(text)
@@ -62,48 +62,48 @@
       .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>');
   }
 
-  /* ── Render one section using h() ───────────────────────── */
-  function renderSection(h, s, i) {
+  /* ── Render one section ─────────────────────────────────── */
+  function renderSection(s, i) {
     if (!s || !s.get) return null;
-    const type = s.get('type') || '';
-    const txt  = s.get('text_fr') || '';
-    const key  = 'sec-' + i;
+    var type = s.get('type') || '';
+    var txt  = s.get('text_fr') || '';
+    var key  = i;
 
     switch(type) {
       case 'eyebrow':
-        return h('div',  { key, className: 'sp-eyebrow' }, txt);
+        return h('div', { key: key, className: 'sp-eyebrow' }, txt);
 
       case 'intro':
-        return h('p', { key, className: 'sp-intro',
+        return h('p', { key: key, className: 'sp-intro',
           dangerouslySetInnerHTML: { __html: md(txt) } });
 
       case 'heading':
-        return h('h2', { key, className: 'sp-heading' }, txt);
+        return h('h2', { key: key, className: 'sp-heading' }, txt);
 
       case 'subheading':
-        return h('h3', { key, className: 'sp-subheading' }, txt);
+        return h('h3', { key: key, className: 'sp-subheading' }, txt);
 
       case 'body':
-        return h('p', { key, className: 'sp-body',
+        return h('p', { key: key, className: 'sp-body',
           dangerouslySetInnerHTML: { __html: md(txt) } });
 
       case 'note':
-        return h('p', { key, className: 'sp-note',
+        return h('p', { key: key, className: 'sp-note',
           dangerouslySetInnerHTML: { __html: md(txt) } });
 
       case 'callout':
-        return h('div', { key, className: 'sp-callout',
+        return h('div', { key: key, className: 'sp-callout',
           dangerouslySetInnerHTML: { __html: md(txt) } });
 
       case 'divider':
-        return h('hr', { key, className: 'sp-divider' });
+        return h('hr', { key: key, className: 'sp-divider' });
 
       case 'image': {
         var src = s.get('src_fr') || s.get('src') || '';
         var alt = s.get('alt_fr') || '';
         var cap = s.get('caption_fr') || '';
         if (!src) return null;
-        return h('figure', { key, style: { margin: '20px 0' } },
+        return h('figure', { key: key, style: { margin: '20px 0' } },
           h('img', { className: 'sp-image', src: src, alt: alt }),
           cap ? h('figcaption', {
             style: { fontSize:'13px', color:'#6B6460', textAlign:'center', marginTop:'6px', fontStyle:'italic' }
@@ -114,7 +114,7 @@
       case 'list': {
         var items = s.get('items');
         if (!items || !items.size) return null;
-        return h('ul', { key, className: 'sp-list' },
+        return h('ul', { key: key, className: 'sp-list' },
           items.map(function(item, j) {
             return h('li', { key: j }, item.get('text_fr') || '');
           }).toArray()
@@ -124,29 +124,30 @@
       case 'linklist': {
         var links = s.get('items');
         if (!links || !links.size) return null;
-        return h('ul', { key, className: 'sp-linklist' },
+        return h('ul', { key: key, className: 'sp-linklist' },
           links.map(function(item, j) {
             var label = item.get('label_fr') || '';
             var url   = item.get('url_fr') || item.get('url') || '#';
-            return h('li', { key: j }, h('a', { href: url }, '↗ ' + label));
+            return h('li', { key: j },
+              h('a', { href: url }, '↗ ' + label)
+            );
           }).toArray()
         );
       }
 
       case 'cta': {
-        var label = s.get('label_fr') || '';
-        var style = s.get('style') || 'primary';
-        var cls   = 'sp-cta' + (style === 'gold' ? ' gold' : '');
-        return h('div', { key },
-          h('span', { className: cls }, label)
+        var clabel = s.get('label_fr') || '';
+        var cstyle = s.get('style') || 'primary';
+        var ccls   = 'sp-cta' + (cstyle === 'gold' ? ' gold' : '');
+        return h('div', { key: key, style: { margin: '20px 0' } },
+          h('span', { className: ccls }, clabel)
         );
       }
 
       case 'page_link': {
         var plabel = s.get('label_fr') || '';
-        var slug   = s.get('slug') || '';
-        return h('div', { key },
-          h('a', { className: 'sp-cta', href: '#' }, plabel + ' →')
+        return h('div', { key: key, style: { margin: '20px 0' } },
+          h('span', { className: 'sp-cta' }, plabel + ' →')
         );
       }
 
@@ -155,27 +156,22 @@
     }
   }
 
-  /* ── Preview component ──────────────────────────────────── */
+  /* ── Preview component — uses global h and createClass ─── */
   var SubpagePreview = createClass({
     render: function() {
-      var h        = this.props.widgetFor; // not used but available
       var entry    = this.props.entry;
-      var domH     = CMS.getPreviewComponentField
-                       ? CMS.getPreviewComponentField
-                       : null;
+      var getAsset = this.props.getAsset;
 
-      // Use the h exposed by Decap via window after CMS loads
-      var _h = window.CMS_H || h;
-
-      var title    = g(entry, 'title_fr')    || '(Titre non défini)';
-      var subtitle = g(entry, 'subtitle_fr') || '';
-      var heroImg  = g(entry, 'hero_image_fr') || g(entry, 'hero_image') || '';
+      var title    = gf(entry, 'title_fr')    || '(Titre non défini)';
+      var subtitle = gf(entry, 'subtitle_fr') || '';
+      var heroRaw  = gf(entry, 'hero_image_fr') || gf(entry, 'hero_image') || '';
+      var heroImg  = heroRaw ? getAsset(heroRaw).toString() : '';
       var sections = entry.getIn(['data', 'sections']);
 
       var heroClass = 'preview-hero' + (heroImg ? ' has-image' : '');
       var heroStyle = heroImg ? { backgroundImage: 'url(' + heroImg + ')' } : {};
 
-      return h('div', null,
+      return h('div', {},
         h('div', { className: heroClass, style: heroStyle },
           h('div', { className: 'preview-inner' },
             h('div', { className: 'preview-back' }, '← Retour à l\'accueil'),
@@ -187,7 +183,7 @@
         h('div', { className: 'preview-body' },
           sections && sections.size > 0
             ? sections.map(function(s, i) {
-                return renderSection(h, s, i);
+                return renderSection(s, i);
               }).toArray()
             : h('p', { className: 'preview-empty' },
                 'Ajoutez des sections pour voir un aperçu…'
