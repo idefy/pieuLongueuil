@@ -12,7 +12,7 @@
           "time": "15:30",
           "title_fr": "Cantique d'ouverture",
           "type": "hymn",
-          "detail_fr": "Français # 40 Saints, en avant! Armés de foi en Christ ! Español | # 38 Santos, avanzad"
+          "detail_fr": "Français # 40 Saints, en avant! Armés de foi en Christ ! | Español # 38 Santos, avanzad"
         },
         {
           "time": "-",
@@ -71,7 +71,7 @@
         {
           "time": "18:00",
           "title_fr": "Cantique d'ouverture",
-          "detail_fr": "Français # 14 La première prière de Joseph Smith Español | #14 La oracion del Profeta",
+          "detail_fr": "Français # 14 La première prière de Joseph Smith | Español #14 La oracion del Profeta",
           "type": "hymn"
         },
         {
@@ -113,7 +113,7 @@
           "type": "hymn",
           "time": "-",
           "title_fr": "Cantique d'intermède",
-          "detail_fr": "Français # 173 Allons avec foi Español | # 169 Al mundo ve a predicar"
+          "detail_fr": "Français # 173 Allons avec foi | Español  # 169 Al mundo ve a predicar"
         },
         {
           "type": "talk",
