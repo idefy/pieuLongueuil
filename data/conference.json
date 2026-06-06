@@ -59,8 +59,8 @@
       ]
     },
     {
-      "time": "12:00",
-      "title_fr": "Deuxième session",
+      "time": "Samedi 18:00",
+      "title_fr": "Session des adultes",
       "items": [
         {
           "time": "12:00",
@@ -104,6 +104,10 @@
           "type": "prayer"
         }
       ]
+    },
+    {
+      "time": "Dimanche 10:00",
+      "title_fr": "Session Générale"
     }
   ]
 }
