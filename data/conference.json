@@ -15,46 +15,46 @@
           "detail_fr": "Français # 40 Saints, en avant! Armés de foi en Christ ! Español | # 38 Santos, avanzad"
         },
         {
-          "time": "10:05",
-          "title_fr": "Cantique d'ouverture",
-          "detail_fr": "No. ___",
-          "type": "hymn"
-        },
-        {
-          "time": "10:10",
+          "time": "-",
           "title_fr": "Prière d'ouverture",
-          "detail_fr": "Frère / Sœur Nom",
+          "detail_fr": "par invitation",
           "type": "prayer"
         },
         {
-          "time": "10:15",
-          "title_fr": "Discours",
-          "detail_fr": "Frère / Sœur Nom",
+          "time": "-",
+          "title_fr": "Instruction",
+          "detail_fr": "Pdt Quevedo et Pdt Dumas",
           "type": "talk"
         },
         {
-          "time": "10:35",
-          "title_fr": "Cantique",
-          "detail_fr": "No. ___",
-          "type": "hymn"
-        },
-        {
-          "time": "10:40",
-          "title_fr": "Discours",
-          "detail_fr": "Frère / Sœur Nom",
+          "time": "16:00",
+          "title_fr": "Séparation",
+          "detail_fr": "",
           "type": "talk"
         },
         {
-          "time": "11:00",
-          "title_fr": "Cantique de clôture",
-          "detail_fr": "No. ___",
-          "type": "hymn"
+          "time": "-",
+          "title_fr": "Jeunes Gens, Jeunes Filles et Épiscopats",
+          "detail_fr": "Salle de culte",
+          "type": "talk"
         },
         {
-          "time": "11:05",
-          "title_fr": "Prière de clôture",
-          "detail_fr": "Frère / Sœur Nom",
-          "type": "prayer"
+          "time": "-",
+          "title_fr": "Primaire",
+          "detail_fr": "Salle de Primaire",
+          "type": "talk"
+        },
+        {
+          "time": "-",
+          "title_fr": "Collège d'ancien et Société de Secours",
+          "detail_fr": "Salle de Société de Secours",
+          "type": "talk"
+        },
+        {
+          "type": "talk",
+          "title_fr": "École du Dimanche",
+          "detail_fr": "Salle des fonds baptismaux",
+          "time": "-"
         }
       ]
     },
