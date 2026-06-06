@@ -55,6 +55,12 @@
           "title_fr": "École du Dimanche",
           "detail_fr": "Salle des fonds baptismaux",
           "time": "-"
+        },
+        {
+          "type": "prayer",
+          "time": "17:00",
+          "title_fr": "Prière de clôture",
+          "detail_fr": "dans les séparations"
         }
       ]
     },
@@ -135,7 +141,7 @@
         },
         {
           "type": "prayer",
-          "time": "-",
+          "time": "20:00",
           "title_fr": "Prière de clôture",
           "detail_fr": "par invitation"
         }
