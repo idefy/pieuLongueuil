@@ -176,6 +176,26 @@
         "en": "Official tools suite for members and leaders."
       },
       "category": "officiel"
+    },
+    {
+      "section": "dirigeants",
+      "active": true,
+      "external": false,
+      "url": "modal:guide-service-pastoral",
+      "title": {
+        "fr": "Guide des dirigeants pour le Service Pastoral",
+        "es": "Guía para líderes en la Ministración",
+        "en": "Guide for leaders for Ministering"
+      },
+      "icon": "users",
+      "type": "guide",
+      "id": "guide-service-pastoral",
+      "description": {
+        "es": "Cubre doctrina, principios, estrategias prácticas, técnicas y prácticas de seguimiento que ayudan a comprender, implementar y mejorar el programa de ministración en sus unidades.",
+        "en": "It covers doctrine, principles, practical strategies, techniques, and follow-up practices that help to understand, implement, and improve the ministry program in your units.",
+        "fr": "Il aborde la doctrine, les principes, les stratégies pratiques, les techniques et les pratiques de suivi qui permettent de comprendre, de mettre en œuvre et d'améliorer le programme ministériel dans vos unités."
+      },
+      "category": "guides"
     }
   ]
 }
