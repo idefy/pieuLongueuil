@@ -69,6 +69,12 @@
       "title_fr": "Session des adultes",
       "items": [
         {
+          "type": "item",
+          "title_fr": "Prélude musicale",
+          "detail_fr": "par le choeur de Victoria",
+          "time": "-"
+        },
+        {
           "time": "18:00",
           "title_fr": "Cantique d'ouverture",
           "detail_fr": "Français # 14 La première prière de Joseph Smith | Español #14 La oracion del Profeta",
@@ -151,6 +157,12 @@
       "time": "Dimanche 10:00",
       "title_fr": "Session Générale",
       "items": [
+        {
+          "type": "item",
+          "time": "-",
+          "title_fr": "Prélude musicale",
+          "detail_fr": "par le Choeur de Lemoyne"
+        },
         {
           "type": "hymn",
           "time": "10:00",
