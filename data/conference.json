@@ -63,45 +63,28 @@
       "title_fr": "Session des adultes",
       "items": [
         {
-          "time": "12:00",
-          "title_fr": "Prélude musical",
-          "type": "music"
-        },
-        {
-          "time": "12:05",
+          "time": "18:00",
           "title_fr": "Cantique d'ouverture",
-          "detail_fr": "No. ___",
+          "detail_fr": "Français # 14 La première prière de Joseph Smith Español | #14 La oracion del Profeta",
           "type": "hymn"
         },
         {
-          "time": "12:10",
-          "title_fr": "Discours",
-          "detail_fr": "Président de Pieu",
-          "type": "talk"
-        },
-        {
-          "time": "12:35",
-          "title_fr": "Cantique",
-          "detail_fr": "No. ___",
-          "type": "hymn"
-        },
-        {
-          "time": "12:40",
-          "title_fr": "Discours de clôture",
-          "detail_fr": "Premier Conseiller",
-          "type": "talk"
-        },
-        {
-          "time": "12:55",
-          "title_fr": "Cantique de clôture",
-          "detail_fr": "No. ___",
-          "type": "hymn"
-        },
-        {
-          "time": "13:00",
-          "title_fr": "Prière de clôture",
-          "detail_fr": "Frère / Sœur Nom",
+          "time": "-",
+          "title_fr": "Prière d'ouverture",
+          "detail_fr": "par invitation",
           "type": "prayer"
+        },
+        {
+          "time": "-",
+          "title_fr": "Présentation musciale",
+          "detail_fr": "par la famille Gingras",
+          "type": "hymn"
+        },
+        {
+          "time": "-",
+          "title_fr": "Fr Arturo Jimenez",
+          "detail_fr": "St-Luc",
+          "type": "talk"
         }
       ]
     },
