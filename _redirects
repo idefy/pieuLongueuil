@@ -7,7 +7,7 @@
 /css		   /css          200		
 /assets        /assets       200
 /js            /js           200
-/conference    /conference.html 200
+/conference.html    /conference.html 200
 
 # 2. subpage redirect
 /jeunes            /page?p=jeunes  200
