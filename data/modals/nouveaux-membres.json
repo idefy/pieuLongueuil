@@ -15,7 +15,9 @@
       "label_es": "Abrir el documento completo",
       "label_en": "Open full document",
       "href": "https://docs.google.com/document/d/15gc7VwH9NYniblyHtEJSLtGKRnaw7rMKGjwWNlKO2Ag/edit",
-      "style": "primary"
+      "style": "primary",
+      "href_en": "https://docs.google.com/document/d/1p_ios1iHo5jlxCrboYZypGfvPI2mfEJsoEQntB7RQVA/edit?tab=t.0",
+      "href_es": "https://docs.google.com/document/d/1OvUmR8feJuvjnIyO2BDPGjUXew65ugNQ2Mqd0RKH9Zw/edit?tab=t.0"
     }
   ],
   "title_en": "Guide — New Member Integration",
