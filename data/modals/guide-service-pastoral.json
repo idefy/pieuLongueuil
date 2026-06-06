@@ -1,0 +1,26 @@
+{
+  "eyebrow_fr": "Guide - Le Service Pastoral",
+  "eyebrow_es": "Guía - Ministración",
+  "modal_id": "guide-service-pastoral",
+  "sections": [
+    {
+      "type": "intro",
+      "text_es": "Esta guía está diseñada para ayudar a los líderes, obispos y sus asesores, presidencia de la Sociedad de Socorro y las presidencias del colegio de élderes para comprender, implementar y mejorar el programa de ministración en sus unidades. Cubre doctrina, principios, estrategias prácticas, técnicas y prácticas de seguimiento que ayudan a crear una comunidad de barrio sinceramente cariñoso.",
+      "text_fr": "Ce guide est conçu pour aider les dirigeants, évêques et leurs conseillers, les présidences de la Société de Secours et les présidences du collège des anciens à comprendre, mettre en œuvre et améliorer le programme de service pastoral dans leurs unités. Il couvre la doctrine, les principes, les stratégies pratiques, les techniques et les pratiques de suivi qui contribuent à créer une communauté de paroisse véritablement attentionnée.",
+      "text_en": "This guide is designed to help leaders, bishops and their counselors, Relief Society presidencies, and elders quorum presidencies understand, implement, and improve the pastoral service program in their units. It covers the doctrine, principles, practical strategies, techniques, and follow-up practices that contribute to creating a truly caring ward community."
+    },
+    {
+      "type": "cta",
+      "style": "primary",
+      "label_fr": "Ouvrir le document complet",
+      "label_es": "Abrir el documento completo",
+      "label_en": "Open full document",
+      "href": "https://docs.google.com/document/d/11xyFSEnT_05l6rTeviulndm11aqdS0GCBxMHpqb6yq8/edit?tab=t.0"
+    }
+  ],
+  "title_en": "Guide - Ministring",
+  "title_fr": "Guide - Le Service Pastoral",
+  "title_es": "Guía - Ministración",
+  "icon": "users",
+  "eyebrow_en": "Guide - Ministring"
+}
