@@ -85,6 +85,59 @@
           "title_fr": "Fr Arturo Jimenez",
           "detail_fr": "St-Luc",
           "type": "talk"
+        },
+        {
+          "type": "talk",
+          "time": "-",
+          "title_fr": "Fr Antoine Doyen",
+          "detail_fr": "Granby"
+        },
+        {
+          "type": "talk",
+          "time": "_",
+          "title_fr": "Sr Lisa et Fr. Serge Desjourdy"
+        },
+        {
+          "type": "talk",
+          "time": "-",
+          "title_fr": "Sr et Pdt Sorenson",
+          "detail_fr": "Présidente de mission"
+        },
+        {
+          "type": "hymn",
+          "time": "-",
+          "title_fr": "Cantique d'intermède",
+          "detail_fr": "Français # 173 Allons avec foi Español | # 169 Al mundo ve a predicar"
+        },
+        {
+          "type": "talk",
+          "time": "- ",
+          "title_fr": "Pdt Dumas",
+          "detail_fr": "2e conseiller de pieu"
+        },
+        {
+          "type": "talk",
+          "time": "-",
+          "title_fr": "Pdt Gingras",
+          "detail_fr": "1e conseiller de pieu"
+        },
+        {
+          "type": "talk",
+          "time": "-",
+          "title_fr": "Pdt Pelchat",
+          "detail_fr": "Présidente de pieu"
+        },
+        {
+          "type": "item",
+          "time": "-",
+          "title_fr": "Cantique de clôture",
+          "detail_fr": "Par le choeur de Victoria"
+        },
+        {
+          "type": "prayer",
+          "time": "-",
+          "title_fr": "Prière de clôture",
+          "detail_fr": "par invitation"
         }
       ]
     },
