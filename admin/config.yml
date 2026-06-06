@@ -299,7 +299,9 @@ collections:
               - { label: "Étiquette (FR)", name: label_fr, widget: string }
               - { label: "Étiquette (ES)", name: label_es, widget: string, required: false }
               - { label: "Étiquette (EN)", name: label_en, widget: string, required: false }
-              - { label: "URL / lien", name: href, widget: string }
+              - { label: "URL / lien (défaut toutes langues)", name: href, widget: string, hint: "URL par défaut si aucune URL spécifique n'est renseignée ci-dessous" }
+              - { label: "URL spécifique — Español (optionnel)", name: href_es, widget: string, required: false, hint: "Si renseigné, remplace l'URL par défaut pour les visiteurs en espagnol" }
+              - { label: "URL spécifique — English (optionnel)", name: href_en, widget: string, required: false, hint: "Si renseigné, remplace l'URL par défaut pour les visiteurs en anglais" }
               - label: "Style"
                 name: style
                 widget: select

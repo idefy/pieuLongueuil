@@ -44,7 +44,7 @@ function renderCMSSection(s, lang) {
     case 'linklist': return `<ul class="pm-linklist">${(s.items||[]).map(i=>`<li><a href="${i.url||'#'}" target="_blank" rel="noopener">${svgExtLinkInline(12)} ${i[`label_${lang}`]||i.label_fr||''}</a></li>`).join('')}</ul>`;
     case 'cta': {
       const label = s.label?.[lang] || s.label?.fr || s['label_'+lang] || s.label_fr || '';
-      const href  = s.href||'#';
+      const href  = s['href_' + lang] || s.href || '#';
       const ext   = href.startsWith('http')||href.startsWith('mailto');
       const cls   = s.style==='primary'?'btn pm-btn-primary':'btn btn-outline pm-btn-secondary';
       return `<div class="pm-cta-wrap"><a class="${cls}" href="${href}" ${ext?'target="_blank" rel="noopener"':''}>${label}</a></div>`;
