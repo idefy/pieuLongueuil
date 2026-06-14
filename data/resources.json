@@ -53,29 +53,6 @@
       "lang": [
         "fr"
       ],
-      "url": "modal:service-pastoral-intro",
-      "title": {
-        "fr": "Introduction au service pastoral",
-        "es": "Introducción al servicio pastoral",
-        "en": "Introduction to Pastoral Service"
-      },
-      "icon": "heart",
-      "type": "guide",
-      "id": "service-pastoral-intro",
-      "description": {
-        "fr": "Principes et pratiques du service pastoral — de la parole aux actes.",
-        "es": "Principios y prácticas del servicio pastoral — de las palabras a los actos.",
-        "en": "Principles and practices of pastoral service — from words to action."
-      },
-      "category": "guides"
-    },
-    {
-      "section": "dirigeants",
-      "active": true,
-      "external": false,
-      "lang": [
-        "fr"
-      ],
       "url": "modal:compte-eglise",
       "title": {
         "fr": "Compte de l'Église",
