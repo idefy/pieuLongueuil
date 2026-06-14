@@ -103,23 +103,6 @@
       }
     },
     {
-      "id": "gc-02",
-      "org": "grandconseil",
-      "role": {
-        "fr": "Grand Conseil",
-        "es": "Alto Consejo",
-        "en": "High Council"
-      },
-      "name": "Yan Bergeron",
-      "photo": "/assets/leaders-yan-bergeron.jpg",
-      "active": true,
-      "responsibility": {
-        "fr": "Jeunes Gens",
-        "es": "Hombres Jóvenes ",
-        "en": "Young Men"
-      }
-    },
-    {
       "id": "gc-03",
       "org": "grandconseil",
       "role": {
@@ -270,6 +253,23 @@
         "fr": "",
         "es": "",
         "en": ""
+      }
+    },
+    {
+      "id": "gc-02",
+      "org": "grandconseil",
+      "role": {
+        "fr": "Grand Conseil",
+        "es": "Alto Consejo",
+        "en": "High Council"
+      },
+      "name": "Nom Prénom",
+      "photo": "/assets/leaders-placeholder.jpg",
+      "active": true,
+      "responsibility": {
+        "fr": "Jeunes Gens",
+        "es": "Hombres Jóvenes ",
+        "en": "Young Men"
       }
     },
     {
@@ -433,8 +433,8 @@
         "es": "Presidente de Hombres Jóvenes",
         "en": "Young Men President"
       },
-      "name": "Yan Bergeron",
-      "photo": "/assets/leaders-yan-bergeron.jpg",
+      "name": "Wesley Olsen",
+      "photo": "/assets/leaders-wesley-olsen.jpg",
       "active": true,
       "responsibility": {
         "fr": "",
@@ -450,8 +450,8 @@
         "es": "Primero Consejero",
         "en": "First Counselor"
       },
-      "name": "Kevin Morrison",
-      "photo": "/assets/leaders-kevin-morrison.jpg",
+      "name": "Nom Prénom",
+      "photo": "/assets/leaders-placeholder.jpg",
       "active": true,
       "responsibility": {
         "fr": "",
