@@ -39,6 +39,16 @@
         "es": "Adultos Solteros",
         "en": "Single Adults"
       }
+    },
+    {
+      "visible_in_nav": true,
+      "nav_order": 99,
+      "slug": "institut",
+      "title": {
+        "fr": "Institut",
+        "es": "Instituto",
+        "en": "Institute"
+      }
     }
   ]
 }
