@@ -1,0 +1,50 @@
+{
+  "slug": "institut",
+  "sections": [
+    {
+      "type": "heading",
+      "text_fr": "Programme d'études",
+      "text_en": "Curriculum",
+      "text_es": "Plan de estudios"
+    },
+    {
+      "type": "subheading",
+      "text_fr": "Automne 2026",
+      "text_es": "Otoño 2026",
+      "text_en": "Autum 2026"
+    },
+    {
+      "type": "image",
+      "src_fr": "/assets/image0.jpeg"
+    },
+    {
+      "type": "heading",
+      "text_fr": "Contacts",
+      "text_es": "Contactos",
+      "text_en": "Contacts"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "text_fr": "Instructrice : Gabriela Oteiza-Hernández ",
+          "text_es": "Maestra: Gabriela Oteiza-Hernández ",
+          "text_en": "Teacher: Gabriela Oteiza-Hernández "
+        },
+        {
+          "text_fr": "Membre du grand-conseil qui supervise l'institut : Olivier Carter",
+          "text_en": "Member of the high council that oversees the institute: Olivier Carter",
+          "text_es": "Miembro del sumo consejo que supervisa el instituto: Olivier Carter"
+        }
+      ]
+    }
+  ],
+  "subtitle_en": "We are a community of young adults seeking a greater understanding of the world in which we live based on the teachings of Jesus Christ.",
+  "title_en": "Institute",
+  "nav_order": 99,
+  "title_fr": "Institut",
+  "subtitle_fr": "Nous sommes une communauté de jeunes adultes cherchant à mieux comprendre le monde dans lequel nous vivons, en nous basant sur les enseignements de Jésus-Christ.",
+  "subtitle_es": "Somos una comunidad de jóvenes adultos que busca una mayor comprensión del mundo en el que vivimos, basada en las enseñanzas de Jesucristo.",
+  "title_es": "Instituto",
+  "visible_in_nav": false
+}
