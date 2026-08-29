@@ -63,6 +63,24 @@
       "label_es": "Inscríbete en el curso",
       "label_en": "Register for the course",
       "href": "https://forms.gle/veToJ3SJR5LigXn17"
+    },
+    {
+      "type": "pdf",
+      "height": 700,
+      "show_download": true,
+      "src": "/assets/affiche-cours-2026-09-24-.pdf"
+    },
+    {
+      "type": "pdf",
+      "height": 700,
+      "show_download": true,
+      "src": "/assets/affiche-fortifier-le-mariage.pdf"
+    },
+    {
+      "type": "pdf",
+      "height": 700,
+      "show_download": true,
+      "src": "/assets/affiche-cours-2026-09-16-compressed.pdf"
     }
   ],
   "subtitle_en": "What if you became stronger?",
