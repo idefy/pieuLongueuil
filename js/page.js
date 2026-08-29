@@ -218,7 +218,42 @@ function renderSection(s, lang) {
       const slug  = s.slug || '';
       return `<div class="sp-cta-wrap"><a class="btn" href="page.html?p=${slug}">${label} →</a></div>`;
     }
+		  
+    case 'pdf': {
+      const pdfSrc   = s.src || '';
+      const title    = s[`title_${lang}`] || s.title_fr || '';
+      const height   = s.height || 700;
+      const showDl   = s.show_download !== false;
+      if (!pdfSrc) return '';
 
+      const dlLabel = lang === 'fr' ? 'Télécharger le PDF'
+                    : lang === 'es' ? 'Descargar PDF'
+                    : 'Download PDF';
+
+      return `<div class="sp-pdf-wrap" style="margin:24px 0">
+        ${title ? `<p class="sp-eyebrow" style="margin-bottom:10px">${title}</p>` : ''}
+        <iframe
+          src="${pdfSrc}"
+          width="100%"
+          height="${height}px"
+          style="border:1px solid var(--c-border);border-radius:6px;display:block"
+          title="${title || 'Document PDF'}"
+        >
+          <p style="padding:20px;color:var(--c-muted);font-size:14px">
+            Votre navigateur ne prend pas en charge l'affichage des PDF.
+            <a href="${pdfSrc}" target="_blank" rel="noopener" style="color:var(--c-accent)">${dlLabel}</a>
+          </p>
+        </iframe>
+        ${showDl ? `
+        <div style="margin-top:10px;text-align:right">
+          <a href="${pdfSrc}" target="_blank" rel="noopener" download
+            style="font-size:12px;font-weight:700;color:var(--c-secondary);text-decoration:none;letter-spacing:0.06em">
+            ↓ ${dlLabel}
+          </a>
+        </div>` : ''}
+      </div>`;
+    }
+		  
     default:
       return '';
   }
