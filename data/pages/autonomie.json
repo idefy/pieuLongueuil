@@ -1,0 +1,52 @@
+{
+  "slug": "autonomie",
+  "sections": [
+    {
+      "type": "heading",
+      "text_fr": "Cours actuellement offerts",
+      "text_en": "Courses currently offered",
+      "text_es": "Cursos que se ofrecen actualmente"
+    },
+    {
+      "type": "subheading",
+      "text_fr": "Finances personnelles",
+      "text_es": "Finanzas personales",
+      "text_en": "Personal Finances"
+    },
+    {
+      "type": "image",
+      "src": "/assets/affiche-cours-2026-09-24-.jpg",
+      "alt_fr": "Affiche"
+    },
+    {
+      "type": "subheading",
+      "text_fr": "Puiser la force dans le Seigneur - Résilience émotionnelle",
+      "text_en": "Drawing strength from the Lord - Emotional Resilience",
+      "text_es": "Fortalecerse gracias al Señor - Resiliencia emocional"
+    },
+    {
+      "type": "image",
+      "src": "/assets/affiche-fortifier-le-mariage.jpg",
+      "alt_fr": "Affiche"
+    },
+    {
+      "type": "subheading",
+      "text_fr": "Fortifier le mariage",
+      "text_es": "Fortalecer el matrimonio",
+      "text_en": "Strengthening the marriage"
+    },
+    {
+      "type": "image",
+      "src": "/assets/affiche-cours-2026-09-16-1-.jpg",
+      "alt_fr": "Affiche"
+    }
+  ],
+  "subtitle_en": "What if you became stronger?",
+  "title_en": "Autonomy",
+  "nav_order": 99,
+  "title_fr": "Autonomie",
+  "subtitle_fr": "Et si vous deveniez plus forts?",
+  "subtitle_es": "¿Y si llegaran a ser más fuertes?",
+  "title_es": "Autonomía",
+  "visible_in_nav": true
+}
