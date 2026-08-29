@@ -44,6 +44,14 @@
           "text_es": "Miembro del sumo consejo que supervisa el instituto: Philippe Bouchard"
         }
       ]
+    },
+    {
+      "type": "cta",
+      "style": "primary",
+      "href": "https://www.churchofjesuschrist.org/si/institute?lang=fra",
+      "label_fr": "Page officielle",
+      "label_en": "Official page",
+      "label_es": "Página oficial"
     }
   ],
   "subtitle_en": "We are a community of young adults seeking a greater understanding of the world in which we live based on the teachings of Jesus Christ.",
