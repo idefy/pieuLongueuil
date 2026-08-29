@@ -89,11 +89,20 @@
       },
       "links": [
         {
+          "href": "https://pieulongueuil.ca/page.html?p=autonomie",
+          "label_fr": "Et si vous deveniez plus forts?",
+          "label_es": "¿Y si llegaran a ser más fuertes?",
+          "label_en": "What if you became stronger?"
+        },
+        {
           "labelKey": "read_more",
           "href": "#pastoral",
           "href_fr": "",
           "href_es": "",
-          "href_en": ""
+          "href_en": "",
+          "label_fr": "Les 8 ressources",
+          "label_es": "Los 8 recursos",
+          "label_en": "The 8 resources"
         },
         {
           "href": "https://docs.google.com/presentation/d/1czDtTQBLruSSDDzGQN96xG3htAwTEPfam5_0no6u4SU/present",
@@ -103,12 +112,6 @@
           "href_fr": "",
           "href_es": "",
           "href_en": ""
-        },
-        {
-          "href": "slug:autonomie",
-          "label_fr": "Et si vous deveniez plus forts?",
-          "label_es": "¿Y si llegaran a ser más fuertes?",
-          "label_en": "What if you became stronger?"
         }
       ]
     },
