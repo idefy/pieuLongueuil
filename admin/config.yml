@@ -245,6 +245,21 @@ collections:
               - { label: "Texte (FR)", name: text_fr, widget: text }
               - { label: "Texte (ES)", name: text_es, widget: text, required: false }
               - { label: "Texte (EN)", name: text_en, widget: text, required: false }
+          - label: "📄 Document PDF"
+            name: pdf
+            widget: object
+            fields:
+              - label: "Fichier PDF"
+                name: src
+                widget: file
+                media_folder: "/assets"
+                public_folder: "/assets"
+                hint: "Téléversez un fichier PDF — il sera affiché directement dans la page"
+              - { label: "Titre / description (FR)", name: title_fr, widget: string, required: false, hint: "Affiché au-dessus du PDF" }
+              - { label: "Título / descripción (ES)", name: title_es, widget: string, required: false }
+              - { label: "Title / description (EN)", name: title_en, widget: string, required: false }
+              - { label: "Hauteur d'affichage (px)", name: height, widget: number, default: 700, required: false, hint: "Hauteur de la visionneuse en pixels — ex: 500, 700, 900" }
+              - { label: "Lien de téléchargement visible", name: show_download, widget: boolean, default: true, hint: "Afficher un bouton pour télécharger le PDF" }
           - label: "📋 Liste à puces"
             name: list
             widget: object
@@ -299,9 +314,7 @@ collections:
               - { label: "Étiquette (FR)", name: label_fr, widget: string }
               - { label: "Étiquette (ES)", name: label_es, widget: string, required: false }
               - { label: "Étiquette (EN)", name: label_en, widget: string, required: false }
-              - { label: "URL / lien (défaut toutes langues)", name: href, widget: string, hint: "URL par défaut si aucune URL spécifique n'est renseignée ci-dessous" }
-              - { label: "URL spécifique — Español (optionnel)", name: href_es, widget: string, required: false, hint: "Si renseigné, remplace l'URL par défaut pour les visiteurs en espagnol" }
-              - { label: "URL spécifique — English (optionnel)", name: href_en, widget: string, required: false, hint: "Si renseigné, remplace l'URL par défaut pour les visiteurs en anglais" }
+              - { label: "URL / lien", name: href, widget: string }
               - label: "Style"
                 name: style
                 widget: select
@@ -1611,6 +1624,21 @@ collections:
               - { label: "Légende (FR)", name: caption_fr, widget: string, required: false }
               - { label: "Légende (ES)", name: caption_es, widget: string, required: false }
               - { label: "Légende (EN)", name: caption_en, widget: string, required: false }
+          - label: "📄 Document PDF"
+            name: pdf
+            widget: object
+            fields:
+              - label: "Fichier PDF"
+                name: src
+                widget: file
+                media_folder: "/assets"
+                public_folder: "/assets"
+                hint: "Téléversez un fichier PDF — il sera affiché directement dans la page"
+              - { label: "Titre / description (FR)", name: title_fr, widget: string, required: false, hint: "Affiché au-dessus du PDF" }
+              - { label: "Título / descripción (ES)", name: title_es, widget: string, required: false }
+              - { label: "Title / description (EN)", name: title_en, widget: string, required: false }
+              - { label: "Hauteur d'affichage (px)", name: height, widget: number, default: 700, required: false, hint: "Hauteur de la visionneuse en pixels — ex: 500, 700, 900" }
+              - { label: "Lien de téléchargement visible", name: show_download, widget: boolean, default: true, hint: "Afficher un bouton pour télécharger le PDF" }
           - label: "📋 Liste à puces"
             name: list
             widget: object
