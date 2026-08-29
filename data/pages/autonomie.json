@@ -19,6 +19,14 @@
       "alt_fr": "Affiche"
     },
     {
+      "type": "cta",
+      "style": "primary",
+      "label_fr": "S'inscrire au cours",
+      "label_en": "Register for the course",
+      "label_es": "Inscríbete en el curso",
+      "href": "https://forms.gle/2j27BGtBVUiP6Z5p9"
+    },
+    {
       "type": "subheading",
       "text_fr": "Puiser la force dans le Seigneur - Résilience émotionnelle",
       "text_en": "Drawing strength from the Lord - Emotional Resilience",
@@ -30,6 +38,14 @@
       "alt_fr": "Affiche"
     },
     {
+      "type": "cta",
+      "style": "primary",
+      "label_fr": "S'inscrire au cours",
+      "label_es": "Inscríbete en el curso",
+      "label_en": "Register for the course",
+      "href": "https://forms.gle/FP4RBJThbVrDc5hKA"
+    },
+    {
       "type": "subheading",
       "text_fr": "Fortifier le mariage",
       "text_es": "Fortalecer el matrimonio",
@@ -39,6 +55,14 @@
       "type": "image",
       "src": "/assets/affiche-fortifier-le-mariage.jpg",
       "alt_fr": "Affiche"
+    },
+    {
+      "type": "cta",
+      "style": "primary",
+      "label_fr": "S'inscrire au cours",
+      "label_es": "Inscríbete en el curso",
+      "label_en": "Register for the course",
+      "href": "https://forms.gle/veToJ3SJR5LigXn17"
     }
   ],
   "subtitle_en": "What if you became stronger?",
