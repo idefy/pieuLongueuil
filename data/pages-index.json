@@ -49,6 +49,16 @@
         "es": "Instituto",
         "en": "Institute"
       }
+    },
+    {
+      "visible_in_nav": true,
+      "nav_order": 5,
+      "slug": "autonomie",
+      "title": {
+        "fr": "Autonomie",
+        "en": "Autonomy",
+        "es": "Autonomia"
+      }
     }
   ]
 }
