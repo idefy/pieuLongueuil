@@ -103,6 +103,12 @@
           "href_fr": "",
           "href_es": "",
           "href_en": ""
+        },
+        {
+          "href": "slug:autonomie",
+          "label_fr": "Et si vous deveniez plus forts?",
+          "label_es": "¿Y si llegaran a ser más fuertes?",
+          "label_en": "What if you became stronger?"
         }
       ]
     },
