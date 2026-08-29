@@ -89,7 +89,7 @@
       },
       "links": [
         {
-          "href": "https://pieulongueuil.ca/page.html?p=autonomie",
+          "href": "?p=autonomie",
           "label_fr": "Et si vous deveniez plus forts?",
           "label_es": "¿Y si llegaran a ser más fuertes?",
           "label_en": "What if you became stronger?"
@@ -168,7 +168,7 @@
         },
         {
           "labelKey": "res_instruire_inst",
-          "href": "https://pieulongueuil.ca/page?p=institut",
+          "href": "?p=institut",
           "href_fr": "https://www.churchofjesuschrist.org/si/institute?lang=fra",
           "href_es": "https://www.churchofjesuschrist.org/si/institute?lang=spa",
           "href_en": "https://www.churchofjesuschrist.org/si/institute?lang=eng"
