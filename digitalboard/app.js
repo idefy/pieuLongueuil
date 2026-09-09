@@ -122,31 +122,35 @@ function renderActiveSlide() {
     const timeConfig = evt.isAllDay ? { weekday: 'long', month: 'short', day: 'numeric' } : { weekday: 'long', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' };
     const formattedDate = evt.start.toLocaleDateString('fr-CA', timeConfig);
 
-    // Left Column Layout: Large full-width visual banner with descriptions layered below
+    // FIXED: Strict structural frame locking using Tailwind v4 structural fractions
     slideContainer.innerHTML = `
-        <div class="flex flex-col h-full justify-between animate-fade-in">
-            <!-- Full Width Image Panel -->
-            <div class="h-[60%] w-full rounded-xl overflow-hidden bg-slate-950 border border-slate-800 relative">
+        <div class="flex flex-col h-full w-full overflow-hidden">
+            
+            <!-- UPPER BOX (75% Fixed Height): Bound Image Container -->
+            <div class="h-3/4 w-full rounded-xl overflow-hidden bg-slate-950/80 border border-slate-800/60 relative flex items-center justify-center">
                 <img src="${evt.bannerImg}" class="h-full w-full object-contain object-center" alt="Flyer" />
-                <div class="absolute top-3 right-3 bg-slate-950/80 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-amber-400 border border-slate-700/60 shadow-md">
+                <div class="absolute top-3 right-3 bg-slate-950/80 backdrop-blur-md px-3 py-1 rounded-full text-[11px] font-bold text-amber-400 border border-slate-700/60 shadow-md">
                     Annonce ${activeSlideIndex + 1} / ${publicSlidesArray.length}
                 </div>
             </div>
             
-            <!-- Context Details Panel -->
-            <div class="h-[36%] flex flex-col justify-start mt-4 space-y-2">
-                <div class="flex flex-col">
-                    <h1 class="text-3xl font-black tracking-tight text-white leading-tight uppercase line-clamp-1">${evt.title}</h1>
-                    <p class="text-md text-amber-400 font-bold uppercase tracking-wide mt-1">📅 ${formattedDate}</p>
+            <!-- LOWER BOX (25% Fixed Height): Rigid Metadata Text Panel -->
+            <div class="h-1/4 w-full flex flex-col justify-between pt-3 overflow-hidden">
+                <div class="flex flex-col shrink-0">
+                    <h1 class="text-2xl font-black tracking-tight text-white leading-tight uppercase truncate">${evt.title}</h1>
+                    <p class="text-xs text-amber-400 font-bold uppercase tracking-wide mt-0.5">📅 ${formattedDate}</p>
                 </div>
-                <!-- Extracted Web description display field -->
-                <div class="text-slate-300 text-sm leading-relaxed font-normal overflow-hidden line-clamp-3 bg-slate-950/30 p-3 rounded-lg border border-slate-800/40">
+                
+                <!-- Expanded multi-line context description card -->
+                <div class="flex-1 mt-1.5 text-slate-300 text-xs leading-relaxed font-normal overflow-hidden line-clamp-3 bg-slate-950/40 p-2.5 rounded-lg border border-slate-800/40">
                     ${evt.extractedDescription || "<i class='text-slate-500'>Aucune description supplémentaire fournie pour cette activité.</i>"}
                 </div>
             </div>
+
         </div>
     `;
 }
+
 
 function renderInternalGrid(eventsList) {
     const gridContainer = document.getElementById("internal-ticker");
