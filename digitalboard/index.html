@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stake Digital Board Kiosk</title>
+    <script src="https://unpkg.com/@tailwindcss/browser/dist/index.global.js"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans min-h-screen h-screen overflow-hidden p-4 select-none">
+
+    <!-- Main Layout Container: 80% Left (Featured Content) / 20% Right (Upcoming List) -->
+    <div class="grid grid-cols-5 gap-4 h-full w-full">
+        
+        <!-- LEFT COLUMN (80% Width): Dynamic Fullscreen Slide Cycler -->
+        <div class="col-span-4 bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between shadow-2xl relative h-full">
+            <div id="public-grid" class="h-full w-full flex flex-col justify-between">
+                <div class="text-slate-500 animate-pulse text-xl p-4">Chargement de l'annonce en vedette...</div>
+            </div>
+        </div>
+
+        <!-- RIGHT COLUMN (20% Width): Compact Vertical List of Internal Events -->
+        <div class="col-span-1 bg-slate-900/60 border border-slate-800/80 rounded-2xl p-4 flex flex-col h-full shadow-lg">
+            <h2 class="text-sm font-bold uppercase tracking-wider text-teal-400 mb-3 pb-1 border-b border-slate-800">
+                🗓️ Prochaines Activités
+            </h2>
+            <div id="internal-ticker" class="flex flex-col gap-2 overflow-y-auto pr-1 flex-1 h-full scrollbar-none">
+                <div class="text-xs text-slate-500 animate-pulse">Chargement de l'agenda...</div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
