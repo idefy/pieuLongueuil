@@ -121,6 +121,78 @@
           "label_en": "Garments"
         }
       ]
+    },
+    {
+      "type": "eyebrow",
+      "text_fr": "Retourner au temple",
+      "text_es": "Regresar al templo",
+      "text_en": "Return to the temple"
+    },
+    {
+      "type": "linklist",
+      "items": [
+        {
+          "url_fr": "https://www.youtube.com/watch?v=uuok_oZnnD0",
+          "url": "https://www.youtube.com/watch?v=uuok_oZnnD0",
+          "url_es": "https://www.youtube.com/watch?v=-e0FviPJWbc",
+          "url_en": "https://www.youtube.com/watch?v=_97I5BG4EGM",
+          "label_fr": "Vidéo : David A. Bednar : Retourner au temple",
+          "label_en": "Video: David A. Bednar: Returning to the Temple",
+          "label_es": "Vídeo: David A. Bednar: Regresar al templo"
+        },
+        {
+          "url": "https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/95?lang=fra&id=p8#p8",
+          "url_fr": "https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/95?lang=fra&id=p8#p8",
+          "url_es": "https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/95?lang=spa&id=p8#p8",
+          "url_en": "https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/95?lang=eng&id=p8#p8",
+          "label_en": "D&C 95:8",
+          "label_es": "D&C 95:8",
+          "label_fr": "D&A 95:8"
+        },
+        {
+          "url_fr": "https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/109?lang=fra&id=p72-80#p72",
+          "url_es": "https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/109?lang=spa&id=p72-80#p72",
+          "url_en": "https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/109?lang=eng&id=p72-80#p72",
+          "url": "https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/109?lang=fra&id=p72-80#p72",
+          "label_en": "D&C 109:72-80",
+          "label_es": "D&C 109:72-80",
+          "label_fr": "D&A 109:72-80"
+        },
+        {
+          "label_fr": "2 Néphi 12: 2-3",
+          "label_es": "2 Nefi 12: 2-3",
+          "label_en": "2 Nephi 12: 2-3",
+          "url": "https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/12?lang=fra&id=p2-p3#p2",
+          "url_fr": "https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/12?lang=fra&id=p2-p3#p2",
+          "url_es": "https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/12?lang=spa&id=p2-p3#p2",
+          "url_en": "https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/12?lang=eng&id=p2-p3#p2"
+        }
+      ]
+    },
+    {
+      "type": "eyebrow",
+      "text_fr": "Se sceller au temple",
+      "text_es": "Sellarse en el templo",
+      "text_en": "To be sealed in the temple"
+    },
+    {
+      "type": "linklist",
+      "items": [
+        {
+          "label_fr": "La famille - Déclaration au monde",
+          "url": "https://www.churchofjesuschrist.org/topics/family-proclamation",
+          "label_es": "La Familia - Una Proclamación para el Mundo",
+          "label_en": "The Family - A Proclamation to the World"
+        },
+        {
+          "label_fr": "Le scellement au temple",
+          "url": "https://www.churchofjesuschrist.org/temples/what-happens-in-a-temple-sealing",
+          "url_es": "",
+          "label_es": "Sobre el sellamiento en el templo",
+          "url_fr": "",
+          "label_en": "About Temple Sealings"
+        }
+      ]
     }
   ]
 }
