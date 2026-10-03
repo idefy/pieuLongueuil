@@ -1,6 +1,6 @@
 {
-  "visible_in_nav": false,
-  "nav_order": 99,
+  "visible_in_nav": true,
+  "nav_order": 98,
   "slug": "temple",
   "title_fr": "Le Temple",
   "title_es": "El Templo",
