@@ -31,6 +31,53 @@
       "caption_fr": "Temple de Montréal © Richard Gingras. Tous droits réservés.",
       "caption_en": "Montreal Temple © Richard Gingras. Reservados todos los derechos.",
       "caption_es": "Templo de Montreal © Richard Gingras. All rights reserved."
+    },
+    {
+      "type": "subheading",
+      "text_fr": "La saviez-vous ?",
+      "text_es": "¿Lo sabía?",
+      "text_en": "Did you know?"
+    },
+    {
+      "type": "body",
+      "text_fr": "Vous pouvez planifier des visites au temple en famille étendu ou en groupe, juste contactez le temple afin d'organiser votre visite et de voir les possibilités.",
+      "text_es": "Puede planificar visitas al templo con su familia extendida o en grupo; simplemente contacte con el templo para organizar la visita y conocer las posibilidades.",
+      "text_en": "You can plan temple visits with your extended family or as a group; simply contact the temple to arrange your visit and explore the options."
+    },
+    {
+      "type": "subheading",
+      "text_fr": "En savoir plus sur le temple",
+      "text_es": "Más información sobre el templo",
+      "text_en": "Learn more about the temple"
+    },
+    {
+      "type": "body",
+      "text_fr": "Pour réserver une session, pour ajouter un nom à la prière du temple, pour connaitre les jours et heures d'ouverture, ou même pour relire la prière de consécration du temple, rendez-vous sur la page du temple.",
+      "text_en": "To book a session, add a name to the temple prayer list, check opening days and hours, or even read the temple dedication prayer, visit the temple page.",
+      "text_es": "Para reservar una sesión, añadir un nombre a la oración del templo, consultar los días y horarios de apertura o incluso volver a leer la oración de dedicación del templo, visite la página del templo."
+    },
+    {
+      "href_fr": "https://www.churchofjesuschrist.org/temples/details/montreal-quebec-temple?lang=fra",
+      "href_es": "https://www.churchofjesuschrist.org/temples/details/montreal-quebec-temple?lang=spa",
+      "href": "https://www.churchofjesuschrist.org/temples/details/montreal-quebec-temple",
+      "style": "primary",
+      "label_en": "Temple page",
+      "label_fr": "Page du temple",
+      "label_es": "Página del templo",
+      "type": "cta",
+      "href_en": "https://www.churchofjesuschrist.org/temples/details/montreal-quebec-temple?lang=eng"
+    },
+    {
+      "type": "heading",
+      "text_fr": "L'expérience du temple",
+      "text_en": "The temple experience",
+      "text_es": "La experiencia del templo"
+    },
+    {
+      "type": "body",
+      "text_fr": "L'expérience du temple dans notre vie, ne se limite pas à la visite; elle forme un tout. Commençant par la préparation avant de nous y rendre, que ce soit pour la première fois ou pour la nième visite, ceci nous prépare à devenir de meilleur disciple pour recevoir la révélation personnelle et recevoir les alliances. Puis après la visite, en agissant selon les révélations reçues et les alliances contractées.",
+      "text_es": "La experiencia del templo en nuestra vida no se limita a la visita; constituye un todo. Comienza con la preparación previa a acudir a él —ya sea la primera vez o en una visita posterior—, lo cual nos dispone a ser mejores discípulos para recibir revelación personal y convenios. Continúa después de la visita, al actuar conforme a las revelaciones recibidas y los convenios contraídos.",
+      "text_en": "The temple experience in our lives is not limited to the visit itself; it forms a complete whole. It begins with preparation before we go—whether for the first time or the umpteenth visit—equipping us to become better disciples, receive personal revelation, and enter into covenants. It continues after the visit as we act upon the revelations received and the covenants made."
     }
   ]
 }
