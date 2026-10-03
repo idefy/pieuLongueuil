@@ -78,6 +78,49 @@
       "text_fr": "L'expérience du temple dans notre vie, ne se limite pas à la visite; elle forme un tout. Commençant par la préparation avant de nous y rendre, que ce soit pour la première fois ou pour la nième visite, ceci nous prépare à devenir de meilleur disciple pour recevoir la révélation personnelle et recevoir les alliances. Puis après la visite, en agissant selon les révélations reçues et les alliances contractées.",
       "text_es": "La experiencia del templo en nuestra vida no se limita a la visita; constituye un todo. Comienza con la preparación previa a acudir a él —ya sea la primera vez o en una visita posterior—, lo cual nos dispone a ser mejores discípulos para recibir revelación personal y convenios. Continúa después de la visita, al actuar conforme a las revelaciones recibidas y los convenios contraídos.",
       "text_en": "The temple experience in our lives is not limited to the visit itself; it forms a complete whole. It begins with preparation before we go—whether for the first time or the umpteenth visit—equipping us to become better disciples, receive personal revelation, and enter into covenants. It continues after the visit as we act upon the revelations received and the covenants made."
+    },
+    {
+      "type": "subheading",
+      "text_fr": "Se préparer à aller au temple",
+      "text_en": "Preparing to go to the temple",
+      "text_es": "Prepararse para ir al templo"
+    },
+    {
+      "type": "eyebrow",
+      "text_es": "Investidura personal",
+      "text_fr": "Dotation personnelle",
+      "text_en": "Personal Endowment"
+    },
+    {
+      "type": "linklist",
+      "items": [
+        {
+          "url": "https://www.churchofjesuschrist.org/temples/prepare-for-your-temple-visit",
+          "label_fr": "Se préparer à aller au temple",
+          "label_es": "Prepararse para ir al templo",
+          "label_en": "Prepare for the House of the Lord"
+        },
+        {
+          "label_fr": "La dotation",
+          "url": "https://www.churchofjesuschrist.org/temples/what-is-temple-endowment",
+          "label_es": "Sobre la investidura del templo",
+          "label_en": "About the Temple Endowment"
+        },
+        {
+          "label_fr": "La dotation du temple : Questions et réponses",
+          "url": "https://www.churchofjesuschrist.org/study/liahona/2019/03/young-adults/temple-endowment-q-and-a",
+          "label_es": "La investidura del templo: Preguntas y respuestas",
+          "label_en": "Temple Endowment Q&A"
+        },
+        {
+          "url_en": "",
+          "url_fr": "",
+          "url": "https://www.churchofjesuschrist.org/study/manual/gospel-topics/garments",
+          "label_fr": "Sous-vêtements du temple",
+          "label_es": "Gárments",
+          "label_en": "Garments"
+        }
+      ]
     }
   ]
 }
