@@ -12,7 +12,7 @@
     },
     {
       "visible_in_nav": true,
-      "nav_order": 1,
+      "nav_order": 2,
       "slug": "jeunes",
       "title": {
         "fr": "Jeunes",
@@ -22,7 +22,7 @@
     },
     {
       "visible_in_nav": true,
-      "nav_order": 2,
+      "nav_order": 3,
       "slug": "jas",
       "title": {
         "fr": "JAS",
@@ -32,7 +32,7 @@
     },
     {
       "visible_in_nav": true,
-      "nav_order": 3,
+      "nav_order": 4,
       "slug": "as",
       "title": {
         "fr": "Adultes Seuls",
@@ -42,7 +42,7 @@
     },
     {
       "visible_in_nav": true,
-      "nav_order": 4,
+      "nav_order": 5,
       "slug": "institut",
       "title": {
         "fr": "Institut",
@@ -52,12 +52,22 @@
     },
     {
       "visible_in_nav": true,
-      "nav_order": 5,
+      "nav_order": 6,
       "slug": "autonomie",
       "title": {
         "fr": "Autonomie",
         "en": "Autonomy",
         "es": "Autonomia"
+      }
+    },
+    {
+      "visible_in_nav": true,
+      "nav_order": 1,
+      "slug": "temple",
+      "title": {
+        "fr": "Le temple",
+        "es": "El templo",
+        "en": "The temple"
       }
     }
   ]
