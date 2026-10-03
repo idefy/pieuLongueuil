@@ -1,0 +1,36 @@
+{
+  "visible_in_nav": false,
+  "nav_order": 99,
+  "slug": "temple",
+  "title_fr": "Le Temple",
+  "title_es": "El Templo",
+  "title_en": "The Temple",
+  "sections": [
+    {
+      "type": "callout",
+      "text_fr": "Nous avons la bénédictions d'avoir un temple proche, nous vous invitons à vous y rendre aussi fréquemment que possible et d'en faire une priorité dans votre vie. En faisant ceci, nous vous promettons que le Seigneur répondra à vos demandes sincères.   \n\n— La présidence de pieu ",
+      "text_en": "We are blessed to have a temple nearby, and we invite you to visit it as often as possible and make it a priority in your life. By doing so, we promise you that the Lord will answer your sincere prayers.\n\n— The Stake Presidency",
+      "text_es": "Tenemos la bendición de contar con un templo cerca; los invitamos a visitarlo con la mayor frecuencia posible y a convertirlo en una prioridad en su vida. Al hacerlo, les prometemos que el Señor responderá a sus oraciones sinceras.\n\n— La Presidencia de Estaca"
+    },
+    {
+      "type": "heading",
+      "text_fr": "Notre Temple",
+      "text_es": "Nuestro Templo",
+      "text_en": "Our Temple"
+    },
+    {
+      "type": "note",
+      "text_fr": "Annoncé le 6 août 1998, le temple a été consacré le 4 juin 2000, puis à nouveau le 22 novembre 2015 après des travaux de réfections requis.",
+      "text_es": "Anunciado el 6 de agosto de 1998, el templo fue consagrado el 4 de junio de 2000 y, posteriormente, de nuevo el 22 de noviembre de 2015 tras las obras de remodelación necesarias.",
+      "text_en": "Announced on August 6, 1998, the temple was dedicated on June 4, 2000, and rededicated on November 22, 2015, following necessary renovations."
+    },
+    {
+      "type": "image",
+      "src": "/assets/montreal-quebec-temple-10671-main.jpg",
+      "alt_fr": "© Richard Gingras. All rights reserved.",
+      "caption_fr": "Temple de Montréal © Richard Gingras. Tous droits réservés.",
+      "caption_en": "Montreal Temple © Richard Gingras. Reservados todos los derechos.",
+      "caption_es": "Templo de Montreal © Richard Gingras. All rights reserved."
+    }
+  ]
+}
