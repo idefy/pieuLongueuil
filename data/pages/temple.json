@@ -86,6 +86,41 @@
       "text_es": "Prepararse para ir al templo"
     },
     {
+      "type": "linklist",
+      "items": [
+        {
+          "label_fr": "Enseignements des prophètes sur le temple",
+          "url": "https://www.churchofjesuschrist.org/temples/prophetic-teachings-on-temples",
+          "label_en": "Prophetic Teachings on Temples",
+          "label_es": "Enseñanzas proféticas sobre los templos"
+        },
+        {
+          "label_fr": "Se préparer à aller au temple",
+          "label_es": "Prepararse para ir al templo",
+          "label_en": "Prepare for the House of the Lord",
+          "url": "https://www.churchofjesuschrist.org/temples/prepare-for-your-temple-visit"
+        }
+      ]
+    },
+    {
+      "type": "eyebrow",
+      "text_fr": "Le baptême et de la confirmation par procuration",
+      "text_es": "El bautismo y la confirmación vicarios",
+      "text_en": "Proxy Baptism and Confirmation"
+    },
+    {
+      "type": "linklist",
+      "items": [
+        {
+          "url": "https://www.churchofjesuschrist.org/temples/what-is-proxy-baptism",
+          "url_fr": "",
+          "label_fr": "Ce qu’il faut savoir au sujet du baptême et de la confirmation par procuration",
+          "label_es": "Acerca del bautismo y la confirmación vicarios",
+          "label_en": "About Proxy Baptism and Confirmation"
+        }
+      ]
+    },
+    {
       "type": "eyebrow",
       "text_es": "Investidura personal",
       "text_fr": "Dotation personnelle",
@@ -94,12 +129,6 @@
     {
       "type": "linklist",
       "items": [
-        {
-          "url": "https://www.churchofjesuschrist.org/temples/prepare-for-your-temple-visit",
-          "label_fr": "Se préparer à aller au temple",
-          "label_es": "Prepararse para ir al templo",
-          "label_en": "Prepare for the House of the Lord"
-        },
         {
           "label_fr": "La dotation",
           "url": "https://www.churchofjesuschrist.org/temples/what-is-temple-endowment",
