@@ -18,4 +18,4 @@
 /temple    /page?=temple 200
 
 # 3. pdf redirect
-/remboursement /assets/Remboursement.pdf
+/remboursement /assets/Remboursement.pdf 302
