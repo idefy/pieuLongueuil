@@ -16,3 +16,6 @@
 /institut     /page?p=institut 200
 /autonomie    /page?=autonomie 200
 /temple    /page?=temple 200
+
+# 3. pdf redirect
+/remboursement /assets/Remboursement.pdf
