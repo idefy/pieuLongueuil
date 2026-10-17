@@ -5,14 +5,14 @@
   "title_en": "Stake Conference",
   "sessions": [
     {
-      "time": "Samedi - 15:30",
+      "time": "Samedi - 11:00",
       "title_fr": "Session des Dirigeants",
       "items": [
         {
-          "time": "15:30",
+          "time": "11:00",
           "title_fr": "Cantique d'ouverture",
           "type": "hymn",
-          "detail_fr": "Français # 40 Saints, en avant! Armés de foi en Christ ! | Español # 38 Santos, avanzad"
+          "detail_fr": "#40 Saints en avant ! Armés de foi en Christ  | #81 Press Forward, Saints  | #38 Santos, avanzad "
         },
         {
           "time": "-",
@@ -23,44 +23,38 @@
         {
           "time": "-",
           "title_fr": "Instruction",
-          "detail_fr": "Pdt Quevedo et Pdt Dumas",
-          "type": "talk"
-        },
-        {
-          "time": "16:00",
-          "title_fr": "Séparation",
-          "detail_fr": "",
-          "type": "talk"
-        },
-        {
-          "time": "-",
-          "title_fr": "Jeunes Gens, Jeunes Filles et Épiscopats",
-          "detail_fr": "Salle de culte",
-          "type": "talk"
-        },
-        {
-          "time": "-",
-          "title_fr": "Primaire",
-          "detail_fr": "Salle de Primaire",
-          "type": "talk"
-        },
-        {
-          "time": "-",
-          "title_fr": "Collège d'ancien et Société de Secours",
-          "detail_fr": "Salle de Société de Secours",
+          "detail_fr": "Pdt Gingras",
           "type": "talk"
         },
         {
           "type": "talk",
-          "title_fr": "École du Dimanche",
-          "detail_fr": "Salle des fonds baptismaux",
-          "time": "-"
+          "time": "-",
+          "title_fr": "Instruction",
+          "detail_fr": "Pdt Pelchat"
+        },
+        {
+          "type": "hymn",
+          "time": "11:45",
+          "title_fr": "Cantique d'intermède",
+          "detail_fr": "à venir"
+        },
+        {
+          "type": "talk",
+          "time": "-",
+          "title_fr": "Instruction",
+          "detail_fr": "Elder Matther L. Carpenter"
+        },
+        {
+          "type": "item",
+          "time": "-",
+          "title_fr": "Cantique de cloture",
+          "detail_fr": "#141 Seigneur, je te suivrai | #220 Lord,  I Would Follow Thee | #138 Senor, yo to seguiré "
         },
         {
           "type": "prayer",
-          "time": "17:00",
+          "time": "12:28",
           "title_fr": "Prière de clôture",
-          "detail_fr": "dans les séparations"
+          "detail_fr": "Sara Matos"
         }
       ]
     },
