@@ -159,15 +159,15 @@
       "title_fr": "Session Générale",
       "items": [
         {
-          "type": "item",
+          "type": "hymn",
           "time": "-",
           "title_fr": "Prélude musicale",
-          "detail_fr": "par le Choeur de Lemoyne"
+          "detail_fr": "Prélude à l’orgue : Sherryl Laplante & chorale de Drummondville"
         },
         {
           "type": "hymn",
           "time": "10:00",
-          "detail_fr": "Français # 42 Quels fondements fermes | Español # 40 Que firmes cimientos",
+          "detail_fr": "#159 Mettons de l’ardeur au service du Seigneur  | #243 Let Us All Press On  | #158 Trabajemos  hoy en la obra ",
           "title_fr": "Cantique d'ouverture"
         },
         {
@@ -177,63 +177,45 @@
           "detail_fr": "Betchina Dorestil"
         },
         {
-          "type": "item",
-          "time": "-",
-          "title_fr": "Affaires de pieu"
-        },
-        {
           "type": "hymn",
           "time": "-",
           "title_fr": "Présentation musicale",
           "detail_fr": "Choeur de Lemoyne"
         },
         {
-          "type": "talk",
-          "title_fr": "Fr. Matias Snickers",
+          "type": "item",
           "time": "-",
-          "detail_fr": "Granby"
+          "title_fr": "Affaires de pieu"
+        },
+        {
+          "type": "talk",
+          "title_fr": "Fr. Damila Espinoza",
+          "time": "-",
+          "detail_fr": "Victoria (9 ans)"
         },
         {
           "type": "talk",
           "time": "-",
-          "title_fr": "Sr. Jade Lambert",
-          "detail_fr": "St-Hilaire"
+          "title_fr": "Sr. Salome Worner",
+          "detail_fr": "Longueuil (15 ans)"
         },
         {
           "type": "talk",
           "time": "-",
-          "title_fr": "Sr. Julia Provost",
-          "detail_fr": "Drummondville"
-        },
-        {
-          "type": "talk",
-          "time": "-",
-          "title_fr": "Pdte Emilie Provost",
-          "detail_fr": "Présidente de la Société de Secours"
+          "title_fr": "Sr. Claudine Ormeus",
+          "detail_fr": "Lemoyne"
         },
         {
           "type": "talk",
           "time": "-",
           "title_fr": "Sr et Pdt. Dietze",
-          "detail_fr": "Président du temple"
+          "detail_fr": "Président du temple et son épouse"
         },
         {
           "type": "hymn",
           "time": "-",
           "title_fr": "Intermède",
-          "detail_fr": "Français #141 Seigneur, je te suivrai | Espagnol #138 Senor, yo te seguiré"
-        },
-        {
-          "type": "talk",
-          "time": "-",
-          "title_fr": "Pdt Dumas",
-          "detail_fr": "2e conseiller de la présidence de pieu"
-        },
-        {
-          "type": "talk",
-          "time": "-",
-          "title_fr": "Pdt Gingras",
-          "detail_fr": "1e Conseiller de la présidence de pieu"
+          "detail_fr": "#152 Nous aimons ta maison | #247 We Love Thy House, O God  | #160 Tu casa anamos, Dios "
         },
         {
           "type": "talk",
@@ -242,16 +224,28 @@
           "detail_fr": "Président de pieu"
         },
         {
+          "type": "talk",
+          "time": "-",
+          "title_fr": "Elder Matthew L. Carpenter",
+          "detail_fr": "Soixante-dix"
+        },
+        {
           "type": "hymn",
           "time": "-",
           "title_fr": "Cantique de Clôture",
-          "detail_fr": "Par le choeur de Lemoyne"
+          "detail_fr": "Par le choeur de Drummondville"
         },
         {
           "type": "prayer",
           "time": "12:00",
           "title_fr": "Prière de clôture",
           "detail_fr": "sur invitation"
+        },
+        {
+          "type": "hymn",
+          "title_fr": "postlude",
+          "detail_fr": "par Jérémie Champoux",
+          "time": "-"
         }
       ]
     }
