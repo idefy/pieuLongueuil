@@ -5,6 +5,30 @@
   "title_en": "Stake Conference",
   "sessions": [
     {
+      "title_fr": "Instruction écouteurs et traduction | Instrucciones sobre ayuda auditiva y traduccion",
+      "items": [
+        {
+          "type": "item",
+          "time": "FR",
+          "title_fr": "Instruction en Français",
+          "detail_fr": "https://tech.churchofjesuschrist.org/wiki/images/2/20/ListenWIFI_Handout_-_Standard_-_French.pdf"
+        },
+        {
+          "type": "item",
+          "time": "ES",
+          "title_fr": "Instrucciones en Español",
+          "detail_fr": "https://tech.churchofjesuschrist.org/wiki/images/c/c4/ListenWIFI-handout-standard-Spanish.pdf"
+        },
+        {
+          "type": "item",
+          "time": "EN",
+          "title_fr": "English instructions",
+          "detail_fr": "https://tech.churchofjesuschrist.org/wiki/images/a/a2/ListenWiFi_Instructions_Standard_Print_with_Tips_English.pdf"
+        }
+      ],
+      "time": "Français et Español"
+    },
+    {
       "time": "Samedi - 11:00",
       "title_fr": "Session des Dirigeants",
       "items": [
@@ -230,7 +254,6 @@
           "detail_fr": "sur invitation"
         }
       ]
-    },
-    {}
+    }
   ]
 }
