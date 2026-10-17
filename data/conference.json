@@ -1,5 +1,5 @@
 {
-  "date": "2026-06-06",
+  "date": "2026-10-31",
   "title_fr": "Conférence de Pieu",
   "title_es": "Conferencia de Estaca",
   "title_en": "Stake Conference",
@@ -59,19 +59,19 @@
       ]
     },
     {
-      "time": "Samedi 18:00",
+      "time": "Samedi 13:00",
       "title_fr": "Session des adultes",
       "items": [
         {
-          "type": "item",
+          "type": "hymn",
           "title_fr": "Prélude musicale",
-          "detail_fr": "par le choeur de Victoria",
+          "detail_fr": "Au piano par Julie-Claire Bouchard  Trompette et piano 160 Appelés à servir ",
           "time": "-"
         },
         {
-          "time": "18:00",
+          "time": "13:00",
           "title_fr": "Cantique d'ouverture",
-          "detail_fr": "Français # 14 La première prière de Joseph Smith | Español #14 La oracion del Profeta",
+          "detail_fr": "#200 Aimez vos frères | #308 Love One Another | #203  Amad a otros (2 fois, la deuxième fois étant plus lentement) ",
           "type": "hymn"
         },
         {
@@ -82,50 +82,27 @@
         },
         {
           "time": "-",
-          "title_fr": "Présentation musciale",
-          "detail_fr": "par la famille Gingras",
-          "type": "hymn"
-        },
-        {
-          "time": "-",
-          "title_fr": "Fr Arturo Jimenez",
-          "detail_fr": "St-Luc",
+          "title_fr": "Président Dumas",
+          "detail_fr": "2e conseiller de pieu",
           "type": "talk"
         },
         {
           "type": "talk",
           "time": "-",
-          "title_fr": "Fr Antoine Doyen",
-          "detail_fr": "Granby"
-        },
-        {
-          "type": "talk",
-          "time": "_",
-          "title_fr": "Sr Lisa et Fr. Serge Desjourdy"
+          "title_fr": "Raphaël Ouellet",
+          "detail_fr": ""
         },
         {
           "type": "talk",
           "time": "-",
           "title_fr": "Sr et Pdt Sorenson",
-          "detail_fr": "Présidente de mission"
+          "detail_fr": "Président de mission et son épouse"
         },
         {
           "type": "hymn",
           "time": "-",
           "title_fr": "Cantique d'intermède",
-          "detail_fr": "Français # 173 Allons avec foi | Español  # 169 Al mundo ve a predicar"
-        },
-        {
-          "type": "talk",
-          "time": "- ",
-          "title_fr": "Pdt Dumas",
-          "detail_fr": "2e conseiller de pieu"
-        },
-        {
-          "type": "talk",
-          "time": "-",
-          "title_fr": "Pdt Gingras",
-          "detail_fr": "1e conseiller de pieu"
+          "detail_fr": "#1032 Vois son éclat s’illuminer | #1032 Look unto Christ | #1032 Mirad a Cristo | (L’assemblée se joindra au dernier couplet)"
         },
         {
           "type": "talk",
@@ -134,14 +111,20 @@
           "detail_fr": "Présidente de pieu"
         },
         {
-          "type": "item",
+          "type": "talk",
+          "title_fr": "Elder Matthew L. Carpenter",
+          "detail_fr": "Soixante-dix",
+          "time": "-"
+        },
+        {
+          "type": "hymn",
           "time": "-",
           "title_fr": "Cantique de clôture",
-          "detail_fr": "Par le choeur de Victoria"
+          "detail_fr": "#4 Tout au sommet des monts | #5 High on the Mountain Top | #4 Bandera de Sion "
         },
         {
           "type": "prayer",
-          "time": "20:00",
+          "time": "15:00",
           "title_fr": "Prière de clôture",
           "detail_fr": "par invitation"
         }
@@ -247,6 +230,7 @@
           "detail_fr": "sur invitation"
         }
       ]
-    }
+    },
+    {}
   ]
 }
