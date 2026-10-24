@@ -60,7 +60,7 @@
           "type": "hymn",
           "time": "11:45",
           "title_fr": "Cantique d'intermède",
-          "detail_fr": "à venir"
+          "detail_fr": "#42 Quels fondements fermes | #85 How Firm a Foundation | #40 Qué firmes Cimientos "
         },
         {
           "type": "talk",
@@ -95,7 +95,7 @@
         {
           "time": "13:00",
           "title_fr": "Cantique d'ouverture",
-          "detail_fr": "#200 Aimez vos frères | #308 Love One Another | #203  Amad a otros (2 fois, la deuxième fois étant plus lentement) ",
+          "detail_fr": "#77 Ah, douce est l’heure de prier | #142 Sweet Hour of Prayer  | #78 Oh dulce, grata oracion ",
           "type": "hymn"
         },
         {
@@ -103,6 +103,12 @@
           "title_fr": "Prière d'ouverture",
           "detail_fr": "par invitation",
           "type": "prayer"
+        },
+        {
+          "type": "hymn",
+          "time": "-",
+          "title_fr": "Présentation musicale au piano",
+          "detail_fr": "Julie-Claire Bouchard et Wesley Olsen "
         },
         {
           "time": "-",
@@ -126,7 +132,7 @@
           "type": "hymn",
           "time": "-",
           "title_fr": "Cantique d'intermède",
-          "detail_fr": "#1032 Vois son éclat s’illuminer | #1032 Look unto Christ | #1032 Mirad a Cristo | (L’assemblée se joindra au dernier couplet)"
+          "detail_fr": "#200 Aimez vos frères | #308 Love One Another | #203  Amad a otros "
         },
         {
           "type": "talk",
@@ -180,7 +186,7 @@
           "type": "hymn",
           "time": "-",
           "title_fr": "Présentation musicale",
-          "detail_fr": "Choeur de Lemoyne"
+          "detail_fr": "Chorale de Drummondville"
         },
         {
           "type": "item",
@@ -233,7 +239,7 @@
           "type": "hymn",
           "time": "-",
           "title_fr": "Cantique de Clôture",
-          "detail_fr": "Par le choeur de Drummondville"
+          "detail_fr": "Par la chorale de Drummondville"
         },
         {
           "type": "prayer",
