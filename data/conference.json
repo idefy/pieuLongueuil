@@ -90,18 +90,16 @@
       "title_fr": "Session des adultes",
       "items": [
         {
-          "type": "hymn",
-          "title_fr": "Prélude musicale",
-          "detail_fr": "Au piano par Julie-Claire Bouchard  Trompette et piano 160 Appelés à servir ",
-          "time": "-"
+          "type": "music",
+          "title_fr": "Au piano par Julie-Claire Bouchard"
         },
         {
           "time": "13:00",
           "title_fr": "Cantique d'ouverture",
-          "detail_fr": "#77 Ah, douce est l’heure de prier",
+          "detail_fr": "77 Ah, douce est l’heure de prier",
           "type": "hymn",
-          "detail_en": "#142 Sweet Hour of Prayer",
-          "detail_es": "#78 Oh dulce, grata oracion "
+          "detail_en": "142 Sweet Hour of Prayer",
+          "detail_es": "78 Oh dulce, grata oracion "
         },
         {
           "time": "-",
@@ -123,19 +121,23 @@
         },
         {
           "time": "-",
-          "title_fr": "Président Dumas",
+          "title_fr": "Président Philippe Dumas",
           "detail_fr": "2e conseiller de la présidence de pieu",
           "type": "talk",
           "detail_es": "2o consejero de la presidencia de la estaca",
-          "detail_en": "2nd stake presidency counselor "
+          "detail_en": "2nd stake presidency counselor ",
+          "title_es": "Presidente Philippe Dumas",
+          "title_en": "Président Philippe Dumas"
         },
         {
           "type": "talk",
           "time": "-",
           "title_fr": "Frère Raphaël Ouellet",
-          "detail_fr": "",
+          "detail_fr": "Paroisse de Longueuil ",
           "title_es": "Hermano Raphaël Ouellet",
-          "title_en": "Brother Raphaël Ouellet"
+          "title_en": "Brother Raphaël Ouellet",
+          "detail_es": "Barrio de Longueuil ",
+          "detail_en": "Longueuil Ward"
         },
         {
           "type": "talk",
@@ -173,15 +175,19 @@
           "detail_fr": "Soixante-dix",
           "time": "-",
           "detail_es": "Setenta",
-          "detail_en": "Seventy"
+          "detail_en": "Seventy",
+          "title_es": "Elder Vern P. Stanfill",
+          "title_en": "Elder Vern P. Stanfill"
         },
         {
           "type": "hymn",
           "time": "-",
           "title_fr": "Cantique de clôture",
-          "detail_fr": "#4 Tout au sommet des monts | #5 High on the Mountain Top | #4 Bandera de Sion ",
+          "detail_fr": "4 Tout au sommet des monts",
           "title_en": "Closing hymn",
-          "title_es": "Último cántico "
+          "title_es": "Último cántico ",
+          "detail_en": "5 High on the Mountain Top",
+          "detail_es": "4 Bandera de Sion"
         },
         {
           "type": "prayer",
