@@ -106,14 +106,21 @@
       "items": [
         {
           "type": "music",
-          "title_fr": "Au piano par Julie-Claire Bouchard"
+          "title_fr": "Au piano Julie-Claire Bouchard",
+          "title_es": "Al piano Julie-Claire Bouchard",
+          "title_en": "Julie-Claire Bouchard at the piano"
         },
         {
+          "hymn_url_en": "https://www.churchofjesuschrist.org/media/music/songs/sweet-hour-of-prayer?crumbs=hymns&order=number&lang=eng",
+          "hymn_url_fr": "https://www.churchofjesuschrist.org/media/music/songs/sweet-hour-of-prayer?crumbs=hymns&order=number&lang=fra",
+          "hymn_url_es": "https://www.churchofjesuschrist.org/media/music/songs/sweet-hour-of-prayer?crumbs=hymns&order=number&lang=spa",
           "time": "13:00",
+          "title_en": "Opening hymn",
           "title_fr": "Cantique d'ouverture",
-          "detail_fr": "77 Ah, douce est l’heure de prier",
-          "type": "hymn",
+          "title_es": "Cántico de apertura ",
           "detail_en": "142 Sweet Hour of Prayer",
+          "type": "hymn",
+          "detail_fr": "77 Ah, douce est l’heure de prier",
           "detail_es": "78 Oh dulce, grata oracion "
         },
         {
@@ -132,7 +139,9 @@
           "title_fr": "Présentation musicale au piano",
           "detail_fr": "Julie-Claire Bouchard et Wesley Olsen ",
           "title_es": "Presentación musical ",
-          "title_en": "Musical presentation "
+          "title_en": "Musical presentation ",
+          "detail_es": "Julie-Claire Bouchard y Wesley Olsen ",
+          "detail_en": "Julie-Claire Bouchard and Wesley Olsen "
         },
         {
           "time": "-",
@@ -142,7 +151,7 @@
           "detail_es": "2o consejero de la presidencia de la estaca",
           "detail_en": "2nd stake presidency counselor ",
           "title_es": "Presidente Philippe Dumas",
-          "title_en": "Président Philippe Dumas"
+          "title_en": "President Philippe Dumas"
         },
         {
           "type": "talk",
@@ -162,17 +171,20 @@
           "title_es": "Hermana y presidente Sorenson",
           "title_en": "Sister and President Sorenson",
           "detail_es": "Presidente de la mision y su esposa",
-          "detail_en": "Mission président and his wife"
+          "detail_en": "Mission president and his wife"
         },
         {
-          "type": "hymn",
+          "hymn_url_en": "https://www.churchofjesuschrist.org/media/music/songs/love-one-another?crumbs=hymns&order=number&lang=eng",
+          "hymn_url_fr": "https://www.churchofjesuschrist.org/media/music/songs/love-one-another?crumbs=hymns&order=number&lang=fra",
+          "hymn_url_es": "https://www.churchofjesuschrist.org/media/music/songs/love-one-another?crumbs=hymns&order=number&lang=spa",
           "time": "-",
+          "title_en": "Intermediate Hymn",
           "title_fr": "Cantique d'intermède",
-          "detail_fr": "#200 Aimez vos frères",
           "title_es": "Cántico de intermedio ",
           "detail_en": "#308 Love One Another",
-          "detail_es": "#203  Amad a otros",
-          "title_en": "Intermediate Hymn"
+          "type": "hymn",
+          "detail_fr": "#200 Aimez vos frères",
+          "detail_es": "#203  Amad a otros"
         },
         {
           "type": "talk",
@@ -195,13 +207,16 @@
           "title_en": "Elder Vern P. Stanfill"
         },
         {
-          "type": "hymn",
+          "hymn_url_en": "https://www.churchofjesuschrist.org/media/music/songs/high-on-the-mountain-top?crumbs=hymns&order=number&lang=eng",
+          "hymn_url_fr": "https://www.churchofjesuschrist.org/media/music/songs/high-on-the-mountain-top?crumbs=hymns&order=number&lang=fra",
+          "hymn_url_es": "https://www.churchofjesuschrist.org/media/music/songs/high-on-the-mountain-top?crumbs=hymns&order=number&lang=spa",
           "time": "-",
-          "title_fr": "Cantique de clôture",
-          "detail_fr": "4 Tout au sommet des monts",
           "title_en": "Closing hymn",
+          "title_fr": "Cantique de clôture",
           "title_es": "Último cántico ",
           "detail_en": "5 High on the Mountain Top",
+          "type": "hymn",
+          "detail_fr": "4 Tout au sommet des monts",
           "detail_es": "4 Bandera de Sion"
         },
         {
