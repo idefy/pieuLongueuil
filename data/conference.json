@@ -199,7 +199,9 @@
           "detail_es": "Por invitación ",
           "detail_en": "By invitation "
         }
-      ]
+      ],
+      "title_es": "Sesion de adultos",
+      "title_en": "Adult's session "
     },
     {
       "time": "Dimanche 10:00",
