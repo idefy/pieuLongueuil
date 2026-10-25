@@ -94,68 +94,100 @@
         {
           "time": "13:00",
           "title_fr": "Cantique d'ouverture",
-          "detail_fr": "#77 Ah, douce est l’heure de prier | #142 Sweet Hour of Prayer  | #78 Oh dulce, grata oracion ",
-          "type": "hymn"
+          "detail_fr": "#77 Ah, douce est l’heure de prier",
+          "type": "hymn",
+          "detail_en": "#142 Sweet Hour of Prayer",
+          "detail_es": "#78 Oh dulce, grata oracion "
         },
         {
           "time": "-",
           "title_fr": "Prière d'ouverture",
           "detail_fr": "par invitation",
-          "type": "prayer"
+          "type": "prayer",
+          "title_es": "Oración de apertura ",
+          "title_en": "Opening prayer",
+          "detail_es": "Por invitación ",
+          "detail_en": "By invitation "
         },
         {
           "type": "hymn",
           "time": "-",
           "title_fr": "Présentation musicale au piano",
-          "detail_fr": "Julie-Claire Bouchard et Wesley Olsen "
+          "detail_fr": "Julie-Claire Bouchard et Wesley Olsen ",
+          "title_es": "Presentación musical ",
+          "title_en": "Musical presentation "
         },
         {
           "time": "-",
           "title_fr": "Président Dumas",
-          "detail_fr": "2e conseiller de pieu",
-          "type": "talk"
+          "detail_fr": "2e conseiller de la présidence de pieu",
+          "type": "talk",
+          "detail_es": "2o consejero de la presidencia de la estaca",
+          "detail_en": "2nd stake presidency counselor "
         },
         {
           "type": "talk",
           "time": "-",
-          "title_fr": "Raphaël Ouellet",
-          "detail_fr": ""
+          "title_fr": "Frère Raphaël Ouellet",
+          "detail_fr": "",
+          "title_es": "Hermano Raphaël Ouellet",
+          "title_en": "Brother Raphaël Ouellet"
         },
         {
           "type": "talk",
           "time": "-",
-          "title_fr": "Sr et Pdt Sorenson",
-          "detail_fr": "Président de mission et son épouse"
+          "title_fr": "Soeur et President Sorenson",
+          "detail_fr": "Président de mission et son épouse",
+          "title_es": "Hermana y presidente Sorenson",
+          "title_en": "Sister and President Sorenson",
+          "detail_es": "Presidente de la mision y su esposa",
+          "detail_en": "Mission président and his wife"
         },
         {
           "type": "hymn",
           "time": "-",
           "title_fr": "Cantique d'intermède",
-          "detail_fr": "#200 Aimez vos frères | #308 Love One Another | #203  Amad a otros "
+          "detail_fr": "#200 Aimez vos frères",
+          "title_es": "Cántico de intermedio ",
+          "detail_en": "#308 Love One Another",
+          "detail_es": "#203  Amad a otros",
+          "title_en": "Intermediate Hymn"
         },
         {
           "type": "talk",
           "time": "-",
-          "title_fr": "Pdt Pelchat",
-          "detail_fr": "Présidente de pieu"
+          "title_fr": "President Paul Pelchat",
+          "detail_fr": "Présidente de pieu",
+          "title_es": "Presidente Paul Pelchat",
+          "title_en": "President Paul Pelchat",
+          "detail_es": "Presidente de estaca",
+          "detail_en": "Stake president "
         },
         {
           "type": "talk",
           "title_fr": "Elder Vern P. Stanfill",
           "detail_fr": "Soixante-dix",
-          "time": "-"
+          "time": "-",
+          "detail_es": "Setenta",
+          "detail_en": "Seventy"
         },
         {
           "type": "hymn",
           "time": "-",
           "title_fr": "Cantique de clôture",
-          "detail_fr": "#4 Tout au sommet des monts | #5 High on the Mountain Top | #4 Bandera de Sion "
+          "detail_fr": "#4 Tout au sommet des monts | #5 High on the Mountain Top | #4 Bandera de Sion ",
+          "title_en": "Closing hymn",
+          "title_es": "Último cántico "
         },
         {
           "type": "prayer",
           "time": "15:00",
           "title_fr": "Prière de clôture",
-          "detail_fr": "par invitation"
+          "detail_fr": "par invitation",
+          "title_es": "Última oración ",
+          "title_en": "Closing prayer ",
+          "detail_es": "Por invitación ",
+          "detail_en": "By invitation "
         }
       ]
     },
