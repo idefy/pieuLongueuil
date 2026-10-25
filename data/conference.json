@@ -181,10 +181,10 @@
           "title_en": "Intermediate Hymn",
           "title_fr": "Cantique d'intermède",
           "title_es": "Cántico de intermedio ",
-          "detail_en": "#308 Love One Another",
+          "detail_en": "308 Love One Another",
           "type": "hymn",
-          "detail_fr": "#200 Aimez vos frères",
-          "detail_es": "#203  Amad a otros"
+          "detail_fr": "200 Aimez vos frères",
+          "detail_es": "203  Amad a otros"
         },
         {
           "type": "talk",
@@ -421,7 +421,7 @@
         },
         {
           "label_fr": "Instructions en Anglais",
-          "label_es": "Instrucciones en Inlges",
+          "label_es": "Instrucciones en Ingles",
           "label_en": "English instructions ",
           "url": "https://tech.churchofjesuschrist.org/wiki/images/a/a2/ListenWiFi_Instructions_Standard_Print_with_Tips_English.pdf"
         }
