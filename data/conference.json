@@ -244,16 +244,19 @@
           "detail_es": "Sherryl Laplante & chorale de Drummondville",
           "detail_en": "Sherryl Laplante & chorale de Drummondville",
           "title_es": "Preludio al órgano ",
-          "title_en": "Orgue prelude"
+          "title_en": " Organ Prelude"
         },
         {
-          "type": "hymn",
+          "hymn_url_en": "https://www.churchofjesuschrist.org/media/music/songs/let-us-all-press-on?crumbs=hymns&order=number&lang=eng",
+          "hymn_url_fr": "https://www.churchofjesuschrist.org/media/music/songs/let-us-all-press-on?crumbs=hymns&order=number&lang=fra",
+          "hymn_url_es": "https://www.churchofjesuschrist.org/media/music/songs/let-us-all-press-on?crumbs=hymns&order=number&lang=spa",
           "time": "10:00",
-          "detail_fr": "159 Mettons de l’ardeur au service du Seigneur",
+          "title_en": "Opening hymn",
           "title_fr": "Cantique d'ouverture",
           "title_es": "Cántico de apertura ",
-          "title_en": "Opening hymn",
           "detail_en": "243 Let Us All Press On ",
+          "type": "hymn",
+          "detail_fr": "159 Mettons de l’ardeur au service du Seigneur",
           "detail_es": "158 Trabajemos  hoy en la obra"
         },
         {
@@ -281,7 +284,7 @@
           "time": "-",
           "title_fr": "Affaires de pieu",
           "title_es": "Anuncios de estaca",
-          "title_en": "Stake busoness"
+          "title_en": "Stake business"
         },
         {
           "type": "talk",
@@ -296,56 +299,91 @@
         {
           "type": "talk",
           "time": "-",
-          "title_fr": "Sr. Salome Worner",
-          "detail_fr": "Longueuil (15 ans)"
+          "title_fr": "Soeur Salome Worner",
+          "detail_fr": "Paroisse de Longueuil (15 ans)",
+          "title_es": "Hermana Salome Worner",
+          "title_en": "Sister Salome Worner",
+          "detail_es": "Barrio de Longueuil (15 años)",
+          "detail_en": "Longueuil Ward (15 years)"
         },
         {
           "type": "talk",
           "time": "-",
-          "title_fr": "Sr. Claudine Ormeus",
-          "detail_fr": "Lemoyne"
+          "title_fr": "Soeur Claudine Ormeus",
+          "detail_fr": "Paroisse de Lemoyne",
+          "title_es": "Hermana Claudine Ormeus",
+          "title_en": "Sister Claudine Ormeus",
+          "detail_es": "Barrio de Lemoyne",
+          "detail_en": "Lemoyne ward"
         },
         {
           "type": "talk",
           "time": "-",
-          "title_fr": "Sr et Pdt. Chen",
-          "detail_fr": "Président du temple et son épouse"
+          "title_fr": "Soeur et Président Chen",
+          "detail_fr": "2e conseil de la présidence du temple et son épouse",
+          "title_es": "Hermana y Presidente Chen",
+          "title_en": "Sister and President Chen",
+          "detail_en": "2nd counselor in the temple presidency and his wife",
+          "detail_es": "2o consejero de la presidencia del templo y su esposa"
         },
         {
+          "hymn_url_en": "https://www.churchofjesuschrist.org/media/music/songs/we-love-thy-house-o-god?crumbs=hymns&order=number&lang=eng",
+          "hymn_url_fr": "https://www.churchofjesuschrist.org/media/music/songs/we-love-thy-house-o-god?crumbs=hymns&order=number&lang=fra",
+          "hymn_url_es": "https://www.churchofjesuschrist.org/media/music/songs/we-love-thy-house-o-god?crumbs=hymns&order=number&lang=spa",
+          "time": "-",
+          "title_en": "Intermediate hymn",
+          "title_fr": "Cnatique d'intermède",
+          "title_es": "Cántico de intermedio ",
+          "detail_en": "247 We Love Thy House, O God",
           "type": "hymn",
-          "time": "-",
-          "title_fr": "Intermède",
-          "detail_fr": "#152 Nous aimons ta maison | #247 We Love Thy House, O God  | #160 Tu casa amamos, Dios "
+          "detail_fr": "152 Nous aimons ta maison",
+          "detail_es": "160 Tu casa amamos, Dios "
         },
         {
           "type": "talk",
           "time": "-",
-          "title_fr": "Pdt Pelchat",
-          "detail_fr": "Président de pieu"
+          "title_fr": "Président Paul Pelchat",
+          "detail_fr": "Président de pieu",
+          "detail_es": "Presidente de estaca",
+          "detail_en": "Stake president",
+          "title_es": "Presidente Paul Pelchat",
+          "title_en": "President Paul Pelchat"
         },
         {
           "type": "talk",
           "time": "-",
           "title_fr": "Elder Van P. Stanfill",
-          "detail_fr": "Soixante-dix"
+          "detail_fr": "Soixante-dix",
+          "title_es": "Elder Van P. Stanfill",
+          "title_en": "Elder Van P. Stanfill",
+          "detail_es": "Setenta",
+          "detail_en": "Seventy"
         },
         {
           "type": "hymn",
           "time": "-",
           "title_fr": "Cantique de Clôture",
-          "detail_fr": "Par la chorale de Drummondville"
+          "detail_fr": "Par la chorale de Drummondville",
+          "title_es": "Ultimo cantico",
+          "title_en": "Closing hymn",
+          "detail_es": "Por la chorale de Drummondville",
+          "detail_en": "By the Drummondville choir"
         },
         {
           "type": "prayer",
           "time": "12:00",
           "title_fr": "Prière de clôture",
-          "detail_fr": "sur invitation"
+          "detail_fr": "sur invitation",
+          "title_es": "Ultima orcation",
+          "title_en": "Closing hymn",
+          "detail_es": "por invitacion",
+          "detail_en": "by invitation"
         },
         {
-          "type": "hymn",
-          "title_fr": "postlude",
-          "detail_fr": "par Jérémie Champoux",
-          "time": "-"
+          "type": "music",
+          "title_fr": "par Jérémie Champoux",
+          "title_es": "por Jérémie Champoux",
+          "title_en": "by Jérémie Champoux"
         }
       ],
       "title_es": "Sesion general",
