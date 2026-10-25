@@ -12,11 +12,11 @@
           "time": "11:00",
           "title_fr": "Cantique d'ouverture",
           "type": "hymn",
-          "detail_fr": "#40 Saints en avant ! Armés de foi en Christ",
+          "detail_fr": "40 Saints en avant ! Armés de foi en Christ",
           "title_es": "Cantico de apertura ",
           "title_en": "Opening hymn",
-          "detail_en": "#81 Press Forward, Saints",
-          "detail_es": " #38 Santos, avanzad "
+          "detail_en": "81 Press Forward, Saints",
+          "detail_es": " 38 Santos, avanzad "
         },
         {
           "time": "-",
@@ -31,16 +31,18 @@
         {
           "time": "-",
           "title_fr": "Instruction",
-          "detail_fr": "Pdt Gingras",
+          "detail_fr": "President Jonathan Gingras",
           "type": "talk",
           "title_es": "Instrucción ",
-          "title_en": "Instruction"
+          "title_en": "Instruction",
+          "detail_es": "Presidente Jonathan Gingras",
+          "detail_en": "President Jonathan Gingras"
         },
         {
           "type": "talk",
           "time": "-",
           "title_fr": "Instruction",
-          "detail_fr": "Pdt Pelchat",
+          "detail_fr": "Président Paul Pelchat",
           "title_es": "Instrucción",
           "title_en": "Instruction "
         },
@@ -48,11 +50,11 @@
           "type": "hymn",
           "time": "11:45",
           "title_fr": "Cantique d'intermède",
-          "detail_fr": "#42 Quels fondements fermes",
+          "detail_fr": "42 Quels fondements fermes",
           "title_es": "Cántico de intermedio ",
           "title_en": "Intermediate Hymn",
-          "detail_en": "#85 How Firm a Foundation",
-          "detail_es": "#40 Qué firmes Cimientos"
+          "detail_en": "85 How Firm a Foundation",
+          "detail_es": "40 Qué firmes Cimientos"
         },
         {
           "type": "talk",
@@ -65,17 +67,19 @@
         {
           "type": "hymn",
           "title_fr": "Cantique de cloture",
-          "detail_fr": "#141 Seigneur, je te suivrai",
+          "detail_fr": "141 Seigneur, je te suivrai",
           "title_es": "Último cántico ",
           "title_en": "Closing hymn",
-          "detail_en": "#220 Lord,  I Would Follow Thee",
-          "detail_es": "#138 Senor, yo to seguiré "
+          "detail_en": "220 Lord,  I Would Follow Thee",
+          "detail_es": "138 Senor, yo to seguiré "
         },
         {
           "type": "prayer",
           "time": "12:28",
           "title_fr": "Prière de clôture",
-          "detail_fr": "Sara Matos"
+          "detail_fr": "Sara Matos",
+          "title_es": "Última oración ",
+          "title_en": "Closing prayer "
         }
       ],
       "title_es": "Sesion de líderes ",
