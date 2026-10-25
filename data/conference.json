@@ -68,11 +68,11 @@
           "type": "talk",
           "time": "-",
           "title_fr": "Elder Vern P. Stanfill",
-          "detail_fr": "Soixante-dix",
+          "detail_fr": "Soixante-dix autorité générale – Président de l’interrégion du Canada",
           "title_es": "Elder Vern P. Stanfill",
           "title_en": "Elder Vern P. Stanfill",
-          "detail_es": "Setenta",
-          "detail_en": "Seventy"
+          "detail_es": "Setenta Autoridad General – Presidente del Área Canadá",
+          "detail_en": "General Authority Seventy - President of the Canada Area"
         },
         {
           "hymn_url_en": "https://www.churchofjesuschrist.org/media/music/songs/in-memory-of-the-crucified?crumbs=hymns&order=number&lang=eng",
@@ -106,9 +106,12 @@
       "items": [
         {
           "type": "music",
-          "title_fr": "Au piano Julie-Claire Bouchard",
-          "title_es": "Al piano Julie-Claire Bouchard",
-          "title_en": "Julie-Claire Bouchard at the piano"
+          "title_fr": "Prelude",
+          "title_es": "Preludio",
+          "title_en": "Prelude",
+          "detail_fr": "Au piano Julie-Claire Bouchard",
+          "detail_es": "Al piano Julie-Claire Bouchard",
+          "detail_en": "Julie-Claire Bouchard at the piano"
         },
         {
           "hymn_url_en": "https://www.churchofjesuschrist.org/media/music/songs/sweet-hour-of-prayer?crumbs=hymns&order=number&lang=eng",
@@ -199,10 +202,10 @@
         {
           "type": "talk",
           "title_fr": "Elder Vern P. Stanfill",
-          "detail_fr": "Soixante-dix",
+          "detail_fr": "Soixante-dix autorité générale – Président de l’interrégion du Canada",
           "time": "-",
-          "detail_es": "Setenta",
-          "detail_en": "Seventy",
+          "detail_es": "Setenta Autoridad General – Presidente del Área Canadá",
+          "detail_en": "General Authority Seventy - President of the Canada Area",
           "title_es": "Elder Vern P. Stanfill",
           "title_en": "Elder Vern P. Stanfill"
         },
@@ -353,11 +356,11 @@
           "type": "talk",
           "time": "-",
           "title_fr": "Elder Van P. Stanfill",
-          "detail_fr": "Soixante-dix",
+          "detail_fr": "Soixante-dix autorité générale – Président de l’interrégion du Canada",
           "title_es": "Elder Van P. Stanfill",
           "title_en": "Elder Van P. Stanfill",
-          "detail_es": "Setenta",
-          "detail_en": "Seventy"
+          "detail_es": "Setenta Autoridad General – Presidente del Área Canadá",
+          "detail_en": "General Authority Seventy - President of the Canada Area"
         },
         {
           "type": "hymn",
@@ -381,9 +384,12 @@
         },
         {
           "type": "music",
-          "title_fr": "par Jérémie Champoux",
-          "title_es": "por Jérémie Champoux",
-          "title_en": "by Jérémie Champoux"
+          "title_fr": "Postlude",
+          "title_es": "Postludio",
+          "title_en": "Postlude",
+          "detail_fr": "par Jérémie Champoux",
+          "detail_es": "por Jérémie Champoux",
+          "detail_en": "by Jérémie Champoux"
         }
       ],
       "title_es": "Sesion general",
