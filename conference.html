@@ -5,182 +5,316 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow">
   <title>Conférence de Pieu — Pieu Longueuil</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lato:wght@300;400;700;900&display=swap">
   <link rel="stylesheet" href="css/main.css">
   <style>
     body { background: var(--c-light); }
-    .conf-header {
-      background: var(--c-primary);
-      padding: 48px 40px 40px;
-      text-align: center;
-    }
-    .conf-header-eyebrow {
-      font-family: var(--font-body);
-      font-size: 11px; font-weight: 500;
-      color: var(--c-secondary);
-      letter-spacing: 0.2em; text-transform: uppercase;
-      margin-bottom: 12px;
-    }
-    .conf-header-title {
-      font-family: var(--font-display);
-      font-size: 40px; font-weight: 700;
-      color: #fff; margin-bottom: 8px;
-    }
-    .conf-header-date {
-      font-family: var(--font-body);
-      font-size: 14px; color: rgba(255,255,255,0.65);
-    }
+
+    /* ── Header ─────────────────────────────────────────── */
+    .conf-header { background: var(--c-primary); padding: 40px 40px 40px; text-align: center; position: relative; }
+    .conf-lang { position: absolute; top: 16px; right: 20px; display: flex; gap: 2px; border: 1px solid rgba(255,255,255,0.18); border-radius: 20px; padding: 3px; }
+    .conf-lang button { font-family: var(--font-body); font-size: 11px; font-weight: 700; letter-spacing: 0.08em; color: rgba(255,255,255,0.55); background: none; border: none; cursor: pointer; padding: 4px 10px; border-radius: 16px; }
+    .conf-lang button:hover { color: #fff; }
+    .conf-lang button.active { background: var(--c-secondary); color: #fff; }
+    .conf-header-eyebrow { font-family: var(--font-body); font-size: 11px; font-weight: 700; color: var(--c-secondary); letter-spacing: 0.2em; text-transform: uppercase; margin: 14px 0 12px; }
+    .conf-header-title { font-family: var(--font-display); font-size: 40px; font-weight: 700; color: #fff; margin-bottom: 10px; line-height: 1.15; }
+    .conf-header-date { font-family: var(--font-body); font-size: 14px; color: rgba(255,255,255,0.7); letter-spacing: 0.02em; }
     .conf-gold-bar { height: 3px; background: var(--c-secondary); }
-    .conf-body { max-width: 720px; margin: 0 auto; padding: 56px 40px; }
-    .conf-section { margin-bottom: 48px; }
-    .conf-section-title {
-      font-family: var(--font-display);
-      font-size: 26px; font-weight: 700;
-      color: var(--c-dark); margin-bottom: 20px;
-      padding-bottom: 12px;
-      border-bottom: 1px solid var(--c-border);
-    }
-    .conf-item {
-      display: flex; gap: 20px;
-      padding: 16px 0;
-      border-bottom: 1px solid var(--c-border);
-    }
-    .conf-item:last-child { border-bottom: none; }
-    .conf-time {
-      font-family: var(--font-body);
-      font-size: 12px; font-weight: 700;
-      color: var(--c-secondary);
-      min-width: 60px; padding-top: 2px;
-    }
-    .conf-item-title {
-      font-family: var(--font-body);
-      font-size: 15px; font-weight: 500;
-      color: var(--c-dark); margin-bottom: 2px;
-    }
-    .conf-item-detail {
-      font-family: var(--font-body);
-      font-size: 13px; color: var(--c-muted);
-    }
-    .conf-item-hymn {
-      font-family: var(--font-display);
-      font-size: 14px; color: var(--c-muted);
-      font-style: italic;
-    }
-    .back-link {
-      display: inline-flex; align-items: center; gap: 8px;
-      font-family: var(--font-body); font-size: 13px;
-      color: var(--c-muted); margin-bottom: 40px;
-      transition: color 0.2s; text-decoration: none;
-    }
+
+    .conf-body { max-width: 720px; margin: 0 auto; padding: 48px 40px 72px; }
+    .back-link { display: inline-block; font-family: var(--font-body); font-size: 13px; color: var(--c-muted); margin-bottom: 36px; text-decoration: none; }
     .back-link:hover { color: var(--c-primary); }
-    .conf-loading {
-      text-align: center; padding: 60px 20px;
-      font-family: var(--font-body); font-size: 14px;
-      color: var(--c-muted); font-style: italic;
-    }
+    .conf-loading { text-align: center; padding: 60px 20px; font-family: var(--font-body); font-size: 14px; color: var(--c-muted); font-style: italic; }
+
+    /* ── Intro content (same blocks as sub-pages) ───────── */
+    #conf-intro { margin-bottom: 40px; }
+    .sp-eyebrow { font-size: 10px; font-weight: 700; color: var(--c-secondary); letter-spacing: 0.22em; text-transform: uppercase; margin-bottom: 8px; }
+    .sp-intro { font-family: var(--font-display); font-style: italic; font-size: 18px; color: var(--c-muted); line-height: 1.8; margin-bottom: 28px; }
+    .sp-heading { font-family: var(--font-display); font-size: 26px; font-weight: 700; color: var(--c-dark); margin: 36px 0 14px; padding-bottom: 10px; border-bottom: 1px solid var(--c-border); }
+    .sp-heading:first-child { margin-top: 0; }
+    .sp-subheading { font-family: var(--font-display); font-size: 19px; font-weight: 600; color: var(--c-primary); margin: 24px 0 10px; }
+    .sp-body { font-size: 16px; line-height: 1.85; color: var(--c-text); margin-bottom: 14px; }
+    .sp-body a, .sp-intro a, .sp-note a, .sp-callout a, .sp-list a { color: var(--c-accent); text-decoration: underline; text-underline-offset: 3px; }
+    .sp-note { font-size: 14px; font-style: italic; color: var(--c-muted); margin-bottom: 14px; padding-left: 14px; border-left: 2px solid var(--c-border); }
+    .sp-callout { background: var(--c-highlight, #EAF0F9); border-left: 3px solid var(--c-secondary); border-radius: 0 6px 6px 0; padding: 18px 22px; margin: 22px 0; font-size: 15px; line-height: 1.7; }
+    .sp-divider { border: none; border-top: 1px solid var(--c-border); margin: 30px 0; }
+    .sp-image { width: 100%; border-radius: 6px; margin: 20px 0 6px; display: block; box-shadow: var(--shadow-md); }
+    .sp-caption { font-size: 13px; color: var(--c-muted); text-align: center; font-style: italic; margin-bottom: 14px; }
+    .sp-list { list-style: none; margin: 0 0 18px; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+    .sp-list li { font-size: 15px; line-height: 1.65; display: flex; gap: 10px; align-items: flex-start; }
+    .sp-list li::before { content: '—'; color: var(--c-secondary); font-weight: 700; flex-shrink: 0; }
+    .sp-linklist { list-style: none; margin: 0 0 18px; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+    .sp-linklist a { font-size: 14px; font-weight: 700; color: var(--c-accent); display: flex; align-items: center; gap: 8px; padding: 9px 14px; border: 1px solid var(--c-border); border-radius: 4px; background: var(--c-surface); text-decoration: none; }
+    .sp-linklist a:hover { border-color: var(--c-secondary); color: var(--c-primary); background: var(--c-warm); }
+    .sp-cta-wrap { margin: 22px 0; }
+    .btn-gold { background: var(--c-secondary); color: #fff; border-color: var(--c-secondary); }
+    .btn-gold:hover { background: var(--c-primary); border-color: var(--c-primary); }
+    .sp-pdf { margin: 24px 0; }
+    .sp-pdf iframe { width: 100%; border: 1px solid var(--c-border); border-radius: 6px; display: block; background: #fff; }
+    .sp-pdf-dl { margin-top: 8px; text-align: right; }
+    .sp-pdf-dl a { font-size: 12px; font-weight: 700; color: var(--c-secondary); text-decoration: none; letter-spacing: 0.06em; }
+
+    /* ── Sessions ───────────────────────────────────────── */
+    .conf-section { margin-bottom: 52px; }
+    .conf-session-time { font-family: var(--font-body); font-size: 12px; font-weight: 700; color: var(--c-secondary); letter-spacing: 0.2em; margin-bottom: 6px; }
+    .conf-section-title { font-family: var(--font-display); font-size: 26px; font-weight: 700; color: var(--c-dark); margin-bottom: 8px; padding-bottom: 12px; border-bottom: 1px solid var(--c-border); }
+    .conf-item { display: flex; gap: 16px; align-items: flex-start; padding: 16px 0; border-bottom: 1px solid var(--c-border); }
+    .conf-item:last-child { border-bottom: none; }
+    .conf-icon { flex-shrink: 0; width: 38px; height: 38px; border: 1px solid var(--c-border); border-radius: 50%; background: var(--c-surface); color: var(--c-secondary); display: flex; align-items: center; justify-content: center; }
+    .conf-item-content { padding-top: 1px; min-width: 0; }
+    .conf-item-title { font-family: var(--font-body); font-size: 15px; font-weight: 700; color: var(--c-dark); }
+    .conf-item-detail { font-family: var(--font-body); font-size: 14px; color: var(--c-muted); margin-top: 2px; }
+    .conf-item-hymn { font-family: var(--font-display); font-style: italic; font-size: 15px; color: var(--c-muted); margin-top: 2px; }
+    .conf-item-hymn a { color: var(--c-accent); text-decoration: none; border-bottom: 1px solid var(--c-border); }
+    .conf-item-hymn a:hover { color: var(--c-secondary); border-bottom-color: var(--c-secondary); }
+
     @media (max-width: 600px) {
-      .conf-body { padding: 32px 20px; }
-      .conf-header { padding: 40px 20px 32px; }
+      .conf-body { padding: 32px 20px 56px; }
+      .conf-header { padding: 36px 20px 32px; }
       .conf-header-title { font-size: 28px; }
     }
   </style>
 </head>
 <body>
 
-<div class="conf-header">
+<header class="conf-header">
+  <div class="conf-lang" role="group" aria-label="Langue / Language">
+    <button type="button" data-lang="fr">FR</button>
+    <button type="button" data-lang="es">ES</button>
+    <button type="button" data-lang="en">EN</button>
+  </div>
   <p class="conf-header-eyebrow" id="conf-eyebrow">Pieu Longueuil Québec</p>
   <h1 class="conf-header-title" id="conf-title">Conférence de Pieu</h1>
   <p class="conf-header-date" id="conf-date"></p>
-</div>
+</header>
 <div class="conf-gold-bar"></div>
 
-<div class="conf-body">
-  <a class="back-link" href="index.html">← Retour au site</a>
-  <div id="conf-content">
-    <p class="conf-loading">Chargement du programme…</p>
-  </div>
-</div>
+<main class="conf-body">
+  <a class="back-link" id="conf-back" href="index.html">← Retour au site</a>
+  <div id="conf-intro"></div>
+  <div id="conf-content"><p class="conf-loading" id="conf-loading">Chargement du programme…</p></div>
+</main>
 
-<script src="js/config.js"></script>
+<script src="js/modals.js"></script>
 <script>
-(async function() {
-  const lang = localStorage.getItem('pieu-lang') || 'fr';
+(function () {
+  'use strict';
 
-  /* ── Type icons/labels ─────────────────────────────────── */
-  const typeLabels = {
-    hymn:   { fr: '♪', es: '♪', en: '♪' },
-    prayer: { fr: '', es: '', en: '' },
-    talk:   { fr: '', es: '', en: '' },
-    music:  { fr: '', es: '', en: '' },
-    item:   { fr: '', es: '', en: '' },
+  /* ── Texts ────────────────────────────────────────────── */
+  var L10N = {
+    fr: { back: '← Retour au site', loading: 'Chargement du programme…', unavailable: 'Programme non disponible pour le moment.', empty: 'Aucun programme disponible pour cette conférence.', download: 'Télécharger le PDF', viewHymn: 'Voir le cantique', locale: 'fr-CA' },
+    es: { back: '← Volver al sitio', loading: 'Cargando el programa…', unavailable: 'Programa no disponible por el momento.', empty: 'No hay programa disponible para esta conferencia.', download: 'Descargar PDF', viewHymn: 'Ver el himno', locale: 'es-MX' },
+    en: { back: '← Back to site', loading: 'Loading program…', unavailable: 'Program not available at this time.', empty: 'No program available for this conference.', download: 'Download PDF', viewHymn: 'View hymn', locale: 'en-CA' }
   };
 
-  /* ── Load data/conference.json ──────────────────────────── */
-  let data;
-  try {
-    const res = await fetch('data/conference.json');
-    if (!res.ok) throw new Error('not found');
-    data = await res.json();
-  } catch(e) {
-    document.getElementById('conf-content').innerHTML =
-      `<p class="conf-loading">Programme non disponible pour le moment.</p>`;
-    return;
+  /* Generic label per item type, used when no title exists in the visitor's language */
+  var TYPE_DEFAULT = {
+    hymn:   { fr: 'Cantique', es: 'Himno',    en: 'Hymn' },
+    prayer: { fr: 'Prière',   es: 'Oración',  en: 'Prayer' },
+    talk:   { fr: 'Discours', es: 'Discurso', en: 'Talk' },
+    music:  { fr: 'Musique',  es: 'Música',   en: 'Music' }
+  };
+
+  /* ── Icons: thin gold line icons, same style as the site ── */
+  function svg(inner, size) {
+    size = size || 20;
+    return '<svg width="' + size + '" height="' + size + '" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + inner + '</svg>';
   }
+  var ICONS = {
+    /* hymn: musical notes */
+    hymn:   '<path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>',
+    /* prayer: kneeling figure (Tabler Icons, MIT) */
+    prayer: '<circle cx="12" cy="5" r="1"/><path d="M7 20h8l-4-4v-7l4 3l2-2"/>',
+    /* talk: open scriptures */
+    talk:   '<path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>',
+    /* prelude / postlude: keyboard (Tabler Icons, MIT) */
+    music:  '<path d="M3 7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-14a2 2 0 0 1-2-2v-10"/><path d="M9 19v-6"/><path d="M8 5v8h2v-8"/><path d="M15 19v-6"/><path d="M14 5v8h2v-8"/>',
+    /* other: small diamond */
+    item:   '<path d="M12 8l4 4-4 4-4-4z"/>'
+  };
 
-  /* ── Header ─────────────────────────────────────────────── */
-  const title = data[`title_${lang}`] || data.title_fr || 'Conférence de Pieu';
-  document.getElementById('conf-title').textContent = title;
-  document.title = title + ' — Pieu Longueuil';
+  /* ── Helpers ──────────────────────────────────────────── */
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+  function safeUrl(u) {
+    u = String(u || '').trim();
+    if (!u) return '#';
+    if (/^(https?:|mailto:|tel:|modal:)/i.test(u)) return u;
+    if (/^[a-z][a-z0-9+.-]*:/i.test(u)) return '#';   /* javascript:, data:, … */
+    return u;                                           /* relative path */
+  }
+  function linkAttrs(url) {
+    return /^modal:/i.test(url) || url.charAt(0) === '#' ? '' : ' target="_blank" rel="noopener"';
+  }
+  /* escape, then **bold**, *italic*, [text](url) */
+  function md(s) {
+    return esc(s)
+      .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+      .replace(/\*([^*]+)\*/g, '<em>$1</em>')
+      .replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, function (m, text, url) {
+        var u = safeUrl(url.replace(/&amp;/g, '&'));
+        return '<a href="' + esc(u) + '"' + linkAttrs(u) + '>' + text + '</a>';
+      });
+  }
+  /* value in the visitor's language, French as the fallback */
+  function L(obj, key, lang) { return obj[key + '_' + lang] || obj[key + '_fr'] || obj[key] || ''; }
 
-  if (data.date) {
-    try {
-      const d = new Date(data.date + 'T12:00:00'); // avoid timezone shift
-      document.getElementById('conf-date').textContent =
-        d.toLocaleDateString(lang === 'fr' ? 'fr-CA' : lang === 'es' ? 'es-MX' : 'en-CA',
-          { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
-    } catch(e) {
-      document.getElementById('conf-date').textContent = data.date;
+  /* ── Intro blocks (same as sub-pages) ─────────────────── */
+  function renderBlock(s, lang) {
+    var t = L(s, 'text', lang);
+    switch (s.type) {
+      case 'eyebrow':    return '<div class="sp-eyebrow">' + esc(t) + '</div>';
+      case 'intro':      return '<p class="sp-intro">' + md(t) + '</p>';
+      case 'heading':    return '<h2 class="sp-heading">' + esc(t) + '</h2>';
+      case 'subheading': return '<h3 class="sp-subheading">' + esc(t) + '</h3>';
+      case 'body':       return '<p class="sp-body">' + md(t) + '</p>';
+      case 'note':       return '<p class="sp-note">' + md(t) + '</p>';
+      case 'callout':    return '<div class="sp-callout">' + md(t) + '</div>';
+      case 'divider':    return '<hr class="sp-divider">';
+      case 'image': {
+        var src = s['src_' + lang] || s.src || '';
+        if (!src) return '';
+        var cap = L(s, 'caption', lang);
+        return '<figure style="margin:0"><img class="sp-image" src="' + esc(src) + '" alt="' + esc(s['alt_' + lang] || s.alt_fr || '') + '" onerror="this.style.display=\'none\'">' +
+               (cap ? '<figcaption class="sp-caption">' + esc(cap) + '</figcaption>' : '') + '</figure>';
+      }
+      case 'pdf': {
+        var pdf = s.src || '';
+        if (!pdf) return '';
+        var ttl = L(s, 'title', lang);
+        var h = parseInt(s.height, 10) || 700;
+        var view = esc(pdf) + '#toolbar=0&navpanes=0&view=FitH';
+        return '<div class="sp-pdf">' + (ttl ? '<p class="sp-eyebrow" style="margin-bottom:10px">' + esc(ttl) + '</p>' : '') +
+               '<iframe src="' + view + '" height="' + h + '" title="' + esc(ttl || 'PDF') + '"></iframe>' +
+               (s.show_download !== false ? '<div class="sp-pdf-dl"><a href="' + esc(pdf) + '" target="_blank" rel="noopener" download>↓ ' + esc(L10N[lang].download) + '</a></div>' : '') + '</div>';
+      }
+      case 'list':
+        return '<ul class="sp-list">' + (s.items || []).map(function (i) { return '<li><span>' + md(L(i, 'text', lang) || i.item || '') + '</span></li>'; }).join('') + '</ul>';
+      case 'linklist':
+        return '<ul class="sp-linklist">' + (s.items || []).map(function (i) {
+          var u = safeUrl(i['url_' + lang] || i.url);
+          return '<li><a href="' + esc(u) + '"' + linkAttrs(u) + '>↗ ' + esc(L(i, 'label', lang)) + '</a></li>';
+        }).join('') + '</ul>';
+      case 'cta': {
+        var cu = safeUrl(s['href_' + lang] || s.href);
+        return '<div class="sp-cta-wrap"><a class="btn' + (s.style === 'gold' ? ' btn-gold' : '') + '" href="' + esc(cu) + '"' + linkAttrs(cu) + '>' + esc(L(s, 'label', lang)) + '</a></div>';
+      }
+      case 'page_link':
+        return '<div class="sp-cta-wrap"><a class="btn" href="page.html?p=' + encodeURIComponent(s.slug || '') + '">' + esc(L(s, 'label', lang)) + ' →</a></div>';
+      default: return '';
     }
   }
 
-  /* ── Sessions ───────────────────────────────────────────── */
-  const sessions = data.sessions || [];
-  if (!sessions.length) {
-    document.getElementById('conf-content').innerHTML =
-      `<p class="conf-loading">Aucun programme disponible pour cette conférence.</p>`;
-    return;
+  /* ── Sessions ─────────────────────────────────────────── */
+  function renderItem(item, lang) {
+    var type = TYPE_DEFAULT[item.type] ? item.type : 'item';
+    var def = TYPE_DEFAULT[type];
+    /* title: visitor's language → generic label of the type → French */
+    var title = item['title_' + lang] || (lang !== 'fr' && def ? def[lang] : '') || item.title_fr || (def ? def.fr : '');
+    var detail = item['detail_' + lang] || item.detail_fr || '';
+    var sub = '';
+    if (type === 'hymn') {
+      var url = item['hymn_url_' + lang] || item.hymn_url_fr || '';
+      if (url) {
+        var u = safeUrl(url);
+        sub = '<div class="conf-item-hymn"><a href="' + esc(u) + '"' + linkAttrs(u) + '>' + esc(detail || L10N[lang].viewHymn) + ' ↗</a></div>';
+      } else if (detail) {
+        sub = '<div class="conf-item-hymn">' + esc(detail) + '</div>';
+      }
+    } else if (detail) {
+      sub = '<div class="conf-item-detail">' + esc(detail) + '</div>';
+    }
+    return '<div class="conf-item"><div class="conf-icon">' + svg(ICONS[type], 20) + '</div>' +
+           '<div class="conf-item-content"><div class="conf-item-title">' + esc(title) + '</div>' + sub + '</div></div>';
   }
 
-  const html = sessions.map(session => {
-    const sessionTitle = session[`title_${lang}`] || session.title_fr || '';
-    const items = session.items || [];
+  function renderSession(session, lang) {
+    var title = session['title_' + lang] || session.title_fr || '';
+    return '<section class="conf-section">' +
+           (session.time ? '<p class="conf-session-time">' + esc(session.time) + '</p>' : '') +
+           '<h2 class="conf-section-title">' + esc(title) + '</h2>' +
+           (session.items || []).map(function (i) { return renderItem(i, lang); }).join('') + '</section>';
+  }
 
-    const itemsHtml = items.map(item => {
-      const itemTitle  = item[`title_${lang}`]  || item.title_fr  || '';
-      const itemDetail = item[`detail_${lang}`] || item.detail_fr || '';
-      const isHymn = item.type === 'hymn';
+  /* ── Dates ────────────────────────────────────────────── */
+  function formatDates(d1, d2, lang) {
+    function mk(s) { return s ? new Date(String(s).slice(0, 10) + 'T12:00:00') : null; }
+    var a = mk(d1), b = mk(d2);
+    if (!a || isNaN(a)) return '';
+    var f = new Intl.DateTimeFormat(L10N[lang].locale, { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+    var out;
+    if (!b || isNaN(b) || String(d1).slice(0, 10) === String(d2).slice(0, 10)) {
+      out = f.format(a);
+    } else {
+      try { out = f.formatRange(a, b); } catch (e) { out = f.format(a) + ' – ' + f.format(b); }
+    }
+    return out.charAt(0).toUpperCase() + out.slice(1);
+  }
 
-      return `
-        <div class="conf-item">
-          <div class="conf-time">${item.time || ''}</div>
-          <div class="conf-item-content">
-            <div class="conf-item-title">${itemTitle}</div>
-            ${itemDetail
-              ? isHymn
-                ? `<div class="conf-item-hymn">${itemDetail}</div>`
-                : `<div class="conf-item-detail">${itemDetail}</div>`
-              : ''}
-          </div>
-        </div>`;
-    }).join('');
+  /* ── Page ─────────────────────────────────────────────── */
+  var DATA = null, SETTINGS = null;
+  var lang = (function () {
+    var l = null;
+    try { l = localStorage.getItem('pieu-lang'); } catch (e) {}
+    return L10N[l] ? l : 'fr';
+  })();
 
-    return `
-      <div class="conf-section">
-        <h2 class="conf-section-title">${sessionTitle}</h2>
-        ${itemsHtml}
-      </div>`;
-  }).join('');
+  function $(id) { return document.getElementById(id); }
 
-  document.getElementById('conf-content').innerHTML = html;
+  function applyTheme(s) {
+    if (!s || !s.colors) return;
+    var map = { primary: '--c-primary', secondary: '--c-secondary', accent: '--c-accent', light: '--c-light', dark: '--c-dark' };
+    Object.keys(map).forEach(function (k) { if (s.colors[k]) document.documentElement.style.setProperty(map[k], s.colors[k]); });
+  }
+
+  function render() {
+    document.documentElement.lang = lang;
+    window.currentLang = lang;
+    Array.prototype.forEach.call(document.querySelectorAll('.conf-lang button'), function (b) {
+      b.classList.toggle('active', b.getAttribute('data-lang') === lang);
+      b.setAttribute('aria-pressed', b.getAttribute('data-lang') === lang ? 'true' : 'false');
+    });
+    $('conf-back').textContent = L10N[lang].back;
+
+    var stake = SETTINGS && ((SETTINGS.stakeNameI18n && (SETTINGS.stakeNameI18n[lang] || SETTINGS.stakeNameI18n.fr)) || SETTINGS.stakeName);
+    $('conf-eyebrow').textContent = stake || 'Pieu Longueuil Québec';
+
+    if (!DATA) {
+      $('conf-content').innerHTML = '<p class="conf-loading">' + esc(L10N[lang].unavailable) + '</p>';
+      return;
+    }
+    var title = DATA['title_' + lang] || DATA.title_fr || 'Conférence de Pieu';
+    $('conf-title').textContent = title;
+    document.title = title + ' — Pieu Longueuil';
+    $('conf-date').textContent = formatDates(DATA.date, DATA.date_end, lang);
+
+    $('conf-intro').innerHTML = (DATA.sections || []).map(function (s) { return renderBlock(s, lang); }).join('');
+
+    var sessions = DATA.sessions || [];
+    $('conf-content').innerHTML = sessions.length
+      ? sessions.map(function (s) { return renderSession(s, lang); }).join('')
+      : '<p class="conf-loading">' + esc(L10N[lang].empty) + '</p>';
+  }
+
+  Array.prototype.forEach.call(document.querySelectorAll('.conf-lang button'), function (b) {
+    b.addEventListener('click', function () {
+      lang = b.getAttribute('data-lang');
+      try { localStorage.setItem('pieu-lang', lang); } catch (e) {}
+      render();
+    });
+  });
+
+  if (window.initPageModals) { initPageModals(); initModalLinks(); }   /* modal: links inside the intro */
+
+  Promise.all([
+    fetch('data/settings.json').then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; }),
+    fetch('data/conference.json').then(function (r) { if (!r.ok) throw new Error('missing'); return r.json(); }).catch(function () { return null; })
+  ]).then(function (res) {
+    SETTINGS = res[0]; DATA = res[1];
+    applyTheme(SETTINGS);
+    render();
+  });
 })();
 </script>
 </body>

@@ -245,21 +245,6 @@ collections:
               - { label: "Texte (FR)", name: text_fr, widget: text }
               - { label: "Texte (ES)", name: text_es, widget: text, required: false }
               - { label: "Texte (EN)", name: text_en, widget: text, required: false }
-          - label: "📄 Document PDF"
-            name: pdf
-            widget: object
-            fields:
-              - label: "Fichier PDF"
-                name: src
-                widget: file
-                media_folder: "/assets"
-                public_folder: "/assets"
-                hint: "Téléversez un fichier PDF — il sera affiché directement dans la page"
-              - { label: "Titre / description (FR)", name: title_fr, widget: string, required: false, hint: "Affiché au-dessus du PDF" }
-              - { label: "Título / descripción (ES)", name: title_es, widget: string, required: false }
-              - { label: "Title / description (EN)", name: title_en, widget: string, required: false }
-              - { label: "Hauteur d'affichage (px)", name: height, widget: number, default: 700, required: false, hint: "Hauteur de la visionneuse en pixels — ex: 500, 700, 900" }
-              - { label: "Lien de téléchargement visible", name: show_download, widget: boolean, default: true, hint: "Afficher un bouton pour télécharger le PDF" }
           - label: "📋 Liste à puces"
             name: list
             widget: object
@@ -382,40 +367,258 @@ collections:
 
   - name: "conference"
     label: "📋 Conférence de Pieu"
-    description: "Programme accessible via QR code uniquement."
+    description: "Programme accessible via QR code uniquement (conference.html)."
     files:
       - name: "conference"
         label: "Programme"
         file: "data/conference.json"
         fields:
-          - { label: "Date", name: date, widget: datetime, format: "YYYY-MM-DD", date_format: "DD MMMM YYYY", time_format: false }
+          - { label: "Date — jour 1", name: date, widget: datetime, format: "YYYY-MM-DD", date_format: "DD MMMM YYYY", time_format: false }
+          - { label: "Date — jour 2", name: date_end, widget: datetime, format: "YYYY-MM-DD", date_format: "DD MMMM YYYY", time_format: false, required: false }
           - { label: "Titre (FR)", name: title_fr, widget: string, default: "Conférence de Pieu" }
           - { label: "Titre (ES)", name: title_es, widget: string, required: false }
+          - { label: "Titre (EN)", name: title_en, widget: string, required: false }
+          - label: "Introduction (avant les sessions)"
+            name: sections
+            widget: list
+            required: false
+            label_singular: "Section"
+            summary: "{{fields.type}}"
+            hint: "Mêmes blocs que les sous-pages : texte, images, liens, PDF… en 3 langues. Affiché avant les sessions."
+            types:
+              - label: "🔖 En-tête (eyebrow)"
+                name: eyebrow
+                widget: object
+                fields:
+                  - { label: "Texte (FR)", name: text_fr, widget: string }
+                  - { label: "Texte (ES)", name: text_es, widget: string, required: false }
+                  - { label: "Texte (EN)", name: text_en, widget: string, required: false }
+              - label: "📝 Introduction"
+                name: intro
+                widget: object
+                fields:
+                  - { label: "Texte (FR)", name: text_fr, widget: text }
+                  - { label: "Texte (ES)", name: text_es, widget: text, required: false }
+                  - { label: "Texte (EN)", name: text_en, widget: text, required: false }
+              - label: "📌 Titre de section (H2)"
+                name: heading
+                widget: object
+                fields:
+                  - { label: "Titre (FR)", name: text_fr, widget: string }
+                  - { label: "Titre (ES)", name: text_es, widget: string, required: false }
+                  - { label: "Titre (EN)", name: text_en, widget: string, required: false }
+              - label: "📎 Sous-titre (H3)"
+                name: subheading
+                widget: object
+                fields:
+                  - { label: "Titre (FR)", name: text_fr, widget: string }
+                  - { label: "Titre (ES)", name: text_es, widget: string, required: false }
+                  - { label: "Titre (EN)", name: text_en, widget: string, required: false }
+              - label: "¶ Paragraphe"
+                name: body
+                widget: object
+                hint: "Supporte **gras**, *italique*, et [texte](url) pour les liens"
+                fields:
+                  - { label: "Texte (FR)", name: text_fr, widget: text }
+                  - { label: "Texte (ES)", name: text_es, widget: text, required: false }
+                  - { label: "Texte (EN)", name: text_en, widget: text, required: false }
+              - label: "📣 Encadré (callout)"
+                name: callout
+                widget: object
+                fields:
+                  - { label: "Texte (FR)", name: text_fr, widget: text }
+                  - { label: "Texte (ES)", name: text_es, widget: text, required: false }
+                  - { label: "Texte (EN)", name: text_en, widget: text, required: false }
+              - label: "📎 Note en italique"
+                name: note
+                widget: object
+                fields:
+                  - { label: "Texte (FR)", name: text_fr, widget: text }
+                  - { label: "Texte (ES)", name: text_es, widget: text, required: false }
+                  - { label: "Texte (EN)", name: text_en, widget: text, required: false }
+              - label: "— Séparateur"
+                name: divider
+                widget: object
+                fields:
+                  - { label: "Note (ignorée)", name: _note, widget: string, required: false }
+              - label: "🖼️ Image"
+                name: image
+                widget: object
+                fields:
+                  - label: "Image par défaut (toutes langues)"
+                    name: src
+                    widget: image
+                    media_folder: "/assets"
+                    public_folder: "/assets"
+                  - { label: "Texte alt (FR)", name: alt_fr, widget: string }
+                  - label: "Image spécifique — Français (optionnel)"
+                    name: src_fr
+                    widget: image
+                    required: false
+                    media_folder: "/assets"
+                    public_folder: "/assets"
+                    hint: "Si renseigné, remplace l'image par défaut pour les visiteurs en français"
+                  - label: "Imagen específica — Español (opcional)"
+                    name: src_es
+                    widget: image
+                    required: false
+                    media_folder: "/assets"
+                    public_folder: "/assets"
+                    hint: "Si se rellena, reemplaza la imagen predeterminada para visitantes en español"
+                  - label: "Specific image — English (optional)"
+                    name: src_en
+                    widget: image
+                    required: false
+                    media_folder: "/assets"
+                    public_folder: "/assets"
+                    hint: "If filled, overrides the default image for English visitors"
+                  - { label: "Légende (FR)", name: caption_fr, widget: string, required: false }
+                  - { label: "Légende (ES)", name: caption_es, widget: string, required: false }
+                  - { label: "Légende (EN)", name: caption_en, widget: string, required: false }
+              - label: "📄 Document PDF"
+                name: pdf
+                widget: object
+                fields:
+                  - label: "Fichier PDF"
+                    name: src
+                    widget: file
+                    media_folder: "/assets"
+                    public_folder: "/assets"
+                    hint: "Téléversez un fichier PDF — il sera affiché directement dans la page"
+                  - { label: "Titre / description (FR)", name: title_fr, widget: string, required: false, hint: "Affiché au-dessus du PDF" }
+                  - { label: "Título / descripción (ES)", name: title_es, widget: string, required: false }
+                  - { label: "Title / description (EN)", name: title_en, widget: string, required: false }
+                  - { label: "Hauteur d'affichage (px)", name: height, widget: number, default: 700, required: false, hint: "Hauteur de la visionneuse en pixels — ex: 500, 700, 900" }
+                  - { label: "Lien de téléchargement visible", name: show_download, widget: boolean, default: true, hint: "Afficher un lien pour télécharger le PDF" }
+              - label: "📋 Liste à puces"
+                name: list
+                widget: object
+                fields:
+                  - label: "Éléments"
+                    name: items
+                    widget: list
+                    summary: "{{fields.text_fr}}"
+                    fields:
+                      - { label: "Texte (FR)", name: text_fr, widget: string }
+                      - { label: "Texte (ES)", name: text_es, widget: string, required: false }
+                      - { label: "Texte (EN)", name: text_en, widget: string, required: false }
+              - label: "🔗 Liste de liens"
+                name: linklist
+                widget: object
+                fields:
+                  - label: "Liens"
+                    name: items
+                    widget: list
+                    summary: "{{fields.label_fr}}"
+                    fields:
+                      - { label: "Étiquette (FR)", name: label_fr, widget: string }
+                      - { label: "Étiquette (ES)", name: label_es, widget: string, required: false }
+                      - { label: "Étiquette (EN)", name: label_en, widget: string, required: false }
+                      - { label: "URL (ou modal:id)", name: url, widget: string }
+                      - { label: "URL spécifique (FR)", name: url_fr, widget: string, required: false }
+                      - { label: "URL spécifique (ES)", name: url_es, widget: string, required: false }
+                      - { label: "URL spécifique (EN)", name: url_en, widget: string, required: false }
+              - label: "🔘 Bouton (CTA)"
+                name: cta
+                widget: object
+                fields:
+                  - { label: "Étiquette (FR)", name: label_fr, widget: string }
+                  - { label: "Étiquette (ES)", name: label_es, widget: string, required: false }
+                  - { label: "Étiquette (EN)", name: label_en, widget: string, required: false }
+                  - { label: "URL / lien (ou modal:id)", name: href, widget: string }
+                  - { label: "URL (FR spécifique)", name: href_fr, widget: string, required: false }
+                  - { label: "URL (ES spécifique)", name: href_es, widget: string, required: false }
+                  - { label: "URL (EN spécifique)", name: href_en, widget: string, required: false }
+                  - label: "Style"
+                    name: style
+                    widget: select
+                    options:
+                      - { label: "Principal (bleu)", value: primary }
+                      - { label: "Or", value: gold }
+                      - { label: "Secondaire (contour)", value: secondary }
+                    default: primary
+              - label: "🔁 Lien vers une autre sous-page"
+                name: page_link
+                widget: object
+                fields:
+                  - { label: "Slug de la page cible", name: slug, widget: string, hint: "Le slug de la sous-page vers laquelle pointer" }
+                  - { label: "Étiquette (FR)", name: label_fr, widget: string }
+                  - { label: "Étiquette (ES)", name: label_es, widget: string, required: false }
+                  - { label: "Étiquette (EN)", name: label_en, widget: string, required: false }
           - label: "Sessions"
             name: sessions
             widget: list
+            label_singular: "Session"
             summary: "{{fields.time}} — {{fields.title_fr}}"
             fields:
-              - { label: "Heure", name: time, widget: string }
+              - { label: "Heure de la session", name: time, widget: string, required: false, hint: "Ex: 10:00 — affichée au-dessus du titre de la session" }
               - { label: "Titre (FR)", name: title_fr, widget: string }
-              - label: "Éléments"
+              - { label: "Titre (ES)", name: title_es, widget: string, required: false }
+              - { label: "Titre (EN)", name: title_en, widget: string, required: false }
+              - label: "Programme de la session"
                 name: items
                 widget: list
-                summary: "{{fields.time}} — {{fields.title_fr}}"
-                fields:
-                  - { label: "Heure", name: time, widget: string }
-                  - { label: "Élément (FR)", name: title_fr, widget: string }
-                  - { label: "Détail (FR)", name: detail_fr, widget: string, required: false }
-                  - label: "Type"
-                    name: type
-                    widget: select
-                    default: item
-                    options:
-                      - { label: "Général", value: item }
-                      - { label: "Cantique", value: hymn }
-                      - { label: "Prière", value: prayer }
-                      - { label: "Discours", value: talk }
-                      - { label: "Prélude/Postlude", value: music }
+                required: false
+                label_singular: "Élément"
+                types:
+                  - label: "🎶 Cantique"
+                    name: hymn
+                    widget: object
+                    summary: "{{fields.title_fr}} — {{fields.detail_fr}}"
+                    fields:
+                      - { label: "Libellé (FR)", name: title_fr, widget: string, hint: "Ex: Prière d'ouverture. Si vide en ES/EN, un libellé générique est affiché dans la langue du visiteur." }
+                      - { label: "Libellé (ES)", name: title_es, widget: string, required: false }
+                      - { label: "Libellé (EN)", name: title_en, widget: string, required: false }
+                      - { label: "Texte du cantique (FR)", name: detail_fr, widget: string, required: false, hint: "Ex: 175. O God, the Eternal Father — affiché comme lien si une URL est fournie" }
+                      - { label: "Texte du cantique (ES)", name: detail_es, widget: string, required: false }
+                      - { label: "Texte du cantique (EN)", name: detail_en, widget: string, required: false }
+                      - { label: "Lien du cantique (FR)", name: hymn_url_fr, widget: string, required: false, hint: "URL de la page du cantique (ex: https://www.churchofjesuschrist.org/study/manual/hymns/...)" }
+                      - { label: "Lien du cantique (ES)", name: hymn_url_es, widget: string, required: false }
+                      - { label: "Lien du cantique (EN)", name: hymn_url_en, widget: string, required: false }
+                  - label: "🙏 Prière"
+                    name: prayer
+                    widget: object
+                    summary: "{{fields.title_fr}} — {{fields.detail_fr}}"
+                    fields:
+                      - { label: "Libellé (FR)", name: title_fr, widget: string, hint: "Ex: Prière d'ouverture. Si vide en ES/EN, un libellé générique est affiché dans la langue du visiteur." }
+                      - { label: "Libellé (ES)", name: title_es, widget: string, required: false }
+                      - { label: "Libellé (EN)", name: title_en, widget: string, required: false }
+                      - { label: "Nom (FR)", name: detail_fr, widget: string, required: false, hint: "Personne qui offre la prière" }
+                      - { label: "Nom (ES)", name: detail_es, widget: string, required: false }
+                      - { label: "Nom (EN)", name: detail_en, widget: string, required: false }
+                  - label: "📖 Discours"
+                    name: talk
+                    widget: object
+                    summary: "{{fields.title_fr}} — {{fields.detail_fr}}"
+                    fields:
+                      - { label: "Libellé (FR)", name: title_fr, widget: string, hint: "Ex: Prière d'ouverture. Si vide en ES/EN, un libellé générique est affiché dans la langue du visiteur." }
+                      - { label: "Libellé (ES)", name: title_es, widget: string, required: false }
+                      - { label: "Libellé (EN)", name: title_en, widget: string, required: false }
+                      - { label: "Orateur / sujet (FR)", name: detail_fr, widget: string, required: false }
+                      - { label: "Orateur / sujet (ES)", name: detail_es, widget: string, required: false }
+                      - { label: "Orateur / sujet (EN)", name: detail_en, widget: string, required: false }
+                  - label: "🎹 Prélude / postlude"
+                    name: music
+                    widget: object
+                    summary: "{{fields.title_fr}} — {{fields.detail_fr}}"
+                    fields:
+                      - { label: "Libellé (FR)", name: title_fr, widget: string, hint: "Ex: Prière d'ouverture. Si vide en ES/EN, un libellé générique est affiché dans la langue du visiteur." }
+                      - { label: "Libellé (ES)", name: title_es, widget: string, required: false }
+                      - { label: "Libellé (EN)", name: title_en, widget: string, required: false }
+                      - { label: "Détail (FR)", name: detail_fr, widget: string, required: false, hint: "Ex: nom de la personne à l'orgue ou au piano" }
+                      - { label: "Détail (ES)", name: detail_es, widget: string, required: false }
+                      - { label: "Détail (EN)", name: detail_en, widget: string, required: false }
+                  - label: "◆ Autre"
+                    name: item
+                    widget: object
+                    summary: "{{fields.title_fr}} — {{fields.detail_fr}}"
+                    fields:
+                      - { label: "Libellé (FR)", name: title_fr, widget: string, hint: "Ex: Prière d'ouverture. Si vide en ES/EN, un libellé générique est affiché dans la langue du visiteur." }
+                      - { label: "Libellé (ES)", name: title_es, widget: string, required: false }
+                      - { label: "Libellé (EN)", name: title_en, widget: string, required: false }
+                      - { label: "Détail (FR)", name: detail_fr, widget: string, required: false }
+                      - { label: "Détail (ES)", name: detail_es, widget: string, required: false }
+                      - { label: "Détail (EN)", name: detail_en, widget: string, required: false }
 
   - name: "settings"
     label: "⚙️ Paramètres du site"
@@ -1638,7 +1841,7 @@ collections:
               - { label: "Título / descripción (ES)", name: title_es, widget: string, required: false }
               - { label: "Title / description (EN)", name: title_en, widget: string, required: false }
               - { label: "Hauteur d'affichage (px)", name: height, widget: number, default: 700, required: false, hint: "Hauteur de la visionneuse en pixels — ex: 500, 700, 900" }
-              - { label: "Lien de téléchargement visible", name: show_download, widget: boolean, default: true, hint: "Afficher un bouton pour télécharger le PDF" }
+              - { label: "Lien de téléchargement visible", name: show_download, widget: boolean, default: true, hint: "Afficher un lien pour télécharger le PDF" }
           - label: "📋 Liste à puces"
             name: list
             widget: object
