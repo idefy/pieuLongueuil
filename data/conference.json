@@ -255,5 +255,14 @@
         }
       ]
     }
+  ],
+  "date_end": "2026-11-01",
+  "sections": [
+    {
+      "type": "image",
+      "src": "/assets/conf-oct-2026-fr.png",
+      "src_es": "/assets/conf-oct-2026-es.png",
+      "alt_fr": "Affiche conférence"
+    }
   ]
 }
