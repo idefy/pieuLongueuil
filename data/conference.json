@@ -208,39 +208,60 @@
       "title_fr": "Session Générale",
       "items": [
         {
-          "type": "hymn",
-          "time": "-",
-          "title_fr": "Prélude musicale",
-          "detail_fr": "Prélude à l’orgue : Sherryl Laplante & chorale de Drummondville"
+          "type": "music",
+          "title_fr": "Prélude à l’orgue ",
+          "detail_fr": "Sherryl Laplante & chorale de Drummondville",
+          "detail_es": "Sherryl Laplante & chorale de Drummondville",
+          "detail_en": "Sherryl Laplante & chorale de Drummondville",
+          "title_es": "Preludio al órgano ",
+          "title_en": "Orgue prelude"
         },
         {
           "type": "hymn",
           "time": "10:00",
-          "detail_fr": "#159 Mettons de l’ardeur au service du Seigneur  | #243 Let Us All Press On  | #158 Trabajemos  hoy en la obra ",
-          "title_fr": "Cantique d'ouverture"
+          "detail_fr": "159 Mettons de l’ardeur au service du Seigneur",
+          "title_fr": "Cantique d'ouverture",
+          "title_es": "Cántico de apertura ",
+          "title_en": "Opening hymn",
+          "detail_en": "243 Let Us All Press On ",
+          "detail_es": "158 Trabajemos  hoy en la obra"
         },
         {
           "type": "prayer",
           "time": "-",
           "title_fr": "Prière d'ouverture",
-          "detail_fr": "Betchina Dorestil"
+          "detail_fr": "Soeur Betchina Dorestil",
+          "title_es": "Oración de apertura ",
+          "title_en": "Opening prayer",
+          "detail_es": "Hermana Betchina Dorestil",
+          "detail_en": "Sister Betchina Dorestil"
         },
         {
           "type": "hymn",
           "time": "-",
           "title_fr": "Présentation musicale",
-          "detail_fr": "Chorale de Drummondville"
+          "detail_fr": "Chorale de Drummondville",
+          "title_es": "Presentación musical ",
+          "title_en": "Musical presentation ",
+          "detail_es": "Chorale de Drummondville",
+          "detail_en": "Chorale de Drummondville"
         },
         {
           "type": "item",
           "time": "-",
-          "title_fr": "Affaires de pieu"
+          "title_fr": "Affaires de pieu",
+          "title_es": "Anuncios de estaca",
+          "title_en": "Stake busoness"
         },
         {
           "type": "talk",
-          "title_fr": "Fr. Damila Espinoza",
+          "title_fr": "Soeur Damila Espinoza",
           "time": "-",
-          "detail_fr": "Victoria (9 ans)"
+          "detail_fr": "Paroisse de Victoria (9 ans)",
+          "title_es": "Hermana Damila Espinoza",
+          "title_en": "Sister Damila Espinoza",
+          "detail_es": "Barrio de Victoria (9 años)",
+          "detail_en": "Victoria Ward (9 years)"
         },
         {
           "type": "talk",
@@ -296,7 +317,9 @@
           "detail_fr": "par Jérémie Champoux",
           "time": "-"
         }
-      ]
+      ],
+      "title_es": "Sesion general",
+      "title_en": "Gerenal session "
     }
   ],
   "date_end": "2026-11-01",
