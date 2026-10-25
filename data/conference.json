@@ -263,6 +263,12 @@
       "src": "/assets/conf-oct-2026-fr.png",
       "src_es": "/assets/conf-oct-2026-es.png",
       "alt_fr": "Affiche conférence"
+    },
+    {
+      "type": "heading",
+      "text_fr": "Instruction aide auditive et traduction",
+      "text_es": "Instrucciones para audífonos y traducción",
+      "text_en": "Hearing aid instructions and translation"
     }
   ]
 }
