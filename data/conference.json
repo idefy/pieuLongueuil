@@ -9,13 +9,16 @@
       "title_fr": "Session des Dirigeants",
       "items": [
         {
+          "hymn_url_en": "https://www.churchofjesuschrist.org/media/music/songs/press-forward-saints?crumbs=hymns&order=number&lang=eng",
+          "hymn_url_fr": "https://www.churchofjesuschrist.org/media/music/songs/press-forward-saints?crumbs=hymns&order=number&lang=fra",
+          "hymn_url_es": "https://www.churchofjesuschrist.org/media/music/songs/press-forward-saints?crumbs=hymns&order=number&lang=spa",
           "time": "11:00",
+          "title_en": "Opening hymn",
           "title_fr": "Cantique d'ouverture",
+          "title_es": "Cantico de apertura ",
+          "detail_en": "81 Press Forward, Saints",
           "type": "hymn",
           "detail_fr": "40 Saints en avant ! Armés de foi en Christ",
-          "title_es": "Cantico de apertura ",
-          "title_en": "Opening hymn",
-          "detail_en": "81 Press Forward, Saints",
           "detail_es": " 38 Santos, avanzad "
         },
         {
@@ -30,47 +33,57 @@
         },
         {
           "time": "-",
-          "title_fr": "Instruction",
-          "detail_fr": "President Jonathan Gingras",
+          "title_fr": "President Jonathan Gingras",
+          "detail_fr": "1e conseiller dans la présidence de pieu",
           "type": "talk",
-          "title_es": "Instrucción ",
-          "title_en": "Instruction",
-          "detail_es": "Presidente Jonathan Gingras",
-          "detail_en": "President Jonathan Gingras"
+          "title_es": "Presidente Jonathan Gingras",
+          "title_en": "President Jonathan Gingras",
+          "detail_es": "1o consejero en la presidencia de estaca",
+          "detail_en": "1st counselor in the stake presidency"
         },
         {
           "type": "talk",
           "time": "-",
-          "title_fr": "Instruction",
-          "detail_fr": "Président Paul Pelchat",
-          "title_es": "Instrucción",
-          "title_en": "Instruction "
+          "title_fr": "Président Paul Pelchat",
+          "detail_fr": "Président de Pieu",
+          "title_es": "Presidente Paul Pelchat",
+          "title_en": "President Paul Pelchat",
+          "detail_en": "Stake President",
+          "detail_es": "Presidente de Estaca"
         },
         {
-          "type": "hymn",
+          "hymn_url_en": "https://www.churchofjesuschrist.org/media/music/songs/how-firm-a-foundation?crumbs=hymns&order=number&lang=por",
+          "hymn_url_fr": "https://www.churchofjesuschrist.org/media/music/songs/how-firm-a-foundation?crumbs=hymns&order=number&lang=fra",
+          "hymn_url_es": "https://www.churchofjesuschrist.org/media/music/songs/how-firm-a-foundation?crumbs=hymns&order=number&lang=spa",
           "time": "11:45",
-          "title_fr": "Cantique d'intermède",
-          "detail_fr": "42 Quels fondements fermes",
-          "title_es": "Cántico de intermedio ",
           "title_en": "Intermediate Hymn",
+          "title_fr": "Cantique d'intermède",
+          "title_es": "Cántico de intermedio ",
           "detail_en": "85 How Firm a Foundation",
+          "type": "hymn",
+          "detail_fr": "42 Quels fondements fermes",
           "detail_es": "40 Qué firmes Cimientos"
         },
         {
           "type": "talk",
           "time": "-",
-          "title_fr": "Instruction",
-          "detail_fr": "Elder Vern P. Stanfill",
-          "title_es": "Instrucción ",
-          "title_en": "Instruction "
+          "title_fr": "Elder Vern P. Stanfill",
+          "detail_fr": "Soixante-dix",
+          "title_es": "Elder Vern P. Stanfill",
+          "title_en": "Elder Vern P. Stanfill",
+          "detail_es": "Setenta",
+          "detail_en": "Seventy"
         },
         {
-          "type": "hymn",
-          "title_fr": "Cantique de cloture",
-          "detail_fr": "141 Seigneur, je te suivrai",
-          "title_es": "Último cántico ",
+          "hymn_url_en": "https://www.churchofjesuschrist.org/media/music/songs/in-memory-of-the-crucified?crumbs=hymns&order=number&lang=eng",
+          "hymn_url_fr": "https://www.churchofjesuschrist.org/media/music/songs/in-memory-of-the-crucified?crumbs=hymns&order=number&lang=fra",
+          "hymn_url_es": "https://www.churchofjesuschrist.org/media/music/songs/in-memory-of-the-crucified?crumbs=hymns&order=number&lang=spa",
           "title_en": "Closing hymn",
+          "title_fr": "Cantique de cloture",
+          "title_es": "Último cántico ",
           "detail_en": "220 Lord,  I Would Follow Thee",
+          "type": "hymn",
+          "detail_fr": "141 Seigneur, je te suivrai",
           "detail_es": "138 Senor, yo to seguiré "
         },
         {
@@ -79,7 +92,9 @@
           "title_fr": "Prière de clôture",
           "detail_fr": "Sara Matos",
           "title_es": "Última oración ",
-          "title_en": "Closing prayer "
+          "title_en": "Closing prayer ",
+          "detail_es": "Sara Matos",
+          "detail_en": "Sara Matos"
         }
       ],
       "title_es": "Sesion de líderes ",
