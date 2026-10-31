@@ -24,12 +24,12 @@
         {
           "time": "-",
           "title_fr": "Prière d'ouverture",
-          "detail_fr": "par invitation",
+          "detail_fr": "Frère Wesley Olsen",
           "type": "prayer",
           "title_es": "Oración de apertura ",
           "title_en": "Opening prayer ",
-          "detail_es": "Por invitación ",
-          "detail_en": "By invitation "
+          "detail_es": "Hermano. Wesley Olsen",
+          "detail_en": "Brother Wesley Olsen"
         },
         {
           "time": "-",
@@ -335,7 +335,7 @@
           "hymn_url_es": "https://www.churchofjesuschrist.org/media/music/songs/we-love-thy-house-o-god?crumbs=hymns&order=number&lang=spa",
           "time": "-",
           "title_en": "Intermediate hymn",
-          "title_fr": "Cnatique d'intermède",
+          "title_fr": "Cantique d'intermède",
           "title_es": "Cántico de intermedio ",
           "detail_en": "247 We Love Thy House, O God",
           "type": "hymn",
