@@ -2,12 +2,6 @@
   "slug": "jas",
   "sections": [
     {
-      "type": "eyebrow",
-      "text_fr": "Activités a venir",
-      "text_es": "Actividades a venir",
-      "text_en": "Upcoming activities "
-    },
-    {
       "type": "heading",
       "text_fr": "Conference des JAS",
       "text_es": "Conferencia JAS",
@@ -19,12 +13,16 @@
       "alt_fr": "Conference "
     },
     {
-      "type": "cta",
-      "style": "primary",
-      "href": "https://web.cvent.com/event/c771dd6c-e733-46cb-8e50-93b874520340/register?rp=3e79f640-430d-425e-b191-c2cebc8d4db1&utm_source=ig&utm_medium=social&utm_content=link_in_bio&utm_id=97760_v0_s00_e0_tv3",
-      "label_fr": "S'inscrire ",
-      "label_es": "Inscribirse ",
-      "label_en": "Register "
+      "type": "eyebrow",
+      "text_fr": "Activités a venir",
+      "text_es": "Actividades a venir",
+      "text_en": "Upcoming activities "
+    },
+    {
+      "type": "calendar",
+      "count": 5,
+      "show_images": true,
+      "url": "https://churchofjesuschrist.org/church-calendar/services/ext/v3.0/export/ical/group/5f31e8267987420ab3704e2154bb1ca7"
     }
   ],
   "subtitle_en": "From 18 to 35 years old",
