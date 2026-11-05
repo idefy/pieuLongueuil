@@ -26,6 +26,12 @@
       "text_fr": "Activités a venir",
       "text_es": "Actividades a venir",
       "text_en": "Upcoming activities "
+    },
+    {
+      "type": "calendar",
+      "count": 5,
+      "show_images": true,
+      "url": "https://churchofjesuschrist.org/church-calendar/services/ext/v3.0/export/ical/group/6e2072d074864973a7509718d47d11fc"
     }
   ],
   "subtitle_en": "From 36 years old and more",
