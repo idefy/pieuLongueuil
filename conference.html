@@ -96,6 +96,7 @@
 </main>
 
 <script src="js/modals.js"></script>
+<script src="js/calendar.js"></script>
 <script>
 (function () {
   'use strict';
@@ -172,6 +173,7 @@
       case 'note':       return '<p class="sp-note">' + md(t) + '</p>';
       case 'callout':    return '<div class="sp-callout">' + md(t) + '</div>';
       case 'divider':    return '<hr class="sp-divider">';
+      case 'calendar':   return window.PieuCalendar ? PieuCalendar.block(s, lang) : '';
       case 'image': {
         var src = s['src_' + lang] || s.src || '';
         if (!src) return '';

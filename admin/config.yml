@@ -490,6 +490,16 @@ collections:
                   - { label: "Title / description (EN)", name: title_en, widget: string, required: false }
                   - { label: "Hauteur d'affichage (px)", name: height, widget: number, default: 700, required: false, hint: "Hauteur de la visionneuse en pixels — ex: 500, 700, 900" }
                   - { label: "Lien de téléchargement visible", name: show_download, widget: boolean, default: true, hint: "Afficher un lien pour télécharger le PDF" }
+              - label: "📅 Calendrier de l'Église"
+                name: calendar
+                widget: object
+                fields:
+                  - { label: "Titre (FR)", name: title_fr, widget: string, required: false, hint: "Titre affiché au-dessus de la liste (optionnel)" }
+                  - { label: "Título (ES)", name: title_es, widget: string, required: false }
+                  - { label: "Title (EN)", name: title_en, widget: string, required: false }
+                  - { label: "URL du calendrier (iCal)", name: url, widget: string, hint: "Lien d'exportation iCal du calendrier de l'Église. Ex: https://churchofjesuschrist.org/church-calendar/services/ext/v3.0/export/ical/group/..." }
+                  - { label: "Nombre d'activités à afficher", name: count, widget: number, value_type: int, min: 1, max: 20, default: 5, hint: "Les prochaines activités à partir d'aujourd'hui. Les activités passées sont ignorées." }
+                  - { label: "Afficher les images", name: show_images, widget: boolean, default: true, hint: "Va chercher l'image de chaque activité sur sa page. Décocher pour une liste plus légère." }
               - label: "📋 Liste à puces"
                 name: list
                 widget: object
@@ -1842,6 +1852,16 @@ collections:
               - { label: "Title / description (EN)", name: title_en, widget: string, required: false }
               - { label: "Hauteur d'affichage (px)", name: height, widget: number, default: 700, required: false, hint: "Hauteur de la visionneuse en pixels — ex: 500, 700, 900" }
               - { label: "Lien de téléchargement visible", name: show_download, widget: boolean, default: true, hint: "Afficher un lien pour télécharger le PDF" }
+          - label: "📅 Calendrier de l'Église"
+            name: calendar
+            widget: object
+            fields:
+              - { label: "Titre (FR)", name: title_fr, widget: string, required: false, hint: "Titre affiché au-dessus de la liste (optionnel)" }
+              - { label: "Título (ES)", name: title_es, widget: string, required: false }
+              - { label: "Title (EN)", name: title_en, widget: string, required: false }
+              - { label: "URL du calendrier (iCal)", name: url, widget: string, hint: "Lien d'exportation iCal du calendrier de l'Église. Ex: https://churchofjesuschrist.org/church-calendar/services/ext/v3.0/export/ical/group/..." }
+              - { label: "Nombre d'activités à afficher", name: count, widget: number, value_type: int, min: 1, max: 20, default: 5, hint: "Les prochaines activités à partir d'aujourd'hui. Les activités passées sont ignorées." }
+              - { label: "Afficher les images", name: show_images, widget: boolean, default: true, hint: "Va chercher l'image de chaque activité sur sa page. Décocher pour une liste plus légère." }
           - label: "📋 Liste à puces"
             name: list
             widget: object
