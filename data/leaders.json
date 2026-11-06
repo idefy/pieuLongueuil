@@ -501,8 +501,8 @@
         "es": "Presidenta de la Primaria",
         "en": "Primary President"
       },
-      "name": "Sonia Khalil",
-      "photo": "/assets/leaders-sonia-khalil.jpg",
+      "name": "Sandra Matos",
+      "photo": "/assets/leaders-sandra-matos.jpg",
       "active": true,
       "responsibility": {
         "fr": "",
@@ -535,8 +535,8 @@
         "es": "Segunda Consejera",
         "en": "Second Counselor"
       },
-      "name": "Jennifer Alvarenga",
-      "photo": "/assets/leaders-jennifer-alvarenga.jpg",
+      "name": "Prénom Nom",
+      "photo": "/assets/leaders-placeholder.jpg",
       "active": true,
       "responsibility": {
         "fr": "",
@@ -552,8 +552,8 @@
         "es": "Secretaria",
         "en": "Secretary"
       },
-      "name": "Marie-Josée Bergeron",
-      "photo": "/assets/leaders-marie-josee-bergeron.jpg",
+      "name": "Prénom Nom",
+      "photo": "/assets/leaders-placeholder.jpg",
       "active": true,
       "responsibility": {
         "fr": "",
