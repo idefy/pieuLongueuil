@@ -563,7 +563,7 @@
     },
     {
       "id": "president-ecole",
-      "org": "ed",
+      "org": "ecole",
       "role": {
         "fr": "Président de l'École du Dimanche",
         "es": "Presidente de la Escuela Dominical",
@@ -580,7 +580,7 @@
     },
     {
       "id": "1conseil-ed",
-      "org": "ed",
+      "org": "ecole",
       "role": {
         "fr": "Premier Conseiller",
         "es": "Primero Consejero",
@@ -597,7 +597,7 @@
     },
     {
       "id": "2conseil-ed",
-      "org": "ed",
+      "org": "ecole",
       "role": {
         "fr": "Deuxième Conseiller",
         "es": "Segundo Consejero",
@@ -614,7 +614,7 @@
     },
     {
       "id": "sec-ed",
-      "org": "ed",
+      "org": "ecole",
       "role": {
         "fr": "Secrétaire",
         "es": "Secretaria",

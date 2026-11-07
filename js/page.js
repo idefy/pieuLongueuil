@@ -48,7 +48,7 @@ function getSlug() {
 	'';
 }
 
-/* ── Apply config colors/fonts (same as main site) ──────── */
+/* ── Apply config colors (fonts are linked statically in page.html) ── */
 function applyConfigToPage() {
   const c = window.SITE_CONFIG?.colors || {};
   const r = document.documentElement.style;
@@ -59,10 +59,6 @@ function applyConfigToPage() {
     '--c-highlight':c.highlight,'--c-cream':'#FDF9F3'
   };
   Object.entries(map).forEach(([k,v]) => v && r.setProperty(k,v));
-  const lnk = document.createElement('link');
-  lnk.rel='stylesheet';
-  lnk.href = window.SITE_CONFIG?.fonts?.google || '';
-  if (lnk.href) document.head.appendChild(lnk);
 }
 
 /* ── Load settings.json (colors/social override) ─────────── */

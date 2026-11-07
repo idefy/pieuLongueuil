@@ -1,6 +1,6 @@
 /* PIEU LONGUEUIL v2 — Application */
 document.addEventListener('DOMContentLoaded', async () => {
-  applyConfig(); initLang(); await Promise.all([loadData(), loadTranslations()]); renderAll(); initNav(); initScrollEffects(); initDirTabs(); initFicheModal(); initPageModals(); initModalLinks();
+  applyConfig(); initLang(); await Promise.all([loadData(), loadTranslations(), loadFiches()]); renderAll(); initNav(); initScrollEffects(); initDirTabs(); initFicheModal(); initPageModals(); initModalLinks();
 });
 
 function applyConfig() {
@@ -51,6 +51,32 @@ async function loadData() {
       if (sr.pastoralQuote) window.SITE_CONFIG.pastoralQuote = sr.pastoralQuote;
     }
   } catch(e) { console.warn('Data load failed', e); }
+}
+
+/* Fiches: build window.FICHES_DATA from data/fiches/<id>.json (the files the CMS edits),
+   in the order listed in data/fiches-index.json. If anything fails, the static
+   data/fiches.js (already loaded by index.html) stays in place as a fallback. */
+async function loadFiches() {
+  try {
+    const idx = await fetch('data/fiches-index.json').then(r=>r.json());
+    const ids = Array.isArray(idx) ? idx : (idx.fiches || []);
+    const list = await Promise.all(ids.map(id =>
+      fetch('data/fiches/'+id+'.json').then(r=>{ if(!r.ok) throw new Error(id); return r.json(); })
+    ));
+    const lang3 = (j, base) => ({ fr:j[base+'_fr']||[], es:j[base+'_es']||[], en:j[base+'_en']||[] });
+    const fiches = list.map(j => ({
+      id: j.fiche_id, num: j.num, image: j.image, color: j.color,
+      title: j.title || {}, quote: j.quote || {},
+      ideesFamille: lang3(j,'ideesFamille'),
+      ideesPastorale: lang3(j,'ideesPastorale'),
+      ressourcesEglise: { fr: j.ressourcesEglise || [] },
+      ressourcesCommunautaires: { fr: j.ressourcesCommunautaires || [] }
+    })).filter(f => f.id && f.title.fr);
+    if (fiches.length) {
+      fiches.sort((a,b) => String(a.num).localeCompare(String(b.num), undefined, {numeric:true}));
+      window.FICHES_DATA = fiches;
+    }
+  } catch(e) { console.warn('Fiches JSON load failed, using data/fiches.js', e); }
 }
 
 function renderAll() {
@@ -260,7 +286,7 @@ function dirCard(r,lang) {
 function renderOrganisations() {
   const el=document.getElementById('org-content'); if(!el) return;
   const lang=window.currentLang;
-  const orgOrder=['presidence','grandconseil','ss','jf','jg','primaire','ecole'];
+  const orgOrder=['presidence','grandconseil','ss','jf','jg','primaire','ecole','jas'];
   const byOrg={};
   leadersData.forEach(l=>{if(!byOrg[l.org])byOrg[l.org]=[];byOrg[l.org].push(l);});
   el.innerHTML=orgOrder.filter(o=>byOrg[o]&&byOrg[o].length).map(org=>`
