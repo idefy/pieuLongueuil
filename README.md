@@ -1,167 +1,117 @@
-# Site Pieu Longueuil — Guide d'administration
+# Site Pieu Longueuil
 
-## Structure des fichiers
+Site web du Pieu de Longueuil (Québec) : ressources pour les membres, service pastoral, ressources pour les dirigeants, organisations et sous-pages. Il est disponible en français (langue par défaut), espagnol et anglais.
+
+- **Site :** https://pieulongueuil.ca
+- **Administration :** https://pieulongueuil.ca/admin (connexion avec un compte GitHub)
+- **Dépôt :** `idefy/pieuLongueuil` (branche `main`)
+
+Le site est **100 % statique** : HTML, JavaScript (ES6) et CSS, sans étape de build, sans framework et sans serveur applicatif. Le contenu est chargé au fil de la navigation depuis les fichiers `data/*.json`. L'hébergement et le déploiement sont décrits dans [`DEPLOIEMENT.md`](DEPLOIEMENT.md).
+
+---
+
+## Pour les éditeurs : modifier le contenu
+
+Tout le contenu courant se modifie dans l'administration, **sans toucher au code** :
+
+1. Aller sur https://pieulongueuil.ca/admin et se connecter avec GitHub. Le compte doit avoir été ajouté comme collaborateur du dépôt avec l'accès en écriture.
+2. Choisir une collection dans le menu de gauche, modifier, puis **Publier**.
+3. Le site se met à jour automatiquement environ une minute plus tard. Chaque enregistrement crée un commit dans GitHub dont le message se termine par « par le CMS ».
+
+| Collection | Ce qu'on y modifie |
+|---|---|
+| 👥 Dirigeants | Noms, appels, photos et organisation de chaque dirigeant (`active: false` masque une personne sans la supprimer) |
+| 👥 Ressources pour les membres | Les 6 boîtes de liens de la section « Ressources » |
+| 📋 Pour les dirigeants — Ressources | Guides, vidéos et documents de la section « Pour les dirigeants » |
+| 🪟 Fenêtres modales | Contenu des fenêtres qui s'ouvrent depuis les liens `modal:<id>` |
+| 🌿 Fiches service pastoral | Les fiches thématiques du service pastoral |
+| 📋 Conférence de Pieu | Programme de la page `conference.html` (accessible par code QR seulement) |
+| ⚙️ Paramètres du site | Nom du pieu, mission, couleurs, réseaux sociaux, infolettre, citation pastorale |
+| 🌐 Traductions (FR / ES / EN) | Textes de l'interface dans les trois langues |
+| 📃 Sous-pages | Pages secondaires (`page.html?p=<slug>`), faites de blocs de contenu |
+| 🗂️ Menu — Ordre des pages | Liste, ordre et visibilité des sous-pages dans le menu « Pages » |
+
+### Images et fichiers
+
+Les images et PDF téléversés vont dans le dossier `assets/`, qui est **plat** (aucun sous-dossier). Préfixer les noms selon l'usage (`leaders-…`, `modals-…`, `servicepastoral-…`). Les fichiers `.jfif` ne s'affichent pas dans l'aperçu : les renommer en `.jpg`.
+
+### Créer une sous-page
+
+1. Admin → **📃 Sous-pages** → nouvelle entrée : slug, titres FR/ES/EN et sections.
+2. Pour l'afficher dans le menu : **🗂️ Menu — Ordre des pages** → ajouter le même slug et cocher « Visible dans le menu ».
+3. Pour une adresse courte (`pieulongueuil.ca/<slug>`), un développeur doit ajouter une ligne dans `_redirects` (voir ci-dessous). Sans cela, la page reste accessible par `page?p=<slug>`.
+
+### Ajouter une fiche de service pastoral
+
+Les fiches affichées sont celles listées dans `data/fiches-index.json`. Après avoir créé une fiche dans l'admin, un développeur doit ajouter son identifiant (`fiche_id`) à ce fichier, sinon elle n'apparaît pas sur le site.
+
+---
+
+## Pour les développeurs
+
+### Structure
 
 ```
-pieu-longueuil/
-├── index.html          ← Page principale (ne pas modifier)
-├── conference.html     ← Programme de conférence (QR code)
-├── css/
-│   └── main.css        ← Styles (ne pas modifier directement)
+├── index.html            Page principale (sections ressources / pastoral / dirigeants / organisations)
+├── page.html             Gabarit des sous-pages (page?p=<slug>)
+├── conference.html       Programme de conférence (code QR, absent du menu)
+├── _redirects            Règles de routage Cloudflare Pages (adresses courtes, PDF)
+├── admin/
+│   ├── index.html        Chargeur Decap CMS + aperçu personnalisé des sous-pages
+│   └── config.yml        Schéma du CMS (toutes les collections)
+├── functions/api/        Connexion GitHub OAuth pour le CMS (auth.js, callback.js)
+├── css/main.css          Styles globaux, pilotés par des variables CSS
 ├── js/
-│   ├── config.js       ★ CONFIGURATION PRINCIPALE — modifier ici
-│   ├── i18n.js         ★ TRADUCTIONS — modifier ici
-│   └── app.js          ← Logique de l'application
-├── data/
-│   ├── leaders.json    ★ DIRIGEANTS — modifier ici
-│   └── resources.json  ★ RESSOURCES/GUIDES — modifier ici
-└── assets/
-    ├── chapel.jpg      ← Photo de la chapelle
-    └── leaders/        ← Photos des dirigeants
-        └── placeholder.jpg
+│   ├── config.js         Valeurs par défaut (couleurs, liens officiels, langue par défaut)
+│   ├── i18n.js           Chargeur de traductions et fonction t(clé)
+│   ├── app.js            Logique de index.html
+│   ├── page.js           Moteur des sous-pages
+│   ├── modals.js         Fenêtres modales
+│   └── calendar.js       Bloc calendrier de l'Église
+├── data/                 Tout le contenu (JSON)
+│   ├── leaders.json, resources.json, member-resources.json, settings.json
+│   ├── fiches-index.json + fiches/<id>.json   (fiches pastorales)
+│   ├── pages/<slug>.json + pages-index.json   (sous-pages et menu)
+│   ├── modals/<id>.json, conference.json
+│   ├── i18n/*.json       Traductions de l'interface (7 fichiers)
+│   └── fiches.js         Ancienne source des fiches, conservée comme solution de repli
+├── assets/               Médias (dossier plat)
+└── digitalboard/         Prototype de tableau d'affichage — à ne pas mélanger avec le site
 ```
 
----
+### Développement local
 
-## Changer les couleurs / polices / nom
+Le chargement des fichiers JSON exige un serveur HTTP (pas `file://`) :
 
-Ouvrez `js/config.js` et modifiez la section `colors` ou `fonts`.
-Les changements s'appliquent automatiquement sur toutes les pages.
-
-```js
-colors: {
-  primary:   "#1B3A6B",   // Bleu marine principal
-  secondary: "#B8924A",   // Or — accents, soulignements
-  // ...
-}
-```
-
----
-
-## Mettre à jour un dirigeant
-
-Ouvrez `data/leaders.json`. Chaque entrée ressemble à ceci :
-
-```json
-{
-  "id": "president-pieu",
-  "org": "presidence",
-  "role": {
-    "fr": "Président de Pieu",
-    "es": "Presidente de Estaca",
-    "en": "Stake President"
-  },
-  "name": "Prénom Nom",
-  "photo": "assets/leaders/nom-photo.jpg",
-  "active": true
-}
-```
-
-- Changer `"name"` pour mettre à jour le nom.
-- Changer `"photo"` pour pointer vers la nouvelle photo dans `assets/leaders/`.
-- Mettre `"active": false` pour masquer un dirigeant sans le supprimer.
-
-**Organisations disponibles :** `presidence`, `grandconseil`, `ss`, `jf`, `jg`, `primaire`, `ecole`
-
----
-
-## Ajouter un guide ou document pour les dirigeants
-
-Ouvrez `data/resources.json` et ajoutez une entrée :
-
-```json
-{
-  "id": "mon-nouveau-guide",
-  "section": "dirigeants",
-  "category": "guides",
-  "type": "guide",
-  "lang": ["fr"],
-  "title": {
-    "fr": "Titre du guide",
-    "es": "Título de la guía",
-    "en": "Guide title"
-  },
-  "description": {
-    "fr": "Description courte du guide.",
-    "es": "Descripción corta.",
-    "en": "Short description."
-  },
-  "url": "https://lien-vers-le-document.com",
-  "icon": "file",
-  "external": true,
-  "active": true
-}
-```
-
-**Valeurs de `section`:** `dirigeants`, `pastoral`
-**Valeurs de `category`:** `vision`, `guides`, `tutoriels`, `officiel`, `fiches`
-**Valeurs de `type`:** `guide`, `processus`, `information`, `video`, `formation`, `rapport`
-**Valeurs de `icon`:** `book`, `heart`, `users`, `star`, `globe`, `calendar`, `settings`, `trendingUp`, `video`, `file`, `target`, `database`
-
----
-
-## Mettre à jour la conférence de pieu
-
-Ouvrez `conference.html` et modifiez directement les entrées HTML dans la section
-marquée `CONTENU DE LA CONFÉRENCE`. Le format est simple :
-
-```html
-<div class="conf-item">
-  <div class="conf-time">10:15</div>
-  <div class="conf-item-content">
-    <div class="conf-item-title">Discours</div>
-    <div class="conf-item-detail">Frère Martin Dupont</div>
-  </div>
-</div>
-```
-
-Le lien QR code pointe vers : `https://votre-domaine.com/conference.html`
-Cette page n'est pas dans le menu — elle est accessible uniquement via QR code.
-
----
-
-## Ajouter une traduction ou corriger un texte
-
-Ouvrez `js/i18n.js`. Chaque langue est un objet avec des clés :
-
-```js
-fr: {
-  nav_ressources: "Ressources",
-  // ...
-},
-es: {
-  nav_ressources: "Recursos",
-  // ...
-}
-```
-
-Ajoutez la clé dans les trois langues pour qu'elle s'affiche dans toutes les langues.
-
----
-
-## Déploiement
-
-Ce site est 100% statique. Il peut être hébergé sur :
-- **GitHub Pages** (gratuit) — pousser les fichiers dans un repo public
-- **Netlify** (gratuit) — glisser-déposer le dossier
-- **Tout hébergeur web** supportant les fichiers statiques
-
-⚠️ Le chargement des fichiers JSON (`data/leaders.json`, `data/resources.json`)
-requiert un serveur HTTP (pas `file://`). En développement local, utilisez :
 ```bash
 npx serve .
 # ou
 python3 -m http.server 8080
 ```
 
----
+Les fonctions `functions/api/` (connexion à l'admin) ne s'exécutent que sur Cloudflare Pages. Le calendrier dépend d'un Worker Cloudflare externe et ne se charge normalement que depuis `pieulongueuil.ca`.
 
-## Langue par défaut
+### Règles à respecter
 
-La langue par défaut est `fr` (français). Changer dans `js/config.js` :
+- **Règle du miroir :** toute modification de la forme d'un fichier de données doit être reproduite exactement dans `admin/config.yml`, sinon le CMS casse ou ignore silencieusement des champs. Après chaque modification, valider le YAML (par exemple avec PyYAML).
+- **Listes dans le CMS :** une collection de type « fichier » avec un champ `list` exige que le JSON soit **enveloppé dans un objet** (`{ "leaders": [ … ] }`), pas un tableau nu.
+- **Nouvelle chaîne d'interface :** l'ajouter dans les trois langues dans le bon fichier de `data/i18n/`, **et** ajouter le champ correspondant dans l'entrée `translations` de `config.yml`.
+- **Nouveau type de bloc :** (1) `types` dans `config.yml` pour les pages et la conférence, (2) un `case` dans `renderSection` de `js/page.js`, (3) le même dans `renderBlock` de `conference.html`, (4) l'aperçu dans `admin/index.html` si souhaité, (5) les chaînes i18n au besoin. Les listes de types sont dupliquées volontairement (pas d'ancres YAML) et doivent rester synchronisées à la main.
+- **Couleurs :** utiliser les variables CSS (`--c-primary`, `--c-secondary`, etc.), jamais de couleur codée en dur. Les valeurs de `data/settings.json` remplacent celles de `js/config.js`.
+- **Polices :** Playfair Display (titres) et Lato (texte), chargées par un lien Google Fonts dans `app.js`, `page.html` et `conference.html`. Le bloc `fonts` de `js/config.js` est obsolète et n'est plus utilisé par `page.js`.
+- **`js/calendar.js` doit rester après `js/page.js`** dans `page.html` : il enveloppe la fonction globale `renderSection`.
+- **`digitalboard/`** est un prototype séparé : ne jamais mélanger son code, ses styles ou ses imports avec le site.
 
-```js
-defaultLang: "fr",   // "fr" | "es" | "en"
+### Adresses courtes (`_redirects`)
+
+Une ligne par sous-page :
+
+```
+/<slug>    /page?p=<slug>    200
 ```
 
-Le choix de l'utilisateur est sauvegardé dans `localStorage` pour ses visites suivantes.
+`_redirects` n'est pas géré par le CMS : l'ajouter à la main, puis déployer. Les raccourcis vers des PDF sont de la forme `/remboursement /assets/Remboursement.pdf 302` (les noms de fichiers respectent la casse).
+
+### Langues
+
+`fr` (par défaut), `es` et `en`. La langue choisie est mémorisée dans `localStorage` (clé `pieu-lang`). La langue par défaut se change dans `js/config.js` (`defaultLang`). Le contenu est traduit dans ses propres fichiers (`*_fr`, `*_es`, `*_en` ou `{ fr, es, en }`) ; une traduction manquante retombe sur le français.

@@ -6,11 +6,11 @@ backend:
   base_url: https://pieulongueuil.ca
   auth_endpoint: /api/auth
   commit_messages:
-    create: 'Créer {{collection}} "{{slug}}" par {{author-name}}'
-    update: 'Modifier {{collection}} "{{slug}}" par {{author-name}}'
-    delete: 'Supprimer {{collection}} "{{slug}}" par {{author-name}}'
-    uploadMedia: 'Téléverser "{{path}}" par {{author-name}}'
-    deleteMedia: 'Supprimer "{{path}}" par {{author-name}}'
+    create: 'Créer {{collection}} "{{slug}}" par le CMS'
+    update: 'Modifier {{collection}} "{{slug}}" par le CMS'
+    delete: 'Supprimer {{collection}} "{{slug}}" par le CMS'
+    uploadMedia: 'Téléverser "{{path}}" par le CMS'
+    deleteMedia: 'Supprimer "{{path}}" par le CMS'
 
 site_url: https://pieulongueuil.ca
 logo_url: https://pieulongueuil.ca/assets/chapel.jpg
