@@ -42,10 +42,10 @@
       "org": "jg"
     },
     {
-      "type": "eyebrow",
-      "text_fr": "Activités a venir",
-      "text_es": "Actividades a venir",
-      "text_en": "Upcoming activities "
+      "type": "heading",
+      "text_fr": "Activités à venir",
+      "text_en": "Upcoming activities",
+      "text_es": "Próximas actividades"
     },
     {
       "type": "calendar",
