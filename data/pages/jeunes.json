@@ -2,6 +2,28 @@
   "slug": "jeunes",
   "sections": [
     {
+      "type": "heading",
+      "text_fr": "Programe 2027",
+      "text_es": "Programa 2027",
+      "text_en": "2027 program"
+    },
+    {
+      "type": "image",
+      "src": "/assets/2027_youth_theme_fsy_conference_style_guide.webp",
+      "alt_fr": "affiche"
+    },
+    {
+      "href_fr": "https://www.churchofjesuschrist.org/callings/youth?lang=fra",
+      "href_es": "https://www.churchofjesuschrist.org/callings/youth?lang=spa",
+      "href": "https://www.churchofjesuschrist.org/callings/youth?lang=fra",
+      "style": "primary",
+      "label_en": "Discover the program",
+      "label_fr": "Découvrir le programme",
+      "label_es": "Descubrir el programa",
+      "type": "cta",
+      "href_en": "https://www.churchofjesuschrist.org/callings/youth?lang=eng"
+    },
+    {
       "type": "eyebrow",
       "text_fr": "Activités a venir",
       "text_es": "Actividades a venir",
