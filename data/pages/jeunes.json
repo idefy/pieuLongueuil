@@ -9,8 +9,10 @@
     },
     {
       "type": "image",
-      "src": "/assets/2027_youth_theme_fsy_conference_style_guide.webp",
-      "alt_fr": "affiche"
+      "src": "/assets/2027_youth_theme_fsy_conference_style_guide_fra.webp",
+      "alt_fr": "affiche",
+      "src_en": "/assets/2027_youth_theme_fsy_conference_style_guide.webp",
+      "src_es": "/assets/2027_youth_theme_fsy_conference_style_guide_spa.webp"
     },
     {
       "href_fr": "https://www.churchofjesuschrist.org/callings/youth?lang=fra",
