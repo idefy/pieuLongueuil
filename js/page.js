@@ -126,6 +126,7 @@ function renderPage(data) {
   // Content sections
   const container = document.getElementById('subpage-content');
   container.innerHTML = (data.sections || []).map(s => renderSection(s, lang)).join('');
+  hydrateLeaders(container);
 }
 
 /* ── Render a single section ─────────────────────────────── */
@@ -250,9 +251,64 @@ function renderSection(s, lang) {
       </div>`;
     }
 		  
+    case 'leaders': {
+      // Leader bar: filled asynchronously from data/leaders.json by hydrateLeaders()
+      const org = String(s.org || '').replace(/[^a-z0-9_-]/gi, '');
+      if (!org) return '';
+      return `<div class="sp-leaders" data-org="${org}" data-title="${s.show_title === false ? 0 : 1}"></div>`;
+    }
+
     default:
       return '';
   }
+}
+
+/* ── Leaders block (data/leaders.json) ──────────────────── */
+let _leadersPromise = null;
+function loadLeaders() {
+  if (!_leadersPromise) {
+    _leadersPromise = fetch('data/leaders.json')
+      .then(r => r.json())
+      .then(d => (Array.isArray(d) ? d : (d.leaders || [])).filter(l => l.active !== false))
+      .catch(() => []);
+  }
+  return _leadersPromise;
+}
+
+function spEsc(v) {
+  return String(v == null ? '' : v).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function spLeaderCard(l, lang) {
+  const role = (l.role && (l.role[lang] || l.role.fr)) || '';
+  const resp = l.responsibility ? (l.responsibility[lang] || l.responsibility.fr || '') : '';
+  const name = l.name || '';
+  const init = name.split(' ').filter(Boolean).map(w => w[0]).join('').slice(0, 2).toUpperCase();
+  const fallback = 'data:image/svg+xml,' + encodeURIComponent(
+    `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84 84"><circle cx="42" cy="42" r="42" fill="#1B3A6B"/><text x="42" y="47" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="26" font-family="Georgia,serif">${spEsc(init)}</text></svg>`
+  );
+  return `<div class="leader-card">
+    <img class="leader-photo" src="${spEsc(l.photo || fallback)}" alt="${spEsc(name)}" onerror="this.onerror=null;this.src='${fallback}'">
+    <div class="leader-name">${spEsc(name)}</div>
+    <div class="leader-role">${spEsc(role)}</div>
+    ${resp ? `<div class="leader-responsibility">${spEsc(resp)}</div>` : ''}
+  </div>`;
+}
+
+async function hydrateLeaders(container) {
+  const holders = container.querySelectorAll('.sp-leaders');
+  if (!holders.length) return;
+  const all  = await loadLeaders();
+  const lang = window.currentLang || 'fr';
+  holders.forEach(el => {
+    const org  = el.dataset.org;
+    const list = all.filter(l => l.org === org);
+    if (!list.length) { el.remove(); return; }
+    const key   = 'org_' + org;
+    const title = el.dataset.title === '1' && t(key) !== key ? t(key) : '';
+    el.innerHTML = (title ? `<div class="org-group-title">${spEsc(title)}</div>` : '') +
+      `<div class="leaders-grid">${list.map(l => spLeaderCard(l, lang)).join('')}</div>`;
+  });
 }
 
 /* ── Inline HTML (bold, italic, links in body text) ─────── */

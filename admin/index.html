@@ -151,6 +151,14 @@
         );
       }
 
+      case 'leaders': {
+        var lorgs = { presidence:'Présidence de Pieu', grandconseil:'Grand Conseil', ss:'Société de Secours', jf:'Jeunes Filles', jg:'Jeunes Gens', primaire:'Primaire', ecole:'École du Dimanche', jas:'Jeunes Adultes Célibataires' };
+        var lorg  = s.get('org') || '';
+        return h('div', { key: key, style: { margin: '24px 0', padding: '16px 20px', border: '1px dashed #B8924A', borderRadius: '6px', color: '#6B6460', fontSize: '14px' } },
+          '👥 Barre de dirigeants — ' + (lorgs[lorg] || '(organisation non choisie)') + ' (affichée sur le site)'
+        );
+      }
+
       default:
         return null;
     }

@@ -58,6 +58,7 @@ collections:
                   - { label: "Primaire", value: primaire }
                   - { label: "École du Dimanche", value: ecole }
                   - { label: "Jeunes Adultes Célibataires", value: jas }
+                  - { label: "Adultes Seuls", value: as }
               - label: "Rôle"
                 name: role
                 widget: object
@@ -1926,6 +1927,25 @@ collections:
               - { label: "Étiquette (FR)", name: label_fr, widget: string }
               - { label: "Étiquette (ES)", name: label_es, widget: string, required: false }
               - { label: "Étiquette (EN)", name: label_en, widget: string, required: false }
+          - label: "👥 Barre de dirigeants"
+            name: leaders
+            widget: object
+            summary: "{{fields.org}}"
+            fields:
+              - label: "Organisation"
+                name: org
+                widget: select
+                hint: "Affiche les dirigeants actifs de cette organisation, tels que listés dans « Dirigeants ». Pour deux organisations, ajouter deux blocs."
+                options:
+                  - { label: "Présidence de Pieu", value: presidence }
+                  - { label: "Grand Conseil", value: grandconseil }
+                  - { label: "Société de Secours", value: ss }
+                  - { label: "Jeunes Filles", value: jf }
+                  - { label: "Jeunes Gens", value: jg }
+                  - { label: "Primaire", value: primaire }
+                  - { label: "École du Dimanche", value: ecole }
+                  - { label: "Jeunes Adultes Célibataires", value: jas }
+              - { label: "Afficher le titre de l'organisation", name: show_title, widget: boolean, default: true, hint: "Ex : « Jeunes Gens », traduit automatiquement dans les 3 langues" }
 
   # ──────────────────────────────────────────────────────────
   #  9. INDEX DES PAGES (navigation)  →  data/pages-index.json
