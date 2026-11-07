@@ -23,6 +23,7 @@ media_processing:
   enabled: true
   format:
     enabled: false   # keep the original type; set true plus default: webp to convert
+    default: webp
   quality: 80
   strip_metadata: true
   width: 1600
