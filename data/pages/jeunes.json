@@ -3,7 +3,7 @@
   "sections": [
     {
       "type": "heading",
-      "text_fr": "Programe 2027",
+      "text_fr": "Programme 2027",
       "text_es": "Programa 2027",
       "text_en": "2027 program"
     },
@@ -22,6 +22,22 @@
       "label_es": "Descubrir el programa",
       "type": "cta",
       "href_en": "https://www.churchofjesuschrist.org/callings/youth?lang=eng"
+    },
+    {
+      "type": "heading",
+      "text_fr": "Mes dirigeants",
+      "text_es": "Mis lideres",
+      "text_en": "My leaders"
+    },
+    {
+      "type": "leaders",
+      "show_title": true,
+      "org": "jf"
+    },
+    {
+      "type": "leaders",
+      "show_title": true,
+      "org": "jg"
     },
     {
       "type": "eyebrow",
