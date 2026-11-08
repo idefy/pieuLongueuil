@@ -148,9 +148,9 @@
       "photo": "/assets/leaders-philippe-bouchard.jpg",
       "active": true,
       "responsibility": {
-        "fr": "Sherbrooke, Jeunes Adultes Seuls ",
-        "es": "Sherbrooke, Jóvenes Adultos Solteros ",
-        "en": "Sherbrooke, Young Single Adults"
+        "fr": "Sherbrooke, Jeunes Adultes Seuls et Institut",
+        "es": "Sherbrooke, Jóvenes Adultos Solteros e Instituto",
+        "en": "Sherbrooke, Young Single Adults and Institute"
       }
     },
     {
@@ -165,9 +165,9 @@
       "photo": "/assets/leaders-olivier-carter.jpg",
       "active": true,
       "responsibility": {
-        "fr": "Longueuil, Séminaire et Institut",
-        "es": "Longueuil, Seminario e Instituto ",
-        "en": "Longueuil, Seminary and Institute "
+        "fr": "Longueuil, Séminaire et Musique",
+        "es": "Longueuil, Seminario e Musica",
+        "en": "Longueuil, Seminary and Musique"
       }
     },
     {
