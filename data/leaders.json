@@ -628,6 +628,30 @@
         "es": "",
         "en": ""
       }
+    },
+    {
+      "active": true,
+      "org": "jas",
+      "role": {
+        "fr": "Représentant des Jeunes Adultes Seuls",
+        "es": "Representante de jóvenes adultos solteros de estaca",
+        "en": "Stake Young Single Adult Representative"
+      },
+      "name": "Olivier Khalil",
+      "id": "rep_jas",
+      "photo": "/assets/leaders-jas-olivier-khalil.jpeg"
+    },
+    {
+      "active": true,
+      "org": "jas",
+      "role": {
+        "fr": "Représentante des Jeunes Adultes Seuls de pieu",
+        "es": "Representante de jóvenes adultos solteros de estaca",
+        "en": "Stake Young Single Adult Representative"
+      },
+      "id": "rep_e_jas",
+      "name": "Jade Lambert",
+      "photo": "/assets/leaders-placeholder.jpg"
     }
   ]
 }
