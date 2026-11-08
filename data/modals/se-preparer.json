@@ -1,21 +1,28 @@
 {
+  "eyebrow_fr": "Entretiens",
+  "eyebrow_es": "Entrevistas",
   "modal_id": "se-preparer",
-  "icon": "star",
   "sections": [
     {
       "type": "intro",
-      "text_fr": "As a servant of the Lord, a member of the stake presidency will have the privilege of meeting with you. He will desire to call down upon you the blessings of our Heavenly Father. We invite you to consider the preparatory study according to the interview you will have."
+      "text_fr": "En tant que serviteur du Seigneur, un membre de la présidence de pieu aura le privilège de s'entretenir avec vous. Il voudra invoquer sur vous les bénédictions de notre Père céleste. Nous vous invitons à faire l'étude préparatoire en vue de l'entrevue que vous aurez.",
+      "text_en": "As a servant of the Lord, a member of the stake presidency will have the privilege of meeting with you. He will desire to call down upon you the blessings of our Heavenly Father. We invite you to consider the preparatory study according to the interview you will have.",
+      "text_es": "Como siervo del Señor, un miembro de la presidencia de estaca tendrá el privilegio de reunirse con usted. Él deseará invocar sobre usted las bendiciones de nuestro Padre Celestial. Le invitamos a realizar el estudio preparatorio correspondiente a la entrevista que tendrá."
     },
     {
       "type": "divider"
     },
     {
       "type": "heading",
-      "text_fr": "Ordination to the Melchizedek Priesthood"
+      "text_fr": "Ordination à la prêtrise de Melchisédek",
+      "text_en": "Ordination to the Melchizedek Priesthood",
+      "text_es": "Ordenación al Sacerdocio de Melquisedec"
     },
     {
       "type": "body",
-      "text_fr": "Preparatory study:"
+      "text_fr": "Étude préparatoire :",
+      "text_en": "Preparatory study:",
+      "text_es": "Estudio preparatorio:"
     },
     {
       "type": "linklist",
@@ -29,48 +36,66 @@
           "url": "https://www.churchofjesuschrist.org/study/scriptures/pgp/abr/1"
         },
         {
-          "label_fr": "D&C 13",
-          "url": "https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/13"
+          "label_fr": "D&A 13",
+          "url": "https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/13",
+          "label_en": "D&C 13",
+          "label_es": "D&C 13"
         },
         {
-          "label_fr": "D&C 20, 84, 107 and 121",
-          "url": "https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/20"
+          "label_fr": "D&A 20, 84, 107 and 121",
+          "url": "https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/20",
+          "label_es": "D&C 20, 84, 107 and 121",
+          "label_en": "D&C 20, 84, 107 and 121"
         }
       ]
     },
     {
       "type": "note",
-      "text_fr": "We will have the opportunity to review the oath and covenant of the priesthood together."
+      "text_fr": "Nous aurons l'occasion d'examiner ensemble le serment et l'alliance de la prêtrise.",
+      "text_es": "Tendremos la oportunidad de repasar juntos el juramento y el convenio del sacerdocio.",
+      "text_en": "We will have the opportunity to review the oath and covenant of the priesthood together."
     },
     {
       "type": "divider"
     },
     {
       "type": "heading",
-      "text_fr": "Personal Endowment"
+      "text_fr": "Dotation personnelle",
+      "text_en": "Personal Endowment",
+      "text_es": "Dotación personal"
     },
     {
       "type": "body",
-      "text_fr": "Preparatory study:"
+      "text_fr": "Étude préparatoire :",
+      "text_en": "Preparatory study:",
+      "text_es": "Estudio preparatorio:"
     },
     {
       "type": "linklist",
       "items": [
         {
-          "label_fr": "Preparing for Your Temple Visit",
-          "url": "https://www.churchofjesuschrist.org/temples/prepare-for-your-temple-visit"
+          "label_fr": "Préparation à votre visite au temple",
+          "url": "https://www.churchofjesuschrist.org/temples/prepare-for-your-temple-visit",
+          "label_en": "Preparing for Your Temple Visit",
+          "label_es": "Preparación para su visita al templo"
         },
         {
-          "label_fr": "The Temple Endowment",
-          "url": "https://www.churchofjesuschrist.org/temples/what-is-temple-endowment"
+          "label_fr": "La dotation du temple",
+          "url": "https://www.churchofjesuschrist.org/temples/what-is-temple-endowment",
+          "label_en": "The Temple Endowment",
+          "label_es": "La investidura del templo"
         },
         {
-          "label_fr": "Temple Endowment: Q&A",
-          "url": "https://www.churchofjesuschrist.org/study/liahona/2019/03/young-adults/temple-endowment-q-and-a"
+          "label_fr": "Dotation du temple : Questions-réponses",
+          "url": "https://www.churchofjesuschrist.org/study/liahona/2019/03/young-adults/temple-endowment-q-and-a",
+          "label_en": "Temple Endowment: Q&A",
+          "label_es": "Investidura del templo: Preguntas y respuestas"
         },
         {
-          "label_fr": "The Temple Garment",
-          "url": "https://www.churchofjesuschrist.org/study/liahona/1999/09/the-temple-garment-an-outward-expression-of-an-inward-commitment?lang=eng"
+          "label_fr": "Le vêtement du temple",
+          "url": "https://www.churchofjesuschrist.org/study/liahona/1999/09/the-temple-garment-an-outward-expression-of-an-inward-commitment?lang=eng",
+          "label_en": "The Temple Garment",
+          "label_es": "La prenda del templo"
         }
       ]
     },
@@ -79,30 +104,42 @@
     },
     {
       "type": "heading",
-      "text_fr": "Renewing Your Temple Recommend"
+      "text_fr": "Renouvellement de votre recommandation pour le temple",
+      "text_en": "Renewing Your Temple Recommend",
+      "text_es": "Renovación de tu recomendación para el templo"
     },
     {
       "type": "body",
-      "text_fr": "Preparatory study:"
+      "text_fr": "Étude préparatoire :",
+      "text_en": "Preparatory study:",
+      "text_es": "Estudio preparatorio:"
     },
     {
       "type": "linklist",
       "items": [
         {
-          "label_fr": "Return to the Temple — video by Elder Bednar (FR)",
-          "url": "https://www.youtube.com/watch?v=uuok_oZnnD0"
+          "label_fr": "Retourner au Temple — video par Elder Bednar (FR)",
+          "url": "https://www.youtube.com/watch?v=uuok_oZnnD0",
+          "label_en": "Return to the Temple — video by Elder Bednar (FR)",
+          "label_es": "Regresar al Templo — video del élder Bednar (FR)"
         },
         {
-          "label_fr": "Return to the Temple — video by Elder Bednar (ES)",
-          "url": "https://www.youtube.com/watch?v=-e0FviPJWbc"
+          "label_fr": "Retourner au Temple — video par Elder Bednar (ES)",
+          "url": "https://www.youtube.com/watch?v=-e0FviPJWbc",
+          "label_en": "Return to the Temple — video by Elder Bednar (ES)",
+          "label_es": "Regresar al Templo — video del élder Bednar (ES)"
         },
         {
-          "label_fr": "Return to the Temple — video by Elder Bednar (EN)",
-          "url": "https://www.youtube.com/watch?v=_97I5BG4EGM"
+          "label_fr": "Retourner au Temple — video par Elder Bednar (EN)",
+          "url": "https://www.youtube.com/watch?v=_97I5BG4EGM",
+          "label_en": "Return to the Temple — video by Elder Bednar (EN)",
+          "label_es": "Regresar al Templo — video del élder Bednar (EN)"
         },
         {
-          "label_fr": "D&C 95:8; 109:72-80; 2 Nephi 12:2-3",
-          "url": "https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/95"
+          "label_fr": "D&A 95:8; 109:72-80; 2 Nephi 12:2-3",
+          "url": "https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/95",
+          "label_es": "D&C 95:8; 109:72-80; 2 Nephi 12:2-3",
+          "label_en": "D&C 95:8; 109:72-80; 2 Nephi 12:2-3"
         }
       ]
     },
@@ -111,22 +148,30 @@
     },
     {
       "type": "heading",
-      "text_fr": "Temple Sealing"
+      "text_fr": "Scellement au temple",
+      "text_en": "Temple Sealing",
+      "text_es": "Sellamiento en el templo"
     },
     {
       "type": "body",
-      "text_fr": "Preparatory study:"
+      "text_fr": "Étude préparatoire :",
+      "text_en": "Preparatory study:",
+      "text_es": "Estudio preparatorio:"
     },
     {
       "type": "linklist",
       "items": [
         {
-          "label_fr": "The Family: A Proclamation to the World",
-          "url": "https://www.churchofjesuschrist.org/topics/family-proclamation"
+          "label_fr": "La famille : Déclaration au monde",
+          "url": "https://www.churchofjesuschrist.org/topics/family-proclamation",
+          "label_en": "The Family: A Proclamation to the World",
+          "label_es": "La familia: Una proclamación para el mundo"
         },
         {
-          "label_fr": "About Temple Sealings",
-          "url": "https://www.churchofjesuschrist.org/temples/what-happens-in-a-temple-sealing"
+          "label_fr": "À propos des scellements au temple",
+          "url": "https://www.churchofjesuschrist.org/temples/what-happens-in-a-temple-sealing",
+          "label_en": "About Temple Sealings",
+          "label_es": "Acerca de los sellamientos en el templo"
         }
       ]
     },
@@ -137,15 +182,14 @@
       "type": "cta",
       "href": "https://www.picktime.com/RVPieuLongueuil",
       "style": "primary",
-      "label_fr": "Schedule Appointment (Picktime)",
-      "label_es": "",
-      "label_en": ""
+      "label_fr": "Prendre rendez-vous (Picktime)",
+      "label_es": "Programar cita (Picktime)",
+      "label_en": "Schedule Appointment (Picktime)"
     }
   ],
+  "title_en": "Preparing for an Interview",
   "title_fr": "Se préparer à un entretien",
   "title_es": "Prepararse para una entrevista",
-  "title_en": "Preparing for an Interview",
-  "eyebrow_fr": "Entretiens",
-  "eyebrow_es": "Entrevistas",
+  "icon": "star",
   "eyebrow_en": "Interviews"
 }
