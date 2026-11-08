@@ -1,101 +1,129 @@
 {
+  "eyebrow_fr": "Entretiens & Rendez-vous",
+  "eyebrow_es": "Entrevistas y Citas",
   "modal_id": "rendez-vous",
-  "icon": "cal",
   "sections": [
     {
       "type": "heading",
-      "text_fr": "With the patriarch"
+      "text_fr": "Avec le patriarche",
+      "text_en": "With the patriarch",
+      "text_es": "Con el patriarca"
     },
     {
       "type": "body",
-      "text_fr": "To schedule an appointment with Brother Limoges for a patriarchal blessing:"
+      "text_fr": "Pour prendre rendez-vous avec frère Limoges en vue d'une bénédiction patriarcale :",
+      "text_en": "To schedule an appointment with Brother Limoges for a patriarchal blessing:",
+      "text_es": "Para programar una cita con el hermano Limoges para una bendición patriarcal:"
     },
     {
       "type": "list",
       "items": [
         {
-          "text_fr": "Meet with your bishop for a recommendation"
+          "text_fr": "Rencontrez votre évêque pour obtenir une recommandation.",
+          "text_en": "Meet with your bishop for a recommendation",
+          "text_es": "Reúnete con tu obispo para obtener una recomendación."
         },
         {
-          "text_fr": "Schedule by email"
+          "text_fr": "Planifier par courriel",
+          "text_en": "Schedule by email",
+          "text_es": "Programar por correo electrónico"
         }
       ]
     },
     {
       "type": "note",
-      "text_fr": "Patriarchal blessings are given at the stake centre."
+      "text_fr": "Les bénédictions patriarcales sont données au centre de pieu.",
+      "text_en": "Patriarchal blessings are given at the stake centre.",
+      "text_es": "Las bendiciones patriarcales se otorgan en el centro de estaca."
     },
     {
       "type": "cta",
       "href": "mailto:daniellimoges88@gmail.com",
       "style": "secondary",
-      "label_fr": "Email the patriarch",
-      "label_es": "",
-      "label_en": ""
+      "label_fr": "Envoyez un courriel au patriarche",
+      "label_es": "Envía un correo electrónico al patriarca",
+      "label_en": "Email the patriarch"
     },
     {
       "type": "divider"
     },
     {
       "type": "heading",
-      "text_fr": "With the stake presidency"
+      "text_fr": "Avec la présidence de pieu",
+      "text_en": "With the stake presidency",
+      "text_es": "Con la presidencia de estaca"
     },
     {
       "type": "body",
-      "text_fr": "If the interview requires first meeting with a member of your bishopric or branch president, please do so before scheduling an appointment with us."
+      "text_fr": "Si l’entrevue nécessite une rencontre préalable avec un membre de votre épiscopat ou avec le président de votre branche, veuillez procéder à cette rencontre avant de prendre rendez-vous avec nous.",
+      "text_en": "If the interview requires first meeting with a member of your bishopric or branch president, please do so before scheduling an appointment with us.",
+      "text_es": "Si la entrevista requiere reunirse primero con un miembro de su obispado o con el presidente de su rama, por favor hágalo antes de programar una cita con nosotros."
     },
     {
       "type": "body",
-      "text_fr": "If you are a sister and your interview is in person, please come accompanied to respect the protocol in place."
+      "text_fr": "Si vous êtes une sœur et que votre entrevue a lieu en personne, veuillez venir accompagnée, afin de respecter le protocole en vigueur.",
+      "text_en": "If you are a sister and your interview is in person, please come accompanied to respect the protocol in place.",
+      "text_es": "Si eres hermana y tu entrevista es presencial, por favor acude acompañada para respetar el protocolo vigente."
     },
     {
       "type": "body",
-      "text_fr": "We invite you to come to the interview dressed as you would to enter the temple."
+      "text_fr": "Nous vous invitons à venir à l'entrevue habillé(e) comme vous le seriez pour entrer dans le temple.",
+      "text_en": "We invite you to come to the interview dressed as you would to enter the temple.",
+      "text_es": "Le invitamos a acudir a la entrevista vestido tal como lo haría para entrar en el templo."
     },
     {
       "type": "body",
-      "text_fr": "Reminder: there must be no more than 3 months between the bishopric interview and the stake presidency interview."
+      "text_fr": "Rappel : il ne doit pas s’écouler plus de trois mois entre l’entretien avec l’épiscopat et l’entretien avec la présidence de pieu.",
+      "text_en": "Reminder: there must be no more than 3 months between the bishopric interview and the stake presidency interview.",
+      "text_es": "Recordatorio: no deben transcurrir más de 3 meses entre la entrevista con el obispado y la entrevista con la presidencia de estaca."
     },
     {
       "type": "cta",
       "href": "https://www.picktime.com/RVPieuLongueuil",
       "style": "primary",
-      "label_fr": "Schedule via Picktime",
-      "label_es": "",
-      "label_en": ""
+      "label_fr": "Prendre rendez-vous par Picktime",
+      "label_es": "Programar a través de Picktime",
+      "label_en": "Schedule via Picktime"
     },
     {
       "type": "note",
-      "text_fr": "★ Recommended option"
+      "text_fr": "★ Option recommandée",
+      "text_en": "★ Recommended option",
+      "text_es": "★ Opción recomendada"
     },
     {
       "type": "cta",
       "href": "mailto:rv-pieulongueuil@googlegroups.com",
       "style": "secondary",
-      "label_fr": "Contact by email",
-      "label_es": "",
-      "label_en": ""
+      "label_fr": "Contacter par courriel",
+      "label_es": "Contactar por correo electrónico",
+      "label_en": "Contact by email"
     },
     {
       "type": "note",
-      "text_fr": "For special cases."
+      "text_fr": "Pour les cas particuliers.",
+      "text_en": "For special cases.",
+      "text_es": "Para casos especiales."
     },
     {
       "type": "divider"
     },
     {
       "type": "heading",
-      "text_fr": "Why Picktime?"
+      "text_fr": "Pourquoi Picktime?",
+      "text_en": "Why Picktime?",
+      "text_es": "Porque Picktime?"
     },
     {
       "type": "body",
-      "text_fr": "Choose the best time based on your availability and the stake presidency"
+      "text_fr": "Choisissez le meilleur moment en fonction de vos disponibilités et de celles de la présidence de pieu.",
+      "text_en": "Choose the best time based on your availability and the stake presidency",
+      "text_es": "Elige el mejor momento según tu disponibilidad y la de la presidencia de estaca."
     }
   ],
+  "title_en": "Schedule an Appointment",
   "title_fr": "Prendre rendez-vous",
   "title_es": "Pedir una cita",
-  "title_en": "Schedule an Appointment",
-  "eyebrow_fr": "Entretiens & Rendez-vous",
-  "eyebrow_es": "Entrevistas y Citas",
+  "icon": "cal",
   "eyebrow_en": "Interviews & Appointments"
 }
