@@ -3,20 +3,20 @@
   "sections": [
     {
       "type": "heading",
-      "text_fr": "Conference des JAS",
-      "text_es": "Conferencia JAS",
-      "text_en": "YSA conference "
+      "text_fr": "Vos représentants",
+      "text_es": "Sus representantes",
+      "text_en": "Your representants"
     },
     {
-      "type": "image",
-      "src": "/assets/1330.jpg",
-      "alt_fr": "Conference "
+      "type": "leaders",
+      "show_title": true,
+      "org": "jas"
     },
     {
-      "type": "eyebrow",
-      "text_fr": "Activités a venir",
+      "type": "heading",
+      "text_fr": "Activités à venir",
       "text_es": "Actividades a venir",
-      "text_en": "Upcoming activities "
+      "text_en": "Upcoming activities"
     },
     {
       "type": "calendar",
