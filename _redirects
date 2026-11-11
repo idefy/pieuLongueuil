@@ -19,3 +19,7 @@
 
 # 3. pdf redirect
 /remboursement /assets/Remboursement.pdf 302
+
+# 4. external links
+/bulletin        https://iiz4xc.subscribepage.io/        302
+/boletin         https://wjsnvm.subscribepage.io/        302
