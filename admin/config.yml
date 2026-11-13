@@ -317,105 +317,6 @@ collections:
                   - { label: "Principal (bleu)", value: primary }
                   - { label: "Secondaire (contour)", value: secondary }
                 default: primary
-          - label: "▥ Colonnes (2 à 5)"
-            name: columns
-            widget: object
-            fields:
-              - label: "Colonnes"
-                name: columns
-                widget: list
-                label_singular: "Colonne"
-                min: 2
-                max: 5
-                hint: "De 2 à 5 colonnes côte à côte (empilées sur mobile). Dans chaque colonne, ajoutez les éléments voulus (titre, texte, image, bouton, lien) et glissez-les pour changer leur ordre."
-                fields:
-                  - label: "Contenu de la colonne"
-                    name: content
-                    widget: list
-                    label_singular: "Élément"
-                    types:
-                      - label: "📌 Titre"
-                        name: title
-                        widget: object
-                        summary: "{{fields.text_fr}}"
-                        fields:
-                          - { label: "Titre (FR)", name: text_fr, widget: string }
-                          - { label: "Título (ES)", name: text_es, widget: string, required: false }
-                          - { label: "Title (EN)", name: text_en, widget: string, required: false }
-                      - label: "¶ Texte"
-                        name: text
-                        widget: object
-                        summary: "{{fields.text_fr}}"
-                        hint: "Supporte **gras**, *italique*, [texte](url). Une ligne vide = nouveau paragraphe."
-                        fields:
-                          - { label: "Texte (FR)", name: text_fr, widget: text }
-                          - { label: "Texto (ES)", name: text_es, widget: text, required: false }
-                          - { label: "Text (EN)", name: text_en, widget: text, required: false }
-                      - label: "🖼️ Image"
-                        name: image
-                        widget: object
-                        summary: "{{fields.alt_fr}}"
-                        fields:
-                          - label: "Image par défaut (toutes langues)"
-                            name: src
-                            widget: image
-                            media_folder: "/assets"
-                            public_folder: "/assets"
-                          - { label: "Texte alt (FR)", name: alt_fr, widget: string, required: false }
-                          - { label: "Texto alt (ES)", name: alt_es, widget: string, required: false }
-                          - { label: "Alt text (EN)", name: alt_en, widget: string, required: false }
-                          - label: "Image spécifique — Français (optionnel)"
-                            name: src_fr
-                            widget: image
-                            required: false
-                            media_folder: "/assets"
-                            public_folder: "/assets"
-                            hint: "Si renseigné, remplace l'image par défaut pour les visiteurs en français"
-                          - label: "Imagen específica — Español (opcional)"
-                            name: src_es
-                            widget: image
-                            required: false
-                            media_folder: "/assets"
-                            public_folder: "/assets"
-                            hint: "Si se rellena, reemplaza la imagen predeterminada para visitantes en español"
-                          - label: "Specific image — English (optional)"
-                            name: src_en
-                            widget: image
-                            required: false
-                            media_folder: "/assets"
-                            public_folder: "/assets"
-                            hint: "If filled, overrides the default image for English visitors"
-                      - label: "🔘 Bouton"
-                        name: button
-                        widget: object
-                        summary: "{{fields.label_fr}}"
-                        fields:
-                          - { label: "Étiquette (FR)", name: label_fr, widget: string }
-                          - { label: "Etiqueta (ES)", name: label_es, widget: string, required: false }
-                          - { label: "Label (EN)", name: label_en, widget: string, required: false }
-                          - { label: "URL / lien (ou modal:id)", name: href, widget: string }
-                          - { label: "URL (FR spécifique)", name: href_fr, widget: string, required: false }
-                          - { label: "URL (ES spécifique)", name: href_es, widget: string, required: false }
-                          - { label: "URL (EN spécifique)", name: href_en, widget: string, required: false }
-                          - label: "Style"
-                            name: style
-                            widget: select
-                            options:
-                              - { label: "Or", value: gold }
-                              - { label: "Secondaire (contour)", value: secondary }
-                            default: gold
-                      - label: "🔗 Lien simple"
-                        name: link
-                        widget: object
-                        summary: "{{fields.label_fr}}"
-                        fields:
-                          - { label: "Étiquette (FR)", name: label_fr, widget: string }
-                          - { label: "Etiqueta (ES)", name: label_es, widget: string, required: false }
-                          - { label: "Label (EN)", name: label_en, widget: string, required: false }
-                          - { label: "URL (ou modal:id)", name: url, widget: string }
-                          - { label: "URL spécifique (FR)", name: url_fr, widget: string, required: false }
-                          - { label: "URL específica (ES)", name: url_es, widget: string, required: false }
-                          - { label: "Specific URL (EN)", name: url_en, widget: string, required: false }
 
   - name: "fiches"
     label: "🌿 Fiches service pastoral"
@@ -2045,6 +1946,106 @@ collections:
                   - { label: "École du Dimanche", value: ecole }
                   - { label: "Jeunes Adultes Célibataires", value: jas }
               - { label: "Afficher le titre de l'organisation", name: show_title, widget: boolean, default: true, hint: "Ex : « Jeunes Gens », traduit automatiquement dans les 3 langues" }
+          - label: "▥ Colonnes (2 à 5)"
+            name: columns
+            widget: object
+            fields:
+              - label: "Colonnes"
+                name: columns
+                widget: list
+                label_singular: "Colonne"
+                min: 2
+                max: 5
+                hint: "De 2 à 5 colonnes côte à côte (empilées sur mobile). Dans chaque colonne, ajoutez les éléments voulus (titre, texte, image, bouton, lien) et glissez-les pour changer leur ordre."
+                fields:
+                  - label: "Contenu de la colonne"
+                    name: content
+                    widget: list
+                    label_singular: "Élément"
+                    types:
+                      - label: "📌 Titre"
+                        name: title
+                        widget: object
+                        summary: "{{fields.text_fr}}"
+                        fields:
+                          - { label: "Titre (FR)", name: text_fr, widget: string }
+                          - { label: "Título (ES)", name: text_es, widget: string, required: false }
+                          - { label: "Title (EN)", name: text_en, widget: string, required: false }
+                      - label: "¶ Texte"
+                        name: text
+                        widget: object
+                        summary: "{{fields.text_fr}}"
+                        hint: "Supporte **gras**, *italique*, [texte](url). Une ligne vide = nouveau paragraphe."
+                        fields:
+                          - { label: "Texte (FR)", name: text_fr, widget: text }
+                          - { label: "Texto (ES)", name: text_es, widget: text, required: false }
+                          - { label: "Text (EN)", name: text_en, widget: text, required: false }
+                      - label: "🖼️ Image"
+                        name: image
+                        widget: object
+                        summary: "{{fields.alt_fr}}"
+                        fields:
+                          - label: "Image par défaut (toutes langues)"
+                            name: src
+                            widget: image
+                            media_folder: "/assets"
+                            public_folder: "/assets"
+                          - { label: "Texte alt (FR)", name: alt_fr, widget: string, required: false }
+                          - { label: "Texto alt (ES)", name: alt_es, widget: string, required: false }
+                          - { label: "Alt text (EN)", name: alt_en, widget: string, required: false }
+                          - label: "Image spécifique — Français (optionnel)"
+                            name: src_fr
+                            widget: image
+                            required: false
+                            media_folder: "/assets"
+                            public_folder: "/assets"
+                            hint: "Si renseigné, remplace l'image par défaut pour les visiteurs en français"
+                          - label: "Imagen específica — Español (opcional)"
+                            name: src_es
+                            widget: image
+                            required: false
+                            media_folder: "/assets"
+                            public_folder: "/assets"
+                            hint: "Si se rellena, reemplaza la imagen predeterminada para visitantes en español"
+                          - label: "Specific image — English (optional)"
+                            name: src_en
+                            widget: image
+                            required: false
+                            media_folder: "/assets"
+                            public_folder: "/assets"
+                            hint: "If filled, overrides the default image for English visitors"
+                      - label: "🔘 Bouton"
+                        name: button
+                        widget: object
+                        summary: "{{fields.label_fr}}"
+                        fields:
+                          - { label: "Étiquette (FR)", name: label_fr, widget: string }
+                          - { label: "Etiqueta (ES)", name: label_es, widget: string, required: false }
+                          - { label: "Label (EN)", name: label_en, widget: string, required: false }
+                          - { label: "URL / lien (ou modal:id)", name: href, widget: string }
+                          - { label: "URL (FR spécifique)", name: href_fr, widget: string, required: false }
+                          - { label: "URL (ES spécifique)", name: href_es, widget: string, required: false }
+                          - { label: "URL (EN spécifique)", name: href_en, widget: string, required: false }
+                          - label: "Style"
+                            name: style
+                            widget: select
+                            options:
+                              - { label: "Or", value: gold }
+                              - { label: "Secondaire (contour)", value: secondary }
+                            default: gold
+                      - label: "🔗 Lien simple"
+                        name: link
+                        widget: object
+                        summary: "{{fields.label_fr}}"
+                        fields:
+                          - { label: "Étiquette (FR)", name: label_fr, widget: string }
+                          - { label: "Etiqueta (ES)", name: label_es, widget: string, required: false }
+                          - { label: "Label (EN)", name: label_en, widget: string, required: false }
+                          - { label: "URL (ou modal:id)", name: url, widget: string }
+                          - { label: "URL spécifique (FR)", name: url_fr, widget: string, required: false }
+                          - { label: "URL específica (ES)", name: url_es, widget: string, required: false }
+                          - { label: "Specific URL (EN)", name: url_en, widget: string, required: false }
+
 
   # ──────────────────────────────────────────────────────────
   #  9. INDEX DES PAGES (navigation)  →  data/pages-index.json
