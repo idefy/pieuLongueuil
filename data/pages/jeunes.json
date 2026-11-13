@@ -52,6 +52,13 @@
       "count": 5,
       "show_images": true,
       "url": "https://churchofjesuschrist.org/church-calendar/services/ext/v3.0/export/ical/group/4ac8b3bd70984cdb8212676a11565417"
+    },
+    {
+      "type": "page_link",
+      "slug": "FSY",
+      "label_fr": "Le prochain FSY",
+      "label_es": "El proximo FSY",
+      "label_en": "The next FSY"
     }
   ],
   "subtitle_en": "From 12 to 18 years old",
