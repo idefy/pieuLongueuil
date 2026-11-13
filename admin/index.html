@@ -158,6 +158,31 @@
           '👥 Barre de dirigeants — ' + (lorgs[lorg] || '(organisation non choisie)') + ' (affichée sur le site)'
         );
       }
+      case 'columns': {
+        var ccols = s.get('columns');
+        if (!ccols || !ccols.size) return null;
+        var colEls = ccols.map(function(col, ci) {
+          var items = col && col.get ? col.get('content') : null;
+          var kids = items ? items.map(function(it, ii) {
+            var t = it.get('type');
+            if (t === 'title') return h('h3', { key: ii, className: 'sp-subheading', style: { margin: '0 0 8px' } }, it.get('text_fr') || '');
+            if (t === 'text')  return h('div', { key: ii, className: 'sp-body', style: { fontSize: '14px', margin: '0 0 8px' },
+                                   dangerouslySetInnerHTML: { __html: md(it.get('text_fr') || '').replace(/\n/g, '<br>') } });
+            if (t === 'image') {
+              var isrc = it.get('src_fr') || it.get('src') || '';
+              return isrc ? h('img', { key: ii, className: 'sp-image', src: isrc, alt: it.get('alt_fr') || '', style: { margin: '0 0 8px' } }) : null;
+            }
+            if (t === 'button') return h('div', { key: ii, style: { margin: '0 0 8px' } },
+                                   h('span', { className: 'sp-cta gold', style: { margin: 0 } }, it.get('label_fr') || ''));
+            if (t === 'link')   return h('div', { key: ii, style: { margin: '0 0 8px' } },
+                                   h('a', { href: it.get('url_fr') || it.get('url') || '#', style: { fontSize: '13px', fontWeight: 700, color: '#2C5F9E' } }, '↗ ' + (it.get('label_fr') || '')));
+            return null;
+          }).toArray() : [];
+          return h('div', { key: ci, style: { minWidth: 0 } }, kids);
+        }).toArray();
+        return h('div', { key: key, style: { display: 'grid', gridTemplateColumns: 'repeat(' + colEls.length + ', minmax(0, 1fr))', gap: '20px', margin: '24px 0', alignItems: 'start' } }, colEls);
+      }
+
 
       default:
         return null;

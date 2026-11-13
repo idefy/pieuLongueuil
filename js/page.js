@@ -258,6 +258,17 @@ function renderSection(s, lang) {
       return `<div class="sp-leaders" data-org="${org}" data-title="${s.show_title === false ? 0 : 1}"></div>`;
     }
 
+    case 'columns': {
+      // 2–5 side-by-side columns; each column holds an ordered list of items (title/text/image/button/link)
+      const cols = (s.columns || []).slice(0, 5)
+        .map(c => (c && c.content || []).map(it => spColItem(it, lang)).join(''))
+        .filter(Boolean);
+      if (!cols.length) return '';
+      return `<div class="sp-columns" data-cols="${cols.length}" style="--cols:${cols.length}">${
+        cols.map(h => `<div class="sp-col">${h}</div>`).join('')
+      }</div>`;
+    }
+
     default:
       return '';
   }
@@ -309,6 +320,54 @@ async function hydrateLeaders(container) {
     el.innerHTML = (title ? `<div class="org-group-title">${spEsc(title)}</div>` : '') +
       `<div class="leaders-grid">${list.map(l => spLeaderCard(l, lang)).join('')}</div>`;
   });
+}
+
+/* ── Columns block: one item inside a column ───────────── */
+function spColItem(it, lang) {
+  if (!it) return '';
+  const pick = base => it[`${base}_${lang}`] || it[`${base}_fr`] || '';
+  const href = base => it[`${base}_${lang}`] || it[base] || it[`${base}_fr`] || '';
+  const anchor = (url, cls, inner) => {
+    if (!url) return '';
+    const ext = /^https?:/i.test(url);
+    // modal:<id> links are handled globally by initModalLinks()
+    return `<a class="${cls}" href="${spEsc(url)}"${ext ? ' target="_blank" rel="noopener"' : ''}>${inner}</a>`;
+  };
+
+  switch (it.type) {
+    case 'title': {
+      const v = pick('text');
+      return v ? `<h3 class="sp-col-title">${spEsc(v)}</h3>` : '';
+    }
+    case 'text': {
+      const v = pick('text');
+      if (!v) return '';
+      const paras = spEsc(v).split(/\n\s*\n/).filter(p => p.trim())
+        .map(p => `<p>${renderInlineHTML(p.trim()).replace(/\n/g, '<br>')}</p>`).join('');
+      return `<div class="sp-col-text">${paras}</div>`;
+    }
+    case 'image': {
+      const src = it[`src_${lang}`] || it.src || it.src_fr || '';
+      if (!src) return '';
+      const alt = pick('alt');
+      return `<img class="sp-col-img" src="${spEsc(src)}" alt="${spEsc(alt)}" loading="lazy" onerror="this.style.display='none'">`;
+    }
+    case 'button': {
+      const label = pick('label');
+      if (!label) return '';
+      const cls = it.style === 'secondary' ? 'btn' : 'btn btn-gold';
+      const a = anchor(href('href'), cls, spEsc(label));
+      return a ? `<div class="sp-col-btn">${a}</div>` : '';
+    }
+    case 'link': {
+      const label = pick('label');
+      if (!label) return '';
+      const a = anchor(href('url'), 'sp-col-link', `${svgExt(12)} ${spEsc(label)}`);
+      return a ? `<div class="sp-col-linkwrap">${a}</div>` : '';
+    }
+    default:
+      return '';
+  }
 }
 
 /* ── Inline HTML (bold, italic, links in body text) ─────── */
