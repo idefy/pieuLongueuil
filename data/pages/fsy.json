@@ -1,5 +1,15 @@
 {
   "slug": "FSY",
+  "sections": [
+    {
+      "type": "heading",
+      "text_fr": "Invitation"
+    },
+    {
+      "type": "subheading",
+      "text_fr": "Pour les 14 à 17 ans"
+    }
+  ],
   "subtitle_en": "For the Strength of Youth Conferences",
   "title_en": "FSY",
   "nav_order": 99,
