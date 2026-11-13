@@ -69,6 +69,16 @@
         "es": "El templo",
         "en": "The temple"
       }
+    },
+    {
+      "visible_in_nav": false,
+      "nav_order": 99,
+      "slug": "FSY",
+      "title": {
+        "fr": "FSY",
+        "es": "FSY",
+        "en": "FSY"
+      }
     }
   ]
 }
