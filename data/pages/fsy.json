@@ -26,6 +26,14 @@
     {
       "type": "video",
       "url": "https://youtu.be/NjEKmz-jIUw"
+    },
+    {
+      "type": "cta",
+      "style": "primary",
+      "label_fr": "Se pré-inscrire",
+      "label_en": "Pre-register",
+      "label_es": "Preinscribirse",
+      "href": "https://fsy.byu.edu/o3/user/fsy/register"
     }
   ],
   "subtitle_en": "For the Strength of Youth Conferences",
