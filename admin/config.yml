@@ -1847,6 +1847,18 @@ collections:
               - { label: "Légende (FR)", name: caption_fr, widget: string, required: false }
               - { label: "Légende (ES)", name: caption_es, widget: string, required: false }
               - { label: "Légende (EN)", name: caption_en, widget: string, required: false }
+          - label: "▶ Vidéo (YouTube / Vimeo)"
+            name: video
+            widget: object
+            summary: "{{fields.url}}"
+            fields:
+              - { label: "URL de la vidéo (YouTube ou Vimeo)", name: url, widget: string, hint: "Collez simplement le lien de la vidéo (ex : https://www.youtube.com/watch?v=… ou https://youtu.be/…)" }
+              - { label: "URL spécifique — Français (optionnel)", name: url_fr, widget: string, required: false, hint: "Si renseigné, remplace l'URL par défaut pour les visiteurs en français" }
+              - { label: "URL específica — Español (opcional)", name: url_es, widget: string, required: false, hint: "Si se rellena, reemplaza la URL predeterminada para visitantes en español" }
+              - { label: "Specific URL — English (optional)", name: url_en, widget: string, required: false, hint: "If filled, overrides the default URL for English visitors" }
+              - { label: "Légende (FR)", name: caption_fr, widget: string, required: false, hint: "Affichée sous la vidéo et lue par les lecteurs d'écran" }
+              - { label: "Leyenda (ES)", name: caption_es, widget: string, required: false }
+              - { label: "Caption (EN)", name: caption_en, widget: string, required: false }    
           - label: "📄 Document PDF"
             name: pdf
             widget: object
@@ -2014,6 +2026,18 @@ collections:
                             media_folder: "/assets"
                             public_folder: "/assets"
                             hint: "If filled, overrides the default image for English visitors"
+                      - label: "▶ Vidéo"
+                        name: video
+                        widget: object
+                        summary: "{{fields.url}}"
+                        fields:
+                          - { label: "URL de la vidéo (YouTube ou Vimeo)", name: url, widget: string, hint: "Collez simplement le lien de la vidéo (ex : https://www.youtube.com/watch?v=… ou https://youtu.be/…)" }
+                          - { label: "URL spécifique — Français (optionnel)", name: url_fr, widget: string, required: false, hint: "Si renseigné, remplace l'URL par défaut pour les visiteurs en français" }
+                          - { label: "URL específica — Español (opcional)", name: url_es, widget: string, required: false, hint: "Si se rellena, reemplaza la URL predeterminada para visitantes en español" }
+                          - { label: "Specific URL — English (optional)", name: url_en, widget: string, required: false, hint: "If filled, overrides the default URL for English visitors" }
+                          - { label: "Légende (FR)", name: caption_fr, widget: string, required: false, hint: "Affichée sous la vidéo et lue par les lecteurs d'écran" }
+                          - { label: "Leyenda (ES)", name: caption_es, widget: string, required: false }
+                          - { label: "Caption (EN)", name: caption_en, widget: string, required: false }
                       - label: "🔘 Bouton"
                         name: button
                         widget: object

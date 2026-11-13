@@ -258,6 +258,9 @@ function renderSection(s, lang) {
       return `<div class="sp-leaders" data-org="${org}" data-title="${s.show_title === false ? 0 : 1}"></div>`;
     }
 
+    case 'video':
+      return spVideoHTML(s[`url_${lang}`] || s.url || s.url_fr || '', lang, s[`caption_${lang}`] || s.caption_fr || '');
+
     case 'columns': {
       // 2–5 side-by-side columns; each column holds an ordered list of items (title/text/image/button/link)
       const cols = (s.columns || []).slice(0, 5)
@@ -322,6 +325,59 @@ async function hydrateLeaders(container) {
   });
 }
 
+/* ── Video embeds (YouTube / Vimeo) ─────────────────────── */
+function spVideoSrc(url, lang) {
+  if (!url) return '';
+  let u;
+  try { u = new URL(String(url).trim()); } catch (e) { return ''; }
+  if (u.protocol !== 'https:' && u.protocol !== 'http:') return '';
+  const host = u.hostname.toLowerCase().replace(/^(www|m|music)\./, '');
+  const toSec = t => {
+    if (!t) return 0;
+    if (/^\d+$/.test(t)) return +t;
+    const m = String(t).match(/^(?:(\d+)h)?(?:(\d+)m)?(?:(\d+)s)?$/i);
+    return m ? (+m[1] || 0) * 3600 + (+m[2] || 0) * 60 + (+m[3] || 0) : 0;
+  };
+  let id = '';
+  if (host === 'youtu.be') id = u.pathname.split('/')[1] || '';
+  else if (host === 'youtube.com' || host === 'youtube-nocookie.com') {
+    if (u.pathname === '/watch') id = u.searchParams.get('v') || '';
+    else { const m = u.pathname.match(/^\/(?:embed|shorts|live|v)\/([\w-]{11})/); id = m ? m[1] : ''; }
+  }
+  if (/^[\w-]{11}$/.test(id)) {
+    // youtube-nocookie = privacy-enhanced mode (no tracking cookies until played)
+    const q = new URLSearchParams({ hl: lang, rel: '0' });
+    const start = toSec(u.searchParams.get('start') || u.searchParams.get('t'));
+    if (start) q.set('start', start);
+    return `https://www.youtube-nocookie.com/embed/${id}?${q}`;
+  }
+  if (host === 'vimeo.com' || host === 'player.vimeo.com') {
+    const m = u.pathname.match(/^\/(?:video\/)?(\d+)(?:\/([a-f0-9]+))?/i);
+    if (m) {
+      const q = new URLSearchParams({ dnt: '1' });
+      const h = m[2] || u.searchParams.get('h');
+      if (h) q.set('h', h);
+      return `https://player.vimeo.com/video/${m[1]}?${q}`;
+    }
+  }
+  return '';
+}
+
+function spVideoHTML(url, lang, caption) {
+  if (!url) return '';
+  const src = spVideoSrc(url, lang);
+  if (!src) {
+    // Unrecognised host: show a plain link rather than embedding something unknown
+    return /^https?:\/\//i.test(url)
+      ? `<p class="sp-video-fallback"><a href="${spEsc(url)}" target="_blank" rel="noopener">${spEsc(caption || url)}</a></p>`
+      : '';
+  }
+  const title = caption || ({ fr: 'Vidéo', es: 'Vídeo', en: 'Video' }[lang] || 'Video');
+  return `<figure class="sp-video"><div class="sp-video-frame"><iframe src="${spEsc(src)}" title="${spEsc(title)}" loading="lazy" allow="encrypted-media; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>${
+    caption ? `<figcaption class="sp-video-caption">${spEsc(caption)}</figcaption>` : ''
+  }</figure>`;
+}
+
 /* ── Columns block: one item inside a column ───────────── */
 function spColItem(it, lang) {
   if (!it) return '';
@@ -352,6 +408,8 @@ function spColItem(it, lang) {
       const alt = pick('alt');
       return `<img class="sp-col-img" src="${spEsc(src)}" alt="${spEsc(alt)}" loading="lazy" onerror="this.style.display='none'">`;
     }
+    case 'video':
+      return spVideoHTML(href('url'), lang, pick('caption'));
     case 'button': {
       const label = pick('label');
       if (!label) return '';

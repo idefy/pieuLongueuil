@@ -158,6 +158,13 @@
           '👥 Barre de dirigeants — ' + (lorgs[lorg] || '(organisation non choisie)') + ' (affichée sur le site)'
         );
       }
+
+      case 'video': {
+        var vurl = s.get('url_fr') || s.get('url') || '';
+        if (!vurl) return null;
+        return h('div', { key: key, style: { aspectRatio: '16 / 9', background: '#111', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '6px', margin: '24px 0', fontSize: '13px', padding: '8px', textAlign: 'center', overflow: 'hidden', wordBreak: 'break-all' } }, '▶ ' + vurl);
+      }
+
       case 'columns': {
         var ccols = s.get('columns');
         if (!ccols || !ccols.size) return null;
@@ -172,6 +179,11 @@
               var isrc = it.get('src_fr') || it.get('src') || '';
               return isrc ? h('img', { key: ii, className: 'sp-image', src: isrc, alt: it.get('alt_fr') || '', style: { margin: '0 0 8px' } }) : null;
             }
+            if (t === 'video') {
+              var vu = it.get('url_fr') || it.get('url') || '';
+              return vu ? h('div', { key: ii, style: { aspectRatio: '16 / 9', background: '#111', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '6px', margin: '0 0 8px', fontSize: '12px', padding: '6px', textAlign: 'center', overflow: 'hidden', wordBreak: 'break-all' } }, '▶ ' + vu) : null;
+            }
+
             if (t === 'button') return h('div', { key: ii, style: { margin: '0 0 8px' } },
                                    h('span', { className: 'sp-cta gold', style: { margin: 0 } }, it.get('label_fr') || ''));
             if (t === 'link')   return h('div', { key: ii, style: { margin: '0 0 8px' } },
