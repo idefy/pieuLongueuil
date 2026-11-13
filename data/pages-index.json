@@ -22,6 +22,16 @@
     },
     {
       "visible_in_nav": true,
+      "nav_order": 99,
+      "slug": "FSY",
+      "title": {
+        "fr": "FSY",
+        "es": "FSY",
+        "en": "FSY"
+      }
+    },
+    {
+      "visible_in_nav": true,
       "nav_order": 3,
       "slug": "jas",
       "title": {
@@ -68,16 +78,6 @@
         "fr": "Le temple",
         "es": "El templo",
         "en": "The temple"
-      }
-    },
-    {
-      "visible_in_nav": false,
-      "nav_order": 99,
-      "slug": "FSY",
-      "title": {
-        "fr": "FSY",
-        "es": "FSY",
-        "en": "FSY"
       }
     }
   ]
