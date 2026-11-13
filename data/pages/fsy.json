@@ -3,11 +3,29 @@
   "sections": [
     {
       "type": "heading",
-      "text_fr": "Invitation"
+      "text_fr": "Invitation",
+      "text_es": "Invitación",
+      "text_en": "Invitation"
     },
     {
       "type": "subheading",
-      "text_fr": "Pour les 14 à 17 ans"
+      "text_fr": "Pour les 14 à 17 ans à Ottawa",
+      "text_es": "Para jóvenes de 14 a 17 años en Ottawa",
+      "text_en": "For 14- to 17-year-olds in Ottawa"
+    },
+    {
+      "type": "video",
+      "url": "https://youtu.be/EVmBHKw_5Jk"
+    },
+    {
+      "type": "subheading",
+      "text_fr": "Pour les 18 ans à Sackville",
+      "text_en": "For 18-year-olds in Sackville",
+      "text_es": "Para los 18 años en Sackville"
+    },
+    {
+      "type": "video",
+      "url": "https://youtu.be/NjEKmz-jIUw"
     }
   ],
   "subtitle_en": "For the Strength of Youth Conferences",
@@ -17,5 +35,5 @@
   "subtitle_fr": "La conférence Jeunes, soyez forts",
   "subtitle_es": "La conferencia Para la Fortaleza de la Juventud",
   "title_es": "FSY",
-  "visible_in_nav": false
+  "visible_in_nav": true
 }
