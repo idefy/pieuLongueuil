@@ -3,7 +3,7 @@
 Site web du Pieu de Longueuil (Québec) : ressources pour les membres, service pastoral, ressources pour les dirigeants, organisations et sous-pages. Il est disponible en français (langue par défaut), espagnol et anglais.
 
 - **Site :** https://pieulongueuil.ca
-- **Administration :** https://pieulongueuil.ca/admin (connexion avec un compte GitHub)
+- **Administration :** https://pieulongueuil.ca/admin (connexion avec un compte GitHub). L'ancienne interface Decap CMS reste disponible en secours sur https://pieulongueuil.ca/admin-decap/
 - **Dépôt :** `idefy/pieuLongueuil` (branche `main`)
 
 Le site est **100 % statique** : HTML, JavaScript (ES6) et CSS, sans étape de build, sans framework et sans serveur applicatif. Le contenu est chargé au fil de la navigation depuis les fichiers `data/*.json`. L'hébergement et le déploiement sont décrits dans [`DEPLOIEMENT.md`](DEPLOIEMENT.md).
@@ -74,8 +74,10 @@ Les fiches affichées sont celles listées dans `data/fiches-index.json`. Après
 ├── conference.html       Programme de conférence (code QR, absent du menu)
 ├── _redirects            Règles de routage Cloudflare Pages (adresses courtes, PDF)
 ├── admin/
-│   ├── index.html        Chargeur Decap CMS + aperçu personnalisé des sous-pages
-│   └── config.yml        Schéma du CMS (toutes les collections)
+│   ├── index.html        Chargeur Sveltia CMS (version fixée)
+│   └── config.yml        Schéma du CMS (toutes les collections), partagé par les deux interfaces
+├── admin-decap/
+│   └── index.html        Ancienne interface Decap CMS (secours) + aperçu personnalisé des sous-pages
 ├── functions/api/        Connexion GitHub OAuth pour le CMS (auth.js, callback.js)
 ├── css/main.css          Styles globaux, pilotés par des variables CSS
 ├── js/
@@ -113,8 +115,8 @@ Les fonctions `functions/api/` (connexion à l'admin) ne s'exécutent que sur Cl
 - **Règle du miroir :** toute modification de la forme d'un fichier de données doit être reproduite exactement dans `admin/config.yml`, sinon le CMS casse ou ignore silencieusement des champs. Après chaque modification, valider le YAML (par exemple avec PyYAML).
 - **Listes dans le CMS :** une collection de type « fichier » avec un champ `list` exige que le JSON soit **enveloppé dans un objet** (`{ "leaders": [ … ] }`), pas un tableau nu.
 - **Nouvelle chaîne d'interface :** l'ajouter dans les trois langues dans le bon fichier de `data/i18n/`, **et** ajouter le champ correspondant dans l'entrée `translations` de `config.yml`.
-- **Nouveau type de bloc :** (1) `types` dans `config.yml` pour les pages et la conférence, (2) un `case` dans `renderSection` de `js/page.js`, (3) le même dans `renderBlock` de `conference.html`, (4) l'aperçu dans `admin/index.html` si souhaité, (5) les chaînes i18n au besoin. Les listes de types sont dupliquées volontairement (pas d'ancres YAML) et doivent rester synchronisées à la main.
-- **Blocs réservés aux sous-pages :** `leaders`, `columns` et `video` n'existent que dans les sous-pages (pas dans la conférence) ; les étapes (1) et (3) ci-dessus se limitent alors à la collection `pages`. Les éléments d'une colonne sont rendus par `spColItem` dans `js/page.js` : un nouveau type d'élément s'ajoute à cet endroit **et** dans la liste `types` du bloc `columns` de `config.yml` (avec son aperçu dans `admin/index.html`). Les vidéos passent par `spVideoSrc` / `spVideoHTML` : seuls YouTube et Vimeo sont intégrés (les autres liens deviennent un lien simple) ; le bloc `video` et l'élément de colonne `video` partagent le même code. Le CSS de ces blocs (`.sp-columns`, `.sp-video`) est dans `page.html`.
+- **Nouveau type de bloc :** (1) `types` dans `config.yml` pour les pages et la conférence, (2) un `case` dans `renderSection` de `js/page.js`, (3) le même dans `renderBlock` de `conference.html`, (4) l'aperçu dans `admin-decap/index.html` si souhaité (l'interface Sveltia n'utilise pas cet aperçu), (5) les chaînes i18n au besoin. Les listes de types sont dupliquées volontairement (pas d'ancres YAML) et doivent rester synchronisées à la main.
+- **Blocs réservés aux sous-pages :** `leaders`, `columns` et `video` n'existent que dans les sous-pages (pas dans la conférence) ; les étapes (1) et (3) ci-dessus se limitent alors à la collection `pages`. Les éléments d'une colonne sont rendus par `spColItem` dans `js/page.js` : un nouveau type d'élément s'ajoute à cet endroit **et** dans la liste `types` du bloc `columns` de `config.yml` (avec son aperçu dans `admin-decap/index.html`, si on le maintient). Les vidéos passent par `spVideoSrc` / `spVideoHTML` : seuls YouTube et Vimeo sont intégrés (les autres liens deviennent un lien simple) ; le bloc `video` et l'élément de colonne `video` partagent le même code. Le CSS de ces blocs (`.sp-columns`, `.sp-video`) est dans `page.html`.
 - **Couleurs :** utiliser les variables CSS (`--c-primary`, `--c-secondary`, etc.), jamais de couleur codée en dur. Les valeurs de `data/settings.json` remplacent celles de `js/config.js`.
 - **Polices :** Playfair Display (titres) et Lato (texte), chargées par un lien Google Fonts dans `app.js`, `page.html` et `conference.html`. Le bloc `fonts` de `js/config.js` est obsolète et n'est plus utilisé par `page.js`.
 - **`js/calendar.js` doit rester après `js/page.js`** dans `page.html` : il enveloppe la fonction globale `renderSection`.

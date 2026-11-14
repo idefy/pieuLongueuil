@@ -11,7 +11,7 @@ Ce document décrit comment le site est hébergé, comment fonctionne la connexi
 | Dépôt | `github.com/idefy/pieuLongueuil`, branche `main` |
 | Commande de build | aucune |
 | Dossier de sortie | `/` (la racine du dépôt) |
-| CMS | Decap CMS 3.8.4, chargé depuis unpkg dans `admin/index.html` |
+| CMS | Sveltia CMS 0.256.0 (version fixée), chargé depuis unpkg dans `admin/index.html`. L'ancienne interface Decap CMS 3.17.3 reste en secours dans `admin-decap/index.html` (adresse `/admin-decap/`) |
 | Connexion à l'admin | GitHub OAuth via Cloudflare Pages Functions (`functions/api/auth.js` et `callback.js`) |
 
 **Flux de publication :** une modification faite dans `/admin` (ou un envoi direct de fichiers sur GitHub) crée un commit sur `main`. Cloudflare Pages détecte le commit et redéploie le site automatiquement, en environ une minute.
@@ -69,7 +69,7 @@ Les commits faits par le CMS sont enregistrés par GitHub au nom du compte conne
 
 ### Rôles
 
-Decap CMS ne peut pas masquer des collections selon l'utilisateur : toute personne ayant accès en écriture voit tout le contenu de l'administration. Une séparation par rôle (un `config.yml` distinct par rôle, sur un autre chemin du type `/admin-…/`) est envisagée mais **n'est pas commencée**. L'ancienne section sur les rôles DecapBridge ne s'applique plus.
+Decap CMS ne peut pas masquer des collections selon l'utilisateur (à revérifier avec Sveltia CMS) : toute personne ayant accès en écriture voit tout le contenu de l'administration. Une séparation par rôle (un `config.yml` distinct par rôle, sur un autre chemin du type `/admin-…/`) est envisagée mais **n'est pas commencée**. L'ancienne section sur les rôles DecapBridge ne s'applique plus.
 
 ---
 
@@ -93,12 +93,16 @@ Si un calendrier affiche « Calendrier non disponible », vérifier en premier q
 
 ---
 
+## Mise à jour du CMS
+
+Sveltia CMS publie de nouvelles versions presque chaque jour ; la version est donc **fixée** dans l'adresse du script de `admin/index.html` (`https://unpkg.com/@sveltia/cms@<version>/dist/sveltia-cms.js`). Pour mettre à jour : choisir une version publiée depuis au moins deux semaines, la tester d'abord sur une page de test (une copie de `admin/index.html` placée dans `admin-test/index.html`, qui utilise la même configuration et la même connexion GitHub, donc **les modifications faites sur cette page sont de vrais commits**), puis changer le numéro dans `admin/index.html`. Pour Decap CMS (`admin-decap/index.html`), la version se change de la même façon dans l'adresse du script.
+
 ## Dépannage
 
 | Symptôme | Piste |
 |---|---|
 | Le site ne se met pas à jour après un commit | Vérifier le dernier déploiement dans Cloudflare Pages ; rafraîchir sans cache |
-| `/admin` est vide ou affiche une erreur au chargement | Erreur de syntaxe dans `admin/config.yml` : annuler le dernier commit sur ce fichier |
+| `/admin` est vide ou affiche une erreur au chargement | Erreur de syntaxe dans `admin/config.yml` : annuler le dernier commit sur ce fichier. Si le fichier est correct, essayer `/admin-decap/` (même configuration) et vérifier que le script Sveltia se charge (version dans `admin/index.html`) |
 | Connexion refusée ou fenêtre de connexion qui se ferme | Vérifier l'adresse de retour de l'application OAuth, les variables `GITHUB_CLIENT_ID` / `GITHUB_CLIENT_SECRET`, et que la personne est collaboratrice avec accès Write |
 | Une modification faite dans l'admin n'apparaît pas | Vérifier que le commit existe sur `main` dans GitHub, attendre la fin du déploiement, puis rafraîchir sans cache |
 | Une nouvelle fiche pastorale n'apparaît pas | Ajouter son identifiant à `data/fiches-index.json` |
