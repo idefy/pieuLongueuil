@@ -232,7 +232,7 @@ collections:
         name: sections
         widget: list
         label_singular: "Section"
-        summary: "{{fields.type}}"
+        summary: "{{fields.text_fr | truncate(60)}}{{fields.label_fr | truncate(60)}}{{fields.title_fr | truncate(60)}}{{fields.alt_fr | truncate(60)}}"
         types:
           - label: "📝 Introduction"
             name: intro
@@ -393,7 +393,7 @@ collections:
             widget: list
             required: false
             label_singular: "Section"
-            summary: "{{fields.type}}"
+            summary: "{{fields.text_fr | truncate(60)}}{{fields.label_fr | truncate(60)}}{{fields.title_fr | truncate(60)}}{{fields.alt_fr | truncate(60)}}"
             hint: "Mêmes blocs que les sous-pages : texte, images, liens, PDF… en 3 langues. Affiché avant les sessions."
             types:
               - label: "🔖 En-tête (eyebrow)"
@@ -1756,7 +1756,7 @@ collections:
         name: sections
         widget: list
         label_singular: "Section"
-        summary: "{{fields.type}}"
+        summary: "{{fields.text_fr | truncate(60)}}{{fields.label_fr | truncate(60)}}{{fields.title_fr | truncate(60)}}{{fields.alt_fr | truncate(60)}}"
         types:
           - label: "🔖 En-tête (eyebrow)"
             name: eyebrow
