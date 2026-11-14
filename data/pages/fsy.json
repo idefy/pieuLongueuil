@@ -8,6 +8,22 @@
       "text_en": "Invitation"
     },
     {
+      "type": "body",
+      "text_fr": "Jeunes du pieu de Longueuil, préparez-vous à vivre une semaine inoubliable !"
+    },
+    {
+      "type": "body",
+      "text_fr": "La conférence FSY (For the Strength of Youth) est une grande rencontre de jeunes de l'Église : une vraie rencontre avec le Seigneur, une foi renforcée, de nouveaux amis, de nouvelles expériences… et des souvenirs pour la vie."
+    },
+    {
+      "type": "body",
+      "text_fr": "En 2027, notre pieu participera à la session d'Ottawa, du 2 au 7 août 2027. Et pour les jeunes qui auront 18 ans en août 2027, une session spéciale les attend à Sackville, au Nouveau-Brunswick, du 9 au 14 août 2027."
+    },
+    {
+      "type": "body",
+      "text_fr": "Regarde les deux vidéos ci-dessous : il y en a une pour toi !"
+    },
+    {
       "type": "subheading",
       "text_fr": "Pour les 14 à 17 ans à Ottawa",
       "text_es": "Para jóvenes de 14 a 17 años en Ottawa",
@@ -34,6 +50,43 @@
       "label_en": "Pre-register",
       "label_es": "Preinscribirse",
       "href": "https://fsy.byu.edu/o3/user/fsy/register"
+    },
+    {
+      "type": "heading",
+      "text_fr": "Qu'est-ce que le FSY ?"
+    },
+    {
+      "type": "body",
+      "text_fr": "Les conférences FSY — « For the Strength of Youth » (Jeunes, soyez forts) — sont de grandes rencontres de jeunes organisées par l'Église de Jésus-Christ des Saints des Derniers Jours, un peu partout dans le monde."
+    },
+    {
+      "type": "body",
+      "text_fr": "Pendant cinq jours, loin du rythme habituel, les jeunes vivent ensemble sur un campus :"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "text_fr": "des veillées spirituelles et des classes inspirantes ;"
+        },
+        {
+          "text_fr": "des activités sportives, des jeux, des danses et des spectacles ;"
+        },
+        {
+          "text_fr": "des projets de service ;"
+        },
+        {
+          "text_fr": "des moments d'étude de l'Évangile et de réflexion personnelle."
+        }
+      ]
+    },
+    {
+      "type": "body",
+      "text_fr": "Le but de FSY est simple et profond à la fois : aider chaque jeune à fortifier sa foi en Jésus-Christ et en son Évangile rétabli, à ressentir la joie de l'Évangile et un sentiment d'appartenance, à se faire des amis qui partagent ses valeurs — et à revenir à la maison avec le désir de continuer à vivre ces expériences spirituelles au quotidien."
+    },
+    {
+      "type": "body",
+      "text_fr": "On le dit souvent : ce que tu investis dans FSY, c'est ce que tu en retireras. Viens avec un cœur ouvert, et tu repartiras différent."
     }
   ],
   "subtitle_en": "For the Strength of Youth Conferences",
