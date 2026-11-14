@@ -31,7 +31,11 @@
     },
     {
       "type": "video",
-      "url": "https://youtu.be/EVmBHKw_5Jk"
+      "url": "https://youtu.be/Voqh1UUDPFw"
+    },
+    {
+      "type": "body",
+      "text_fr": "Attention : les places sont limitées, et sans préinscription, il n'y a pas d'inscription finale. Ne reste pas en dehors — fais ta préinscription dès maintenant !"
     },
     {
       "type": "subheading",
@@ -42,6 +46,10 @@
     {
       "type": "video",
       "url": "https://youtu.be/NjEKmz-jIUw"
+    },
+    {
+      "type": "body",
+      "text_fr": "La session de Sackville n'apparaît pas encore dans les options d'inscription : c'est normal. Assure-toi de t'inscrire à la bonne session le moment venu — et dès maintenant, tu peux manifester ton désir de participer à ton évêque"
     },
     {
       "type": "cta",
@@ -87,6 +95,139 @@
     {
       "type": "body",
       "text_fr": "On le dit souvent : ce que tu investis dans FSY, c'est ce que tu en retireras. Viens avec un cœur ouvert, et tu repartiras différent."
+    },
+    {
+      "type": "heading",
+      "text_fr": "Ce qui est attendu des jeunes"
+    },
+    {
+      "type": "body",
+      "text_fr": "Pour que l'Esprit puisse être présent et que tous vivent une belle semaine, chaque jeune qui participe s'engage à :"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "text_fr": "Suivre les principes du guide « Jeunes, soyez forts : un guide pour faire des choix » et les normes et politiques des conférences FSY. L'inscription se fait avec l'approbation de l'évêque, qui s'assure que le jeune souhaite vivre selon ces principes."
+        },
+        {
+          "text_fr": "Participer pleinement : être présent aux veillées, aux classes et aux activités, rester avec son groupe et profiter de chaque journée."
+        },
+        {
+          "text_fr": "Se conduire avec respect : envers les animateurs (de jeunes adultes qui donnent de leur temps pour les jeunes), envers les autres participants et envers les lieux."
+        },
+        {
+          "text_fr": "Vivre les normes de l'Évangile pendant toute la conférence : pudeur dans l'habillement et dans le langage, honnêteté, et abstinence totale d'alcool, de tabac, de drogues et de toute conduite contraire à l'esprit de FSY."
+        },
+        {
+          "text_fr": "Prendre soin de soi et des autres : gérer son comportement, ses émotions et sa santé, et demander de l'aide à un dirigeant ou à un animateur en cas de besoin."
+        }
+      ]
+    },
+    {
+      "type": "body",
+      "text_fr": "Et pour bien s'y préparer, dès maintenant :"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "text_fr": "Étudie le guide « Jeunes, soyez forts » ;"
+        },
+        {
+          "text_fr": "Prie et réfléchis à ce que tu veux vivre et apprendre ;"
+        },
+        {
+          "text_fr": "Parle avec tes parents et tes dirigeants de tes attentes."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text_fr": "Comment s'inscrire"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "text_fr": "Rends-toi sur le lien plus bas",
+          "text_es": ""
+        },
+        {
+          "text_fr": "Connecte-toi avec le compte de l'Église du jeune."
+        },
+        {
+          "text_fr": "Fais ta préinscription dès maintenant (pour Ottawa) — n'attends pas la dernière minute !"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "style": "primary",
+      "href": "https://fsy.byu.edu/o3/user/fsy/register",
+      "label_fr": "Se pré-inscrire",
+      "label_en": "Pre-register",
+      "label_es": "Preinscribirse"
+    },
+    {
+      "type": "body",
+      "text_fr": "Si tu n'arrives pas à faire ta préinscription, contacte ton évêque : il pourra vérifier ton approbation et t'aider."
+    },
+    {
+      "type": "heading",
+      "text_fr": "Un mot pour les parents et les dirigeants"
+    },
+    {
+      "type": "body",
+      "text_fr": "La participation d'un jeune commence par l'approbation de son évêque : si ce n'est pas déjà fait, merci de prévoir ce pas dès maintenant. Parents et dirigeants, votre encouragement personnel est ce qui motive le plus les jeunes à s'inscrire — parlons-leur de FSY dès aujourd'hui, pour qu'aucun jeune ne reste en dehors de cette belle expérience."
+    },
+    {
+      "type": "heading",
+      "text_fr": "Dates Importantes"
+    },
+    {
+      "type": "body",
+      "text_fr": "OTTAWA (14 à 17 ans)"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "text_fr": "Préinscription : Dès le 20 oct. 2026, jusqu'au 11 janvier 2027"
+        },
+        {
+          "text_fr": "Inscription finale : Du 27 janvier au 3 février 2027"
+        },
+        {
+          "text_fr": "Conférence : Du 2 au 7 août 2027"
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "text_fr": "ATTENTION: sans préinscription, il n'y a l'opportunité de faire l'inscription finale dû au faite que les places sont limitées."
+    },
+    {
+      "type": "body",
+      "text_fr": "SACKVILLE (18 ans en août 2027)"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "text_fr": "Préinscription : Dès le 15 février 2027"
+        },
+        {
+          "text_fr": "Inscription finale : Du 24 février au 2 mars 2027"
+        },
+        {
+          "text_fr": "Conférence : Du 9 au 14 août 2027"
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "text_fr": "Le voyage (vols, transport aéroport–campus, petit-déjeuner du samedi) est réservé et payé par FSY."
     }
   ],
   "subtitle_en": "For the Strength of Youth Conferences",
