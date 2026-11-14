@@ -132,7 +132,7 @@
         {
           "text_fr": "des projets de service ;",
           "text_es": "proyectos de servicio;",
-          "text_en": "service plans;"
+          "text_en": "service projects;"
         },
         {
           "text_fr": "des moments d'étude de l'Évangile et de réflexion personnelle.",
@@ -273,97 +273,97 @@
     {
       "type": "body",
       "text_fr": "La participation d'un jeune commence par l'approbation de son évêque : si ce n'est pas déjà fait, merci de prévoir ce pas dès maintenant. Parents et dirigeants, votre encouragement personnel est ce qui motive le plus les jeunes à s'inscrire — parlons-leur de FSY dès aujourd'hui, pour qu'aucun jeune ne reste en dehors de cette belle expérience.",
-      "text_es": "",
-      "text_en": ""
+      "text_es": "La participación de un joven comienza con la aprobación de su obispo; si aún no se ha hecho, les pedimos que den este paso desde ahora. Padres y líderes, su aliento personal es lo que más motiva a los jóvenes a inscribirse; hablemos con ellos de FSY desde hoy, para que ningún joven se quede al margen de esta hermosa experiencia.",
+      "text_en": "A young person's participation begins with their bishop's approval; if this has not already been done, please plan for this step right away. Parents and leaders, your personal encouragement is what motivates youth most to register—let's talk with them about FSY starting today, so that no young person misses out on this wonderful experience."
     },
     {
       "type": "heading",
-      "text_fr": "Dates Importantes",
-      "text_es": "",
-      "text_en": ""
+      "text_fr": "Dates importantes",
+      "text_es": "Fechas importantes",
+      "text_en": "Important dates"
     },
     {
       "type": "body",
       "text_fr": "OTTAWA (14 à 17 ans)",
-      "text_es": "",
-      "text_en": ""
+      "text_es": "OTTAWA (14 a 17 años)",
+      "text_en": "OTTAWA (ages 14 to 17)"
     },
     {
       "type": "list",
       "items": [
         {
           "text_fr": "Préinscription : Dès le 20 oct. 2026, jusqu'au 11 janvier 2027",
-          "text_es": "",
-          "text_en": ""
+          "text_es": "Preinscripción: desde el 20 de octubre de 2026 hasta el 11 de enero de 2027",
+          "text_en": "Pre-registration: from October 20, 2026, until January 11, 2027"
         },
         {
           "text_fr": "Inscription finale : Du 27 janvier au 3 février 2027",
-          "text_es": "",
-          "text_en": ""
+          "text_es": "Inscripción definitiva: del 27 de enero al 3 de febrero de 2027",
+          "text_en": "Final registration: January 27 to February 3, 2027"
         },
         {
           "text_fr": "Conférence : Du 2 au 7 août 2027",
-          "text_es": "",
-          "text_en": ""
+          "text_es": "Conferencia: del 2 al 7 de agosto de 2027",
+          "text_en": "Conference: August 2 to 7, 2027"
         }
       ]
     },
     {
       "type": "note",
-      "text_fr": "ATTENTION: sans préinscription, il n'y a l'opportunité de faire l'inscription finale dû au faite que les places sont limitées.",
-      "text_es": "",
-      "text_en": ""
+      "text_fr": "ATTENTION: sans préinscription, il n’est pas possible de faire l’inscription finale, les places étant limitées.",
+      "text_es": "ATENCIÓN: sin preinscripción no hay posibilidad de realizar la inscripción definitiva, debido a que las plazas son limitadas.",
+      "text_en": "ATTENTION: without pre-registration, there is no opportunity to complete final registration, because spaces are limited."
     },
     {
       "type": "body",
-      "text_fr": "SACKVILLE (18 ans en août 2027)",
-      "text_es": "",
-      "text_en": ""
+      "text_fr": "SACKVILLE (qui ont 18 ans en août 2027)",
+      "text_es": "SACKVILLE (que cumplen 18 años en agosto de 2027)",
+      "text_en": "SACKVILLE (turning 18 in August 2027)"
     },
     {
       "type": "list",
       "items": [
         {
           "text_fr": "Préinscription : Dès le 15 février 2027",
-          "text_es": "",
-          "text_en": ""
+          "text_es": "Preinscripción: desde el 15 de febrero de 2027",
+          "text_en": "Pre-registration: starting February 15, 2027"
         },
         {
           "text_fr": "Inscription finale : Du 24 février au 2 mars 2027",
-          "text_es": "",
-          "text_en": ""
+          "text_es": "Inscripción definitiva: del 24 de febrero al 2 de marzo de 2027",
+          "text_en": "Final registration: February 24 to March 2, 2027"
         },
         {
           "text_fr": "Conférence : Du 9 au 14 août 2027",
-          "text_es": "",
-          "text_en": ""
+          "text_es": "Conferencia: del 9 al 14 de agosto de 2027",
+          "text_en": "Conference: August 9 to 14, 2027"
         }
       ]
     },
     {
       "type": "note",
       "text_fr": "Le voyage (vols, transport aéroport–campus, petit-déjeuner du samedi) est réservé et payé par FSY.",
-      "text_es": "",
-      "text_en": ""
+      "text_es": "El viaje (vuelos, transporte aeropuerto–campus y desayuno del sábado) es reservado y pagado por FSY.",
+      "text_en": "Travel (flights, airport–campus transportation, and Saturday breakfast) is booked and paid for by FSY."
     },
     {
       "type": "heading",
-      "text_fr": "Question fréquentes",
-      "text_es": "",
-      "text_en": ""
+      "text_fr": "Questions fréquentes",
+      "text_es": "Preguntas frecuentes",
+      "text_en": "Frequently asked questions"
     },
     {
       "type": "list",
       "items": [
         {
           "text_fr": "Q : Qui peut participer à la conférence FSY 2027 ?",
-          "text_es": "",
-          "text_en": ""
+          "text_es": "P: ¿Quién puede participar en la conferencia FSY 2027?",
+          "text_en": "Q: Who can attend the 2027 FSY conference?"
         },
         {
           "text_fr": "R : Les jeunes du pieu de Longueuil âgés de 14 à 17 ans au 2 août 2027 participeront à la session d'Ottawa (2 au 7 août 2027). Les jeunes qui auront 18 ans en août 2027 participeront à la session de Sackville, au Nouveau-Brunswick (9 au 14 août 2027).",
-          "text_es": "",
-          "text_en": ""
+          "text_es": "R: Los jóvenes de la estaca de Longueuil de 14 a 17 años al 2 de agosto de 2027 participarán en la sesión de Ottawa (del 2 al 7 de agosto de 2027). Los jóvenes que cumplan 18 años en agosto de 2027 participarán en la sesión de Sackville, en Nuevo Brunswick (del 9 al 14 de agosto de 2027).",
+          "text_en": "A: Youth of the Longueuil Stake who are ages 14 to 17 as of August 2, 2027, will attend the Ottawa session (August 2 to 7, 2027). Youth who will turn 18 in August 2027 will attend the Sackville, New Brunswick, session (August 9 to 14, 2027)."
         }
       ]
     },
@@ -376,13 +376,13 @@
       "items": [
         {
           "text_fr": "Q : Pourquoi les jeunes de 18 ans ne vont-ils pas à Ottawa ?",
-          "text_es": "",
-          "text_en": ""
+          "text_es": "P: ¿Por qué los jóvenes de 18 años no van a Ottawa?",
+          "text_en": "Q: Why don't 18-year-olds go to Ottawa?"
         },
         {
           "text_fr": "R : Une loi de la province de l'Ontario ne permet pas aux jeunes de 18 ans de participer au FSY en Ontario. C'est pourquoi une session spéciale est organisée pour eux à Sackville — différente, mais tout aussi extraordinaire.",
-          "text_es": "",
-          "text_en": ""
+          "text_es": "R: Una ley de la provincia de Ontario no permite que los jóvenes de 18 años participen en FSY en Ontario. Por eso se organiza para ellos una sesión especial en Sackville: diferente, pero igual de extraordinaria.",
+          "text_en": "A: An Ontario provincial law does not allow 18-year-olds to take part in FSY in Ontario. That is why a special session is being organized for them in Sackville—different, but just as extraordinary."
         }
       ]
     },
@@ -395,13 +395,13 @@
       "items": [
         {
           "text_fr": "Q : Combien coûte le voyage à Sackville ?",
-          "text_es": "",
-          "text_en": ""
+          "text_es": "P: ¿Cuánto cuesta el viaje a Sackville?",
+          "text_en": "Q: How much does the trip to Sackville cost?"
         },
         {
           "text_fr": "R : Pour les jeunes de 18 ans, FSY réserve et paie les vols aller-retour, le transport entre l'aéroport et le campus, ainsi qu'un petit-déjeuner à emporter le samedi.",
-          "text_es": "",
-          "text_en": ""
+          "text_es": "R: Para los jóvenes de 18 años, FSY reserva y paga los vuelos de ida y vuelta, el transporte entre el aeropuerto y el campus, así como un desayuno para llevar el sábado.",
+          "text_en": "A: For 18-year-olds, FSY books and pays for round-trip flights, transportation between the airport and the campus, and a take-away breakfast on Saturday."
         }
       ]
     },
@@ -414,13 +414,13 @@
       "items": [
         {
           "text_fr": "Q : Je veux m'inscrire à Sackville, mais la session n'apparaît pas dans les options. Est-ce normal ?",
-          "text_es": "",
-          "text_en": ""
+          "text_es": "P: Quiero inscribirme en Sackville, pero la sesión no aparece en las opciones. ¿Es normal?",
+          "text_en": "Q: I want to register for Sackville, but the session doesn't appear among the options. Is that normal?"
         },
         {
           "text_fr": "R : Oui, c'est normal : la session de Sackville n'apparaît pas encore. Ta préinscription commencera le 15 février 2027. D'ici là, tu peux manifester ton désir de participer à ton évêque.",
-          "text_es": "",
-          "text_en": ""
+          "text_es": "R: Sí, es normal: la sesión de Sackville aún no aparece. Tu preinscripción comenzará el 15 de febrero de 2027. Mientras tanto, puedes expresarle a tu obispo tu deseo de participar.",
+          "text_en": "A: Yes, that's normal: the Sackville session doesn't appear yet. Your pre-registration will begin on February 15, 2027. Until then, you can let your bishop know you want to attend."
         }
       ]
     },
@@ -433,13 +433,13 @@
       "items": [
         {
           "text_fr": "Q : Que se passe-t-il si je ne fais pas ma préinscription (Ottawa) ?",
-          "text_es": "",
-          "text_en": ""
+          "text_es": "P: ¿Qué pasa si no hago mi preinscripción (Ottawa)?",
+          "text_en": "Q: What happens if I don't pre-register (Ottawa)?"
         },
         {
           "text_fr": "R : Sans préinscription, il n'y a pas d'inscription finale — et les places sont limitées. La préinscription pour Ottawa se termine le 11 janvier 2027 : fais-la dès maintenant !",
-          "text_es": "",
-          "text_en": ""
+          "text_es": "R: Sin preinscripción no hay inscripción definitiva, y las plazas son limitadas. La preinscripción para Ottawa termina el 11 de enero de 2027: ¡hazla ahora mismo!",
+          "text_en": "A: Without pre-registration, there is no final registration—and spaces are limited. Pre-registration for Ottawa ends on January 11, 2027: do it now!"
         }
       ]
     },
@@ -452,13 +452,13 @@
       "items": [
         {
           "text_fr": "Q : Je n'arrive pas à faire ma préinscription. Que dois-je faire ?",
-          "text_es": "",
-          "text_en": ""
+          "text_es": "P: No logro realizar mi preinscripción. ¿Qué debo hacer?",
+          "text_en": "Q: I can't complete my pre-registration. What should I do?"
         },
         {
           "text_fr": "R : Contacte ton évêque : il pourra vérifier ton approbation dans le système et t'aider. L'approbation de l'évêque est la première étape de la participation.",
-          "text_es": "",
-          "text_en": ""
+          "text_es": "R: Contacta a tu obispo: él podrá verificar tu aprobación en el sistema y ayudarte. La aprobación del obispo es el primer paso para participar.",
+          "text_en": "A: Contact your bishop: he can check your approval in the system and help you. The bishop's approval is the first step to participating."
         }
       ]
     },
@@ -471,13 +471,13 @@
       "items": [
         {
           "text_fr": "Q : Où se fait l'inscription ?",
-          "text_es": "",
-          "text_en": ""
+          "text_es": "P: ¿Dónde se hace la inscripción?",
+          "text_en": "Q: Where do I register?"
         },
         {
           "text_fr": "R : Sur le portail officiel de l'Église, avec le compte de l'Église du jeune",
-          "text_es": "",
-          "text_en": ""
+          "text_es": "R: En el portal oficial de la Iglesia, con la cuenta de la Iglesia del joven",
+          "text_en": "A: On the Church's official portal, using the youth's Church account"
         }
       ]
     },
@@ -490,13 +490,13 @@
       "items": [
         {
           "text_fr": "Q : Est-ce qu'il y a des frais d'inscription ?",
-          "text_es": "",
-          "text_en": ""
+          "text_es": "P: ¿Hay una cuota de inscripción?",
+          "text_en": "Q: Is there a registration fee?"
         },
         {
           "text_fr": "R : Oui : au moment de l'inscription, des frais de 100 $ CAD sont demandés. Et si ces frais empêchaient un jeune de participer, qu'il en parle à son évêque — l'unité peut aider à partir de son budget pour qu'aucun jeune ne reste en dehors pour une question d'argent.",
-          "text_es": "",
-          "text_en": ""
+          "text_es": "R: Sí: al momento de la inscripción se solicita una cuota de 100 $ CAD. Y si esa cuota impidiera que un joven participe, que hable con su obispo: la unidad puede ayudar con su presupuesto para que ningún joven se quede fuera por una cuestión de dinero.",
+          "text_en": "A: Yes: a fee of $100 CAD is requested at the time of registration. And if this fee would prevent a young person from participating, they should talk to their bishop—the unit can help from its budget so that no young person misses out because of money."
         }
       ]
     },
@@ -509,13 +509,13 @@
       "items": [
         {
           "text_fr": "Q : Puis-je inviter un ami qui n'est pas membre de l'Église ?",
-          "text_es": "",
-          "text_en": ""
+          "text_es": "P: ¿Puedo invitar a un amigo que no es miembro de la Iglesia?",
+          "text_en": "Q: Can I invite a friend who isn't a member of the Church?"
         },
         {
           "text_fr": "R : Oui ! Les jeunes peuvent inviter leurs amis à vivre cette expérience avec eux. Parlez-en à votre évêque ou à vos dirigeants de jeunes pour les détails de leur inscription.",
-          "text_es": "",
-          "text_en": ""
+          "text_es": "R: ¡Sí! Los jóvenes pueden invitar a sus amigos a vivir esta experiencia con ellos. Hablen con su obispo o con sus líderes de jóvenes para conocer los detalles de su inscripción.",
+          "text_en": "A: Yes! Youth can invite their friends to share this experience with them. Talk to your bishop or your youth leaders for the details of their registration."
         }
       ]
     }
