@@ -1,5 +1,17 @@
 {
   "slug": "FSY",
+  "visible_in_nav": true,
+  "nav_order": 99,
+  "hero_image": "/assets/photo_couverture_fsy_jeunes_aerienne-1-.jpg",
+  "hero_image_fr": "",
+  "hero_image_es": "",
+  "hero_image_en": "",
+  "title_fr": "FSY",
+  "title_es": "FSY",
+  "title_en": "FSY",
+  "subtitle_fr": "La conférence Jeunes, soyez forts",
+  "subtitle_es": "La conferencia Para la Fortaleza de la Juventud",
+  "subtitle_en": "For the Strength of Youth Conferences",
   "sections": [
     {
       "type": "heading",
@@ -9,19 +21,27 @@
     },
     {
       "type": "body",
-      "text_fr": "Jeunes du pieu de Longueuil, préparez-vous à vivre une semaine inoubliable !"
+      "text_fr": "Jeunes du pieu de Longueuil, préparez-vous à vivre une semaine inoubliable !",
+      "text_es": "Jóvenes de la estaca de Longueuil, ¡prepárense para vivir una semana inolvidable!",
+      "text_en": "Youth of the Longueuil Stake, get ready for an unforgettable week!"
     },
     {
       "type": "body",
-      "text_fr": "La conférence FSY (For the Strength of Youth) est une grande rencontre de jeunes de l'Église : une vraie rencontre avec le Seigneur, une foi renforcée, de nouveaux amis, de nouvelles expériences… et des souvenirs pour la vie."
+      "text_fr": "La conférence FSY (For the Strength of Youth) est une grande rencontre de jeunes de l'Église : une vraie rencontre avec le Seigneur, une foi renforcée, de nouveaux amis, de nouvelles expériences… et des souvenirs pour la vie.",
+      "text_es": "La conferencia FSY (Para la Fortaleza de los Jóvenes) es un gran encuentro de jóvenes de la Iglesia: un verdadero encuentro con el Señor, una fe fortalecida, nuevos amigos, nuevas experiencias… y recuerdos para toda la vida.",
+      "text_en": "The FSY (For the Strength of Youth) conference is a major gathering for youth in the Church: a genuine encounter with the Lord, strengthened faith, new friends, new experiences… and memories that will last a lifetime."
     },
     {
       "type": "body",
-      "text_fr": "En 2027, notre pieu participera à la session d'Ottawa, du 2 au 7 août 2027. Et pour les jeunes qui auront 18 ans en août 2027, une session spéciale les attend à Sackville, au Nouveau-Brunswick, du 9 au 14 août 2027."
+      "text_fr": "En 2027, notre pieu participera à la session d'Ottawa, du 2 au 7 août 2027. Et pour les jeunes qui auront 18 ans en août 2027, une session spéciale les attend à Sackville, au Nouveau-Brunswick, du 9 au 14 août 2027.",
+      "text_es": "",
+      "text_en": ""
     },
     {
       "type": "body",
-      "text_fr": "Regarde les deux vidéos ci-dessous : il y en a une pour toi !"
+      "text_fr": "Regarde les deux vidéos ci-dessous : il y en a une pour toi !",
+      "text_es": "",
+      "text_en": ""
     },
     {
       "type": "subheading",
@@ -31,339 +51,473 @@
     },
     {
       "type": "video",
-      "url": "https://youtu.be/Voqh1UUDPFw"
+      "caption_fr": "",
+      "caption_es": "",
+      "caption_en": "",
+      "url": "https://youtu.be/Voqh1UUDPFw",
+      "url_fr": "",
+      "url_es": "",
+      "url_en": ""
     },
     {
       "type": "body",
-      "text_fr": "Attention : les places sont limitées, et sans préinscription, il n'y a pas d'inscription finale. Ne reste pas en dehors — fais ta préinscription dès maintenant !"
+      "text_fr": "Attention : les places sont limitées, et sans préinscription, il n'y a pas d'inscription finale. Ne reste pas en dehors — fais ta préinscription dès maintenant !",
+      "text_es": "",
+      "text_en": ""
     },
     {
       "type": "subheading",
       "text_fr": "Pour les 18 ans à Sackville",
-      "text_en": "For 18-year-olds in Sackville",
-      "text_es": "Para los 18 años en Sackville"
+      "text_es": "Para los 18 años en Sackville",
+      "text_en": "For 18-year-olds in Sackville"
     },
     {
       "type": "video",
-      "url": "https://youtu.be/NjEKmz-jIUw"
+      "caption_fr": "",
+      "caption_es": "",
+      "caption_en": "",
+      "url": "https://youtu.be/NjEKmz-jIUw",
+      "url_fr": "",
+      "url_es": "",
+      "url_en": ""
     },
     {
       "type": "body",
-      "text_fr": "La session de Sackville n'apparaît pas encore dans les options d'inscription : c'est normal. Assure-toi de t'inscrire à la bonne session le moment venu — et dès maintenant, tu peux manifester ton désir de participer à ton évêque"
+      "text_fr": "La session de Sackville n'apparaît pas encore dans les options d'inscription : c'est normal. Assure-toi de t'inscrire à la bonne session le moment venu — et dès maintenant, tu peux manifester ton désir de participer à ton évêque",
+      "text_es": "",
+      "text_en": ""
     },
     {
       "type": "cta",
-      "style": "primary",
       "label_fr": "Se pré-inscrire",
-      "label_en": "Pre-register",
       "label_es": "Preinscribirse",
-      "href": "https://fsy.byu.edu/o3/user/fsy/register"
+      "label_en": "Pre-register",
+      "href": "https://fsy.byu.edu/o3/user/fsy/register",
+      "href_fr": "",
+      "href_es": "",
+      "href_en": "",
+      "style": "primary"
     },
     {
       "type": "heading",
-      "text_fr": "Qu'est-ce que le FSY ?"
+      "text_fr": "Qu'est-ce que le FSY ?",
+      "text_es": "",
+      "text_en": ""
     },
     {
       "type": "body",
-      "text_fr": "Les conférences FSY — « For the Strength of Youth » (Jeunes, soyez forts) — sont de grandes rencontres de jeunes organisées par l'Église de Jésus-Christ des Saints des Derniers Jours, un peu partout dans le monde."
+      "text_fr": "Les conférences FSY — « For the Strength of Youth » (Jeunes, soyez forts) — sont de grandes rencontres de jeunes organisées par l'Église de Jésus-Christ des Saints des Derniers Jours, un peu partout dans le monde.",
+      "text_es": "",
+      "text_en": ""
     },
     {
       "type": "body",
-      "text_fr": "Pendant cinq jours, loin du rythme habituel, les jeunes vivent ensemble sur un campus :"
+      "text_fr": "Pendant cinq jours, loin du rythme habituel, les jeunes vivent ensemble sur un campus :",
+      "text_es": "",
+      "text_en": ""
     },
     {
       "type": "list",
       "items": [
         {
-          "text_fr": "des veillées spirituelles et des classes inspirantes ;"
+          "text_fr": "des veillées spirituelles et des classes inspirantes ;",
+          "text_es": "",
+          "text_en": ""
         },
         {
-          "text_fr": "des activités sportives, des jeux, des danses et des spectacles ;"
+          "text_fr": "des activités sportives, des jeux, des danses et des spectacles ;",
+          "text_es": "",
+          "text_en": ""
         },
         {
-          "text_fr": "des projets de service ;"
+          "text_fr": "des projets de service ;",
+          "text_es": "",
+          "text_en": ""
         },
         {
-          "text_fr": "des moments d'étude de l'Évangile et de réflexion personnelle."
+          "text_fr": "des moments d'étude de l'Évangile et de réflexion personnelle.",
+          "text_es": "",
+          "text_en": ""
         }
       ]
     },
     {
       "type": "body",
-      "text_fr": "Le but de FSY est simple et profond à la fois : aider chaque jeune à fortifier sa foi en Jésus-Christ et en son Évangile rétabli, à ressentir la joie de l'Évangile et un sentiment d'appartenance, à se faire des amis qui partagent ses valeurs — et à revenir à la maison avec le désir de continuer à vivre ces expériences spirituelles au quotidien."
+      "text_fr": "Le but de FSY est simple et profond à la fois : aider chaque jeune à fortifier sa foi en Jésus-Christ et en son Évangile rétabli, à ressentir la joie de l'Évangile et un sentiment d'appartenance, à se faire des amis qui partagent ses valeurs — et à revenir à la maison avec le désir de continuer à vivre ces expériences spirituelles au quotidien.",
+      "text_es": "",
+      "text_en": ""
     },
     {
       "type": "body",
-      "text_fr": "On le dit souvent : ce que tu investis dans FSY, c'est ce que tu en retireras. Viens avec un cœur ouvert, et tu repartiras différent."
+      "text_fr": "On le dit souvent : ce que tu investis dans FSY, c'est ce que tu en retireras. Viens avec un cœur ouvert, et tu repartiras différent.",
+      "text_es": "",
+      "text_en": ""
     },
     {
       "type": "heading",
-      "text_fr": "Ce qui est attendu des jeunes"
+      "text_fr": "Ce qui est attendu des jeunes",
+      "text_es": "",
+      "text_en": ""
     },
     {
       "type": "body",
-      "text_fr": "Pour que l'Esprit puisse être présent et que tous vivent une belle semaine, chaque jeune qui participe s'engage à :"
+      "text_fr": "Pour que l'Esprit puisse être présent et que tous vivent une belle semaine, chaque jeune qui participe s'engage à :",
+      "text_es": "",
+      "text_en": ""
     },
     {
       "type": "list",
       "items": [
         {
-          "text_fr": "Suivre les principes du guide « Jeunes, soyez forts : un guide pour faire des choix » et les normes et politiques des conférences FSY. L'inscription se fait avec l'approbation de l'évêque, qui s'assure que le jeune souhaite vivre selon ces principes."
+          "text_fr": "Suivre les principes du guide « Jeunes, soyez forts : un guide pour faire des choix » et les normes et politiques des conférences FSY. L'inscription se fait avec l'approbation de l'évêque, qui s'assure que le jeune souhaite vivre selon ces principes.",
+          "text_es": "",
+          "text_en": ""
         },
         {
-          "text_fr": "Participer pleinement : être présent aux veillées, aux classes et aux activités, rester avec son groupe et profiter de chaque journée."
+          "text_fr": "Participer pleinement : être présent aux veillées, aux classes et aux activités, rester avec son groupe et profiter de chaque journée.",
+          "text_es": "",
+          "text_en": ""
         },
         {
-          "text_fr": "Se conduire avec respect : envers les animateurs (de jeunes adultes qui donnent de leur temps pour les jeunes), envers les autres participants et envers les lieux."
+          "text_fr": "Se conduire avec respect : envers les animateurs (de jeunes adultes qui donnent de leur temps pour les jeunes), envers les autres participants et envers les lieux.",
+          "text_es": "",
+          "text_en": ""
         },
         {
-          "text_fr": "Vivre les normes de l'Évangile pendant toute la conférence : pudeur dans l'habillement et dans le langage, honnêteté, et abstinence totale d'alcool, de tabac, de drogues et de toute conduite contraire à l'esprit de FSY."
+          "text_fr": "Vivre les normes de l'Évangile pendant toute la conférence : pudeur dans l'habillement et dans le langage, honnêteté, et abstinence totale d'alcool, de tabac, de drogues et de toute conduite contraire à l'esprit de FSY.",
+          "text_es": "",
+          "text_en": ""
         },
         {
-          "text_fr": "Prendre soin de soi et des autres : gérer son comportement, ses émotions et sa santé, et demander de l'aide à un dirigeant ou à un animateur en cas de besoin."
+          "text_fr": "Prendre soin de soi et des autres : gérer son comportement, ses émotions et sa santé, et demander de l'aide à un dirigeant ou à un animateur en cas de besoin.",
+          "text_es": "",
+          "text_en": ""
         }
       ]
     },
     {
       "type": "body",
-      "text_fr": "Et pour bien s'y préparer, dès maintenant :"
+      "text_fr": "Et pour bien s'y préparer, dès maintenant :",
+      "text_es": "",
+      "text_en": ""
     },
     {
       "type": "list",
       "items": [
         {
-          "text_fr": "Étudie le guide « Jeunes, soyez forts » ;"
+          "text_fr": "Étudie le guide « Jeunes, soyez forts » ;",
+          "text_es": "",
+          "text_en": ""
         },
         {
-          "text_fr": "Prie et réfléchis à ce que tu veux vivre et apprendre ;"
+          "text_fr": "Prie et réfléchis à ce que tu veux vivre et apprendre ;",
+          "text_es": "",
+          "text_en": ""
         },
         {
-          "text_fr": "Parle avec tes parents et tes dirigeants de tes attentes."
+          "text_fr": "Parle avec tes parents et tes dirigeants de tes attentes.",
+          "text_es": "",
+          "text_en": ""
         }
       ]
     },
     {
       "type": "heading",
-      "text_fr": "Comment s'inscrire"
+      "text_fr": "Comment s'inscrire",
+      "text_es": "",
+      "text_en": ""
     },
     {
       "type": "list",
       "items": [
         {
           "text_fr": "Rends-toi sur le lien plus bas",
-          "text_es": ""
+          "text_es": "",
+          "text_en": ""
         },
         {
-          "text_fr": "Connecte-toi avec le compte de l'Église du jeune."
+          "text_fr": "Connecte-toi avec le compte de l'Église du jeune.",
+          "text_es": "",
+          "text_en": ""
         },
         {
-          "text_fr": "Fais ta préinscription dès maintenant (pour Ottawa) — n'attends pas la dernière minute !"
+          "text_fr": "Fais ta préinscription dès maintenant (pour Ottawa) — n'attends pas la dernière minute !",
+          "text_es": "",
+          "text_en": ""
         }
       ]
     },
     {
       "type": "cta",
-      "style": "primary",
-      "href": "https://fsy.byu.edu/o3/user/fsy/register",
       "label_fr": "Se pré-inscrire",
+      "label_es": "Preinscribirse",
       "label_en": "Pre-register",
-      "label_es": "Preinscribirse"
+      "href": "https://fsy.byu.edu/o3/user/fsy/register",
+      "href_fr": "",
+      "href_es": "",
+      "href_en": "",
+      "style": "primary"
     },
     {
       "type": "body",
-      "text_fr": "Si tu n'arrives pas à faire ta préinscription, contacte ton évêque : il pourra vérifier ton approbation et t'aider."
+      "text_fr": "Si tu n'arrives pas à faire ta préinscription, contacte ton évêque : il pourra vérifier ton approbation et t'aider.",
+      "text_es": "",
+      "text_en": ""
     },
     {
       "type": "heading",
-      "text_fr": "Un mot pour les parents et les dirigeants"
+      "text_fr": "Un mot pour les parents et les dirigeants",
+      "text_es": "",
+      "text_en": ""
     },
     {
       "type": "body",
-      "text_fr": "La participation d'un jeune commence par l'approbation de son évêque : si ce n'est pas déjà fait, merci de prévoir ce pas dès maintenant. Parents et dirigeants, votre encouragement personnel est ce qui motive le plus les jeunes à s'inscrire — parlons-leur de FSY dès aujourd'hui, pour qu'aucun jeune ne reste en dehors de cette belle expérience."
+      "text_fr": "La participation d'un jeune commence par l'approbation de son évêque : si ce n'est pas déjà fait, merci de prévoir ce pas dès maintenant. Parents et dirigeants, votre encouragement personnel est ce qui motive le plus les jeunes à s'inscrire — parlons-leur de FSY dès aujourd'hui, pour qu'aucun jeune ne reste en dehors de cette belle expérience.",
+      "text_es": "",
+      "text_en": ""
     },
     {
       "type": "heading",
-      "text_fr": "Dates Importantes"
+      "text_fr": "Dates Importantes",
+      "text_es": "",
+      "text_en": ""
     },
     {
       "type": "body",
-      "text_fr": "OTTAWA (14 à 17 ans)"
+      "text_fr": "OTTAWA (14 à 17 ans)",
+      "text_es": "",
+      "text_en": ""
     },
     {
       "type": "list",
       "items": [
         {
-          "text_fr": "Préinscription : Dès le 20 oct. 2026, jusqu'au 11 janvier 2027"
+          "text_fr": "Préinscription : Dès le 20 oct. 2026, jusqu'au 11 janvier 2027",
+          "text_es": "",
+          "text_en": ""
         },
         {
-          "text_fr": "Inscription finale : Du 27 janvier au 3 février 2027"
+          "text_fr": "Inscription finale : Du 27 janvier au 3 février 2027",
+          "text_es": "",
+          "text_en": ""
         },
         {
-          "text_fr": "Conférence : Du 2 au 7 août 2027"
+          "text_fr": "Conférence : Du 2 au 7 août 2027",
+          "text_es": "",
+          "text_en": ""
         }
       ]
     },
     {
       "type": "note",
-      "text_fr": "ATTENTION: sans préinscription, il n'y a l'opportunité de faire l'inscription finale dû au faite que les places sont limitées."
+      "text_fr": "ATTENTION: sans préinscription, il n'y a l'opportunité de faire l'inscription finale dû au faite que les places sont limitées.",
+      "text_es": "",
+      "text_en": ""
     },
     {
       "type": "body",
-      "text_fr": "SACKVILLE (18 ans en août 2027)"
+      "text_fr": "SACKVILLE (18 ans en août 2027)",
+      "text_es": "",
+      "text_en": ""
     },
     {
       "type": "list",
       "items": [
         {
-          "text_fr": "Préinscription : Dès le 15 février 2027"
+          "text_fr": "Préinscription : Dès le 15 février 2027",
+          "text_es": "",
+          "text_en": ""
         },
         {
-          "text_fr": "Inscription finale : Du 24 février au 2 mars 2027"
+          "text_fr": "Inscription finale : Du 24 février au 2 mars 2027",
+          "text_es": "",
+          "text_en": ""
         },
         {
-          "text_fr": "Conférence : Du 9 au 14 août 2027"
+          "text_fr": "Conférence : Du 9 au 14 août 2027",
+          "text_es": "",
+          "text_en": ""
         }
       ]
     },
     {
       "type": "note",
-      "text_fr": "Le voyage (vols, transport aéroport–campus, petit-déjeuner du samedi) est réservé et payé par FSY."
+      "text_fr": "Le voyage (vols, transport aéroport–campus, petit-déjeuner du samedi) est réservé et payé par FSY.",
+      "text_es": "",
+      "text_en": ""
     },
     {
       "type": "heading",
-      "text_fr": "Question fréquentes"
+      "text_fr": "Question fréquentes",
+      "text_es": "",
+      "text_en": ""
     },
     {
       "type": "list",
       "items": [
         {
-          "text_fr": "Q : Qui peut participer à la conférence FSY 2027 ?"
+          "text_fr": "Q : Qui peut participer à la conférence FSY 2027 ?",
+          "text_es": "",
+          "text_en": ""
         },
         {
-          "text_fr": "R : Les jeunes du pieu de Longueuil âgés de 14 à 17 ans au 2 août 2027 participeront à la session d'Ottawa (2 au 7 août 2027). Les jeunes qui auront 18 ans en août 2027 participeront à la session de Sackville, au Nouveau-Brunswick (9 au 14 août 2027)."
+          "text_fr": "R : Les jeunes du pieu de Longueuil âgés de 14 à 17 ans au 2 août 2027 participeront à la session d'Ottawa (2 au 7 août 2027). Les jeunes qui auront 18 ans en août 2027 participeront à la session de Sackville, au Nouveau-Brunswick (9 au 14 août 2027).",
+          "text_es": "",
+          "text_en": ""
         }
       ]
     },
     {
-      "type": "divider"
+      "type": "divider",
+      "_note": ""
     },
     {
       "type": "list",
       "items": [
         {
-          "text_fr": "Q : Pourquoi les jeunes de 18 ans ne vont-ils pas à Ottawa ?"
+          "text_fr": "Q : Pourquoi les jeunes de 18 ans ne vont-ils pas à Ottawa ?",
+          "text_es": "",
+          "text_en": ""
         },
         {
-          "text_fr": "R : Une loi de la province de l'Ontario ne permet pas aux jeunes de 18 ans de participer au FSY en Ontario. C'est pourquoi une session spéciale est organisée pour eux à Sackville — différente, mais tout aussi extraordinaire."
+          "text_fr": "R : Une loi de la province de l'Ontario ne permet pas aux jeunes de 18 ans de participer au FSY en Ontario. C'est pourquoi une session spéciale est organisée pour eux à Sackville — différente, mais tout aussi extraordinaire.",
+          "text_es": "",
+          "text_en": ""
         }
       ]
     },
     {
-      "type": "divider"
+      "type": "divider",
+      "_note": ""
     },
     {
       "type": "list",
       "items": [
         {
-          "text_fr": "Q : Combien coûte le voyage à Sackville ?"
+          "text_fr": "Q : Combien coûte le voyage à Sackville ?",
+          "text_es": "",
+          "text_en": ""
         },
         {
-          "text_fr": "R : Pour les jeunes de 18 ans, FSY réserve et paie les vols aller-retour, le transport entre l'aéroport et le campus, ainsi qu'un petit-déjeuner à emporter le samedi."
+          "text_fr": "R : Pour les jeunes de 18 ans, FSY réserve et paie les vols aller-retour, le transport entre l'aéroport et le campus, ainsi qu'un petit-déjeuner à emporter le samedi.",
+          "text_es": "",
+          "text_en": ""
         }
       ]
     },
     {
-      "type": "divider"
+      "type": "divider",
+      "_note": ""
     },
     {
       "type": "list",
       "items": [
         {
-          "text_fr": "Q : Je veux m'inscrire à Sackville, mais la session n'apparaît pas dans les options. Est-ce normal ?"
+          "text_fr": "Q : Je veux m'inscrire à Sackville, mais la session n'apparaît pas dans les options. Est-ce normal ?",
+          "text_es": "",
+          "text_en": ""
         },
         {
-          "text_fr": "R : Oui, c'est normal : la session de Sackville n'apparaît pas encore. Ta préinscription commencera le 15 février 2027. D'ici là, tu peux manifester ton désir de participer à ton évêque."
+          "text_fr": "R : Oui, c'est normal : la session de Sackville n'apparaît pas encore. Ta préinscription commencera le 15 février 2027. D'ici là, tu peux manifester ton désir de participer à ton évêque.",
+          "text_es": "",
+          "text_en": ""
         }
       ]
     },
     {
-      "type": "divider"
+      "type": "divider",
+      "_note": ""
     },
     {
       "type": "list",
       "items": [
         {
-          "text_fr": "Q : Que se passe-t-il si je ne fais pas ma préinscription (Ottawa) ?"
+          "text_fr": "Q : Que se passe-t-il si je ne fais pas ma préinscription (Ottawa) ?",
+          "text_es": "",
+          "text_en": ""
         },
         {
-          "text_fr": "R : Sans préinscription, il n'y a pas d'inscription finale — et les places sont limitées. La préinscription pour Ottawa se termine le 11 janvier 2027 : fais-la dès maintenant !"
+          "text_fr": "R : Sans préinscription, il n'y a pas d'inscription finale — et les places sont limitées. La préinscription pour Ottawa se termine le 11 janvier 2027 : fais-la dès maintenant !",
+          "text_es": "",
+          "text_en": ""
         }
       ]
     },
     {
-      "type": "divider"
+      "type": "divider",
+      "_note": ""
     },
     {
       "type": "list",
       "items": [
         {
-          "text_fr": "Q : Je n'arrive pas à faire ma préinscription. Que dois-je faire ?"
+          "text_fr": "Q : Je n'arrive pas à faire ma préinscription. Que dois-je faire ?",
+          "text_es": "",
+          "text_en": ""
         },
         {
-          "text_fr": "R : Contacte ton évêque : il pourra vérifier ton approbation dans le système et t'aider. L'approbation de l'évêque est la première étape de la participation."
+          "text_fr": "R : Contacte ton évêque : il pourra vérifier ton approbation dans le système et t'aider. L'approbation de l'évêque est la première étape de la participation.",
+          "text_es": "",
+          "text_en": ""
         }
       ]
     },
     {
-      "type": "divider"
+      "type": "divider",
+      "_note": ""
     },
     {
       "type": "list",
       "items": [
         {
-          "text_fr": "Q : Où se fait l'inscription ?"
+          "text_fr": "Q : Où se fait l'inscription ?",
+          "text_es": "",
+          "text_en": ""
         },
         {
-          "text_fr": "R : Sur le portail officiel de l'Église, avec le compte de l'Église du jeune"
+          "text_fr": "R : Sur le portail officiel de l'Église, avec le compte de l'Église du jeune",
+          "text_es": "",
+          "text_en": ""
         }
       ]
     },
     {
-      "type": "divider"
+      "type": "divider",
+      "_note": ""
     },
     {
       "type": "list",
       "items": [
         {
-          "text_fr": "Q : Est-ce qu'il y a des frais d'inscription ?"
+          "text_fr": "Q : Est-ce qu'il y a des frais d'inscription ?",
+          "text_es": "",
+          "text_en": ""
         },
         {
-          "text_fr": "R : Oui : au moment de l'inscription, des frais de 100 $ CAD sont demandés. Et si ces frais empêchaient un jeune de participer, qu'il en parle à son évêque — l'unité peut aider à partir de son budget pour qu'aucun jeune ne reste en dehors pour une question d'argent."
+          "text_fr": "R : Oui : au moment de l'inscription, des frais de 100 $ CAD sont demandés. Et si ces frais empêchaient un jeune de participer, qu'il en parle à son évêque — l'unité peut aider à partir de son budget pour qu'aucun jeune ne reste en dehors pour une question d'argent.",
+          "text_es": "",
+          "text_en": ""
         }
       ]
     },
     {
-      "type": "divider"
+      "type": "divider",
+      "_note": ""
     },
     {
       "type": "list",
       "items": [
         {
-          "text_fr": "Q : Puis-je inviter un ami qui n'est pas membre de l'Église ?"
+          "text_fr": "Q : Puis-je inviter un ami qui n'est pas membre de l'Église ?",
+          "text_es": "",
+          "text_en": ""
         },
         {
-          "text_fr": "R : Oui ! Les jeunes peuvent inviter leurs amis à vivre cette expérience avec eux. Parlez-en à votre évêque ou à vos dirigeants de jeunes pour les détails de leur inscription."
+          "text_fr": "R : Oui ! Les jeunes peuvent inviter leurs amis à vivre cette expérience avec eux. Parlez-en à votre évêque ou à vos dirigeants de jeunes pour les détails de leur inscription.",
+          "text_es": "",
+          "text_en": ""
         }
       ]
     }
-  ],
-  "subtitle_en": "For the Strength of Youth Conferences",
-  "title_en": "FSY",
-  "nav_order": 99,
-  "title_fr": "FSY",
-  "subtitle_fr": "La conférence Jeunes, soyez forts",
-  "subtitle_es": "La conferencia Para la Fortaleza de la Juventud",
-  "title_es": "FSY",
-  "hero_image": "/assets/photo_couverture_fsy_jeunes_aerienne-1-.jpg",
-  "visible_in_nav": true
+  ]
 }
