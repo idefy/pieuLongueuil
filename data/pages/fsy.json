@@ -228,6 +228,133 @@
     {
       "type": "note",
       "text_fr": "Le voyage (vols, transport aéroport–campus, petit-déjeuner du samedi) est réservé et payé par FSY."
+    },
+    {
+      "type": "heading",
+      "text_fr": "Question fréquentes"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "text_fr": "Q : Qui peut participer à la conférence FSY 2027 ?"
+        },
+        {
+          "text_fr": "R : Les jeunes du pieu de Longueuil âgés de 14 à 17 ans au 2 août 2027 participeront à la session d'Ottawa (2 au 7 août 2027). Les jeunes qui auront 18 ans en août 2027 participeront à la session de Sackville, au Nouveau-Brunswick (9 au 14 août 2027)."
+        }
+      ]
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "text_fr": "Q : Pourquoi les jeunes de 18 ans ne vont-ils pas à Ottawa ?"
+        },
+        {
+          "text_fr": "R : Une loi de la province de l'Ontario ne permet pas aux jeunes de 18 ans de participer au FSY en Ontario. C'est pourquoi une session spéciale est organisée pour eux à Sackville — différente, mais tout aussi extraordinaire."
+        }
+      ]
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "text_fr": "Q : Combien coûte le voyage à Sackville ?"
+        },
+        {
+          "text_fr": "R : Pour les jeunes de 18 ans, FSY réserve et paie les vols aller-retour, le transport entre l'aéroport et le campus, ainsi qu'un petit-déjeuner à emporter le samedi."
+        }
+      ]
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "text_fr": "Q : Je veux m'inscrire à Sackville, mais la session n'apparaît pas dans les options. Est-ce normal ?"
+        },
+        {
+          "text_fr": "R : Oui, c'est normal : la session de Sackville n'apparaît pas encore. Ta préinscription commencera le 15 février 2027. D'ici là, tu peux manifester ton désir de participer à ton évêque."
+        }
+      ]
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "text_fr": "Q : Que se passe-t-il si je ne fais pas ma préinscription (Ottawa) ?"
+        },
+        {
+          "text_fr": "R : Sans préinscription, il n'y a pas d'inscription finale — et les places sont limitées. La préinscription pour Ottawa se termine le 11 janvier 2027 : fais-la dès maintenant !"
+        }
+      ]
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "text_fr": "Q : Je n'arrive pas à faire ma préinscription. Que dois-je faire ?"
+        },
+        {
+          "text_fr": "R : Contacte ton évêque : il pourra vérifier ton approbation dans le système et t'aider. L'approbation de l'évêque est la première étape de la participation."
+        }
+      ]
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "text_fr": "Q : Où se fait l'inscription ?"
+        },
+        {
+          "text_fr": "R : Sur le portail officiel de l'Église, avec le compte de l'Église du jeune"
+        }
+      ]
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "text_fr": "Q : Est-ce qu'il y a des frais d'inscription ?"
+        },
+        {
+          "text_fr": "R : Oui : au moment de l'inscription, des frais de 100 $ CAD sont demandés. Et si ces frais empêchaient un jeune de participer, qu'il en parle à son évêque — l'unité peut aider à partir de son budget pour qu'aucun jeune ne reste en dehors pour une question d'argent."
+        }
+      ]
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "text_fr": "Q : Puis-je inviter un ami qui n'est pas membre de l'Église ?"
+        },
+        {
+          "text_fr": "R : Oui ! Les jeunes peuvent inviter leurs amis à vivre cette expérience avec eux. Parlez-en à votre évêque ou à vos dirigeants de jeunes pour les détails de leur inscription."
+        }
+      ]
     }
   ],
   "subtitle_en": "For the Strength of Youth Conferences",
