@@ -1,0 +1,38 @@
+{
+  "slug": "communaute",
+  "visible_in_nav": true,
+  "nav_order": 99,
+  "hero_image": "",
+  "hero_image_fr": "",
+  "hero_image_es": "",
+  "hero_image_en": "",
+  "title_fr": "Service communautaire",
+  "title_es": "",
+  "title_en": "",
+  "subtitle_fr": "",
+  "subtitle_es": "",
+  "subtitle_en": "",
+  "sections": [
+    {
+      "type": "heading",
+      "text_fr": "Collecte Annuelle",
+      "text_es": "",
+      "text_en": ""
+    },
+    {
+      "type": "intro",
+      "text_fr": "Chaque année, lors de la journée national de service, nous organisons des collectes de denrées dans diverses régions du pieu. Ceci a pour but de rapprocher les membres de la vie du Christ en s'oubliant au service des autres tout en aidant une aide pour la communauté.",
+      "text_es": "",
+      "text_en": ""
+    },
+    {
+      "type": "pdf",
+      "src": "/assets/Collecte Annuelle 2027 Moisson Rive-Sud.pdf",
+      "title_fr": "Collecte Annuelle 2027 Moisson Rive-Sud",
+      "title_es": "",
+      "title_en": "",
+      "height": 700,
+      "show_download": true
+    }
+  ]
+}
