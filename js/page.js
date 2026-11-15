@@ -4,7 +4,7 @@
  * Loads the correct page JSON from data/pages/?slug=.json,
  * renders all sections, manages i18n, nav dropdown, and footer.
  *
- * URL format: page.html?p=slug
+ * URL format: page.html?p=slug (page.html?page=slug also accepted)
  * Direct URL: page.html?p=exemple  → loads data/pages/exemple.json
  */
 
@@ -43,9 +43,14 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 /* ── URL slug ────────────────────────────────────────────── */
 function getSlug() {
-  return new URLSearchParams(window.location.search).get('p') || 
-	window.location.pathname.split('/').filter(Boolean).at(-1) ||
-	'';
+  // ?p=slug or ?page=slug (a page need not be in the menu to be reachable)
+  const q = new URLSearchParams(window.location.search);
+  const fromQuery = q.get('p') || q.get('page');
+  if (fromQuery) return fromQuery;
+  // pretty URLs (/autonomie rewritten to page.html by _redirects): last path segment,
+  // but never the shell file itself (page.html, page, index.html)
+  const last = window.location.pathname.split('/').filter(Boolean).at(-1) || '';
+  return /^(page(\.html)?|index(\.html)?)$/i.test(last) ? '' : last;
 }
 
 /* ── Apply config colors (fonts are linked statically in page.html) ── */
@@ -148,6 +153,10 @@ function renderSection(s, lang) {
 
     case 'body':
       return `<p class="sp-body">${renderInlineHTML(txt())}</p>`;
+
+    case 'longtext':
+      // Long text: several paragraphs, lists, headings, quotes (Markdown subset)
+      return spMd(txt());
 
     case 'note':
       return `<p class="sp-note">${renderInlineHTML(txt())}</p>`;
@@ -435,6 +444,110 @@ function renderInlineHTML(text) {
     .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
     .replace(/\*(.+?)\*/g, '<em>$1</em>')
     .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
+}
+
+/* ── Long text block: small, safe Markdown renderer ─────────
+   Supports: paragraphs (blank line), line breaks (a single newline
+   becomes <br>), **bold**, *italic* / _italic_, [text](url),
+   - / * / 1. lists (nested by indentation), ## / ### headings,
+   > quotes, --- rule, \* escapes. HTML in the text is escaped.
+   Not supported: images, tables, raw HTML (use the dedicated blocks). */
+function spMdInline(raw) {
+  const keep = [];
+  const hold = h => '\uE000' + (keep.push(h) - 1) + '\uE001';
+  const back = t => t.replace(/\uE000(\d+)\uE001/g, (m, i) => back(keep[i]));
+  const emph = t => t
+    .replace(/\*\*\*([^*]+?)\*\*\*/g, '<strong><em>$1</em></strong>')
+    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+    .replace(/(^|[^\w])__(.+?)__(?!\w)/g, '$1<strong>$2</strong>')
+    .replace(/\*([^*\s](?:[^*]*[^*\s])?)\*/g, '<em>$1</em>')
+    .replace(/(^|[^\w])_([^_\s](?:[^_]*[^_\s])?)_(?!\w)/g, '$1<em>$2</em>');
+  let t = String(raw);
+  // backslash escapes (\* → literal *)
+  t = t.replace(/\\([\\`*_{}\[\]()#+\-.!|~>])/g, (m, c) => hold(spEsc(c)));
+  t = spEsc(t);
+  // links are set aside first so emphasis never touches the URL
+  t = t.replace(/\[([^\]]+)\]\(([^)\s]+)(?:\s+&quot;[^&]*&quot;)?\)/g, (m, label, url) => {
+    const bad = /^\s*(javascript|data|vbscript):/i.test(back(url));
+    const ext = /^https?:/i.test(url);
+    return hold(`<a href="${bad ? '#' : url}"${ext ? ' target="_blank" rel="noopener"' : ''}>${emph(label)}</a>`);
+  });
+  return back(emph(t));
+}
+
+function spMdListHTML(items) {
+  let html = '';
+  const stack = [];
+  items.forEach(it => {
+    const text = spMdInline(it.text).replace(/\n/g, '<br>');
+    let top = stack[stack.length - 1];
+    while (top && it.indent < top.indent) { html += `</li></${stack.pop().tag}>`; top = stack[stack.length - 1]; }
+    if (top && it.indent === top.indent && it.tag !== top.tag) { html += `</li></${stack.pop().tag}>`; top = stack[stack.length - 1]; }
+    if (!top || it.indent > top.indent) { stack.push({ indent: it.indent, tag: it.tag }); html += `<${it.tag}><li>${text}`; }
+    else { html += `</li><li>${text}`; }
+  });
+  while (stack.length) html += `</li></${stack.pop().tag}>`;
+  return html;
+}
+
+function spMdBlocks(src) {
+  const lines = String(src || '').replace(/\r\n?/g, '\n').split('\n');
+  const out = [];
+  const blank = l => !l.trim();
+  const reHr = /^ {0,3}([-*_])( *\1){2,} *$/;
+  const reHead = /^ {0,3}(#{1,6})\s+(.+?)\s*$/;
+  const reList = /^(\s*)([-*+]|\d+[.)])\s+(.*)$/;
+  const reQuote = /^ {0,3}>\s?(.*)$/;
+  // a list may interrupt a paragraph only as a bullet or "1."
+  const interrupts = l => reHr.test(l) || reHead.test(l) || reQuote.test(l)
+    || (reList.test(l) && /^\s*([-*+]|1[.)])\s/.test(l));
+  let i = 0;
+  while (i < lines.length) {
+    const l = lines[i];
+    if (blank(l)) { i++; continue; }
+    if (reHr.test(l)) { out.push('<hr class="sp-divider">'); i++; continue; }
+    const h = l.match(reHead);
+    if (h) {
+      out.push(h[1].length <= 2
+        ? `<h2 class="sp-heading">${spMdInline(h[2])}</h2>`
+        : `<h3 class="sp-subheading">${spMdInline(h[2])}</h3>`);
+      i++; continue;
+    }
+    if (reQuote.test(l)) {
+      const q = [];
+      while (i < lines.length && reQuote.test(lines[i])) { q.push(lines[i].match(reQuote)[1]); i++; }
+      out.push(`<blockquote class="sp-quote">${spMdBlocks(q.join('\n'))}</blockquote>`);
+      continue;
+    }
+    if (reList.test(l)) {
+      const items = [];
+      while (i < lines.length) {
+        const cur = lines[i];
+        const m = cur.match(reList);
+        if (m) {
+          items.push({ indent: m[1].replace(/\t/g, '    ').length, tag: /^\d/.test(m[2]) ? 'ol' : 'ul', text: m[3] });
+          i++;
+        } else if (blank(cur)) {
+          let j = i + 1;
+          while (j < lines.length && blank(lines[j])) j++;
+          if (j < lines.length && reList.test(lines[j])) i = j; else break;
+        } else if (/^\s+\S/.test(cur)) {
+          items[items.length - 1].text += '\n' + cur.trim(); i++;
+        } else break;
+      }
+      out.push(spMdListHTML(items));
+      continue;
+    }
+    const buf = [];
+    while (i < lines.length && !blank(lines[i]) && (!buf.length || !interrupts(lines[i]))) { buf.push(lines[i]); i++; }
+    out.push('<p>' + buf.map(x => spMdInline(x.replace(/\s*\\$/, '').replace(/\s+$/, ''))).join('<br>') + '</p>');
+  }
+  return out.join('');
+}
+
+function spMd(src) {
+  const html = spMdBlocks(src);
+  return html ? `<div class="sp-longtext">${html}</div>` : '';
 }
 
 /* ── Not found ───────────────────────────────────────────── */

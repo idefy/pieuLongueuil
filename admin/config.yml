@@ -1790,6 +1790,28 @@ collections:
               - { label: "Texte (FR)", name: text_fr, widget: text, hint: "Mise en forme : `**gras**` · `*italique*` · `[texte du lien](https://adresse)`. Pour un lien, collez l'adresse complète entre les parenthèses." }
               - { label: "Texte (ES)", name: text_es, widget: text, required: false }
               - { label: "Texte (EN)", name: text_en, widget: text, required: false }
+          - label: "📄 Texte long (Markdown)"
+            name: longtext
+            widget: object
+            hint: "Un seul bloc pour plusieurs paragraphes, listes, sous-titres et citations. Entrée = nouveau paragraphe."
+            fields:
+              - label: "Texte (FR)"
+                name: text_fr
+                widget: markdown
+                buttons: [bold, italic, link, heading-two, heading-three, bulleted-list, numbered-list, quote]
+                editor_components: []
+              - label: "Texte (ES)"
+                name: text_es
+                widget: markdown
+                required: false
+                buttons: [bold, italic, link, heading-two, heading-three, bulleted-list, numbered-list, quote]
+                editor_components: []
+              - label: "Texte (EN)"
+                name: text_en
+                widget: markdown
+                required: false
+                buttons: [bold, italic, link, heading-two, heading-three, bulleted-list, numbered-list, quote]
+                editor_components: []
           - label: "📣 Encadré (callout)"
             name: callout
             widget: object
