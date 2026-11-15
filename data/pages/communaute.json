@@ -1,7 +1,5 @@
 {
   "slug": "service",
-  "visible_in_nav": true,
-  "nav_order": 99,
   "hero_image": "",
   "hero_image_fr": "",
   "hero_image_es": "",
@@ -26,13 +24,18 @@
       "text_en": ""
     },
     {
-      "type": "pdf",
-      "src": "/assets/Collecte Annuelle 2027 Moisson Rive-Sud.pdf",
-      "title_fr": "Collecte Annuelle 2027 Moisson Rive-Sud",
-      "title_es": "",
-      "title_en": "",
-      "height": 700,
-      "show_download": true
+      "type": "subheading",
+      "text_fr": "Collecte 2026",
+      "text_es": "",
+      "text_en": ""
+    },
+    {
+      "type": "longtext",
+      "text_fr": "**Servir tout simplement à la manière du Sauveur**\n**Le Pieu de Longueuil se rassemble pour la collecte de denrées.**\n\nC’est pour une deuxième année consécutive que des membres et amis(es) de l’Église de Jésus-Christ des saints des derniers des jours du Pieu de Longueuil/Québec; et plus précisément des paroisses de Longueuil, Victoria, Lemoyne, St-Luc et St-Hilaire, se sont joints, dans un esprit de fraternité et d’entraide, à l’organisme ‘’Moisson Rive-Sud’’, les 3 et 12 septembre 2026, afin de lui venir en aide dans sa mission qui est de soutenir les organismes de la Montérégie qui accompagnent les personnes vivant en situation d’insécurité alimentaire ou de vulnérabilité. Au Québec, il y a plus de 300 000 demandes alimentaires qui se font chaque mois et grâce à cet organisme, plus de 250 000 repas sont rendus possibles. \n\nPour ainsi continuer à promouvoir cet élan de générosité, l’Évêque Gonzalez, de la paroisse de Longueuil, a fait appel, dans un premier temps, à tous les jeunes de 12 à 17 ans, afin de recevoir de l’aide pour distribuer des accroche-portes dans exactement 24 secteurs du voisinage du Pieu de Longueuil, le jeudi 3 septembre 2026\\\\. Ce geste visait surtout à avertir les citoyens qu’une collecte de denrée se déroulera dans les prochains jours, soit le samedi 12 septembre. \n\n`  C’est ainsi donc qu’un peu plus d’une semaine plus tard, ce fut au tour de plus de 100 membres et amis (es) de l’Église de Jésus-Christ de tout âge qui ont été sollicitées; par le biais de ‘Just Serve’, afin de récolter ces dons directement aux portes des maisons des quartiers ciblés. C’est aussi sous la supervision de sœur Katherine Defaye, responsable de l’activité de service, que chaque participant a été premièrement mobilisé au centre de Pieu afin de former des équipes et ensuite être envoyé dans les quartiers avec une carte de remerciement à remettre pour chaque donateur.    `\n\nGrâce aux participants et à l’aide des Longueuillois et Longueuilloises, le Pieu a pu ramasser pour l’organisme ‘’ Moisson Rive-Sud’, et cela en moins de 2 heures, un grand total de 1 479 kg de denrées alimentaires non périssables et plus de 1 300$ en argent comptant; soit plus de 300kg de denrées et de 700$ de plus qu’en 2025. \n\nEn se joignant à Moisson Rive-Sud et à sa mission d’entraide, chaque participant de cette activité a non seulement réussi à ramasser plusieurs dons pour des personnes dans le besoin, mais a aussi pu mettre en pratique le service désintéressé et ainsi être édifié en servant leurs prochains :\n\n_‘’ C’est pour la première fois que je participais dans la collecte annuelle des denrées alimentaires. À travers de cette activité j’ai pu constater le désir de servir de chaque membre de l’église et la générosité des personnes à qui j’ai frappé à leur porte. C’était vraiment édifiant pour moi de servir et faire un impact dans la vie de chaque personne qui va bénéficier de cette activité.’’_ a évoqué Sœur Claudine Ormeus, participante de l’activité de service et représentante de Paroisse de Lemoyne dans le comité des denrées.\n\n_‘’ Nous avons eu le plaisir de nous réunir en tant que pieu le 12 septembre pour notre collecte de denrées annuelle, organisée en collaboration avec de nombreuses unités de notre pieu. Cette année a été un autre succès, la quantité recueillie au centre de pieu dépassant celle de l'an dernier de plus de 20 % en poids. Nous sommes reconnaissants de notre partenariat avec les nombreuses communautés de notre pieu, et en particulier avec Moisson Rive-Sud, sur la Rive-Sud de Montréal. Des occasions comme celles-ci nous permettent de voir l'Évangile en action, de prendre soin de notre prochain et de suivre l'exemple de notre Sauveur Jésus-Christ.’’_, a aussi mentionné le Président de Pieu de Longueuil/Québec, Président Paula Pelchat.\n\nComme sœur Ormeus et Président Pelchat l’ont si bien dit, le service est un des points prépondérants pour les membres de l’Église de Jésus-Christ, puisqu’il les amène aussi à développer un réel intérêt pour tous les enfants de Dieu. À ce sujet, Frère Dieter F. Uchtdorf a dit :\n\n_‘’ Frères et sœurs, nous avons tous contracté par alliance la responsabilité d’être sensibles aux besoins d’autrui et de servir comme le Sauveur l’a fait, d’aller vers les gens qui nous entourent, de leur faire du bien et de les réconforter. Souvent, la réponse à notre prière ne vient pas quand nous sommes à genoux mais quand nous sommes debout à servir le Seigneur et les gens qui nous entourent.’’_ (« Ceux qui attendent sur le chemin de Damas », _Le Liahona,_ mai 2011, p. 76)\n\nMis à part les paroisses qui ont participé à la grande collecte, d’autres paroisses et branche du Pieu de Longueuil/Québec plus éloigné, comme les paroisses de Sherbrooke, Drummondville et de la branche de Granby, se sont aussi jointes à cette vague de service d’une tout autre manière. Une autre façon de servir les pauvres a été, comme l’a faite la paroisse de Drummondville, d’encourager les membres à apporter des denrées non-périssables qu’ils pouvaient prendre directement de chez eux et de les amener à la chapelle. Chaque dimanche, la Présidence rappelait aux membres qu’ils pouvaient donner jusqu’au 12 septembre. Après cette date, ce fut l’épiscopat qui fut ensuite responsable de ramasser ces dons pour les apporter et les remettre en mains propres à un organisme de la région appelée ‘’Le comptoir alimentaire’’. \n\n`  En mobilisant autant de personnes un peu partout dans toutes les paroisses et branches du Pieu de Longueuil/Québec pour des collectes, les membres et amis de l’Église ont pu aider à soulager le plus grand nombre possible de personnes pauvres, être édifiés et devenir de plus en plus sensibles aux besoins des autres. Pour ainsi dire, ils ont pu servir tout simplement à la manière du Sauveur.  `",
+      "text_es": "",
+      "text_en": ""
     }
-  ]
+  ],
+  "nav_order": 99,
+  "visible_in_nav": true
 }
