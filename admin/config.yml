@@ -407,7 +407,7 @@ collections:
                 name: intro
                 widget: object
                 fields:
-                  - { label: "Texte (FR)", name: text_fr, widget: text }
+                  - { label: "Texte (FR)", name: text_fr, widget: text, hint: "Mise en forme : `**gras**` · `*italique*` · `[texte du lien](https://adresse)`. Pour un lien, collez l'adresse complète entre les parenthèses." }
                   - { label: "Texte (ES)", name: text_es, widget: text, required: false }
                   - { label: "Texte (EN)", name: text_en, widget: text, required: false }
               - label: "📌 Titre de section (H2)"
@@ -427,23 +427,22 @@ collections:
               - label: "¶ Paragraphe"
                 name: body
                 widget: object
-                hint: "Supporte **gras**, *italique*, et [texte](url) pour les liens"
                 fields:
-                  - { label: "Texte (FR)", name: text_fr, widget: text }
+                  - { label: "Texte (FR)", name: text_fr, widget: text, hint: "Mise en forme : `**gras**` · `*italique*` · `[texte du lien](https://adresse)`. Pour un lien, collez l'adresse complète entre les parenthèses." }
                   - { label: "Texte (ES)", name: text_es, widget: text, required: false }
                   - { label: "Texte (EN)", name: text_en, widget: text, required: false }
               - label: "📣 Encadré (callout)"
                 name: callout
                 widget: object
                 fields:
-                  - { label: "Texte (FR)", name: text_fr, widget: text }
+                  - { label: "Texte (FR)", name: text_fr, widget: text, hint: "Mise en forme : `**gras**` · `*italique*` · `[texte du lien](https://adresse)`. Pour un lien, collez l'adresse complète entre les parenthèses." }
                   - { label: "Texte (ES)", name: text_es, widget: text, required: false }
                   - { label: "Texte (EN)", name: text_en, widget: text, required: false }
               - label: "📎 Note en italique"
                 name: note
                 widget: object
                 fields:
-                  - { label: "Texte (FR)", name: text_fr, widget: text }
+                  - { label: "Texte (FR)", name: text_fr, widget: text, hint: "Mise en forme : `**gras**` · `*italique*` · `[texte du lien](https://adresse)`. Pour un lien, collez l'adresse complète entre les parenthèses." }
                   - { label: "Texte (ES)", name: text_es, widget: text, required: false }
                   - { label: "Texte (EN)", name: text_en, widget: text, required: false }
               - label: "— Séparateur"
@@ -519,7 +518,7 @@ collections:
                     widget: list
                     summary: "{{fields.text_fr}}"
                     fields:
-                      - { label: "Texte (FR)", name: text_fr, widget: string }
+                      - { label: "Texte (FR)", name: text_fr, widget: string, hint: "Mise en forme : `**gras**` · `*italique*` · `[texte du lien](https://adresse)`. Pour un lien, collez l'adresse complète entre les parenthèses." }
                       - { label: "Texte (ES)", name: text_es, widget: string, required: false }
                       - { label: "Texte (EN)", name: text_en, widget: string, required: false }
               - label: "🔗 Liste de liens"
@@ -697,7 +696,7 @@ collections:
               - label: "Texte"
                 name: text
                 widget: object
-                hint: "Supporte **texte en gras**. Double saut de ligne pour nouveau paragraphe."
+                hint: "Mise en forme : `**texte en gras**`. Une ligne vide = nouveau paragraphe."
                 fields:
                   - { label: "Français", name: fr, widget: text }
                   - { label: "Español",  name: es, widget: text, required: false }
@@ -1705,19 +1704,17 @@ collections:
   - name: "pages"
     label: "📃 Sous-pages"
     label_singular: "Sous-page"
-    description: "Créer et modifier les sous-pages du site. Chaque page est accessible via page.html?p=slug."
+    description: "Créer et modifier les sous-pages du site. Chaque page est accessible via page.html?p=slug. Sa présence dans le menu et son ordre se règlent dans « 🗂️ Menu — Ordre des pages »."
     folder: "data/pages"
     create: true
     extension: json
     format: json
     slug: "{{fields.slug}}"
     identifier_field: slug
-    summary: "{{fields.slug}} — {{fields.title_fr}} {{fields.visible_in_nav}}"
+    summary: "{{fields.slug}} — {{fields.title_fr}}"
     preview_path: "page.html?p={{fields.slug}}"
     fields:
       - { label: "Slug (identifiant URL)", name: slug, widget: string, hint: "Identifiant unique sans espaces ni accents. Ex: conseil-jeunesse. Sera dans l'URL: page.html?p=conseil-jeunesse" }
-      - { label: "Visible dans la navigation", name: visible_in_nav, widget: boolean, default: false, hint: "Afficher dans le menu déroulant Pages" }
-      - { label: "Ordre dans le menu", name: nav_order, widget: number, default: 99, hint: "Nombre entier — les pages sont triées du plus petit au plus grand" }
       - label: "Image hero par défaut (optionnel)"
         name: hero_image
         widget: image
@@ -1769,7 +1766,7 @@ collections:
             name: intro
             widget: object
             fields:
-              - { label: "Texte (FR)", name: text_fr, widget: text }
+              - { label: "Texte (FR)", name: text_fr, widget: text, hint: "Mise en forme : `**gras**` · `*italique*` · `[texte du lien](https://adresse)`. Pour un lien, collez l'adresse complète entre les parenthèses." }
               - { label: "Texte (ES)", name: text_es, widget: text, required: false }
               - { label: "Texte (EN)", name: text_en, widget: text, required: false }
           - label: "📌 Titre de section (H2)"
@@ -1789,23 +1786,22 @@ collections:
           - label: "¶ Paragraphe"
             name: body
             widget: object
-            hint: "Supporte **gras**, *italique*, et [texte](url) pour les liens"
             fields:
-              - { label: "Texte (FR)", name: text_fr, widget: text }
+              - { label: "Texte (FR)", name: text_fr, widget: text, hint: "Mise en forme : `**gras**` · `*italique*` · `[texte du lien](https://adresse)`. Pour un lien, collez l'adresse complète entre les parenthèses." }
               - { label: "Texte (ES)", name: text_es, widget: text, required: false }
               - { label: "Texte (EN)", name: text_en, widget: text, required: false }
           - label: "📣 Encadré (callout)"
             name: callout
             widget: object
             fields:
-              - { label: "Texte (FR)", name: text_fr, widget: text }
+              - { label: "Texte (FR)", name: text_fr, widget: text, hint: "Mise en forme : `**gras**` · `*italique*` · `[texte du lien](https://adresse)`. Pour un lien, collez l'adresse complète entre les parenthèses." }
               - { label: "Texte (ES)", name: text_es, widget: text, required: false }
               - { label: "Texte (EN)", name: text_en, widget: text, required: false }
           - label: "📎 Note en italique"
             name: note
             widget: object
             fields:
-              - { label: "Texte (FR)", name: text_fr, widget: text }
+              - { label: "Texte (FR)", name: text_fr, widget: text, hint: "Mise en forme : `**gras**` · `*italique*` · `[texte du lien](https://adresse)`. Pour un lien, collez l'adresse complète entre les parenthèses." }
               - { label: "Texte (ES)", name: text_es, widget: text, required: false }
               - { label: "Texte (EN)", name: text_en, widget: text, required: false }
           - label: "— Séparateur"
@@ -1893,7 +1889,7 @@ collections:
                 widget: list
                 summary: "{{fields.text_fr}}"
                 fields:
-                  - { label: "Texte (FR)", name: text_fr, widget: string }
+                  - { label: "Texte (FR)", name: text_fr, widget: string, hint: "Mise en forme : `**gras**` · `*italique*` · `[texte du lien](https://adresse)`. Pour un lien, collez l'adresse complète entre les parenthèses." }
                   - { label: "Texte (ES)", name: text_es, widget: string, required: false }
                   - { label: "Texte (EN)", name: text_en, widget: string, required: false }
           - label: "🔗 Liste de liens"
@@ -1987,7 +1983,7 @@ collections:
                         name: text
                         widget: object
                         summary: "{{fields.text_fr}}"
-                        hint: "Supporte **gras**, *italique*, [texte](url). Une ligne vide = nouveau paragraphe."
+                        hint: "Mise en forme : `**gras**` · `*italique*` · `[texte du lien](https://adresse)`. Une ligne vide = nouveau paragraphe."
                         fields:
                           - { label: "Texte (FR)", name: text_fr, widget: text }
                           - { label: "Texto (ES)", name: text_es, widget: text, required: false }
