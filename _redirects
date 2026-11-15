@@ -17,6 +17,7 @@
 /autonomie    /page?=autonomie 200
 /temple    /page?=temple 200
 /fsy    /page?=fsy 200
+/service    /page?=service 200
 
 # 3. pdf redirect
 /remboursement /assets/Remboursement.pdf 302
