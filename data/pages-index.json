@@ -82,7 +82,7 @@
     },
     {
       "slug": "service",
-      "visible_in_nav": false,
+      "visible_in_nav": true,
       "nav_order": 8,
       "title": {
         "fr": "Service communautaire",
