@@ -11,19 +11,19 @@
       }
     },
     {
+      "slug": "jeunes",
       "visible_in_nav": true,
       "nav_order": 2,
-      "slug": "jeunes",
       "title": {
         "fr": "Jeunes",
-        "es": "Jóvenes ",
+        "es": "Jóvenes",
         "en": "Youth"
       }
     },
     {
+      "slug": "FSY",
       "visible_in_nav": true,
       "nav_order": 99,
-      "slug": "FSY",
       "title": {
         "fr": "FSY",
         "es": "FSY",
@@ -31,9 +31,9 @@
       }
     },
     {
+      "slug": "jas",
       "visible_in_nav": true,
       "nav_order": 3,
-      "slug": "jas",
       "title": {
         "fr": "JAS",
         "es": "JAS",
@@ -41,9 +41,9 @@
       }
     },
     {
+      "slug": "as",
       "visible_in_nav": true,
       "nav_order": 4,
-      "slug": "as",
       "title": {
         "fr": "Adultes Seuls",
         "es": "Adultos Solteros",
@@ -51,9 +51,9 @@
       }
     },
     {
+      "slug": "institut",
       "visible_in_nav": true,
       "nav_order": 5,
-      "slug": "institut",
       "title": {
         "fr": "Institut",
         "es": "Instituto",
@@ -61,23 +61,33 @@
       }
     },
     {
+      "slug": "autonomie",
       "visible_in_nav": true,
       "nav_order": 6,
-      "slug": "autonomie",
       "title": {
         "fr": "Autonomie",
-        "en": "Autonomy",
-        "es": "Autonomia"
+        "es": "Autonomia",
+        "en": "Autonomy"
       }
     },
     {
+      "slug": "temple",
       "visible_in_nav": true,
       "nav_order": 1,
-      "slug": "temple",
       "title": {
         "fr": "Le temple",
         "es": "El templo",
         "en": "The temple"
+      }
+    },
+    {
+      "slug": "service",
+      "visible_in_nav": false,
+      "nav_order": 99,
+      "title": {
+        "fr": "Service communautaire",
+        "es": "Servicio comunitario",
+        "en": "Community Service"
       }
     }
   ]
