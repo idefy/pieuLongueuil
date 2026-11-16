@@ -153,6 +153,17 @@
       ]
     },
     {
+      "type": "cta",
+      "label_fr": "Voir la liste de lecture dans Youtube",
+      "label_es": "Ver la liste completa en Youtube",
+      "label_en": "See the playlist in Youtube",
+      "href": "https://www.youtube.com/playlist?list=PLZKH4LzhmUD0",
+      "href_fr": "",
+      "href_es": "https://www.youtube.com/playlist?list=PLdSRy1dWD2Uk",
+      "href_en": "",
+      "style": "primary"
+    },
+    {
       "type": "heading",
       "text_fr": "Mes dirigeants",
       "text_es": "Mis lideres",
