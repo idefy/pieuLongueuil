@@ -182,8 +182,8 @@
       "photo": "/assets/leaders-alain-quevedo.jpg",
       "active": true,
       "responsibility": {
-        "fr": "St-Hilaire, École du Dimanche ",
-        "es": "St-Hilaire, Escuela Dominical ",
+        "fr": "St-Hilaire, École du Dimanche",
+        "es": "St-Hilaire, Escuela Dominical",
         "en": "St-Hilaire, Sunday School"
       }
     },
@@ -199,7 +199,7 @@
       "photo": "/assets/leaders-richard-gingras.jpg",
       "active": true,
       "responsibility": {
-        "fr": "Granby, œuvre Missionnaire ",
+        "fr": "Granby, œuvre Missionnaire",
         "es": "Granby, Obra Misional",
         "en": "Granby, Missionnaire Work"
       }
@@ -217,7 +217,7 @@
       "active": true,
       "responsibility": {
         "fr": "Lemoyne, Jeunes Gens, Jeunes Filles",
-        "es": "Lemoyne, Hombres Jóvenes , Mujeres Jóvenes ",
+        "es": "Lemoyne, Hombres Jóvenes , Mujeres Jóvenes",
         "en": "Lemoyne, Young Men, Young Women"
       }
     },
@@ -233,7 +233,7 @@
       "photo": "/assets/leaders-david-pelchat.jpg",
       "active": true,
       "responsibility": {
-        "fr": "Drummondville, Entraide et Autonomie ",
+        "fr": "Drummondville, Entraide et Autonomie",
         "es": "Drummondville, Bienestar y Autonomía",
         "en": "Drummondville, Welfare and Autonomy"
       }
@@ -416,8 +416,8 @@
         "es": "Secretaria",
         "en": "Secretary"
       },
-      "name": "Regina Lara",
-      "photo": "/assets/leaders-regina-lara.jpg",
+      "name": "Nom Prénom",
+      "photo": "/assets/leaders-placeholder.jpg",
       "active": true,
       "responsibility": {
         "fr": "",
@@ -630,7 +630,7 @@
       }
     },
     {
-      "active": true,
+      "id": "rep_jas",
       "org": "jas",
       "role": {
         "fr": "Représentant des Jeunes Adultes Seuls",
@@ -638,20 +638,22 @@
         "en": "Stake Young Single Adult Representative"
       },
       "name": "Olivier Khalil",
-      "id": "rep_jas",
-      "photo": "/assets/leaders-jas-olivier-khalil.jpg"
+      "photo": "/assets/leaders-jas-olivier-khalil.jpg",
+      "active": true,
+      "responsibility": null
     },
     {
-      "active": true,
+      "id": "rep_e_jas",
       "org": "jas",
       "role": {
         "fr": "Représentante des Jeunes Adultes Seuls de pieu",
         "es": "Representante de jóvenes adultos solteros de estaca",
         "en": "Stake Young Single Adult Representative"
       },
-      "id": "rep_e_jas",
       "name": "Jade Lambert",
-      "photo": "/assets/leaders-placeholder.jpg"
+      "photo": "/assets/leaders-placeholder.jpg",
+      "active": true,
+      "responsibility": null
     }
   ]
 }
