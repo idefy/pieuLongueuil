@@ -1,5 +1,17 @@
 {
   "slug": "jeunes",
+  "visible_in_nav": true,
+  "nav_order": 1,
+  "hero_image": "/assets/banner_youth.png",
+  "hero_image_fr": "",
+  "hero_image_es": "",
+  "hero_image_en": "",
+  "title_fr": "Jeunes",
+  "title_es": "Jóvenes",
+  "title_en": "Youth",
+  "subtitle_fr": "De 12 à 18 ans",
+  "subtitle_es": "De 12 a 18 años",
+  "subtitle_en": "From 12 to 18 years old",
   "sections": [
     {
       "type": "heading",
@@ -11,19 +23,104 @@
       "type": "image",
       "src": "/assets/2027_youth_theme_fsy_conference_style_guide_fra.webp",
       "alt_fr": "affiche",
+      "src_fr": "",
+      "src_es": "/assets/2027_youth_theme_fsy_conference_style_guide_spa.webp",
       "src_en": "/assets/2027_youth_theme_fsy_conference_style_guide.webp",
-      "src_es": "/assets/2027_youth_theme_fsy_conference_style_guide_spa.webp"
+      "caption_fr": "",
+      "caption_es": "",
+      "caption_en": ""
     },
     {
-      "href_fr": "https://www.churchofjesuschrist.org/callings/youth?lang=fra",
-      "href_es": "https://www.churchofjesuschrist.org/callings/youth?lang=spa",
-      "href": "https://www.churchofjesuschrist.org/callings/youth?lang=fra",
-      "style": "primary",
-      "label_en": "Discover the program",
+      "type": "cta",
       "label_fr": "Découvrir le programme",
       "label_es": "Descubrir el programa",
-      "type": "cta",
-      "href_en": "https://www.churchofjesuschrist.org/callings/youth?lang=eng"
+      "label_en": "Discover the program",
+      "href": "https://www.churchofjesuschrist.org/callings/youth?lang=fra",
+      "href_fr": "https://www.churchofjesuschrist.org/callings/youth?lang=fra",
+      "href_es": "https://www.churchofjesuschrist.org/callings/youth?lang=spa",
+      "href_en": "https://www.churchofjesuschrist.org/callings/youth?lang=eng",
+      "style": "primary"
+    },
+    {
+      "type": "subheading",
+      "text_fr": "Jeunes Filles",
+      "text_es": "Mujeres Jovenes",
+      "text_en": "Young Women"
+    },
+    {
+      "type": "columns",
+      "columns": [
+        {
+          "content": [
+            {
+              "type": "video",
+              "url": "https://youtu.be/YePVKYa8ppg",
+              "url_fr": "",
+              "url_es": "https://youtu.be/ttxFDlW9dlc",
+              "url_en": "",
+              "caption_fr": "",
+              "caption_es": "",
+              "caption_en": ""
+            }
+          ]
+        },
+        {
+          "content": [
+            {
+              "type": "video",
+              "url": "https://youtu.be/4B5ATyovBIs",
+              "url_fr": "",
+              "url_es": "https://youtu.be/ElIw4uqW7Sw",
+              "url_en": "",
+              "caption_fr": "",
+              "caption_es": "",
+              "caption_en": ""
+            }
+          ]
+        },
+        {
+          "content": [
+            {
+              "type": "video",
+              "url": "https://youtu.be/1i2qEwa1pQc",
+              "url_fr": "",
+              "url_es": "https://youtu.be/wK7jTreNFUk",
+              "url_en": "",
+              "caption_fr": "",
+              "caption_es": "",
+              "caption_en": ""
+            }
+          ]
+        },
+        {
+          "content": [
+            {
+              "type": "video",
+              "url": "https://youtu.be/XSphnm6CSP4",
+              "url_fr": "",
+              "url_es": "https://youtu.be/43Gxw7kHqLs",
+              "url_en": "",
+              "caption_fr": "",
+              "caption_es": "",
+              "caption_en": ""
+            }
+          ]
+        },
+        {
+          "content": [
+            {
+              "type": "video",
+              "url": "https://youtu.be/LXNUYuvjQ3k",
+              "url_fr": "",
+              "url_es": "https://youtu.be/Dbydx45ex1U",
+              "url_en": "",
+              "caption_fr": "",
+              "caption_es": "",
+              "caption_en": ""
+            }
+          ]
+        }
+      ]
     },
     {
       "type": "heading",
@@ -33,25 +130,28 @@
     },
     {
       "type": "leaders",
-      "show_title": true,
-      "org": "jf"
+      "org": "jf",
+      "show_title": true
     },
     {
       "type": "leaders",
-      "show_title": true,
-      "org": "jg"
+      "org": "jg",
+      "show_title": true
     },
     {
       "type": "heading",
       "text_fr": "Activités à venir",
-      "text_en": "Upcoming activities",
-      "text_es": "Próximas actividades"
+      "text_es": "Próximas actividades",
+      "text_en": "Upcoming activities"
     },
     {
       "type": "calendar",
+      "url": "https://churchofjesuschrist.org/church-calendar/services/ext/v3.0/export/ical/group/4ac8b3bd70984cdb8212676a11565417",
+      "title_fr": "",
+      "title_es": "",
+      "title_en": "",
       "count": 5,
-      "show_images": true,
-      "url": "https://churchofjesuschrist.org/church-calendar/services/ext/v3.0/export/ical/group/4ac8b3bd70984cdb8212676a11565417"
+      "show_images": true
     },
     {
       "type": "columns",
@@ -60,11 +160,14 @@
           "content": [
             {
               "type": "button",
-              "style": "gold",
-              "href": "https://myseminary.churchofjesuschrist.org/",
               "label_fr": "Mon séminaire",
               "label_es": "Mi seminario",
-              "label_en": "My Seminary"
+              "label_en": "My Seminary",
+              "href": "https://myseminary.churchofjesuschrist.org/",
+              "href_fr": "",
+              "href_es": "",
+              "href_en": "",
+              "style": "gold"
             }
           ]
         },
@@ -72,25 +175,18 @@
           "content": [
             {
               "type": "button",
-              "style": "gold",
-              "href_fr": "",
               "label_fr": "Le prochain FSY",
-              "href": "fsy",
               "label_es": "El proximo FSY",
-              "label_en": "The next FSY"
+              "label_en": "The next FSY",
+              "href": "fsy",
+              "href_fr": "",
+              "href_es": "",
+              "href_en": "",
+              "style": "gold"
             }
           ]
         }
       ]
     }
-  ],
-  "subtitle_en": "From 12 to 18 years old",
-  "title_en": "Youth",
-  "nav_order": 1,
-  "title_fr": "Jeunes",
-  "subtitle_fr": "De 12 à 18 ans",
-  "subtitle_es": "De 12 a 18 años ",
-  "title_es": "Jóvenes ",
-  "hero_image": "/assets/banner_youth.png",
-  "visible_in_nav": true
+  ]
 }
