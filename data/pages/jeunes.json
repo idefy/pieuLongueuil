@@ -73,6 +73,12 @@
         {
           "content": [
             {
+              "type": "text",
+              "text_fr": "Changements partie 2",
+              "text_es": "Cambios parte 2",
+              "text_en": "Change part 2"
+            },
+            {
               "type": "video",
               "url": "https://youtu.be/4B5ATyovBIs",
               "url_fr": "",
@@ -86,6 +92,12 @@
         },
         {
           "content": [
+            {
+              "type": "text",
+              "text_fr": "Changements partie 3",
+              "text_es": "Cambios parte 3",
+              "text_en": "Change part 3"
+            },
             {
               "type": "video",
               "url": "https://youtu.be/1i2qEwa1pQc",
@@ -101,6 +113,12 @@
         {
           "content": [
             {
+              "type": "text",
+              "text_fr": "Changements partie 4",
+              "text_es": "Cambios parte 4",
+              "text_en": "Change part 4"
+            },
+            {
               "type": "video",
               "url": "https://youtu.be/XSphnm6CSP4",
               "url_fr": "",
@@ -114,6 +132,12 @@
         },
         {
           "content": [
+            {
+              "type": "text",
+              "text_fr": "Classes",
+              "text_es": "Clases",
+              "text_en": "Class"
+            },
             {
               "type": "video",
               "url": "https://youtu.be/LXNUYuvjQ3k",
