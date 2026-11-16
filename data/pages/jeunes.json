@@ -53,6 +53,12 @@
         {
           "content": [
             {
+              "type": "text",
+              "text_fr": "Changements partie 1",
+              "text_es": "Cambios parte 1",
+              "text_en": "Changes part 1"
+            },
+            {
               "type": "video",
               "url": "https://youtu.be/YePVKYa8ppg",
               "url_fr": "",
