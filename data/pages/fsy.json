@@ -297,9 +297,14 @@
           "text_en": "Pre-registration: from October 20, 2026, until January 11, 2027"
         },
         {
-          "text_fr": "Inscription finale : Du 27 janvier au 3 février 2027",
-          "text_es": "Inscripción definitiva: del 27 de enero al 3 de febrero de 2027",
-          "text_en": "Final registration: January 27 to February 3, 2027"
+          "text_fr": "Finalisation de l'inscription : Du 13 au 26 janvier 2027",
+          "text_es": "Finalización de la inscripción : Del 13 al 26 de enero de 2027",
+          "text_en": "Finalizing registration: From January 13 to January 26, 2027"
+        },
+        {
+          "text_fr": "Inscription prioritaire : Du 27 janvier au 3 février 2027",
+          "text_es": "Inscripción prioritaria : del 27 de enero al 3 de febrero de 2027",
+          "text_en": "Priority registration: January 27 to February 3, 2027"
         },
         {
           "text_fr": "Conférence : Du 2 au 7 août 2027",
@@ -310,7 +315,7 @@
     },
     {
       "type": "note",
-      "text_fr": "ATTENTION: sans préinscription, il n’est pas possible de faire l’inscription finale, les places étant limitées.",
+      "text_fr": "ATTENTION: sans préinscription, il n'y a pas d'inscription finale — et ta place réservée se confirme du 13 au 26 janvier 2027. Places limitées.",
       "text_es": "ATENCIÓN: sin preinscripción no hay posibilidad de realizar la inscripción definitiva, debido a que las plazas son limitadas.",
       "text_en": "ATTENTION: without pre-registration, there is no opportunity to complete final registration, because spaces are limited."
     },
